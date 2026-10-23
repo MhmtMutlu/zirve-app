@@ -6,13 +6,18 @@ GitHub Pages ile yayınlanır: <https://mhmtmutlu.github.io/zirve-app/>
 | Sayfa | Türkçe | English |
 |---|---|---|
 | Tanıtım | `/` | `/en/` |
+| Günün kulesi (paylaşılan sonucun bağlantısı, Smart App Banner) | `/daily/` | `/en/daily/` |
 | Gizlilik politikası | `/gizlilik/` | `/en/privacy/` |
 | KVKK aydınlatma metni | `/kvkk/` | – |
 | Hesap silme | `/hesap-silme/` | `/en/delete-account/` |
 | Destek | `/destek/` | `/en/support/` |
 
 ## Düzenleme
-- Metinler: tanıtım sayfası `build.py` içindeki `S` sözlüğünde, hukuki sayfalar `src/*.html`.
+- Metinler: tanıtım sayfası `build.py` içindeki `S` sözlüğünde, günün kulesi sayfası `DAILY` sözlüğünde, hukuki
+  sayfalar `src/*.html`.
+- Yayın günü: `build.py` → `APP_STORE_LIVE = True` (tek anahtar). App Store rozetleri gerçek bağlantı olur, "Çok yakında"
+  ve TestFlight notları kalkar. Günün kulesi sayfasındaki Smart App Banner (`apple-itunes-app`, `app-argument=zirve://daily`)
+  her zaman sayfadadır; Safari onu uygulama mağazada yayındayken gösterir.
 - Derleme: `python3 build.py` (statik HTML'i depo köküne yazar ve tüm iç bağlantıları kontrol eder). Derlenmiş HTML de
   commit'lenir; GitHub Pages ek bir derleme adımı çalıştırmaz.
 - Stil: `assets/site.css` (renkler ve yazı tipleri uygulamanın ZirveDesign tokenlarıyla aynı).

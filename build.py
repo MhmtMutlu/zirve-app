@@ -3,8 +3,9 @@
 
     python3 build.py
 
-Pages: landing (tr at /, en at /en/), privacy (gizlilik, en/privacy), KVKK, account deletion
-(hesap-silme, en/delete-account), support (destek, en/support), 404. Legal bodies live in src/*.html;
+Pages: landing (tr at /, en at /en/), daily tower (daily, en/daily: the link in shared daily results, with a
+Smart App Banner), privacy (gizlilik, en/privacy), KVKK, account deletion (hesap-silme, en/delete-account),
+support (destek, en/support), 404. Legal bodies live in src/*.html;
 this script wraps them in the shared header/footer. Paths are relative so the site works both at
 https://<user>.github.io/zirve-app/ and on a custom domain. No cookies, no analytics, no third-party
 requests: fonts are self-hosted.
@@ -15,6 +16,19 @@ ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
 CONTACT = "apps.support.mm@gmail.com"
 UPDATED = {"tr": "19.10.2026", "en": "19 October 2026"}
+
+# The single switch for launch day: True turns every App Store badge into a real link and drops the "coming soon"
+# and TestFlight wording (landing chip and CTA, daily page note).
+APP_STORE_LIVE = False
+APP_ID = "6823998367"   # App Store Connect → Apple ID (docs/SETUP_KEYS.md in the app repo)
+APP_STORE_URL = f"https://apps.apple.com/app/id{APP_ID}"
+# Smart App Banner on the daily page: Safari offers "Open" (app installed) or "View" (App Store), and the argument opens
+# the daily tower in the app (`AppRoute`). Safari shows the banner only once the app is live in the visitor's store.
+DAILY_BANNER = f'<meta name="apple-itunes-app" content="app-id={APP_ID}, app-argument=zirve://daily">'
+
+def live(t, key):
+    """The launch-day variant of a string (`<key>_live`) once the app is live, else the pre-launch one."""
+    return t.get(key + "_live", t[key]) if APP_STORE_LIVE else t[key]
 
 # ---------------------------------------------------------------------------------------------- icons
 def icon(paths, fill=None, stroke="currentColor", width=2, size=24):
@@ -41,6 +55,8 @@ I = {
     "clock": icon(["M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z", "M12 7v5l3 2"]),
     "hint": icon(["M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.6 1 1.4 1 2.5h6c0-1.1.3-1.9 1-2.5A6 6 0 0 0 12 3z"]),
     "check": icon(["M5 12l5 5 9-10"], width=3),
+    "retry": icon(["M4 12a8 8 0 1 0 2.3-5.7", "M4 4v5h5"], width=2.4),
+    "close": icon(["M6 6l12 12M18 6L6 18"], width=2.6),
     "offline": icon(["M2 8.5a15 15 0 0 1 6-3.2M12 12.5a7 7 0 0 1 4.5 1.6M9 16.5a3 3 0 0 1 3-.5", "M3 3l18 18"]),
     "eye": icon(["M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z", "M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"]),
     "globe": icon(["M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z", "M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"]),
@@ -78,10 +94,10 @@ S = {
   "title": "Zirve: Zeka Oyunları Kulesi · Her kat yeni bir bulmaca",
   "desc": "Zirve, 30–60 saniyelik bulmacalardan oluşan sonsuz bir kule. Çöz, bir kat yüksel, haftalık ligde arkadaşlarını geç. iPhone ve iPad için.",
   "nav": [("#nasil", "Nasıl oynanır"), ("#oyunlar", "Oyunlar"), ("#dunyalar", "Dünyalar"), ("#lig", "Lig"), ("#sss", "SSS")],
-  "soon": "iPhone ve iPad için · çok yakında",
+  "soon": "iPhone ve iPad için · çok yakında", "soon_live": "iPhone ve iPad için · App Store'da",
   "h1": "Kuleye tırman.<br><em>Her kat</em> bir bulmaca.",
   "lead": "Zirve, kısa bulmacalardan oluşan sonsuz bir kule. Çöz, bir kat yüksel, kampa ulaş ve haftalık ligde arkadaşlarını geç.",
-  "badge_small": "Çok yakında", "badge_big": "App Store", "how_btn": "Nasıl oynanır",
+  "badge_small": "Çok yakında", "badge_small_live": "İndir", "badge_big": "App Store", "how_btn": "Nasıl oynanır",
   "trust": ["Ücretsiz", "Hesap gerekmez", "Çevrimdışı oynanır", "6 dil"],
   "f1": ("2 gün", "seri"), "f2": ("Kat 6 geçildi", ""), "f3": ("3/3", "can"),
   "how_eyebrow": "Nasıl oynanır", "how_h2": "Bir dakikadan kısa, beş saniyede anlaşılır.",
@@ -150,6 +166,7 @@ S = {
           ("Verilerim nasıl işleniyor?", "Yalnızca oyunun çalışması için gereken verileri işleriz; ayrıntılar <a href=\"{r}gizlilik/\">Gizlilik Politikası</a> ve <a href=\"{r}kvkk/\">KVKK Aydınlatma Metni</a>'nde."),
           ("Hesabımı nasıl silerim?", "Uygulamada Profil → Ayarlar → Hesap → Hesabı sil. Ayrıntılar <a href=\"{r}hesap-silme/\">Hesap silme</a> sayfasında.")],
   "cta_h2": "Zirvede görüşürüz.", "cta_p": "Zirve çok yakında App Store'da. İlk katlar seni bekliyor.",
+  "cta_p_live": "Zirve App Store'da, ücretsiz. İlk katlar seni bekliyor.",
   "footer_tag": "Kuleye tırman, her kat bir bulmaca.",
   "footer_links": [("gizlilik/", "Gizlilik"), ("kvkk/", "KVKK"), ("hesap-silme/", "Hesap silme"), ("destek/", "Destek")],
   "fine": "© 2026 Mehmet Mutlu · Zirve · Apple, App Store ve iPhone, Apple Inc.'in ticari markalarıdır. Bu sitede çerez ve izleme aracı kullanılmaz.",
@@ -160,10 +177,10 @@ S = {
   "title": "Zirve: Brain Puzzle Tower · Every floor, a new puzzle",
   "desc": "Zirve is an endless tower of 30–60 second puzzles. Solve, climb a floor, pass your friends in the weekly league. For iPhone and iPad.",
   "nav": [("#how", "How to play"), ("#games", "Games"), ("#worlds", "Worlds"), ("#league", "League"), ("#faq", "FAQ")],
-  "soon": "For iPhone and iPad · coming soon",
+  "soon": "For iPhone and iPad · coming soon", "soon_live": "For iPhone and iPad · on the App Store",
   "h1": "Climb the tower.<br><em>Every floor</em> a puzzle.",
   "lead": "Zirve is an endless tower of quick puzzles. Solve one, climb a floor, reach the next camp and pass your friends in the weekly league.",
-  "badge_small": "Coming soon on the", "badge_big": "App Store", "how_btn": "How to play",
+  "badge_small": "Coming soon on the", "badge_small_live": "Download on the", "badge_big": "App Store", "how_btn": "How to play",
   "trust": ["Free", "No account needed", "Plays offline", "6 languages"],
   "f1": ("2 days", "streak"), "f2": ("Floor 6 cleared", ""), "f3": ("3/3", "lives"),
   "how_eyebrow": "How to play", "how_h2": "Under a minute. Understood in five seconds.",
@@ -232,6 +249,7 @@ S = {
           ("How is my data handled?", "We only process what the game needs to work; see the <a href=\"{r}en/privacy/\">Privacy Policy</a>."),
           ("How do I delete my account?", "In the app: Profile → Settings → Account → Delete account. See <a href=\"{r}en/delete-account/\">Delete your account</a>.")],
   "cta_h2": "See you at the summit.", "cta_p": "Zirve is coming soon to the App Store. The first floors are waiting.",
+  "cta_p_live": "Zirve is free on the App Store. The first floors are waiting.",
   "footer_tag": "Climb the tower, every floor a puzzle.",
   "footer_links": [("en/privacy/", "Privacy"), ("en/delete-account/", "Delete account"), ("en/support/", "Support"), ("kvkk/", "KVKK (TR)")],
   "fine": "© 2026 Mehmet Mutlu · Zirve · Apple, App Store and iPhone are trademarks of Apple Inc. This site uses no cookies or trackers.",
@@ -240,7 +258,7 @@ S = {
 }
 
 # ------------------------------------------------------------------------------------------- layout
-def head(t, r, title, desc, canonical):
+def head(t, r, title, desc, canonical, extra=""):
     return f"""<!doctype html>
 <html lang="{t['lang']}">
 <head>
@@ -248,7 +266,7 @@ def head(t, r, title, desc, canonical):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
-<meta name="theme-color" content="#F4F6F1">
+{extra + chr(10) if extra else ""}<meta name="theme-color" content="#F4F6F1">
 <link rel="canonical" href="{canonical}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{html.escape(title)}">
@@ -293,8 +311,10 @@ def footer(t, r):
 """ + SCRIPT
 
 def store_badge(t, cls=""):
-    return (f'<a class="store-badge {cls}" aria-disabled="true" role="link" aria-label="{html.escape(t["badge_small"] + " " + t["badge_big"])}">'
-            f'{APPLE}<span><small>{html.escape(t["badge_small"])}</small><b>{t["badge_big"]}</b></span></a>')
+    small = live(t, "badge_small")
+    target = f'href="{APP_STORE_URL}"' if APP_STORE_LIVE else 'aria-disabled="true" role="link"'
+    return (f'<a class="store-badge {cls}" {target} aria-label="{html.escape(small + " " + t["badge_big"])}">'
+            f'{APPLE}<span><small>{html.escape(small)}</small><b>{t["badge_big"]}</b></span></a>')
 
 # ------------------------------------------------------------------------------------------- landing
 def landing(lang):
@@ -309,7 +329,7 @@ def landing(lang):
     out += f"""<main>
 <section class="hero"><div class="wrap">
   <div>
-    <span class="chip-soon"><i></i>{html.escape(t['soon'])}</span>
+    <span class="chip-soon"><i></i>{html.escape(live(t, 'soon'))}</span>
     <h1>{t['h1']}</h1>
     <p class="lead">{html.escape(t['lead'])}</p>
     <div class="hero-cta">{store_badge(t)}<a class="btn btn-ghost" href="#{ids[0]}">{html.escape(t['how_btn'])}</a></div>
@@ -394,7 +414,116 @@ def landing(lang):
 </div></section>
 <div class="cta-band"><div class="wrap"><div class="cta-card">
   {mascot(cls="mascot")}
-  <div><h2>{html.escape(t['cta_h2'])}</h2><p>{html.escape(t['cta_p'])}</p></div>
+  <div><h2>{html.escape(t['cta_h2'])}</h2><p>{html.escape(live(t, 'cta_p'))}</p></div>
+  {store_badge(t)}
+</div></div></div>
+</main>
+"""
+    out += footer(t, r)
+    return out
+
+# ------------------------------------------------------------------------------------------- daily tower
+# The page a shared daily result links to (the app's "Sonucu paylaş"). Tile colours and icons match the share card.
+DAILY = {
+"tr": {
+  "title": "Günün kulesi · Zirve",
+  "desc": "Herkese aynı on kat, üç deneme. Zirve'de günün kulesine sen de tırman ve sonucunu paylaş.",
+  "chip": "Günün kulesi · her gece yenilenir",
+  "h1": "Bugün herkes <em>aynı kuleye</em> tırmanıyor.",
+  "lead": "Her gün herkese aynı on kat ve üç deneme. En iyi denemen sıralamaya girer. Sonucunu paylaştığında oyunlar ve tahtalar görünmez; kimsenin sürprizi bozulmaz.",
+  "note": "Zirve henüz App Store'da değil; şu an TestFlight'ta kapalı beta. Katılmak istersen <a href=\"mailto:{c}\">{c}</a> adresine yaz.",
+  "note_live": "Zirve yüklüyse sayfanın üstündeki bantta Aç'a dokun: günün kulesi açılır.",
+  "card_label": "Örnek sonuç: 10 kattan 7'si, 3 dakika 5 saniye",
+  "card_title": "Günün kulesi", "card_time": "3:05 toplam süre", "card_try": "Sen de dene",
+  "grid_eyebrow": "Sonuç", "grid_h2": "Kareler ne anlatıyor?",
+  "grid_p": "Paylaşılan sonuçta her kare bir kat: üst sıra 1–5, alt sıra 6–10. Her karenin rengi ve simgesi farklı, renk ayırt etmeden de okunur.",
+  "legend": [("perfect", "⭐", "3 yıldız hızında", "Kat, sürenin en az 15 saniyesi kala çözüldü."),
+             ("cleared", "🟩", "Çözüldü", "Kat, süre bitmeden çözüldü."),
+             ("continued", "🟨", "Devam ederek", "Süre bitti; reklam izleyerek ya da elmasla devam edilip çözüldü."),
+             ("failed", "🟥", "Süre bitti", "Deneme bu katta sona erdi."),
+             ("unreached", "⬜", "Ulaşılmadı", "Bu denemede o kata çıkılmadı.")],
+  "assist": "🕒 Süre yardımıyla satırı, denemede Süre yardımının açık olduğunu gösterir. Kareler yine normal süreye göre boyanır; yardımlı denemeler sıralamaya girmez.",
+  "how_eyebrow": "Nasıl oynanır", "how_h2": "On kat, üç deneme, bir sıralama.",
+  "steps": [("Kuleyi aç", "Zirve'de kule ekranındaki Günün kulesi kartına dokun. Kule her gece yarısı yenilenir ve herkes için aynıdır."),
+            ("Tırman", "Her kat kısa bir bulmaca. Üç denemen var; en iyisi ülke ve arkadaş sıralamasına girer. 3, 6 ve 10. katlarda elmas ödülü."),
+            ("Paylaş", "Deneme bitince Sonucu paylaş: kareler ve süre gider, oyunlar ve tahtalar gitmez.")],
+  "cta_h2": "Sıra sende.",
+  "cta_p": "Zirve çok yakında App Store'da. Bugünün kulesi seni bekliyor.",
+  "cta_p_live": "Zirve App Store'da, ücretsiz. Bugünün kulesi seni bekliyor.",
+},
+"en": {
+  "title": "Daily tower · Zirve",
+  "desc": "The same ten floors for everyone, three attempts. Climb today's tower in Zirve and share your result.",
+  "chip": "Daily tower · new every midnight",
+  "h1": "Today everyone climbs <em>the same tower</em>.",
+  "lead": "Every day, the same ten floors for everyone and three attempts. Your best attempt is ranked. When you share your result, the games and boards stay hidden, so nobody's surprise is spoiled.",
+  "note": "Zirve is not on the App Store yet; it is in a closed TestFlight beta. To join, write to <a href=\"mailto:{c}\">{c}</a>.",
+  "note_live": "Got Zirve? Tap Open in the banner at the top of this page to go straight to the daily tower.",
+  "card_label": "Sample result: 7 of 10 floors in 3 minutes 5 seconds",
+  "card_title": "Daily tower", "card_time": "3:05 total time", "card_try": "Your turn",
+  "grid_eyebrow": "Result", "grid_h2": "What do the squares mean?",
+  "grid_p": "Each square of a shared result is one floor: top row 1–5, bottom row 6–10. Every square has its own colour and icon, so it reads without colour too.",
+  "legend": [("perfect", "⭐", "At 3-star speed", "Solved with at least 15 seconds left."),
+             ("cleared", "🟩", "Solved", "Solved before the time ran out."),
+             ("continued", "🟨", "With a continue", "Time ran out; solved after continuing with an ad or gems."),
+             ("failed", "🟥", "Time ran out", "The attempt ended on this floor."),
+             ("unreached", "⬜", "Not reached", "The attempt did not get this far.")],
+  "assist": "A 🕒 With time assist line means Time assist was on during the attempt. The squares still follow the normal time; assisted attempts are not ranked.",
+  "how_eyebrow": "How to play", "how_h2": "Ten floors, three attempts, one ranking.",
+  "steps": [("Open the tower", "In Zirve, tap the Daily tower card on the tower screen. It renews every midnight and is the same for everyone."),
+            ("Climb", "Every floor is a quick puzzle. You get three attempts; the best one is ranked in your country and among friends. Gems at floors 3, 6 and 10."),
+            ("Share", "When the attempt is over, tap Share result: the squares and your time go out, the games and boards don't.")],
+  "cta_h2": "Your turn.",
+  "cta_p": "Zirve is coming soon to the App Store. Today's tower is waiting.",
+  "cta_p_live": "Zirve is free on the App Store. Today's tower is waiting.",
+},
+}
+DAILY_SAMPLE = ["perfect", "perfect", "cleared", "perfect", "perfect", "cleared", "continued", "failed", None, None]
+TILE_ICON = {"perfect": "star", "cleared": "check", "continued": "retry", "failed": "close"}
+
+def tile(kind):
+    return f'<span class="tile {kind or "unreached"}">{I[TILE_ICON[kind]] if kind in TILE_ICON else ""}</span>'
+
+def daily(lang):
+    t, d = S[lang], DAILY[lang]
+    r = "../" if lang == "tr" else "../../"
+    home = r + ("en/" if lang == "en" else "")
+    out = head(t, r, d["title"], d["desc"], "https://mhmtmutlu.github.io/zirve-app/" + ("daily/" if lang == "tr" else "en/daily/"), DAILY_BANNER)
+    out += nav(t, r, home, [(home, t["back"])], r + ("en/daily/" if lang == "tr" else "daily/"))
+    tiles = "".join(tile(k) for k in DAILY_SAMPLE)
+    note = live(d, "note").format(c=CONTACT)
+    legend = "".join(f'<li>{tile(None if k == "unreached" else k)}<div><h3><span aria-hidden="true">{e}</span> {html.escape(h)}</h3><p>{html.escape(p)}</p></div></li>'
+                     for k, e, h, p in d["legend"])
+    steps = "".join(f'<div class="step"><div class="num">{i+1}</div><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></div>' for i, (h, p) in enumerate(d["steps"]))
+    out += f"""<main>
+<section class="hero daily-hero"><div class="wrap">
+  <div>
+    <span class="chip-soon"><i></i>{html.escape(d['chip'])}</span>
+    <h1>{d['h1']}</h1>
+    <p class="lead">{html.escape(d['lead'])}</p>
+    <div class="hero-cta">{store_badge(t)}</div>
+    <p class="store-note">{note}</p>
+  </div>
+  <div class="result-card" role="img" aria-label="{html.escape(d['card_label'])}">
+    <div class="result-head"><span class="brand">{mascot()}<span>Zirve</span></span><span class="result-day">{html.escape(d['card_title'])}</span></div>
+    <p class="result-score">7<small>/10</small></p>
+    <p class="result-time">{I['clock']}{html.escape(d['card_time'])}</p>
+    <div class="result-grid">{tiles}</div>
+    <p class="result-try">{html.escape(d['card_try'])}</p>
+  </div>
+</div></section>
+<section style="background:#fff"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">{d['grid_eyebrow']}</span><h2>{html.escape(d['grid_h2'])}</h2><p>{html.escape(d['grid_p'])}</p></div>
+  <ul class="legend">{legend}</ul>
+  <p class="legend-assist">{html.escape(d['assist'])}</p>
+</div></section>
+<section><div class="wrap">
+  <div class="section-head"><span class="eyebrow">{d['how_eyebrow']}</span><h2>{html.escape(d['how_h2'])}</h2></div>
+  <div class="steps">{steps}</div>
+</div></section>
+<div class="cta-band"><div class="wrap"><div class="cta-card">
+  {mascot(cls="mascot")}
+  <div><h2>{html.escape(d['cta_h2'])}</h2><p>{html.escape(live(d, 'cta_p'))}</p></div>
   {store_badge(t)}
 </div></div></div>
 </main>
@@ -434,6 +563,8 @@ def build():
         p = ROOT / rel; p.parent.mkdir(parents=True, exist_ok=True); p.write_text(text); written.append(rel)
     write("index.html", landing("tr"))
     write("en/index.html", landing("en"))
+    write("daily/index.html", daily("tr"))
+    write("en/daily/index.html", daily("en"))
     for d in DOCS:
         write(f"{d[0]}/index.html", document(*d))
     nf = S["tr"]
