@@ -17,7 +17,8 @@
   <li>Zirve'yi oynamak için ad, e-posta ya da telefon numarası vermen gerekmez. İlk açılışta senin için rastgele kimlikli bir <b>misafir hesabı</b> oluşturulur.</li>
   <li>Oyunun çalışması için gereken verileri işleriz: ilerlemen, sonuçların, elmasların, lig ve arkadaş bilgilerin.</li>
   <li>Konumunu, rehberini, fotoğraflarını, kamera ve mikrofonunu kullanmayız. Apple'ın reklam tanımlayıcısı (IDFA) için izin istemeyiz ve ona erişmeyiz.</li>
-  <li>Üçüncü taraf analiz veya kilitlenme raporu aracı kullanmayız ve verilerini satmayız. Oyunu geliştirmek için kendi sunucumuzda, hesabına bağlı ama adını veya iletişim bilgini içermeyen <b>kullanım istatistikleri</b> tutarız. Avrupa Ekonomik Alanı'nda bunu yalnızca izin verirsen yaparız; diğer ülkelerde Profil → Ayarlar → <b>Kullanım istatistikleri</b>'nden istediğin an kapatabilirsin. Kapattığında geçmiş istatistiklerin de silinir.</li>
+  <li>Üçüncü taraf analiz veya kilitlenme raporu aracı kullanmayız ve verilerini satmayız. Oyunu geliştirmek için kendi veritabanımızda (Supabase, AB/Frankfurt), hesabına bağlı ama adını veya iletişim bilgini içermeyen <b>kullanım istatistikleri</b> 90 gün tutarız. Avrupa Ekonomik Alanı'nda bunu yalnızca izin verirsen yaparız; diğer ülkelerde Profil → Ayarlar → <b>Kullanım istatistikleri</b>'nden istediğin an kapatabilirsin. Kapattığında geçmiş istatistiklerin de silinir.</li>
+  <li>Mümkün olan en az veriyi tutarız: IP adresini veritabanımızda saklamayız, Apple ile girişte adını ve e-postanı istemeyiz, verileri işlevin gerektirdiği en kısa süre saklarız (<a href="#sure">Saklama</a>).</li>
   <li>Hesabını uygulama içinden silebilir, verilerinin bir kopyasını uygulama içinden indirebilirsin.</li>
 </ul>
 
@@ -25,20 +26,20 @@
 <div class="table"><table>
   <thead><tr><th>Kategori</th><th>Örnekler</th><th>Ne zaman</th></tr></thead>
   <tbody>
-    <tr><td>Hesap</td><td>Rastgele kullanıcı kimliği. Apple ile giriş yaparsan Apple'ın verdiği kullanıcı kimliği (Apple'dan e-posta adresini istemeyiz).</td><td>İlk açılışta; Apple ile girişte</td></tr>
-    <tr><td>Profil</td><td>Görünen ad (istediğin zaman değiştirebilirsin), seçtiğin kostüm ve kule teması, davet kodun.</td><td>Oynadıkça</td></tr>
+    <tr><td>Hesap</td><td>Rastgele kullanıcı kimliği. Apple ile giriş yaparsan yalnızca Apple'ın bu uygulama için ürettiği anonim kullanıcı kimliği: Apple'dan adını ve e-posta adresini <b>istemeyiz</b>, Apple yine de gönderirse saklamadan sileriz. (Apple bu kimliği kendi tarafında Apple hesabınla eşleştirebilir.)</td><td>İlk açılışta; Apple ile girişte</td></tr>
+    <tr><td>Profil</td><td>Görünen ad (takma ad seçmeni öneririz; e-posta, telefon numarası veya site adresi içeren adlar kabul edilmez; istediğin zaman değiştirebilirsin), seçtiğin kostüm ve kule teması, davet kodun.</td><td>Oynadıkça</td></tr>
     <tr><td>Oyun ilerlemesi</td><td>Bulunduğun kat, rekorun, kamp ve sandık ilerlemesi; her katın sonucu (bulmaca türü, yıldız, kalan süre, devam kullanıp kullanmadığın, oynama zamanı); süre bittiğinde katın kaydı; günlük seri; sezon puanı ve alınan ödüller; günün kulesi denemelerin ve süren.</td><td>Her kat sonunda ve uygulama açıldığında</td></tr>
     <tr><td>Oyun içi ekonomi</td><td>Elmas bakiyen ve hareketleri (kazanma/harcama nedeni), envanterin (ipucu, ek süre, seri dondurucu).</td><td>Kazandıkça ve harcadıkça</td></tr>
-    <tr><td>Sosyal</td><td>Haftalık lig grubun ve sıran, arkadaşlık bağlantıların, kullandığın davet kodu, gönderilen “dürt” ve “seni geçti” bildirimlerinin kaydı (kim, kime, ne zaman).</td><td>Lige yerleşince; arkadaş ekleyince</td></tr>
-    <tr><td>Bildirim</td><td>Cihazının bildirim jetonu (Apple Push Notification service). Jeton <b>yalnızca bildirimlere izin verdiğinde</b> saklanır; izni kapatırsan sunucudan silinir.</td><td>Bildirim izni verdiğinde</td></tr>
+    <tr><td>Sosyal</td><td>Haftalık lig grubun ve sıran, arkadaşlık bağlantıların, kullandığın davet kodu, gönderilen “dürt” ve “seni geçti” bildirimlerinin kaydı (kim, kime, ne zaman); sakin modda çözdüğün tahtalar (oyun türü, tahta sırası, çözüm anı ve süresi) haftalık sakin liste için.</td><td>Lige yerleşince; arkadaş ekleyince</td></tr>
+    <tr><td>Bildirim</td><td>Cihazının bildirim jetonu (Apple Push Notification service). Jeton <b>yalnızca bildirimlere izin verdiğinde</b> saklanır; izni kapatırsan ya da uygulamayı 60 gün açmazsan sunucudan silinir.</td><td>Bildirim izni verdiğinde</td></tr>
     <tr><td>Satın alma</td><td>Uygulama içi satın almanın işlem kimliği, ürünü, tarihi, mağaza ülkesi ve para birimi. Kart bilgilerin bize ulaşmaz; ödemeyi Apple alır.</td><td>Satın aldığında</td></tr>
     <tr><td>Kullanım istatistikleri</td><td>Oturumun başlangıç ve bitiş zamanı, açtığın ekranlar, onboarding adımları, kat bırakma ve devam seçimleri, reklam ve mağaza etkileşimleri (sonuç düzeyinde; ödeme bilgisi yok), ayar değişiklikleri; cihaz modeli, iOS sürümü, uygulama sürümü, dil ve App Store ülkesi. IP adresi, reklam kimliği veya cihaz kimliği <b>tutulmaz</b>. Ayrıntı: <a href="#istatistik">Kullanım istatistikleri</a>.</td><td>Oynadıkça (Avrupa Ekonomik Alanı'nda izin verdiysen)</td></tr>
     <tr><td>Tanılama</td><td>Uygulama çöktüğünde veya donduğunda iOS'un (MetricKit) ürettiği teknik rapor: çağrı yığını, hata türü, cihaz modeli, iOS ve uygulama sürümü. Oyun içeriği veya kişisel bilgi içermez; hesabına bağlıdır.</td><td>Bir sonraki açılışta</td></tr>
     <tr><td>Reklam</td><td>Ödüllü reklam izlemeyi seçtiğinde Google AdMob'un işlediği cihaz ve uygulama bilgileri, IP adresi, reklam etkileşimi ve AEA/Birleşik Krallık/İsviçre'deki rıza tercihin. Ayrıntı: <a href="#reklam">Reklamlar</a>.</td><td>Reklam yüklendiğinde ve izlendiğinde</td></tr>
-    <tr><td>Teknik</td><td>Sunucu isteklerinin zamanı ve IP adresi (hizmet sağlayıcımızın güvenlik kayıtlarında), uygulama sürümü.</td><td>Sunucuyla her bağlantıda</td></tr>
+    <tr><td>Teknik</td><td>Uygulama sürümü. IP adresini ve cihaz/tarayıcı bilgisini <b>veritabanımızda saklamayız</b>; giriş oturumlarında yazıldığı anda silinir. İstek zamanı ve IP adresi yalnızca barındırma sağlayıcımız Supabase'in altyapı kayıtlarında kısa süre (birkaç gün) bulunur.</td><td>Sunucuyla her bağlantıda</td></tr>
   </tbody>
 </table></div>
-<p>Oyun ilerlemen ve ayarların, çevrimdışı oynayabilmen için <b>cihazında da</b> saklanır. Paylaşım kartları cihazında oluşturulur; sen paylaşmadıkça bize gönderilmez. Sakin mod yalnızca cihazında kalır.</p>
+<p>Oyun ilerlemen ve ayarların, çevrimdışı oynayabilmen için <b>cihazında da</b> saklanır. Paylaşım kartları cihazında oluşturulur; sen paylaşmadıkça bize gönderilmez. Sakin moddaki ilerlemen cihazında kalır; sunucuya yalnızca haftalık listede sayılan çözümler gider.</p>
 
 <h2 id="amaclar">2. Amaçlar ve hukuki sebepler</h2>
 <div class="table"><table>
@@ -58,7 +59,7 @@
 
 <h2 id="istatistik">3. Kullanım istatistikleri</h2>
 <ul>
-  <li>İstatistikler yalnızca kendi sunucumuzda (Supabase, Frankfurt) tutulur; hiçbir üçüncü tarafla paylaşılmaz, reklam veya takip için kullanılmaz ve uygulamalar ya da siteler arasında seni izlemek için kullanılmaz.</li>
+  <li>İstatistikler yalnızca kendi veritabanımızda (Supabase, AB/Frankfurt) tutulur, hesabına bağlı ham kayıtlar <b>90 gün</b> sonra silinir (uzun dönemde yalnızca kimseye bağlı olmayan günlük toplamlar kalır); hiçbir üçüncü tarafla paylaşılmaz, reklam veya takip için kullanılmaz ve uygulamalar ya da siteler arasında seni izlemek için kullanılmaz.</li>
   <li><b>Avrupa Ekonomik Alanı</b> (AB ülkeleri, İzlanda, Lihtenştayn, Norveç): eğitimden sonra bir kez “Paylaş / Paylaşma” diye sorarız; yanıt verene kadar ve “Paylaşma” dersen hiçbir istatistik kaydedilmez. Bölgeni App Store ülkenden ve reklam rıza formunun bildirdiği bilgiden anlarız; anlaşılamıyorsa izin istenen bölge kabul edilir.</li>
   <li><b>Diğer ülkeler</b> (Türkiye, Birleşik Krallık, İsviçre ve diğerleri): istatistikler varsayılan olarak açıktır; ilk açılışta bunu bir satırla bildiririz.</li>
   <li>Her yerde Profil → Ayarlar → <b>Kullanım istatistikleri</b> anahtarıyla kapatabilir ya da açabilirsin. Kapattığında kayıt durur ve geçmiş istatistiklerin sunucudan silinir. Verdiğin kararların (ne zaman, hangi metin sürümüne) kaydını, rızanın ispatı için hesabın var olduğu sürece tutarız.</li>
@@ -69,13 +70,14 @@
   <li><b>Lig grubundaki oyuncular:</b> görünen adın, kostümün ve kule teman, bu hafta geçtiğin kat sayısı ve sıran.</li>
   <li><b>Arkadaşların:</b> görünen adın, kostümün, rekor katın, ligin ve son oynama zamanın.</li>
   <li><b>Günün kulesi sıralaması:</b> görünen adın, geçtiğin kat sayısı ve süren.</li>
+  <li><b>Sakin mod haftalık listesi:</b> görünen adın, kostümün ve bu hafta sakin modda çözdüğün bulmaca sayısı.</li>
 </ul>
-<p>Görünen adına gerçek adını yazmak zorunda değilsin; uygunsuz adlar değiştirilebilir.</p>
+<p><b>Görünen adına gerçek adını yazma; takma ad seç.</b> Ad ekranı bunu hatırlatır; e-posta adresi, telefon numarası veya site adresi gibi görünen adlar kabul edilmez. Uygunsuz adlar değiştirilebilir.</p>
 
 <h2 id="aktarim">5. Hizmet sağlayıcılar ve yurt dışına aktarım</h2>
 <p>Verilerini yalnızca Hizmeti sunmak için çalıştığımız şu sağlayıcılarla, onların hizmeti için gerektiği ölçüde paylaşırız:</p>
 <ul>
-  <li><b>Supabase</b> (veri işleme sözleşmesinin tarafı Supabase Pte. Ltd., Singapur) — veritabanı, kimlik doğrulama, sunucu fonksiyonları, kullanım istatistikleri ve tanılama. Verilerin Avrupa Birliği'nde (Frankfurt, Almanya) barındırılır. <a href="https://supabase.com/privacy" rel="noopener">Gizlilik</a></li>
+  <li><b>Supabase</b> (veri işleme sözleşmesinin tarafı Supabase Pte. Ltd., Singapur) — barındırma sağlayıcımız: veritabanı, kimlik doğrulama, sunucu fonksiyonları, kullanım istatistikleri ve tanılama. Verilerin Avrupa Birliği'nde (Frankfurt, Almanya) barındırılır. Oyuncular Supabase'de rastgele kimliklerle (takma adlı) kaydedilir; adını, e-postanı veya telefon numaranı istemeyiz (görünen adı sen seçersin). <a href="https://supabase.com/privacy" rel="noopener">Gizlilik</a></li>
   <li><b>RevenueCat Inc.</b> (ABD) — uygulama içi satın almaların doğrulanması ve yönetimi. <a href="https://www.revenuecat.com/privacy" rel="noopener">Gizlilik</a></li>
   <li><b>Google LLC / Google Ireland Ltd.</b> — AdMob reklamları ve rıza yönetimi (User Messaging Platform); bağımsız veri sorumlusu. <a href="https://policies.google.com/privacy" rel="noopener">Gizlilik</a></li>
   <li><b>Apple Inc.</b> — Apple ile giriş, App Store ödemeleri ve bildirim iletimi; bağımsız veri sorumlusu. <a href="https://www.apple.com/legal/privacy/" rel="noopener">Gizlilik</a></li>
@@ -95,11 +97,12 @@
 <h2 id="sure">7. Saklama süresi ve silme</h2>
 <ul>
   <li>Oyun verilerini hesabın var olduğu sürece saklarız.</li>
-  <li>Kullanım istatistikleri en fazla <b>13 ay</b> saklanır; kapattığında ya da hesabını sildiğinde hemen silinir.</li>
-  <li>Tanılama raporları <b>90 gün</b>, bildirim kayıtları 30 gün saklanır.</li>
-  <li><b>Hesabını sildiğinde</b> (Profil → Ayarlar → Hesap → Hesabı sil) hesabın ve ona bağlı oyun verilerin hemen silinir; sistem yedeklerinden en geç 30 gün içinde çıkar. İstisna: hile ve iade denetimi için elmas hareketleri, hile işaretleri ve satın alma olayları, hesap kimliğinle bağlantısı kaldırılarak <b>en fazla 24 ay</b> saklanır, sonra silinir. Satın alma işleme sağlayıcımız RevenueCat'teki kaydın da silinmesini isteriz; Apple ile giriş yaptıysan uygulamanın Apple'daki giriş yetkisini iptal ederiz. Silme işleminin kendisini yalnızca tarih ve rastgele bir talep numarasıyla (kimliğin olmadan) 3 yıl kaydederiz. Ayrıntı: <a href="{{R}}hesap-silme/">Hesap silme</a>.</li>
+  <li>Kullanım istatistikleri en fazla <b>90 gün</b> saklanır; kapattığında ya da hesabını sildiğinde hemen silinir. Kimseye bağlı olmayan günlük toplamlar (ör. günlük oyuncu sayısı) 13 ay kalır.</li>
+  <li>Tanılama raporları <b>30 gün</b>, bildirim kayıtları 30 gün, süre biten katların kaydı 90 gün, sakin modda çözülen tahtalar 30 gün (haftalık sayılar 90 gün) saklanır.</li>
+  <li>Bildirim jetonu, uygulamayı 60 gün açmazsan silinir. Giriş oturumlarında IP adresi ve cihaz bilgisi tutulmaz; giriş güvenlik kayıtları IP ve e-posta olmadan en fazla 1 saat tutulur.</li>
+  <li><b>Hesabını sildiğinde</b> (Profil → Ayarlar → Hesap → Hesabı sil) hesabın ve ona bağlı oyun verilerin hemen silinir; sistem yedeklerinden en geç 30 gün içinde çıkar. İstisna: hile ve iade denetimi için elmas hareketleri ve hile işaretleri hesap kimliğinle bağlantısı kaldırılarak <b>en fazla 12 ay</b>, satın alma olayları (ürün, tarih, ülke, para birimi, fiyat, işlem kimliği) <b>en fazla 24 ay</b> saklanır, sonra silinir ya da kimliksiz hale getirilir. Satın alma işleme sağlayıcımız RevenueCat'teki kaydın da silinmesini isteriz; Apple ile giriş yaptıysan uygulamanın Apple'daki giriş yetkisini iptal ederiz. Silme işleminin kendisini yalnızca tarih ve rastgele bir talep numarasıyla (kimliğin olmadan) 3 yıl kaydederiz. Ayrıntı: <a href="{{R}}hesap-silme/">Hesap silme</a>.</li>
   <li>Mağaza makbuzların Apple hesabında kalır.</li>
-  <li>Hizmet sağlayıcımızın güvenlik kayıtları (IP adresi, istek zamanı) kısa süre tutulur ve kendiliğinden silinir.</li>
+  <li>Barındırma sağlayıcımız Supabase'in altyapı kayıtları (IP adresi, istek zamanı) birkaç gün tutulur ve kendiliğinden silinir; bu kayıtları biz oluşturmayız ve uzatmayız.</li>
   <li>Uygulamayı cihazından silmek yalnızca cihazdaki verileri siler; sunucudaki misafir hesabını silmek için önce uygulama içinden “Hesabı sil”i kullan ya da uygulamadaki destek koduyla bize yaz.</li>
 </ul>
 
