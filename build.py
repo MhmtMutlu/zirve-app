@@ -15,7 +15,7 @@ import html, pathlib, re
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
 CONTACT = "apps.support.mm@gmail.com"
-UPDATED = {"tr": "25.10.2026", "en": "25 October 2026"}
+UPDATED = {"tr": "28.10.2026", "en": "28 October 2026"}
 
 # The single switch for launch day: True turns every App Store badge into a real link and drops the "coming soon"
 # and TestFlight wording (landing chip and CTA, daily page note).
