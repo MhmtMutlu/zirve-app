@@ -17,7 +17,7 @@
   <li>Zirve'yi oynamak için ad, e-posta ya da telefon numarası vermen gerekmez. İlk açılışta senin için rastgele kimlikli bir <b>misafir hesabı</b> oluşturulur.</li>
   <li>Oyunun çalışması için gereken verileri işleriz: ilerlemen, sonuçların, elmasların, lig ve arkadaş bilgilerin.</li>
   <li>Konumunu, rehberini, fotoğraflarını, kamera ve mikrofonunu kullanmayız. Apple'ın reklam tanımlayıcısı (IDFA) için izin istemeyiz ve ona erişmeyiz.</li>
-  <li>Üçüncü taraf analiz veya kilitlenme raporu aracı kullanmayız ve verilerini satmayız. Oyunu geliştirmek için kendi veritabanımızda (Supabase, AB/Frankfurt), hesabına bağlı ama adını veya iletişim bilgini içermeyen <b>kullanım istatistikleri</b> 90 gün tutarız. Avrupa Ekonomik Alanı'nda bunu yalnızca izin verirsen yaparız; diğer ülkelerde Profil → Ayarlar → <b>Kullanım istatistikleri</b>'nden istediğin an kapatabilirsin. Kapattığında geçmiş istatistiklerin de silinir.</li>
+  <li>Üçüncü taraf analiz veya kilitlenme raporu aracı kullanmayız ve verilerini satmayız. Oyunu geliştirmek için kendi veritabanımızda (Türkiye'deki sunucumuzda), hesabına bağlı ama adını veya iletişim bilgini içermeyen <b>kullanım istatistikleri</b> 90 gün tutarız. Avrupa Ekonomik Alanı'nda bunu yalnızca izin verirsen yaparız; diğer ülkelerde Profil → Ayarlar → <b>Kullanım istatistikleri</b>'nden istediğin an kapatabilirsin. Kapattığında geçmiş istatistiklerin de silinir.</li>
   <li>Mümkün olan en az veriyi tutarız: IP adresini veritabanımızda saklamayız, Apple ile girişte adını ve e-postanı istemeyiz, verileri işlevin gerektirdiği en kısa süre saklarız (<a href="#sure">Saklama</a>).</li>
   <li>Hesabını uygulama içinden silebilir, verilerinin bir kopyasını uygulama içinden indirebilirsin.</li>
 </ul>
@@ -36,7 +36,7 @@
     <tr><td>Kullanım istatistikleri</td><td>Oturumun başlangıç ve bitiş zamanı, açtığın ekranlar, onboarding adımları, kat bırakma ve devam seçimleri, reklam ve mağaza etkileşimleri (sonuç düzeyinde; ödeme bilgisi yok), ayar değişiklikleri; cihaz modeli, iOS sürümü, uygulama sürümü, dil ve App Store ülkesi. IP adresi, reklam kimliği veya cihaz kimliği <b>tutulmaz</b>. Ayrıntı: <a href="#istatistik">Kullanım istatistikleri</a>.</td><td>Oynadıkça (Avrupa Ekonomik Alanı'nda izin verdiysen)</td></tr>
     <tr><td>Tanılama</td><td>Uygulama çöktüğünde veya donduğunda iOS'un (MetricKit) ürettiği teknik rapor: çağrı yığını, hata türü, cihaz modeli, iOS ve uygulama sürümü. Oyun içeriği veya kişisel bilgi içermez; hesabına bağlıdır.</td><td>Bir sonraki açılışta</td></tr>
     <tr><td>Reklam</td><td>Ödüllü reklam izlemeyi seçtiğinde Google AdMob'un işlediği cihaz ve uygulama bilgileri, IP adresi, reklam etkileşimi ve AEA/Birleşik Krallık/İsviçre'deki rıza tercihin. Ayrıntı: <a href="#reklam">Reklamlar</a>.</td><td>Reklam yüklendiğinde ve izlendiğinde</td></tr>
-    <tr><td>Teknik</td><td>Uygulama sürümü. IP adresini ve cihaz/tarayıcı bilgisini <b>veritabanımızda saklamayız</b>; giriş oturumlarında yazıldığı anda silinir. İstek zamanı ve IP adresi yalnızca barındırma sağlayıcımız Supabase'in altyapı kayıtlarında kısa süre (en fazla 7 gün) bulunur.</td><td>Sunucuyla her bağlantıda</td></tr>
+    <tr><td>Teknik</td><td>Uygulama sürümü. IP adresini ve cihaz/tarayıcı bilgisini <b>veritabanımızda saklamayız</b>; giriş oturumlarında yazıldığı anda silinir. İstek zamanı ve IP adresi yalnızca sunucumuzun teknik kayıtlarında (güvenlik ve hata ayıklama için) kısa süre, en fazla 7 gün bulunur.</td><td>Sunucuyla her bağlantıda</td></tr>
   </tbody>
 </table></div>
 <p>Oyun ilerlemen ve ayarların, çevrimdışı oynayabilmen için <b>cihazında da</b> saklanır. Paylaşım kartları cihazında oluşturulur; sen paylaşmadıkça bize gönderilmez. Sakin moddaki ilerlemen cihazında kalır; sunucuya yalnızca haftalık listede sayılan çözümler gider.</p>
@@ -59,7 +59,7 @@
 
 <h2 id="istatistik">3. Kullanım istatistikleri</h2>
 <ul>
-  <li>İstatistikler yalnızca kendi veritabanımızda (Supabase, AB/Frankfurt) tutulur, hesabına bağlı ham kayıtlar <b>90 gün</b> sonra silinir (uzun dönemde yalnızca kimseye bağlı olmayan günlük toplamlar kalır); hiçbir üçüncü tarafla paylaşılmaz, reklam veya takip için kullanılmaz ve uygulamalar ya da siteler arasında seni izlemek için kullanılmaz.</li>
+  <li>İstatistikler yalnızca kendi veritabanımızda (Türkiye'deki sunucumuzda) tutulur, hesabına bağlı ham kayıtlar <b>90 gün</b> sonra silinir (uzun dönemde yalnızca kimseye bağlı olmayan günlük toplamlar kalır); hiçbir üçüncü tarafla paylaşılmaz, reklam veya takip için kullanılmaz ve uygulamalar ya da siteler arasında seni izlemek için kullanılmaz.</li>
   <li><b>Avrupa Ekonomik Alanı</b> (AB ülkeleri, İzlanda, Lihtenştayn, Norveç): eğitimden sonra bir kez “Paylaş / Paylaşma” diye sorarız; yanıt verene kadar ve “Paylaşma” dersen hiçbir istatistik kaydedilmez. Bölgeni App Store ülkenden ve reklam rıza formunun bildirdiği bilgiden anlarız; anlaşılamıyorsa izin istenen bölge kabul edilir.</li>
   <li><b>Diğer ülkeler</b> (Türkiye, Birleşik Krallık, İsviçre ve diğerleri): istatistikler varsayılan olarak açıktır; ilk açılışta bunu bir satırla bildiririz.</li>
   <li>Her yerde Profil → Ayarlar → <b>Kullanım istatistikleri</b> anahtarıyla kapatabilir ya da açabilirsin. Kapattığında kayıt durur ve geçmiş istatistiklerin sunucudan silinir. Verdiğin kararların (ne zaman, hangi metin sürümüne) kaydını, rızanın ispatı için hesabın var olduğu sürece tutarız.</li>
@@ -77,13 +77,15 @@
 <h2 id="aktarim">5. Hizmet sağlayıcılar ve yurt dışına aktarım</h2>
 <p>Verilerini yalnızca Hizmeti sunmak için çalıştığımız şu sağlayıcılarla, onların hizmeti için gerektiği ölçüde paylaşırız:</p>
 <ul>
-  <li><b>Supabase</b> (veri işleme sözleşmesinin tarafı Supabase Pte. Ltd., Singapur) — barındırma sağlayıcımız: veritabanı, kimlik doğrulama, sunucu fonksiyonları, kullanım istatistikleri ve tanılama. Verilerin Avrupa Birliği'nde (Frankfurt, Almanya) barındırılır. Oyuncular Supabase'de rastgele kimliklerle (takma adlı) kaydedilir; adını, e-postanı veya telefon numaranı istemeyiz (görünen adı sen seçersin). <a href="https://supabase.com/privacy" rel="noopener">Gizlilik</a></li>
+  <li><b>Güzel Hosting</b> (Türkiye) — sunucumuzun ve yedeklerimizin bulunduğu sanal sunucu hizmeti. Veritabanı, kimlik doğrulama, sunucu fonksiyonları, kullanım istatistikleri ve tanılama bu sunucuda, bizim yönettiğimiz yazılımla (açık kaynaklı Supabase) çalışır. Verilerin Türkiye'de barındırılır; yedekler sunucudan çıkmadan şifrelenir ve yine Türkiye'de saklanır. Oyuncular rastgele kimliklerle (takma adlı) kaydedilir; adını, e-postanı veya telefon numaranı istemeyiz (görünen adı sen seçersin).</li>
   <li><b>RevenueCat Inc.</b> (ABD) — uygulama içi satın almaların doğrulanması ve yönetimi. <a href="https://www.revenuecat.com/privacy" rel="noopener">Gizlilik</a></li>
   <li><b>Google LLC / Google Ireland Ltd.</b> — AdMob reklamları ve rıza yönetimi (User Messaging Platform); bağımsız veri sorumlusu. <a href="https://policies.google.com/privacy" rel="noopener">Gizlilik</a></li>
   <li><b>Apple Inc.</b> — Apple ile giriş, App Store ödemeleri ve bildirim iletimi; bağımsız veri sorumlusu. <a href="https://www.apple.com/legal/privacy/" rel="noopener">Gizlilik</a></li>
   <li><b>GitHub Inc.</b> — bu web sitesinin barındırılması (yalnızca erişim kayıtları; site çerez kullanmaz).</li>
 </ul>
-<p>Sunucularımız Almanya'da (Frankfurt) bulunduğundan ve hizmet sağlayıcılarımızın bir kısmı ABD'de olduğundan verilerin yurt dışına aktarılır. Sağlayıcılarımızla AB standart sözleşme maddelerini içeren veri işleme sözleşmeleri yaptık; KVKK m.9 kapsamındaki standart sözleşmeleri imzalamaları için başvurduk. Ayrıca yasal zorunluluk halinde yetkili kamu kurum ve kuruluşlarıyla paylaşılabilir.</p>
+<p>Sunucularımız Türkiye'dedir. Hizmet sağlayıcılarımızın bir kısmı ABD'de olduğundan, onlarla paylaşılan veriler (satın alma doğrulaması, reklamlar, Apple hizmetleri) yurt dışına aktarılır. Bu sağlayıcılarla AB standart sözleşme maddelerini içeren veri işleme sözleşmeleri yaptık; KVKK m.9 kapsamındaki standart sözleşmeleri imzalamaları için başvurduk. Ayrıca yasal zorunluluk halinde yetkili kamu kurum ve kuruluşlarıyla paylaşılabilir.</p>
+<p><b>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki oyuncular:</b> veri sorumlusu ve sunucularımız Türkiye'dedir; verilerin Türkiye'de işlenir ve saklanır. Türkiye hakkında bir AB yeterlilik kararı bulunmaz; verilerini bu politikada anlatılan saklama, güvenlik ve haklarla, GDPR'a uygun olarak işleriz.</p>
+<p><b>Sunucu değişikliği:</b> 30 Ekim 2026'ya kadar verilerin Supabase Pte. Ltd.'nin Frankfurt'taki (Almanya) altyapısında barındırılıyordu. Oradaki proje durduruldu; kopya Kasım 2026 içinde silinecektir.</p>
 
 <h2 id="reklam">6. Reklamlar</h2>
 <p>Zirve'de reklamlar yalnızca <b>sen istediğinde</b> gösterilir: can kazanmak ya da süre bittiğinde devam etmek için “Reklam izle” dediğinde. Oyunu kesen reklam yoktur ve reklamlar genel izleyiciye uygun içerikle sınırlıdır.</p>
@@ -102,12 +104,12 @@
   <li>Bildirim jetonu, uygulamayı 60 gün açmazsan silinir. Giriş oturumlarında IP adresi ve cihaz bilgisi tutulmaz; giriş güvenlik kayıtları IP ve e-posta olmadan en fazla 1 saat tutulur.</li>
   <li><b>Hesabını sildiğinde</b> (Profil → Ayarlar → Hesap → Hesabı sil) hesabın ve ona bağlı oyun verilerin hemen silinir; sistem yedeklerinden en geç 30 gün içinde çıkar. İstisna: hile ve iade denetimi için elmas hareketleri ve hile işaretleri hesap kimliğinle bağlantısı kaldırılarak <b>en fazla 12 ay</b>, satın alma olayları (ürün, tarih, ülke, para birimi, fiyat, işlem kimliği) <b>en fazla 24 ay</b> saklanır, sonra silinir ya da kimliksiz hale getirilir. Satın alma işleme sağlayıcımız RevenueCat'teki kaydın da silinmesini isteriz; Apple ile giriş yaptıysan uygulamanın Apple'daki giriş yetkisini iptal ederiz. Silme işleminin kendisini yalnızca tarih ve rastgele bir talep numarasıyla (kimliğin olmadan) 3 yıl kaydederiz. Ayrıntı: <a href="{{R}}hesap-silme/">Hesap silme</a>.</li>
   <li>Mağaza makbuzların Apple hesabında kalır.</li>
-  <li>Barındırma sağlayıcımız Supabase'in altyapı kayıtları (IP adresi, istek zamanı) en fazla 7 gün tutulur ve kendiliğinden silinir; bu kayıtları biz oluşturmayız ve uzatmayız.</li>
+  <li>Sunucumuzun teknik kayıtları (IP adresi, istek zamanı) en fazla 7 gün tutulur ve kendiliğinden silinir.</li>
   <li>Uygulamayı cihazından silmek yalnızca cihazdaki verileri siler; sunucudaki misafir hesabını silmek için önce uygulama içinden “Hesabı sil”i kullan ya da uygulamadaki destek koduyla bize yaz.</li>
 </ul>
 
 <h2>8. Güvenlik</h2>
-<p>Veriler aktarım sırasında TLS ile şifrelenir. Veritabanında her oyuncu yalnızca kendi verilerine erişebilir (satır düzeyinde güvenlik); kullanım istatistiklerine dışarıdan doğrudan erişilemez; bakiye ve ödül gibi hassas işlemler yalnızca sunucuda yapılır. Hiçbir sistem tamamen güvenli değildir; bir ihlal durumunda mevzuatın öngördüğü bildirimleri yaparız.</p>
+<p>Veriler aktarım sırasında TLS ile şifrelenir; yedekler sunucudan çıkmadan şifrelenir. Veritabanında her oyuncu yalnızca kendi verilerine erişebilir (satır düzeyinde güvenlik); kullanım istatistiklerine dışarıdan doğrudan erişilemez; bakiye ve ödül gibi hassas işlemler yalnızca sunucuda yapılır. Hiçbir sistem tamamen güvenli değildir; bir ihlal durumunda mevzuatın öngördüğü bildirimleri yaparız.</p>
 
 <h2>9. Çocuklar</h2>
 <p>Zirve her yaştan oyuncunun oynayabileceği bir bulmaca oyunudur ama çocuklar için özel olarak tasarlanmamıştır ve App Store'un Çocuklar kategorisinde değildir. Ad, e-posta veya doğum tarihi istemeyiz; reklamlar yalnızca istek üzerine ve genel izleyiciye uygun içerikle gösterilir. 13 yaşından (bulunduğun ülkede daha yüksek bir yaş geçerliyse o yaştan) küçük bir çocuğun bize kişisel veri verdiğini öğrenirsek hesabı sileriz; bize <a href="mailto:{{CONTACT}}">{{CONTACT}}</a> adresinden yazabilirsin.</p>

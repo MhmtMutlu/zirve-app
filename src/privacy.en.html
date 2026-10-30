@@ -17,7 +17,7 @@
   <li>You don't need to give us a name, email or phone number to play. On first launch a <b>guest account</b> with a random ID is created for you.</li>
   <li>We process the data the game needs to work: your progress, results, gems, league and friends.</li>
   <li>We don't use your location, contacts, photos, camera or microphone. We don't ask for, or access, Apple's advertising identifier (IDFA).</li>
-  <li>We use no third-party analytics or crash-reporting tools and we do not sell your data. To improve the game we keep <b>usage statistics</b> for 90 days in our own database (Supabase, EU/Frankfurt), linked to your account but not containing your name or contact details. In the European Economic Area we only do this if you allow it; elsewhere you can turn it off at any time under Profile → Settings → <b>Usage statistics</b>. Turning it off also deletes your past statistics.</li>
+  <li>We use no third-party analytics or crash-reporting tools and we do not sell your data. To improve the game we keep <b>usage statistics</b> for 90 days in our own database (on our server in Türkiye), linked to your account but not containing your name or contact details. In the European Economic Area we only do this if you allow it; elsewhere you can turn it off at any time under Profile → Settings → <b>Usage statistics</b>. Turning it off also deletes your past statistics.</li>
   <li>We keep as little as possible: we don't store your IP address in our database, we don't ask Apple for your name or email when you sign in, and we keep data only as long as its purpose needs (<a href="#retention">Retention</a>).</li>
   <li>You can delete your account and download a copy of your data in the app.</li>
 </ul>
@@ -36,7 +36,7 @@
     <tr><td>Usage statistics</td><td>When a session starts and ends, screens you open, onboarding steps, leaving or continuing a floor, ad and store interactions (outcomes only, no payment details), settings changes; device model, iOS version, app version, language and App Store country. We do <b>not</b> keep your IP address, advertising identifier or device identifier. See <a href="#statistics">Usage statistics</a>.</td><td>As you play (in the EEA only if you agreed)</td></tr>
     <tr><td>Diagnostics</td><td>Technical reports iOS creates (MetricKit) when the app crashes or hangs: call stacks, error type, device model, iOS and app version. No game content or personal details; linked to your account.</td><td>At the next launch</td></tr>
     <tr><td>Ads</td><td>When you choose to watch a rewarded ad, the device and app information, IP address, ad interactions and (in the EEA/UK/Switzerland) consent choice processed by Google AdMob. See <a href="#ads">Ads</a>.</td><td>When an ad loads and plays</td></tr>
-    <tr><td>Technical</td><td>App version. We do <b>not store your IP address</b> or device/browser details in our database; they are removed from sign-in sessions as soon as they are written. Request times and IP addresses exist only briefly (up to 7 days) in the infrastructure logs of our hosting provider Supabase.</td><td>On every server connection</td></tr>
+    <tr><td>Technical</td><td>App version. We do <b>not store your IP address</b> or device/browser details in our database; they are removed from sign-in sessions as soon as they are written. Request times and IP addresses exist only briefly, for at most 7 days, in our server's technical logs (for security and debugging).</td><td>On every server connection</td></tr>
   </tbody>
 </table></div>
 <p>Your progress and settings are also stored <b>on your device</b> so you can play offline. Share cards are created on your device and are not sent to us unless you share them. Your calm-mode progress stays on your device; only the solves counted on the weekly list reach the server.</p>
@@ -59,7 +59,7 @@
 
 <h2 id="statistics">3. Usage statistics</h2>
 <ul>
-  <li>Statistics are kept only in our own database (Supabase, EU/Frankfurt), and the records linked to your account are deleted after <b>90 days</b> (in the long run only daily totals not linked to anyone remain); they are never shared with third parties, never used for ads or tracking, and never used to follow you across other apps or websites.</li>
+  <li>Statistics are kept only in our own database (on our server in Türkiye), and the records linked to your account are deleted after <b>90 days</b> (in the long run only daily totals not linked to anyone remain); they are never shared with third parties, never used for ads or tracking, and never used to follow you across other apps or websites.</li>
   <li><b>European Economic Area</b> (EU countries, Iceland, Liechtenstein, Norway): after the tutorial we ask once, “Share / Don't share”; nothing is recorded until you answer, and nothing if you choose “Don't share”. We tell your region from your App Store country and from what the ad consent form reports; if it can't be told, we treat you as being in a region where we ask.</li>
   <li><b>Other countries</b> (Türkiye, the UK, Switzerland and elsewhere): statistics are on by default; we tell you so in one line on first launch.</li>
   <li>Everywhere you can switch them off or on under Profile → Settings → <b>Usage statistics</b>. Turning them off stops recording and deletes your past statistics from our server. We keep a record of your choices (when, which text version) for as long as your account exists, to prove consent.</li>
@@ -77,13 +77,15 @@
 <h2 id="providers">5. Service providers and international transfers</h2>
 <p>We share data only with the providers we work with to run the Service, and only as far as their service needs it:</p>
 <ul>
-  <li><b>Supabase</b> (data processing agreement with Supabase Pte. Ltd., Singapore) — our hosting provider: database, authentication, server functions, usage statistics and diagnostics. Your data is hosted in the European Union (Frankfurt, Germany). Players are stored at Supabase under random (pseudonymous) IDs; we don't ask for your name, email or phone number (you choose your display name). <a href="https://supabase.com/privacy" rel="noopener">Privacy</a></li>
+  <li><b>Güzel Hosting</b> (Türkiye) — the virtual server service our server and our backups run on. The database, authentication, server functions, usage statistics and diagnostics run on this server with software we operate ourselves (open-source Supabase). Your data is hosted in Türkiye; backups are encrypted before they leave the server and are also kept in Türkiye. Players are stored under random (pseudonymous) IDs; we don't ask for your name, email or phone number (you choose your display name).</li>
   <li><b>RevenueCat Inc.</b> (USA) — verification and management of in-app purchases. <a href="https://www.revenuecat.com/privacy" rel="noopener">Privacy</a></li>
   <li><b>Google LLC / Google Ireland Ltd.</b> — AdMob ads and consent management (User Messaging Platform); an independent controller. <a href="https://policies.google.com/privacy" rel="noopener">Privacy</a></li>
   <li><b>Apple Inc.</b> — Sign in with Apple, App Store payments and notification delivery; an independent controller. <a href="https://www.apple.com/legal/privacy/" rel="noopener">Privacy</a></li>
   <li><b>GitHub Inc.</b> — hosting of this website (access logs only; the site uses no cookies).</li>
 </ul>
-<p>Because our servers are in Germany (Frankfurt) and some of our providers are in the USA, your data is transferred abroad. We have data processing agreements with our providers that include the EU standard contractual clauses (Chapter V GDPR); for Türkiye we have asked them to sign the standard contracts under Art. 9 KVKK. We may also disclose data to competent authorities where required by law.</p>
+<p>Our servers are in Türkiye. Some of our providers are in the USA, so the data shared with them (purchase verification, ads, Apple services) is transferred abroad. We have data processing agreements with these providers that include the EU standard contractual clauses (Chapter V GDPR); for Türkiye we have asked them to sign the standard contracts under Art. 9 KVKK. We may also disclose data to competent authorities where required by law.</p>
+<p><b>Players in the European Economic Area, the UK and Switzerland:</b> the controller and our servers are in Türkiye, so your data is processed and stored in Türkiye. There is no EU adequacy decision for Türkiye; we process your data in line with the GDPR, with the retention, security and rights described in this policy.</p>
+<p><b>Change of server:</b> until 30 October 2026 your data was hosted on Supabase Pte. Ltd.'s infrastructure in Frankfurt, Germany. That project has been stopped; the copy there will be deleted during November 2026.</p>
 
 <h2 id="ads">6. Ads</h2>
 <p>Ads in Zirve appear <b>only when you ask for one</b>: when you tap “Watch ad” to get a life or continue after time runs out. No ad interrupts play, and ads are limited to content suitable for general audiences.</p>
@@ -102,7 +104,7 @@
   <li>Your push token is removed if you don't open the app for 60 days. Sign-in sessions keep no IP address or device details; sign-in security records are kept without IP address and email for at most 1 hour.</li>
   <li><b>When you delete your account</b> (Profile → Settings → Account → Delete account), your account and the game data linked to it are deleted immediately and leave system backups within 30 days. Exception: to audit cheating and refunds, gem movements and cheat flags are kept for at most <b>12 months</b> and purchase events (product, date, country, currency, price, transaction ID) for at most <b>24 months</b>, with the link to your account removed; then they are deleted or made anonymous. We also ask our purchase provider RevenueCat to delete its record, and if you signed in with Apple we revoke the app's Sign in with Apple authorization. We record the deletion itself with only a date and a random request number (not your ID) for 3 years. See <a href="{{R}}en/delete-account/">Delete your account</a>.</li>
   <li>Your store receipts remain in your Apple account.</li>
-  <li>The infrastructure logs of our hosting provider Supabase (IP address, request time) are kept for up to 7 days and deleted automatically; we neither create nor extend them.</li>
+  <li>Our server's technical logs (IP address, request time) are kept for at most 7 days and deleted automatically.</li>
   <li>Deleting the app only removes data on your device. To delete your guest account on our servers, use “Delete account” in the app first, or email us with the support code shown in the app.</li>
 </ul>
 
