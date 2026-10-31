@@ -135,6 +135,12 @@ section { padding: 96px 0; }
 .world.space .rows span { background: rgba(255, 255, 255, .1); color: #E8EDF8; }
 .world.space .rows span.you { background: #fff; color: var(--ink); }
 .world.crystal { background: linear-gradient(180deg, var(--crystal-a), var(--crystal-b)); }
+.world.dusk { background: linear-gradient(180deg, #FDE6CC, #F7C9A8); }
+.world.lights, .world.summit { color: #E8EDF8; }
+.world.lights { background: linear-gradient(180deg, #163049, #0D1B2E); }
+.world.summit { background: linear-gradient(180deg, #2C2160, #120E2E); }
+.world.lights .rows span, .world.summit .rows span { background: rgba(255, 255, 255, .1); color: #E8EDF8; }
+.world.lights .rows span.you, .world.summit .rows span.you { background: #fff; color: var(--ink); }
 .world .deco { position: absolute; border-radius: 50%; }
 @media (max-width: 960px) { .worlds { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 460px) { .worlds { grid-template-columns: 1fr; } .world { min-height: 320px; } }

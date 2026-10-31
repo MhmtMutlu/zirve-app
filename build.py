@@ -128,7 +128,7 @@ S = {
      ["5×5 tahtadan 7×7'ye", "3 renkten 6 renge", "Geçilemeyen engel kareler"]),
     ("pipes", "Boru çevirme", "Kat 21'den", "Boruları döndür, suyu akıt.",
      ["Bir boruya dokun: 90 derece döner.", "Suyu kaynaktan bayrağa kesintisiz ulaştır; akan borular dolu görünür."],
-     ["Kat 40'tan bütün borular bağlanmalı", "Daha çok kollu, daha karışık borular", "Kristal zirvede 6×6 tahta"]),
+     ["Kat 40'tan bütün borular bağlanmalı", "Daha çok kollu, daha karışık borular", "Kat 100'den 6×6 tahta"]),
     ("colorSort", "Renk dizme", "Kat 31'den", "Tüplerdeki renkleri ayır, her tüpte tek renk kalsın.",
      ["Bir tüpe, sonra başka bir tüpe dokun: üstteki renk oraya dökülür.", "Yalnızca aynı rengin üstüne ya da boş tüpe dökülür; sıkışırsan Geri al."],
      ["4 renkten 8 renge", "Daha karışık başlangıçlar, daha uzun çözümler", "Hep iki boş tüp: plan yapmak sende"]),
@@ -137,7 +137,7 @@ S = {
      ["7×7 tahtadan 11×11'e, karelerin %85'ine kadar dolu", "Kısa oklarla 12 kareye varan kıvrımlı yılan oklar", "Daha uzun \"önce bu çıkmalı\" zincirleri"]),
     ("gates", "Kapı", "Kat 51'den", "Blokları kendi renklerindeki kapılardan çıkar.",
      ["Bir bloğu sürükle: yalnızca oklarının gösterdiği yönde kayar. Önü açıksa aynı renkli kapıdan çıkar; dokunman da yeter.", "İlk hamle hiçbir zaman çıkış değildir: önce bir bloğu kenara park edip yol açman gerekir."],
-     ["6×6 tahtadan 8×8'e, 7 bloktan 14 bloğa", "Her tahtada en az 3, sonra 4 planlı park", "Kat 80'den kilitli blok, kristal zirvede dört yöne kayan 2×2 blok"]),
+     ["6×6 tahtadan 8×8'e, 7 bloktan 14 bloğa", "Her tahtada en az 3, sonra 4 planlı park", "Kat 80'den kilitli blok, kat 100'den dört yöne kayan 2×2 blok"]),
     ("flags", "Gözcüler", "Kat 61'den", "Her satıra, sütuna ve renkli bölgeye bir gözcü kulesi yerleştir.",
      ["Bir kareye dokun: önce ✕ (not), tekrar dokununca gözcü. Her satırda, sütunda ve bölgede tam bir gözcü olmalı.", "Gözcüler birbirine değmez, çaprazda bile. Her tahtanın tek çözümü var; tahmin gerekmez, mantıkla bulunur."],
      ["6×6 tahtadan 8×8'e", "İlk tahtalarda elenen kareler noktayla gösterilir, sonra kendin işaretlersin", "Daha uzun çıkarım zincirleri"]),
@@ -145,9 +145,9 @@ S = {
      ["Bir kareye dokun: o kare ve üst, alt, sağ, sol komşuları (+ şekli) tersine döner. Sönük olan yanar, yanan söner.", "Parmağını basılı tutunca dönecek kareler çerçevelenir; çaprazlar etkilenmez."],
      ["3×3 tahtadan 5×5'e", "Çözüm için gereken dokunuş 3'ten 10'a", "Sıra önemli: önce düşün, sonra dokun"])],
   "shots": [("play-path", "Yol çizme"), ("play-color", "Renk birleştirme"), ("play-blocks", "Blok yerleştirme"), ("play-arrows", "Oklar")],
-  "worlds_eyebrow": "Dünyalar", "worlds_h2": "Dört dünya, sonu olmayan bir kule.",
-  "worlds_p": "Ormandan başla, bulutların arasından uzaya çık, kristal zirveye ulaş. Her dünyada kurallar biraz daha zorlaşır.",
-  "worlds": [("forest", "Orman", "Kat 1–29"), ("clouds", "Bulutlar", "Kat 30–59"), ("space", "Uzay", "Kat 60–99"), ("crystal", "Kristal Zirve", "Kat 100 ve üstü")],
+  "worlds_eyebrow": "Dünyalar", "worlds_h2": "16 dünya, sonu olmayan bir kule.",
+  "worlds_p": "Her 20 katta yeni bir dünya: ormandan çiçekli yamaçlara, fırtınadan kuzey ışıklarına, galaksilerden Sonsuz Zirve'ye. Tırmandıkça bulmacalar zorlaşır, dünyalar daha da parlar.",
+  "worlds": [("forest", "Orman", "Kat 1–19"), ("dusk", "Gün Batımı", "Kat 80–99"), ("lights", "Kuzey Işıkları", "Kat 140–159"), ("summit", "Sonsuz Zirve", "Kat 300 ve ötesi")],
   "floor": "Kat",
   "league_eyebrow": "Lig ve arkadaşlar", "league_h2": "Kat numaran, senin puanın.",
   "league_p": "Her hafta 30 kişilik bir ligdesin. Bu hafta geçtiğin katlar sıralamanı belirler; ilk yedi bir üst lige çıkar, son beş bir alta iner. Herkes seçtiği oyuncu adı, kıyafeti ve kule temasıyla görünür; listeyi aşağı çekip anında yenileyebilirsin.",
@@ -217,7 +217,7 @@ S = {
      ["From a 5×5 board to 7×7", "From 3 colours to 6", "Blocked squares you have to route around"]),
     ("pipes", "Pipes", "From floor 21", "Turn the pipes and get the water flowing.",
      ["Tap a pipe to turn it 90 degrees.", "Lead the water from the source to the flag without a gap; flowing pipes fill up."],
-     ["From floor 40: every pipe must be connected", "More branches, more tangled pipes", "A 6×6 board at the crystal summit"]),
+     ["From floor 40: every pipe must be connected", "More branches, more tangled pipes", "A 6×6 board from floor 100"]),
     ("colorSort", "Colour sort", "From floor 31", "Sort the colours until every tube holds one.",
      ["Tap a tube, then another: the top colour pours over.", "It only goes onto the same colour or into an empty tube; stuck? Undo."],
      ["From 4 colours to 8", "More mixed starts, longer solutions", "Always two empty tubes: the planning is yours"]),
@@ -226,7 +226,7 @@ S = {
      ["From a 7×7 board to 11×11, up to 85% full", "Short arrows next to winding snakes up to 12 cells long", "Longer \"this one first\" chains"]),
     ("gates", "Gates", "From floor 51", "Lead every block out through the gate of its own colour.",
      ["Drag a block: it only slides the way its arrows point. With a clear way it leaves through the matching gate; a tap is enough.", "The first move is never an exit: you have to park a block aside to open a way first."],
-     ["From a 6×6 board to 8×8, from 7 blocks to 14", "At least 3, later 4 planned parks on every board", "From floor 80 a locked block; at the crystal summit a 2×2 block that slides any direction"]),
+     ["From a 6×6 board to 8×8, from 7 blocks to 14", "At least 3, later 4 planned parks on every board", "From floor 80 a locked block; from floor 100 a 2×2 block that slides any direction"]),
     ("flags", "Lookouts", "From floor 61", "Place one lookout tower in every row, column and coloured region.",
      ["Tap a square: first ✕ (a note), tap again for a lookout. Every row, column and region needs exactly one.", "Lookouts never touch, not even diagonally. Every board has exactly one solution; no guessing, just logic."],
      ["From a 6×6 board to 8×8", "On the first boards ruled-out squares are dotted for you; later you mark them yourself", "Longer chains of deduction"]),
@@ -234,9 +234,9 @@ S = {
      ["Tap a square: it and its up, down, left and right neighbours (a + shape) flip. Dark ones light up, lit ones go dark.", "Hold your finger down to see which squares will flip; diagonals are not affected."],
      ["From a 3×3 board to 5×5", "From 3 to 10 taps to solve", "Order matters: think first, then tap"])],
   "shots": [("play-path", "Path draw"), ("play-color", "Colour match"), ("play-blocks", "Block fit"), ("play-arrows", "Arrows")],
-  "worlds_eyebrow": "Worlds", "worlds_h2": "Four worlds, a tower without an end.",
-  "worlds_p": "Start in the forest, climb through the clouds into space and reach the crystal summit. Each world bends the rules a little more.",
-  "worlds": [("forest", "Forest", "Floors 1–29"), ("clouds", "Clouds", "Floors 30–59"), ("space", "Space", "Floors 60–99"), ("crystal", "Crystal Summit", "Floor 100 and up")],
+  "worlds_eyebrow": "Worlds", "worlds_h2": "16 worlds, a tower without an end.",
+  "worlds_p": "A new world every 20 floors: from the forest to flower slopes, from storms to northern lights, from galaxies to the Endless Summit. The higher you climb, the harder the puzzles and the brighter the worlds.",
+  "worlds": [("forest", "Forest", "Floors 1–19"), ("dusk", "Sunset", "Floors 80–99"), ("lights", "Northern Lights", "Floors 140–159"), ("summit", "Endless Summit", "Floor 300 and beyond")],
   "floor": "Floor",
   "league_eyebrow": "League and friends", "league_h2": "Your floor is your score.",
   "league_p": "Every week you join a league of 30 players. The floors you clear this week set your rank; the top seven move up a tier, the bottom five move down. Everyone shows with their chosen name, outfit and tower theme; pull down to refresh the standings instantly.",
@@ -380,20 +380,24 @@ def landing(lang):
 </div></section>
 """
     def world(key, name, floors):
-        base = {"forest": 6, "clouds": 35, "space": 72, "crystal": 115}[key]
+        base = {"forest": 6, "dusk": 86, "lights": 146, "summit": 306}[key]
         rows = "".join(f'<span>{t["floor"]} {base + i}</span>' for i in (3, 2, 1))
         rows += f'<span class="you">{t["floor"]} {base}</span>'
         deco = {"forest": '<i class="deco" style="width:160px;height:120px;background:#A9CFA0;right:-50px;bottom:60px;opacity:.6"></i>',
                 "clouds": '<i class="deco" style="width:170px;height:60px;background:#fff;right:-40px;bottom:90px;opacity:.9"></i><i class="deco" style="width:110px;height:44px;background:#fff;left:-30px;bottom:150px;opacity:.8"></i>',
                 "space": '<i class="deco" style="width:120px;height:120px;background:#8C8FA6;right:-40px;bottom:70px;opacity:.55"></i><i class="deco" style="width:4px;height:4px;background:#FFF4C2;left:30%;bottom:120px"></i><i class="deco" style="width:3px;height:3px;background:#fff;left:70%;bottom:150px"></i>',
-                "crystal": '<i class="deco" style="width:110px;height:110px;background:#B6E3EC;right:-30px;bottom:70px;border-radius:24px;transform:rotate(45deg);opacity:.8"></i>'}[key]
+                "crystal": '<i class="deco" style="width:110px;height:110px;background:#B6E3EC;right:-30px;bottom:70px;border-radius:24px;transform:rotate(45deg);opacity:.8"></i>',
+                # 16 zones since 31 Oct; the site shows four of them, the show growing with the climb.
+                "dusk": '<i class="deco" style="width:130px;height:130px;background:#F28C38;right:-40px;bottom:50px;border-radius:50%;opacity:.8"></i><i class="deco" style="width:180px;height:30px;background:#FCE9D6;left:-30px;bottom:40px;opacity:.9"></i>',
+                "lights": '<i class="deco" style="width:260px;height:60px;background:linear-gradient(90deg,transparent,#7FE0B0,transparent);left:-40px;top:30px;filter:blur(8px);opacity:.8"></i><i class="deco" style="width:240px;height:44px;background:linear-gradient(90deg,transparent,#A58AE0,transparent);right:-50px;top:90px;filter:blur(8px);opacity:.7"></i><i class="deco" style="width:3px;height:3px;background:#fff;left:70%;bottom:150px"></i>',
+                "summit": '<i class="deco" style="width:220px;height:220px;background:radial-gradient(circle,#F5C542 0%,transparent 65%);left:50%;top:-110px;transform:translateX(-50%);opacity:.7"></i><i class="deco" style="width:46px;height:46px;background:#B6E3EC;right:16px;bottom:120px;border-radius:10px;transform:rotate(45deg);box-shadow:0 0 18px #B6E3EC;opacity:.9"></i><i class="deco" style="width:5px;height:5px;background:#FFF4C2;left:24%;bottom:150px;box-shadow:0 0 8px #F5C542"></i>'}[key]
         return f'<article class="world {key}">{deco}<div class="rows" aria-hidden="true">{rows}</div><h3>{html.escape(name)}</h3><p>{html.escape(floors)}</p></article>'
     worlds = "".join(world(*w) for w in t["worlds"])
     out += f"""<section id="{ids[2]}"><div class="wrap">
   <div class="section-head"><span class="eyebrow">{t['worlds_eyebrow']}</span><h2>{html.escape(t['worlds_h2'])}</h2><p>{html.escape(t['worlds_p'])}</p></div>
   <div class="worlds">{worlds}</div>
   <div class="shots">""" + "".join(f'<figure><div class="phone sm"><img src="{r}assets/shots/{f}.webp" width="603" height="1311" loading="lazy" alt="{html.escape(c)}"></div><figcaption>{html.escape(c)}</figcaption></figure>'
-                                 for f, c in [("tower-forest", t["worlds"][0][1]), ("tower-clouds", t["worlds"][1][1]), ("play-lights", t["worlds"][2][1]), ("tower-crystal", t["worlds"][3][1])]) + """</div>
+                                 for f, c in [("tower-forest", t["worlds"][0][1]), ("tower-dusk", t["worlds"][1][1]), ("tower-lights", t["worlds"][2][1]), ("tower-summit", t["worlds"][3][1])]) + """</div>
 </div></section>
 """
     tiers = "".join(f'<span class="{"on" if i == 0 else ""}"><i></i>{html.escape(n)}</span>' for i, n in enumerate(t["tiers"]))
