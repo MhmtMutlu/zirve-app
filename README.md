@@ -8,6 +8,7 @@ GitHub Pages ile yayınlanır: <https://mhmtmutlu.github.io/zirve-app/>
 | Tanıtım | `/` | `/en/` |
 | Günün kulesi (paylaşılan sonucun bağlantısı, Smart App Banner) | `/daily/` | `/en/daily/` |
 | Gizlilik politikası | `/gizlilik/` | `/en/privacy/` |
+| Kullanım koşulları | `/kosullar/` | `/en/terms/` |
 | KVKK aydınlatma metni | `/kvkk/` | – |
 | Hesap silme | `/hesap-silme/` | `/en/delete-account/` |
 | Destek | `/destek/` | `/en/support/` |

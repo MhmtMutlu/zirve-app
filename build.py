@@ -4,7 +4,7 @@
     python3 build.py
 
 Pages: landing (tr at /, en at /en/), daily tower (daily, en/daily: the link in shared daily results, with a
-Smart App Banner), privacy (gizlilik, en/privacy), KVKK, account deletion (hesap-silme, en/delete-account),
+Smart App Banner), privacy (gizlilik, en/privacy), terms of use (kosullar, en/terms), KVKK, account deletion (hesap-silme, en/delete-account),
 support (destek, en/support), 404. Legal bodies live in src/*.html;
 this script wraps them in the shared header/footer. Paths are relative so the site works both at
 https://<user>.github.io/zirve-app/ and on a custom domain. No cookies, no analytics, no third-party
@@ -15,7 +15,7 @@ import html, pathlib, re
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
 CONTACT = "destek@mm-apps.com"
-UPDATED = {"tr": "30.10.2026", "en": "30 October 2026"}
+UPDATED = {"tr": "6.11.2026", "en": "6 November 2026"}
 
 # The single switch for launch day: True turns every App Store badge into a real link and drops the "coming soon"
 # and TestFlight wording (landing chip and CTA, daily page note).
@@ -171,12 +171,12 @@ S = {
           ("Hesap açmam gerekiyor mu?", "Hayır. İlk açılışta senin için otomatik bir misafir hesabı oluşur. İlerlemeni başka cihaza taşımak istersen Apple ile giriş yapabilirsin."),
           ("Süre yetmezse ne yapabilirim?", "Ayarlar → Süre yardımı ile her kata 1,5 kat ya da sınırsız süre alabilirsin. Yıldızlar normal süreye göre hesaplanır ve yardımlı katlar haftalık lige sayılmaz."),
           ("Canlarım bitince ne olur?", "Üç canın var. Hepsi bitince kampa dönersin ama rekorun silinmez. Canlar zamanla dolar, kampa varınca bir can geri gelir; istersen reklam izleyerek ya da elmasla da doldurabilirsin."),
-          ("Verilerim nasıl işleniyor?", "Yalnızca oyunun çalışması için gereken verileri işleriz; ayrıntılar <a href=\"{r}gizlilik/\">Gizlilik Politikası</a> ve <a href=\"{r}kvkk/\">KVKK Aydınlatma Metni</a>'nde."),
+          ("Verilerim nasıl işleniyor?", "Yalnızca oyunun çalışması için gereken verileri işleriz; ayrıntılar <a href=\"{r}gizlilik/\">Gizlilik Politikası</a> ve <a href=\"{r}kvkk/\">KVKK Aydınlatma Metni</a>'nde. Oyunun kuralları <a href=\"{r}kosullar/\">Kullanım Koşulları</a>'nda."),
           ("Hesabımı nasıl silerim?", "Uygulamada Profil → Ayarlar → Hesap → Hesabı sil. Ayrıntılar <a href=\"{r}hesap-silme/\">Hesap silme</a> sayfasında.")],
   "cta_h2": "Zirvede görüşürüz.", "cta_p": "Zirve çok yakında App Store'da. İlk katlar seni bekliyor.",
   "cta_p_live": "Zirve App Store'da, ücretsiz. İlk katlar seni bekliyor.",
   "footer_tag": "Kuleye tırman, her kat bir bulmaca.",
-  "footer_links": [("gizlilik/", "Gizlilik"), ("kvkk/", "KVKK"), ("hesap-silme/", "Hesap silme"), ("destek/", "Destek")],
+  "footer_links": [("gizlilik/", "Gizlilik"), ("kosullar/", "Kullanım koşulları"), ("kvkk/", "KVKK"), ("hesap-silme/", "Hesap silme"), ("destek/", "Destek")],
   "fine": "© 2026 Mehmet Mutlu · Zirve · Apple, App Store ve iPhone, Apple Inc.'in ticari markalarıdır. Bu sitede çerez ve izleme aracı kullanılmaz.",
   "back": "Ana sayfa",
 },
@@ -260,12 +260,12 @@ S = {
           ("Do I need an account?", "No. A guest account is created for you on first launch. To move your progress to another device, sign in with Apple."),
           ("What if the time is too short for me?", "Turn on Settings → Time assist for 1.5× or unlimited time on every floor. Stars still use the normal time and assisted floors don't count for the weekly league."),
           ("What happens when I run out of lives?", "You have three lives. When they are gone you return to camp, but your record stays. Lives refill over time and reaching a camp gives one back; you can also refill by watching an ad or with gems."),
-          ("How is my data handled?", "We only process what the game needs to work; see the <a href=\"{r}en/privacy/\">Privacy Policy</a>."),
+          ("How is my data handled?", "We only process what the game needs to work; see the <a href=\"{r}en/privacy/\">Privacy Policy</a>. The rules of the game are in the <a href=\"{r}en/terms/\">Terms of Use</a>."),
           ("How do I delete my account?", "In the app: Profile → Settings → Account → Delete account. See <a href=\"{r}en/delete-account/\">Delete your account</a>.")],
   "cta_h2": "See you at the summit.", "cta_p": "Zirve is coming soon to the App Store. The first floors are waiting.",
   "cta_p_live": "Zirve is free on the App Store. The first floors are waiting.",
   "footer_tag": "Climb the tower, every floor a puzzle.",
-  "footer_links": [("en/privacy/", "Privacy"), ("en/delete-account/", "Delete account"), ("en/support/", "Support"), ("kvkk/", "KVKK (TR)")],
+  "footer_links": [("en/privacy/", "Privacy"), ("en/terms/", "Terms"), ("en/delete-account/", "Delete account"), ("en/support/", "Support"), ("kvkk/", "KVKK (TR)")],
   "fine": "© 2026 Mehmet Mutlu · Zirve · Apple, App Store and iPhone are trademarks of Apple Inc. This site uses no cookies or trackers.",
   "back": "Home",
 },
@@ -554,6 +554,8 @@ DOCS = [
     # (output dir, lang, source file, title, description)
     ("gizlilik", "tr", "privacy.tr.html", "Gizlilik Politikası · Zirve", "Zirve mobil oyununda kişisel verilerin nasıl işlendiği."),
     ("en/privacy", "en", "privacy.en.html", "Privacy Policy · Zirve", "How the Zirve mobile game processes personal data."),
+    ("kosullar", "tr", "terms.tr.html", "Kullanım Koşulları · Zirve", "Zirve mobil oyununun kullanım koşulları."),
+    ("en/terms", "en", "terms.en.html", "Terms of Use · Zirve", "The terms of use of the Zirve mobile game."),
     ("kvkk", "tr", "kvkk.tr.html", "KVKK Aydınlatma Metni · Zirve", "6698 sayılı Kanun m.10 kapsamında Zirve aydınlatma metni."),
     ("hesap-silme", "tr", "delete.tr.html", "Hesap Silme · Zirve", "Zirve hesabını ve oyun verilerini silme."),
     ("en/delete-account", "en", "delete.en.html", "Delete your account · Zirve", "How to delete your Zirve account and game data."),
@@ -561,7 +563,8 @@ DOCS = [
     ("en/support", "en", "support.en.html", "Support · Zirve", "Help and contact for Zirve."),
 ]
 OTHER = {"gizlilik": "en/privacy", "en/privacy": "gizlilik", "hesap-silme": "en/delete-account", "en/delete-account": "hesap-silme",
-         "destek": "en/support", "en/support": "destek", "kvkk": "en/privacy"}
+         "destek": "en/support", "en/support": "destek", "kvkk": "en/privacy",
+         "kosullar": "en/terms", "en/terms": "kosullar"}
 
 def document(out_dir, lang, src, title, desc):
     t = S[lang]
