@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://mhmtmutlu.github.io/zirve-app/sitemap.xml
+Sitemap: https://zirve.mm-apps.com/sitemap.xml

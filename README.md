@@ -1,7 +1,7 @@
 # zirve-app
 
 Zirve'nin web sitesi: tanıtım sayfası, gizlilik politikası, KVKK aydınlatma metni, hesap silme ve destek.
-GitHub Pages ile yayınlanır: <https://mhmtmutlu.github.io/zirve-app/>
+GitHub Pages ile yayınlanır: <https://zirve.mm-apps.com/>
 
 | Sayfa | Türkçe | English |
 |---|---|---|
@@ -30,8 +30,8 @@ sunulur.
 
 ## app-ads.txt
 `app-ads.txt` AdMob doğrulaması içindir. Google bu dosyayı App Store'daki geliştirici web sitesi alan adının **kökünde**
-arar (ör. `https://mhmtmutlu.github.io/app-ads.txt`). Proje sitesi `/zirve-app/` altında olduğundan, kök alan adında
-yayınlanması için aynı dosyanın `MhmtMutlu.github.io` deposuna da konması ya da bu siteye özel alan adı bağlanması gerekir.
+arar; site `zirve.mm-apps.com` kökünde yayınlandığı için <https://zirve.mm-apps.com/app-ads.txt> doğrudan geçerlidir.
+App Store Connect'teki pazarlama adresi de bu alan adında olmalıdır.
 
 ## Yayına alma
 Settings → Pages → Source: *Deploy from a branch* → Branch: `main` / `(root)`.

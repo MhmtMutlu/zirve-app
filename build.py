@@ -7,7 +7,7 @@ Pages: landing (tr at /, en at /en/), daily tower (daily, en/daily: the link in 
 Smart App Banner), privacy (gizlilik, en/privacy), terms of use (kosullar, en/terms), KVKK, account deletion (hesap-silme, en/delete-account),
 support (destek, en/support), 404. Legal bodies live in src/*.html;
 this script wraps them in the shared header/footer. Paths are relative so the site works both at
-https://<user>.github.io/zirve-app/ and on a custom domain. No cookies, no analytics, no third-party
+https://zirve.mm-apps.com/ (GitHub Pages, custom domain; the 404 page needs the site at the domain root). No cookies, no analytics, no third-party
 requests: fonts are self-hosted.
 """
 import html, pathlib, re
@@ -285,7 +285,7 @@ def head(t, r, title, desc, canonical, extra=""):
 <meta property="og:type" content="website">
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
-<meta property="og:image" content="https://mhmtmutlu.github.io/zirve-app/assets/og.jpg">
+<meta property="og:image" content="https://zirve.mm-apps.com/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{r}assets/icon-64.png" sizes="64x64" type="image/png">
 <link rel="apple-touch-icon" href="{r}assets/icon-180.png">
@@ -335,7 +335,7 @@ def landing(lang):
     t = S[lang]
     r = "" if lang == "tr" else "../"
     ids = {"tr": ("nasil", "oyunlar", "dunyalar", "lig", "sss"), "en": ("how", "games", "worlds", "league", "faq")}[lang]
-    canonical = "https://mhmtmutlu.github.io/zirve-app/" + ("" if lang == "tr" else "en/")
+    canonical = "https://zirve.mm-apps.com/" + ("" if lang == "tr" else "en/")
     out = head(t, r, t["title"], t["desc"], canonical)
     out += nav(t, r, "./", t["nav"], ("en/" if lang == "tr" else "../"))
     trust = "".join(f"<li>{I['check']}{html.escape(x)}</li>" for x in t["trust"])
@@ -506,7 +506,7 @@ def daily(lang):
     t, d = S[lang], DAILY[lang]
     r = "../" if lang == "tr" else "../../"
     home = r + ("en/" if lang == "en" else "")
-    out = head(t, r, d["title"], d["desc"], "https://mhmtmutlu.github.io/zirve-app/" + ("daily/" if lang == "tr" else "en/daily/"), DAILY_BANNER)
+    out = head(t, r, d["title"], d["desc"], "https://zirve.mm-apps.com/" + ("daily/" if lang == "tr" else "en/daily/"), DAILY_BANNER)
     out += nav(t, r, home, [(home, t["back"])], r + ("en/daily/" if lang == "tr" else "daily/"))
     tiles = "".join(tile(k) for k in DAILY_SAMPLE)
     note = live(d, "note").format(c=CONTACT)
@@ -572,7 +572,7 @@ def document(out_dir, lang, src, title, desc):
     r = "../" * depth
     body = (SRC / src).read_text().replace("{{CONTACT}}", CONTACT).replace("{{UPDATED}}", UPDATED[lang]).replace("{{R}}", r)
     home = r + ("en/" if lang == "en" else "")
-    page = head(t, r, title, desc, f"https://mhmtmutlu.github.io/zirve-app/{out_dir}/")
+    page = head(t, r, title, desc, f"https://zirve.mm-apps.com/{out_dir}/")
     page += nav(t, r, home, [(home, t["back"])], r + OTHER[out_dir] + "/")
     page += f'<main class="doc"><div class="wrap">{body}</div></main>\n'
     page += footer(t, r)
@@ -589,16 +589,16 @@ def build():
     for d in DOCS:
         write(f"{d[0]}/index.html", document(*d))
     nf = S["tr"]
-    write("404.html", head(nf, "/zirve-app/", "Sayfa bulunamadı · Zirve", "Sayfa bulunamadı.", "https://mhmtmutlu.github.io/zirve-app/")
-          + nav(nf, "/zirve-app/", "/zirve-app/", [], "/zirve-app/en/")
+    write("404.html", head(nf, "/", "Sayfa bulunamadı · Zirve", "Sayfa bulunamadı.", "https://zirve.mm-apps.com/")
+          + nav(nf, "/", "/", [], "/zirve-app/en/")
           + '<main class="doc"><div class="wrap" style="text-align:center;padding:60px 0"><h1>Bu kat boş.</h1><p class="meta" style="margin:14px 0 28px">Aradığın sayfa yok. / This page does not exist.</p>'
-          + '<a class="btn btn-primary" href="/zirve-app/">Ana sayfa / Home</a></div></main>' + footer(nf, "/zirve-app/"))
+          + '<a class="btn btn-primary" href="/">Ana sayfa / Home</a></div></main>' + footer(nf, "/"))
     # Every relative link must resolve to a built file or an asset.
     missing = []
     for rel in written:
         page = (ROOT / rel).read_text()
         for href in re.findall(r'(?:href|src)="([^"#:]+?)"', page):
-            if href.startswith("/zirve-app/") or href.startswith("mailto"):
+            if href.startswith("/") or href.startswith("mailto"):
                 continue
             target = (ROOT / rel).parent / href
             if href.endswith("/"):
