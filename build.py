@@ -19,7 +19,7 @@ UPDATED = {"tr": "6.11.2026", "en": "6 November 2026"}
 
 # The single switch for launch day: True turns every App Store badge into a real link and drops the "coming soon"
 # and TestFlight wording (landing chip and CTA, daily page note).
-APP_STORE_LIVE = False
+APP_STORE_LIVE = True    # Zirve 1.0 went live on 10 November 2026
 APP_ID = "6823998367"   # App Store Connect → Apple ID (docs/SETUP_KEYS.md in the app repo)
 APP_STORE_URL = f"https://apps.apple.com/app/id{APP_ID}"
 # Smart App Banner on the daily page: Safari offers "Open" (app installed) or "View" (App Store), and the argument opens
@@ -99,7 +99,7 @@ S = {
   "soon": "iPhone ve iPad için · çok yakında", "soon_live": "iPhone ve iPad için · App Store'da",
   "h1": "Kuleye tırman.<br><em>Her kat</em> bir bulmaca.",
   "lead": "Zirve, kısa bulmacalardan oluşan sonsuz bir kule. Çöz, bir kat yüksel, kampa ulaş ve haftalık ligde arkadaşlarını geç.",
-  "badge_small": "Çok yakında", "badge_small_live": "İndir", "badge_big": "App Store", "how_btn": "Nasıl oynanır",
+  "badge_small": "Çok yakında", "badge_small_live": "App Store'dan", "badge_big": "App Store", "badge_big_live": "İndir", "how_btn": "Nasıl oynanır",
   "trust": ["Ücretsiz", "Hesap gerekmez", "Çevrimdışı oynanır", "6 dil"],
   "f1": ("2 gün", "seri"), "f2": ("Kat 6 geçildi", ""), "f3": ("3/3", "can"),
   "how_eyebrow": "Nasıl oynanır", "how_h2": "Bir dakikadan kısa, beş saniyede anlaşılır.",
@@ -325,10 +325,10 @@ def footer(t, r):
 """ + SCRIPT
 
 def store_badge(t, cls=""):
-    small = live(t, "badge_small")
+    small, big = live(t, "badge_small"), live(t, "badge_big")
     target = f'href="{APP_STORE_URL}"' if APP_STORE_LIVE else 'aria-disabled="true" role="link"'
-    return (f'<a class="store-badge {cls}" {target} aria-label="{html.escape(small + " " + t["badge_big"])}">'
-            f'{APPLE}<span><small>{html.escape(small)}</small><b>{t["badge_big"]}</b></span></a>')
+    return (f'<a class="store-badge {cls}" {target} aria-label="{html.escape(small + " " + big)}">'
+            f'{APPLE}<span><small>{html.escape(small)}</small><b>{html.escape(big)}</b></span></a>')
 
 # ------------------------------------------------------------------------------------------- landing
 def landing(lang):
