@@ -1,0 +1,22 @@
+[
+  {
+    "page": "daily/index.html",
+    "phrase": "en iyi"
+  },
+  {
+    "page": "en/daily/index.html",
+    "phrase": "best"
+  },
+  {
+    "page": "gizlilik/index.html",
+    "phrase": "çevrimdışı"
+  },
+  {
+    "page": "en/privacy/index.html",
+    "phrase": "offline"
+  },
+  {
+    "page": "en/terms/index.html",
+    "phrase": "offline"
+  }
+]

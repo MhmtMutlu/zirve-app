@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "en",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "English",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "Skip to content",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Sections",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Menu",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Language",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Home",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "Also available in:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Close",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Links",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Made by mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · This site uses no cookies or trackers.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Page updated: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Privacy"
+    ],
+    [
+     "terms",
+     "Terms"
+    ],
+    [
+     "delete",
+     "Delete account"
+    ],
+    [
+     "support",
+     "Support"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d} {month} {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve is a free logic puzzle game for iPhone and iPad by mm-apps, an independent developer in Türkiye. Climb a tower where every floor is a short timed puzzle from {puzzleTypes} types.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "Download on the App Store",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "From floor {floor}",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Page not found · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "This floor is empty.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "This page does not exist.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "English home page",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Climb the tower.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Every floor a puzzle.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} puzzles · weekly league · iPhone and iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Climb the tower. Every floor a puzzle. {puzzleTypes} puzzles, weekly league, iPhone and iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6 November 2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Privacy Policy · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "How the Zirve mobile game processes personal data.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Terms of Use · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "The terms of use of the Zirve mobile game.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Delete your account · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "How to delete your Zirve account and game data.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Support · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Help and contact for Zirve.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} for iPhone & iPad",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve is a free logic puzzle game for iPhone and iPad: climb a tower where every floor is a short puzzle from {puzzleTypes} types. Daily tower, weekly league. No forced ads.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Zirve home screen: the forest tower at floor 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Sample league standings",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n} floors cleared",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Daily tower: the same {dailyFloors} floors for everyone · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Bronze",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Silver",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Gold",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platinum",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Diamond",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Master",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Legend",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mythic",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Titan",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Immortal",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Champion",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Summit",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Color match",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Path draw",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Block fit",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Memory",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Flow",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Pipe turn",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Color sort",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Arrows",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Gates",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Lookouts",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Lights",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "How to play"
+    ],
+    [
+     "#games",
+     "Games"
+    ],
+    [
+     "#worlds",
+     "Worlds"
+    ],
+    [
+     "#league",
+     "League"
+    ],
+    [
+     "#faq",
+     "FAQ"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "For iPhone and iPad · on the App Store",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Climb the tower.</span> <span class=\"line\"><em>Every floor</em> a puzzle.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve is an endless tower of quick puzzles. Solve one, climb a floor, reach the next camp and pass your friends in the weekly league.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "How to play",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Free"
+    },
+    {
+     "text": "No account needed"
+    },
+    {
+     "text": "Plays offline",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} languages"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 days",
+     "streak"
+    ],
+    [
+     "Floor 6 cleared",
+     ""
+    ],
+    [
+     "3/3",
+     "lives"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "How to play",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Under a minute. Understood in five seconds.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Every floor is a single puzzle. You get the rules at a glance; as you climb the board gets harder, not the clock.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Games",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Each floor brings a different game; every 10 floors there is a camp and a new game. The first time you meet one, a short animation shows how it works before the clock starts, and the ? button brings it back during play. Every board is solved by the computer before you see it: no unsolvable puzzles.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "How to play",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Higher up",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Worlds",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "A new world every 20 floors: from the forest to flower slopes, from storms to northern lights, from galaxies to the Endless Summit. The higher you climb, the harder the puzzles and the brighter the worlds.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Floor",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "League and friends",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Your floor is your score.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Calm and fair",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Made for a clear head.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "FAQ",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Questions",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "See you at the summit.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Climb the tower, every floor a puzzle.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve is free on the App Store. The first floors are waiting.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Open your floor",
+     "Tap Climb and meet the floor's puzzle: colours, paths, blocks or cards."
+    ],
+    [
+     "Solve before time runs out",
+     "You have 30–60 seconds. Miss it by a hair and the board waits for you; take a breath and finish."
+    ],
+    [
+     "Climb to the next camp",
+     "A camp every 10 floors gives a life back and unlocks a new game. Even when your lives run out, your record stays."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} puzzles, one tower.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "Bring matching tiles together and clear the board.",
+     "how": [
+      "Drag a tile onto a neighbour of the same colour: both disappear.",
+      "Drag into an empty square to slide a tile closer to its pair."
+     ],
+     "harder": [
+      "From floor 10: walls and tiles with a limited number of slides (frozen at 0)",
+      "From floor 30: every tile has a slide limit, up to 6 colours",
+      "From floor 60: locked tiles that open when a match happens next to them"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Reach the flag with one line, without lifting your finger.",
+     "how": [
+      "Draw from node to node; pull back to undo the last step.",
+      "Pass the checkpoints and end on the flag. Lift your finger and the line resets."
+     ],
+     "harder": [
+      "From floor 20: fog, you only see around your pen",
+      "From floor 30: checkpoints in order",
+      "From floor 60: visit every node, more walls"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Fit every piece into the gaps on the board.",
+     "how": [
+      "Drag a piece from the tray onto the board; tap a piece to turn it.",
+      "Tap a placed piece to take it back; the floor is done when everything fits."
+     ],
+     "harder": [
+      "From a 6×6 board to 8×8, from 3 pieces to 6",
+      "From floor 30: mirrored pieces you flip with a long press",
+      "Bigger pieces, tighter gaps"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Flip the cards and find the matches.",
+     "how": [
+      "Turn two cards: a match stays open, otherwise they close again shortly.",
+      "Remember where each card is and find every pair."
+     ],
+     "harder": [
+      "From 12 cards to 24",
+      "From floor 30: triples, find three of the same picture",
+      "Wrong cards close faster"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Connect matching ends and fill the board.",
+     "how": [
+      "Draw a line from a coloured dot to its matching dot.",
+      "Lines can't cross and every square must be filled; an unfinished line vanishes when you lift your finger."
+     ],
+     "harder": [
+      "From a 5×5 board to 7×7",
+      "From 3 colours to 6",
+      "Blocked squares you have to route around"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Turn the pipes and get the water flowing.",
+     "how": [
+      "Tap a pipe to turn it 90 degrees.",
+      "Lead the water from the source to the flag without a gap; flowing pipes fill up."
+     ],
+     "harder": [
+      "From floor 40: every pipe must be connected",
+      "More branches, more tangled pipes",
+      "A 6×6 board from floor 100"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Sort the colours until every tube holds one.",
+     "how": [
+      "Tap a tube, then another: the top colour pours over.",
+      "It only goes onto the same colour or into an empty tube; stuck? Undo."
+     ],
+     "harder": [
+      "From 4 colours to 8",
+      "More mixed starts, longer solutions",
+      "Always two empty tubes: the planning is yours"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Clear the arrows in the right order.",
+     "how": [
+      "Tap an arrow: it slides the way its head points, its body follows, and it leaves the board if the way is clear.",
+      "If another arrow is in the way, it bumps back and costs 3 seconds; clear the ones in front first."
+     ],
+     "harder": [
+      "From a 7×7 board to 11×11, up to 85% full",
+      "Short arrows next to winding snakes up to 12 cells long",
+      "Longer \"this one first\" chains"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Lead every block out through the gate of its own colour.",
+     "how": [
+      "Drag a block: it only slides the way its arrows point. With a clear way it leaves through the matching gate; a tap is enough.",
+      "The first move is never an exit: you have to park a block aside to open a way first."
+     ],
+     "harder": [
+      "From a 6×6 board to 8×8, from 7 blocks to 14",
+      "At least 3, later 4 planned parks on every board",
+      "From floor 80 a locked block; from floor 100 a 2×2 block that slides any direction"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Place one lookout tower in every row, column and coloured region.",
+     "how": [
+      "Tap a square: first ✕ (a note), tap again for a lookout. Every row, column and region needs exactly one.",
+      "Lookouts never touch, not even diagonally. Every board has exactly one solution; no guessing, just logic."
+     ],
+     "harder": [
+      "From a 6×6 board to 8×8",
+      "On the first boards ruled-out squares are dotted for you; later you mark them yourself",
+      "Longer chains of deduction"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Light up every square.",
+     "how": [
+      "Tap a square: it and its up, down, left and right neighbours (a + shape) flip. Dark ones light up, lit ones go dark.",
+      "Hold your finger down to see which squares will flip; diagonals are not affected."
+     ],
+     "harder": [
+      "From a 3×3 board to 5×5",
+      "From 3 to 10 taps to solve",
+      "Order matters: think first, then tap"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} worlds, a tower without an end.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Forest",
+     "Floors 1–19"
+    ],
+    [
+     "dusk",
+     "Sunset",
+     "Floors 80–99"
+    ],
+    [
+     "lights",
+     "Northern Lights",
+     "Floors 140–159"
+    ],
+    [
+     "summit",
+     "Endless Summit",
+     "Floor 300 and beyond"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Every week you join a league of {leagueSize} players. The floors you clear this week set your rank; the top {leaguePromote} move up a tier, the bottom {leagueRelegate} move down. Everyone shows with their chosen name, outfit and tower theme; pull down to refresh the standings instantly.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "PROMOTION ZONE · TOP {leaguePromote}",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "You",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "You",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Tower of the day",
+     "The same {dailyFloors} floors for everyone, {dailyAttempts} attempts. Gems at floors 3, 6 and 10; where do you rank in your country and among friends?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Monthly seasons",
+     "A new reward track every month: earn gems, outfits and tower themes as you climb. Each season brings its own exclusive outfit and theme."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Friends",
+     "Share your invite code, see where everyone is in the tower, get a heads-up when you pass them."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Chests and streaks",
+     "A chest every 10 clean floors (5–20 gems), a star chest every 20 stars. One floor a day keeps your streak alive."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Every puzzle has a solution",
+     "p": "Boards are solved as they are generated; it comes down to your moves, not luck."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "No account needed",
+     "p": "Start right away. Sign in with Apple if you like, and your progress follows you to a new device."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Plays offline",
+     "p": "Keep climbing on the train or a plane; your floors sync when you are back online.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Made for everyone",
+     "p": "Every tile has a shape as well as a colour; playable with VoiceOver; Time assist gives more or unlimited time."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Ads only when you choose",
+     "p": "Ads appear only when you ask for one: for a life or extra time. No interruptions."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} languages",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Is Zirve free?",
+     "Yes. Downloading and playing are free. Gem packs, the starter pack, the season set and the season's premium reward track are optional in-app purchases, billed by Apple."
+    ],
+    [
+     "Which devices are supported?",
+     "iPhone and iPad on iOS 18 or later, iPhone 11 and newer. There is no Android version for now."
+    ],
+    [
+     "Do I need an account?",
+     "No. A guest account is created for you on first launch. To move your progress to another device, sign in with Apple."
+    ],
+    [
+     "What if the time is too short for me?",
+     "Turn on Settings → Time assist for 1.5× or unlimited time on every floor. Stars still use the normal time and assisted floors don't count for the weekly league."
+    ],
+    [
+     "What happens when I run out of lives?",
+     "You have three lives. When they are gone you return to camp, but your record stays. Lives refill over time and reaching a camp gives one back; you can also refill by watching an ad or with gems."
+    ],
+    [
+     "How is my data handled?",
+     "We only process what the game needs to work; see the <a href=\"{href:privacy}\">Privacy Policy</a>. The rules of the game are in the <a href=\"{href:terms}\">Terms of Use</a>."
+    ],
+    [
+     "How do I delete my account?",
+     "In the app: Profile → Settings → Account → Delete account. See <a href=\"{href:delete}\">Delete your account</a>."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "The same {dailyFloors} floors for everyone, {dailyAttempts} attempts. Climb today's tower in Zirve and share your result.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Daily tower · new every midnight",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Every day, the same ten floors for everyone and three attempts. Your best attempt is ranked. When you share your result, the games and boards stay hidden, so nobody's surprise is spoiled.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Sample result: 7 of 10 floors in 3 minutes 5 seconds",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Daily tower",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "3:05 total time",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Your turn",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Result",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "What do the squares mean?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Each square of a shared result is one floor: top row 1–5, bottom row 6–10. Every square has its own colour and icon, so it reads without colour too.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "A 🕒 With time assist line means Time assist was on during the attempt. The squares still follow the normal time; assisted attempts are not ranked.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "How to play",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Your turn.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "Today everyone climbs <em>the same tower</em>.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Got Zirve? Tap Open in the banner at the top of this page to go straight to the daily tower.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve is free on the App Store. Today's tower is waiting.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "At 3-star speed",
+     "Solved with at least 15 seconds left."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Solved",
+     "Solved before the time ran out."
+    ],
+    [
+     "continued",
+     "🟨",
+     "With a continue",
+     "Time ran out; solved after continuing with an ad or gems."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Time ran out",
+     "The attempt ended on this floor."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "Not reached",
+     "The attempt did not get this far."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} floors, {dailyAttempts} attempts, one ranking.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Open the tower",
+     "In Zirve, tap the Daily tower card on the tower screen. It renews every midnight and is the same for everyone."
+    ],
+    [
+     "Climb",
+     "Every floor is a quick puzzle. You get three attempts; the best one is ranked in your country and among friends. Gems at floors 3, 6 and 10."
+    ],
+    [
+     "Share",
+     "When the attempt is over, tap Share result: the squares and your time go out, the games and boards don't."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

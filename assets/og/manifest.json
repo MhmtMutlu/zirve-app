@@ -1,0 +1,23 @@
+{
+ "base": "assets-src/og-base.jpg",
+ "cards": [
+  {
+   "file": "assets/og/og-tr.jpg",
+   "line1": "Kuleye tırman.",
+   "line2": "Her kat bir bulmaca.",
+   "subline": "11 bulmaca · haftalık lig · iPhone ve iPad"
+  },
+  {
+   "file": "assets/og/og-en.jpg",
+   "line1": "Climb the tower.",
+   "line2": "Every floor a puzzle.",
+   "subline": "11 puzzles · weekly league · iPhone and iPad"
+  },
+  {
+   "file": "assets/og.jpg",
+   "line1": "Kuleye tırman.",
+   "line2": "Her kat bir bulmaca.",
+   "subline": "11 bulmaca · haftalık lig · iPhone ve iPad"
+  }
+ ]
+}

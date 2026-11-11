@@ -1,0 +1,32 @@
+# Zirve
+
+> Zirve is a free logic puzzle game for iPhone and iPad by mm-apps, an independent developer in Türkiye. Climb a tower where every floor is a short timed puzzle from 11 types.
+
+Zirve: Logic Puzzle Tower is a free iPhone and iPad game by mm-apps (Türkiye), released 10 November 2026.
+
+## Facts
+- Platforms: iPhone, iPad (iOS/iPadOS 18 or later)
+- Price: free; optional gem packs
+- Ads: no forced or interstitial ads; rewarded ads only when the player chooses (lives, continue, double chest)
+- Puzzle types: 11 (Color match, Path draw, Block fit, Memory, Flow, Pipe turn, Color sort, Arrows, Gates, Lookouts, Lights)
+- Modes: tower with camps every 10 floors; daily tower (same 10 floors for everyone, 3 tries); weekly leagues (7 tiers)
+- Accessibility labels declared on the App Store: VoiceOver, Voice Control, Larger Text, Sufficient Contrast, Reduced Motion, Differentiate Without Color Alone
+- Languages: Türkçe, English, Deutsch, Français, Italiano, Español
+- Current version: 1.0
+- Not available in: mainland China, Brazil, Russia, Belarus App Stores
+- App Store: https://apps.apple.com/app/id6823998367
+- Last updated: 2026-11-12
+
+## Pages
+- [Home](https://zirve.mm-apps.com/en/)
+- [Daily tower](https://zirve.mm-apps.com/en/daily/)
+- [Support](https://zirve.mm-apps.com/en/support/)
+- [Privacy policy](https://zirve.mm-apps.com/en/privacy/)
+- [Terms of use](https://zirve.mm-apps.com/en/terms/)
+- [Delete your account](https://zirve.mm-apps.com/en/delete-account/)
+
+## Other languages
+- Türkçe: https://zirve.mm-apps.com/
+
+## Optional
+- [Developer](https://mm-apps.com/)

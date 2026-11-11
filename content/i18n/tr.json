@@ -1,0 +1,948 @@
+{
+ "_meta": {
+  "lang": "tr",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "Türkçe",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "İçeriğe geç",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Bölümler",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Menü",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Dil",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Ana sayfa",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "Şu dilde de okuyabilirsin:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Kapat",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Bağlantılar",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Geliştirici: mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · Bu sitede çerez ve izleme aracı kullanılmaz.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Sayfa güncellendi: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Gizlilik"
+    ],
+    [
+     "terms",
+     "Kullanım koşulları"
+    ],
+    [
+     "kvkk",
+     "KVKK"
+    ],
+    [
+     "delete",
+     "Hesap silme"
+    ],
+    [
+     "support",
+     "Destek"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d} {month} {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "Ocak",
+    "Şubat",
+    "Mart",
+    "Nisan",
+    "Mayıs",
+    "Haziran",
+    "Temmuz",
+    "Ağustos",
+    "Eylül",
+    "Ekim",
+    "Kasım",
+    "Aralık"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve, Türkiye'de bağımsız geliştirici mm-apps'in iPhone ve iPad için ücretsiz zeka oyunu. Her katı {puzzleTypes} türden kısa, süreli bir bulmaca olan bir kuleye tırmanırsın.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "App Store'dan İndirin",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "Kat {floor}'den",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Sayfa bulunamadı · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "Bu kat boş.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "Aradığın sayfa yok.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "Türkçe ana sayfa",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Kuleye tırman.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Her kat bir bulmaca.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} bulmaca · haftalık lig · iPhone ve iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Kuleye tırman. Her kat bir bulmaca. {puzzleTypes} bulmaca, haftalık lig, iPhone ve iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6.11.2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Gizlilik Politikası · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Zirve mobil oyununda kişisel verilerin nasıl işlendiği.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Kullanım Koşulları · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "Zirve mobil oyununun kullanım koşulları.",
+   "state": "translated"
+  },
+  "doc.kvkk.title": {
+   "value": "KVKK Aydınlatma Metni · Zirve",
+   "state": "translated"
+  },
+  "doc.kvkk.desc": {
+   "value": "6698 sayılı Kanun m.10 kapsamında Zirve aydınlatma metni.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Hesap Silme · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "Zirve hesabını ve oyun verilerini silme.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Destek · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Zirve için yardım ve iletişim.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} · iPhone ve iPad",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve, iPhone ve iPad için ücretsiz zeka oyunu: her katı {puzzleTypes} türden kısa bir bulmaca olan bir kuleye tırman. Günün kulesi, haftalık lig. Zorla reklam yok.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Zirve ana ekranı: orman temasında kule, kat 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Örnek lig sıralaması",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n} kat geçti",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Günün kulesi: herkese aynı {dailyFloors} kat · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Bronz",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Gümüş",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Altın",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platin",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Elmas",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Usta",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Efsane",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mitik",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Titan",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Ölümsüz",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Şampiyon",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Zirve",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Renk birleştirme",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Yol çizme",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Blok yerleştirme",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Hafıza",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Akış",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Boru çevirme",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Renk dizme",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Oklar",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Kapı",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Gözcüler",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Işık",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#nasil",
+     "Nasıl oynanır"
+    ],
+    [
+     "#oyunlar",
+     "Oyunlar"
+    ],
+    [
+     "#dunyalar",
+     "Dünyalar"
+    ],
+    [
+     "#lig",
+     "Lig"
+    ],
+    [
+     "#sss",
+     "SSS"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "iPhone ve iPad için · App Store'da",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Kuleye tırman.</span> <span class=\"line\"><em>Her kat</em> bir bulmaca.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve, kısa bulmacalardan oluşan sonsuz bir kule. Çöz, bir kat yüksel, kampa ulaş ve haftalık ligde arkadaşlarını geç.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "Nasıl oynanır",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Ücretsiz"
+    },
+    {
+     "text": "Hesap gerekmez"
+    },
+    {
+     "text": "Çevrimdışı oynanır",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} dil"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 gün",
+     "seri"
+    ],
+    [
+     "Kat 6 geçildi",
+     ""
+    ],
+    [
+     "3/3",
+     "can"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "Nasıl oynanır",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Bir dakikadan kısa, beş saniyede anlaşılır.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Her kat tek bir bulmaca. Kuralları ekrana bakar bakmaz anlarsın; zorluk yükseldikçe tahta değişir, süre değil.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Oyunlar",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Her kat farklı bir oyunla gelir; her 10 katta bir kamp ve yeni bir oyun. İlk kez karşılaştığında süre başlamadan kısa bir animasyonla nasıl oynandığı gösterilir, oyun sırasında ? düğmesi aynı kartı açar. Her tahta üretilirken bilgisayar tarafından çözülerek doğrulanır: çözümsüz bulmaca yok.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "Nasıl oynanır",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Yükseldikçe",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Dünyalar",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "Her 20 katta yeni bir dünya: ormandan çiçekli yamaçlara, fırtınadan kuzey ışıklarına, galaksilerden Sonsuz Zirve'ye. Tırmandıkça bulmacalar zorlaşır, dünyalar daha da parlar.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Kat",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "Lig ve arkadaşlar",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Kat numaran, senin puanın.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Sakin ve adil",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Kafa dağıtmak için tasarlandı.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "SSS",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Sık sorulanlar",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "Zirvede görüşürüz.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Kuleye tırman, her kat bir bulmaca.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve App Store'da, ücretsiz. İlk katlar seni bekliyor.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Katını aç",
+     "Tırman'a bas, karşına o katın bulmacası gelsin: renkler, yollar, bloklar ya da kartlar."
+    ],
+    [
+     "Süre bitmeden çöz",
+     "30–60 saniyen var. Kıl payı kaçırırsan tahta aynen kalır; bir nefes al ve bitir."
+    ],
+    [
+     "Yüksel, kampa ulaş",
+     "Her 10 katta bir kamp: bir can geri gelir ve yeni bir oyun açılır. Canların bitse bile rekorun yerinde durur."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} bulmaca, tek kule.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "Aynı renkteki taşları buluştur, tahtayı temizle.",
+     "how": [
+      "Bir taşı aynı renkli komşusunun üstüne sürükle: ikisi birden kaybolur.",
+      "Boş kareye sürüklersen taş kayar; eşine yaklaştırmak için kullan."
+     ],
+     "harder": [
+      "Kat 10'dan duvarlar ve kayma hakkı sayılı taşlar (0'da donar)",
+      "Kat 30'dan her taşın kayma hakkı var, 6 renge kadar",
+      "Kat 60'tan kilitli taşlar: yanında eşleşme olunca açılır"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Parmağını kaldırmadan tek çizgiyle bayrağa ulaş.",
+     "how": [
+      "Başlangıçtan düğümden düğüme çiz; geri çekersen son adım silinir.",
+      "Ara noktalardan geçip bayrakta bitir. Parmağını kaldırırsan yol sıfırlanır."
+     ],
+     "harder": [
+      "Kat 20'den sis: yalnızca kalemin çevresi görünür",
+      "Kat 30'dan ara noktalar sırayla geçilir",
+      "Kat 60'tan bütün düğümlerden geçmen gerekir, duvarlar çoğalır"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Parçaları tahtadaki boşluklara tam oturt.",
+     "how": [
+      "Alttaki parçayı tahtaya sürükle; parçaya dokununca döner.",
+      "Tahtadaki parçaya dokunursan geri gelir; bütün parçalar sığınca kat biter."
+     ],
+     "harder": [
+      "6×6 tahtadan 8×8'e, 3 parçadan 6 parçaya",
+      "Kat 30'dan aynalı parça: basılı tutup çevirmen gerekir",
+      "Parçalar büyür, boşluklar daralır"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Kartları çevir, eşleri bul.",
+     "how": [
+      "İki kart çevir: aynı resimse açık kalır, değilse kısa süre sonra kapanır.",
+      "Kartların yerini aklında tut ve bütün çiftleri bul."
+     ],
+     "harder": [
+      "12 karttan 24 karta",
+      "Kat 30'dan üçlüler: aynı resimden üç kartı bul",
+      "Yanlış kartlar daha çabuk kapanır"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Aynı renkteki uçları birleştir, tahtayı doldur.",
+     "how": [
+      "Renkli bir noktadan aynı renkteki eşine çizgi çek.",
+      "Çizgiler kesişmez ve bütün kareler dolmalı; yarım kalan çizgi parmak kalkınca silinir."
+     ],
+     "harder": [
+      "5×5 tahtadan 7×7'ye",
+      "3 renkten 6 renge",
+      "Geçilemeyen engel kareler"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Boruları döndür, suyu akıt.",
+     "how": [
+      "Bir boruya dokun: 90 derece döner.",
+      "Suyu kaynaktan bayrağa kesintisiz ulaştır; akan borular dolu görünür."
+     ],
+     "harder": [
+      "Kat 40'tan bütün borular bağlanmalı",
+      "Daha çok kollu, daha karışık borular",
+      "Kat 100'den 6×6 tahta"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Tüplerdeki renkleri ayır, her tüpte tek renk kalsın.",
+     "how": [
+      "Bir tüpe, sonra başka bir tüpe dokun: üstteki renk oraya dökülür.",
+      "Yalnızca aynı rengin üstüne ya da boş tüpe dökülür; sıkışırsan Geri al."
+     ],
+     "harder": [
+      "4 renkten 8 renge",
+      "Daha karışık başlangıçlar, daha uzun çözümler",
+      "Hep iki boş tüp: plan yapmak sende"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Okları sırasıyla tahtadan çıkar.",
+     "how": [
+      "Bir oka dokun: ucunun gösterdiği yöne kayar, gövdesi ucunu izler ve yolu açıksa tahtadan çıkar.",
+      "Önünde başka ok varsa çarpıp geri döner ve 3 saniye götürür; önce öndekileri çıkar."
+     ],
+     "harder": [
+      "7×7 tahtadan 11×11'e, karelerin %85'ine kadar dolu",
+      "Kısa oklarla 12 kareye varan kıvrımlı yılan oklar",
+      "Daha uzun \"önce bu çıkmalı\" zincirleri"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Blokları kendi renklerindeki kapılardan çıkar.",
+     "how": [
+      "Bir bloğu sürükle: yalnızca oklarının gösterdiği yönde kayar. Önü açıksa aynı renkli kapıdan çıkar; dokunman da yeter.",
+      "İlk hamle hiçbir zaman çıkış değildir: önce bir bloğu kenara park edip yol açman gerekir."
+     ],
+     "harder": [
+      "6×6 tahtadan 8×8'e, 7 bloktan 14 bloğa",
+      "Her tahtada en az 3, sonra 4 planlı park",
+      "Kat 80'den kilitli blok, kat 100'den dört yöne kayan 2×2 blok"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Her satıra, sütuna ve renkli bölgeye bir gözcü kulesi yerleştir.",
+     "how": [
+      "Bir kareye dokun: önce ✕ (not), tekrar dokununca gözcü. Her satırda, sütunda ve bölgede tam bir gözcü olmalı.",
+      "Gözcüler birbirine değmez, çaprazda bile. Her tahtanın tek çözümü var; tahmin gerekmez, mantıkla bulunur."
+     ],
+     "harder": [
+      "6×6 tahtadan 8×8'e",
+      "İlk tahtalarda elenen kareler noktayla gösterilir, sonra kendin işaretlersin",
+      "Daha uzun çıkarım zincirleri"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Bütün kareleri yak.",
+     "how": [
+      "Bir kareye dokun: o kare ve üst, alt, sağ, sol komşuları (+ şekli) tersine döner. Sönük olan yanar, yanan söner.",
+      "Parmağını basılı tutunca dönecek kareler çerçevelenir; çaprazlar etkilenmez."
+     ],
+     "harder": [
+      "3×3 tahtadan 5×5'e",
+      "Çözüm için gereken dokunuş 3'ten 10'a",
+      "Sıra önemli: önce düşün, sonra dokun"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} dünya, sonu olmayan bir kule.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Orman",
+     "Kat 1–19"
+    ],
+    [
+     "dusk",
+     "Gün Batımı",
+     "Kat 80–99"
+    ],
+    [
+     "lights",
+     "Kuzey Işıkları",
+     "Kat 140–159"
+    ],
+    [
+     "summit",
+     "Sonsuz Zirve",
+     "Kat 300 ve ötesi"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Her hafta {leagueSize} kişilik bir ligdesin. Bu hafta geçtiğin katlar sıralamanı belirler; ilk {leaguePromote} bir üst lige çıkar, son {leagueRelegate} bir alta iner. Herkes seçtiği oyuncu adı, kıyafeti ve kule temasıyla görünür; listeyi aşağı çekip anında yenileyebilirsin.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "YÜKSELME BÖLGESİ · İLK {leaguePromote}",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "Sen",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "Sen",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Günün kulesi",
+     "Herkese aynı {dailyFloors} kat, {dailyAttempts} deneme. 3, 6 ve 10. katta elmas ödülü; ülke ve arkadaş sıralamasında kaçıncısın?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Aylık sezonlar",
+     "Her ay yeni bir ödül yolu: tırmandıkça elmas, kıyafet ve kule teması kazan. Her sezonun o aya özel bir kıyafeti ve teması var."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Arkadaşlar",
+     "Davet kodunu paylaş, kulede kimin nerede olduğunu gör, geçince haberin olsun."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Sandıklar ve seri",
+     "Her 10 temiz katta bir sandık (5–20 elmas), her 20 yıldızda bir yıldız sandığı. Her gün bir kat bile serini büyütür."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Her bulmacanın çözümü var",
+     "p": "Tahtalar üretilirken çözülerek doğrulanır; şansa değil hamlene bağlısın."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "Hesap gerekmez",
+     "p": "Hemen başla. İstersen Apple ile giriş yap; ilerlemen cihaz değiştirince de seninle gelir."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Çevrimdışı da oynanır",
+     "p": "Metroda, uçakta tırmanmaya devam et; katların bağlantı gelince eşitlenir.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Herkes için",
+     "p": "Her taş renkle birlikte bir şekil taşır; VoiceOver ile oynanır; Süre yardımı daha fazla ya da sınırsız süre verir."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Reklam senin seçimin",
+     "p": "Reklamlar yalnızca sen istediğinde: can ya da ek süre için. Araya giren reklam yok."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} dilde",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Zirve ücretsiz mi?",
+     "Evet. İndirmek ve oynamak ücretsiz. Elmas paketleri, başlangıç paketi, sezon seti ve sezonun premium ödül yolu isteğe bağlı uygulama içi satın almalardır; ödemeyi Apple alır."
+    ],
+    [
+     "Hangi cihazlarda oynanır?",
+     "iOS 18 ve üzeri iPhone ve iPad'de. iPhone 11 ve sonrası desteklenir. Android sürümü şimdilik yok."
+    ],
+    [
+     "Hesap açmam gerekiyor mu?",
+     "Hayır. İlk açılışta senin için otomatik bir misafir hesabı oluşur. İlerlemeni başka cihaza taşımak istersen Apple ile giriş yapabilirsin."
+    ],
+    [
+     "Süre yetmezse ne yapabilirim?",
+     "Ayarlar → Süre yardımı ile her kata 1,5 kat ya da sınırsız süre alabilirsin. Yıldızlar normal süreye göre hesaplanır ve yardımlı katlar haftalık lige sayılmaz."
+    ],
+    [
+     "Canlarım bitince ne olur?",
+     "Üç canın var. Hepsi bitince kampa dönersin ama rekorun silinmez. Canlar zamanla dolar, kampa varınca bir can geri gelir; istersen reklam izleyerek ya da elmasla da doldurabilirsin."
+    ],
+    [
+     "Verilerim nasıl işleniyor?",
+     "Yalnızca oyunun çalışması için gereken verileri işleriz; ayrıntılar <a href=\"{href:privacy}\">Gizlilik Politikası</a> ve <a href=\"{href:kvkk}\">KVKK Aydınlatma Metni</a>'nde. Oyunun kuralları <a href=\"{href:terms}\">Kullanım Koşulları</a>'nda."
+    ],
+    [
+     "Hesabımı nasıl silerim?",
+     "Uygulamada Profil → Ayarlar → Hesap → Hesabı sil. Ayrıntılar <a href=\"{href:delete}\">Hesap silme</a> sayfasında."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "Herkese aynı {dailyFloors} kat, {dailyAttempts} deneme. Zirve'de günün kulesine sen de tırman ve sonucunu paylaş.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Günün kulesi · her gece yenilenir",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Her gün herkese aynı on kat ve üç deneme. En iyi denemen sıralamaya girer. Sonucunu paylaştığında oyunlar ve tahtalar görünmez; kimsenin sürprizi bozulmaz.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Örnek sonuç: 10 kattan 7'si, 3 dakika 5 saniye",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Günün kulesi",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "3:05 toplam süre",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Sen de dene",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Sonuç",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "Kareler ne anlatıyor?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Paylaşılan sonuçta her kare bir kat: üst sıra 1–5, alt sıra 6–10. Her karenin rengi ve simgesi farklı, renk ayırt etmeden de okunur.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "🕒 Süre yardımıyla satırı, denemede Süre yardımının açık olduğunu gösterir. Kareler yine normal süreye göre boyanır; yardımlı denemeler sıralamaya girmez.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "Nasıl oynanır",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Sıra sende.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "Bugün herkes <em>aynı kuleye</em> tırmanıyor.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Zirve yüklüyse sayfanın üstündeki bantta Aç'a dokun: günün kulesi açılır.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve App Store'da, ücretsiz. Bugünün kulesi seni bekliyor.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "3 yıldız hızında",
+     "Kat, sürenin en az 15 saniyesi kala çözüldü."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Çözüldü",
+     "Kat, süre bitmeden çözüldü."
+    ],
+    [
+     "continued",
+     "🟨",
+     "Devam ederek",
+     "Süre bitti; reklam izleyerek ya da elmasla devam edilip çözüldü."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Süre bitti",
+     "Deneme bu katta sona erdi."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "Ulaşılmadı",
+     "Bu denemede o kata çıkılmadı."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} kat, {dailyAttempts} deneme, bir sıralama.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Kuleyi aç",
+     "Zirve'de kule ekranındaki Günün kulesi kartına dokun. Kule her gece yarısı yenilenir ve herkes için aynıdır."
+    ],
+    [
+     "Tırman",
+     "Her kat kısa bir bulmaca. Üç denemen var; en iyisi ülke ve arkadaş sıralamasına girer. 3, 6 ve 10. katlarda elmas ödülü."
+    ],
+    [
+     "Paylaş",
+     "Deneme bitince Sonucu paylaş: kareler ve süre gider, oyunlar ve tahtalar gitmez."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "": {
+  "date": "2026-11-12",
+  "hash": "f03e04080d4f3f65"
+ },
+ "404.html": {
+  "date": "2026-11-12",
+  "hash": "370adde9ba59fc21"
+ },
+ "daily/": {
+  "date": "2026-11-12",
+  "hash": "a9d878506be0ccc1"
+ },
+ "destek/": {
+  "date": "2026-11-12",
+  "hash": "6fcea5eaff44359b"
+ },
+ "en/": {
+  "date": "2026-11-12",
+  "hash": "d43c20ccbcf66e1c"
+ },
+ "en/daily/": {
+  "date": "2026-11-12",
+  "hash": "d50eefb87dfcfd1f"
+ },
+ "en/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "3c839e8895ac8c35"
+ },
+ "en/privacy/": {
+  "date": "2026-11-12",
+  "hash": "b8cb2ee2e30a342b"
+ },
+ "en/support/": {
+  "date": "2026-11-12",
+  "hash": "336e645b73cadff4"
+ },
+ "en/terms/": {
+  "date": "2026-11-12",
+  "hash": "c4da112207c8c6d2"
+ },
+ "gizlilik/": {
+  "date": "2026-11-12",
+  "hash": "52b98afa0213e573"
+ },
+ "hesap-silme/": {
+  "date": "2026-11-12",
+  "hash": "d84733e74e2485d4"
+ },
+ "kosullar/": {
+  "date": "2026-11-12",
+  "hash": "0863eaf2405c8ba5"
+ },
+ "kvkk/": {
+  "date": "2026-11-12",
+  "hash": "617408e280a1dcd4"
+ }
+}

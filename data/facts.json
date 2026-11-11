@@ -1,0 +1,68 @@
+{
+  "_doc": "Single source of truth for every fact the site, the JSON-LD, llms.txt and the OG cards state. Release flag: only `live` and versions.<v>.releaseDate change on release day. build.py compares the values marked (app) with the app repo (../zirve or $ZIRVE_APP_REPO) and fails on a mismatch. Plan: zirve/docs/research/SEO_GEO_1_1.md §2.2, §4.9.",
+  "live": "1.0",
+  "versions": {
+    "1.0": {
+      "softwareVersion": "1.0",
+      "releaseDate": "2026-11-10",
+      "leagueTiers": ["bronze", "silver", "gold", "platinum", "diamond", "master", "legend"],
+      "appLanguages": ["tr", "en", "de", "fr", "it", "es"]
+    },
+    "1.1": {
+      "softwareVersion": "1.1",
+      "releaseDate": null,
+      "leagueTiers": ["bronze", "silver", "gold", "platinum", "diamond", "master", "legend", "mythic", "titan", "immortal", "champion", "summit"],
+      "appLanguages": ["tr", "en", "de", "fr", "it", "es", "ja", "ko", "zh-Hant", "zh-Hans", "nl", "pl", "sv", "th", "id", "uk", "ru"]
+    }
+  },
+  "appStoreId": "6823998367",
+  "datePublished": "2026-11-10",
+  "developer": "mm-apps",
+  "puzzleKinds": [
+    {"id": "colorMatch", "unlockCamp": 0},
+    {"id": "pathDraw", "unlockCamp": 0},
+    {"id": "blockFit", "unlockCamp": 0},
+    {"id": "memory", "unlockCamp": 0},
+    {"id": "flow", "unlockCamp": 10},
+    {"id": "pipes", "unlockCamp": 20},
+    {"id": "colorSort", "unlockCamp": 30},
+    {"id": "arrows", "unlockCamp": 40},
+    {"id": "gates", "unlockCamp": 50},
+    {"id": "flags", "unlockCamp": 60},
+    {"id": "lights", "unlockCamp": 70}
+  ],
+  "worlds": 16,
+  "campEveryFloors": 10,
+  "league": {"size": 30, "promote": 7, "relegate": 5},
+  "dailyTower": {"floors": 10, "attempts": 3, "rewardFloors": [3, 6, 10]},
+  "platforms": ["iPhone", "iPad"],
+  "minOS": "18.0",
+  "price": "free, optional gem packs",
+  "ads": "rewarded only, player's choice: lives, continue, double chest (max 3/day)",
+  "offlineVerified": false,
+  "macVerified": false,
+  "ageRating": null,
+  "unavailableStorefronts": ["CN", "BR", "RU", "BY"],
+  "accessibilityLabels": ["VoiceOver", "Voice Control", "Larger Text", "Sufficient Contrast", "Reduced Motion", "Differentiate Without Color Alone"],
+  "schemaAccessibilityFeature": [],
+  "_schemaAccessibilityFeature": "Left empty on purpose: the plan's mapping (Larger Text → largePrint, Sufficient Contrast → highContrastDisplay, time assist → timingControl) is marked [doğrula]. Fill only after checking the schema.org/W3C vocabulary.",
+  "storeNames": {
+    "tr": "Zirve: Akıl ve Zeka Oyunları",
+    "en": "Zirve: Logic Puzzle Tower",
+    "de": "Zirve: Denkspiele & Rätsel",
+    "fr": "Zirve : Casse-tête logique",
+    "it": "Zirve: Giochi di logica",
+    "es": "Zirve: Juegos mentales",
+    "ja": "Zirve: 脳トレ・ロジックパズル",
+    "ko": "Zirve: 두뇌 퍼즐 게임",
+    "zh-Hant": "Zirve：燒腦益智遊戲",
+    "zh-Hans": "Zirve：烧脑益智游戏",
+    "nl": "Zirve: Puzzel & Denkspelletjes",
+    "pl": "Zirve: Łamigłówki logiczne",
+    "sv": "Zirve: Logikspel & Hjärngympa",
+    "th": "Zirve: เกมฝึกสมอง หอคอยปริศนา",
+    "id": "Zirve: Game Asah Otak & Logika",
+    "uk": "Zirve: Логічні головоломки"
+  },
+  "_storeNames": "1.0 names from zirve/docs/store/METADATA.md, 1.1 drafts from zirve/docs/store/i18n/*.json (ru has none yet). JSON-LD alternateName lists only the languages of the live version."
+}

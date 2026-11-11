@@ -1,34 +1,216 @@
 #!/usr/bin/env python3
-"""Builds the Zirve website into static HTML (GitHub Pages serves the repository root).
+"""Builds the Zirve website (https://zirve.mm-apps.com) into static HTML in the repository root, then checks it.
 
-    python3 build.py
+    python3 build.py            # build + every check (exit 1 on an error; warnings are printed)
+    python3 build.py --today 2026-11-12   # date used for changed pages (default: today)
 
-Pages: landing (tr at /, en at /en/), daily tower (daily, en/daily: the link in shared daily results, with a
-Smart App Banner), privacy (gizlilik, en/privacy), terms of use (kosullar, en/terms), KVKK, account deletion (hesap-silme, en/delete-account),
-support (destek, en/support), 404. Legal bodies live in src/*.html;
-this script wraps them in the shared header/footer. Paths are relative so the site works both at
-https://zirve.mm-apps.com/ (GitHub Pages, custom domain; the 404 page needs the site at the domain root). No cookies, no analytics, no third-party
-requests: fonts are self-hosted.
+Sources (README → "Yapı"):
+    data/facts.json        single source of truth for facts + the release flag (`live`)
+    data/site.json         base URL, contact, IndexNow key, trademark line
+    data/lastmod.json      page content hash → last change date (written by the build)
+    content/i18n/<l>.json  every string of the site per language ({value, state})
+    src/<doc>.<l>.html     legal bodies (privacy, terms, kvkk, delete, support)
+    LANGS (below)          languages: path prefix, html lang, hreflang, og:locale, App Store badge, published flag
+
+Output: index pages, 404.html, robots.txt, sitemap.xml, llms.txt, <IndexNow key>.txt, assets/og/manifest.json.
+Static and hosting-agnostic: no server headers are assumed (CSP and referrer policy are <meta>), links are
+root-relative, canonical/hreflang/OG URLs absolute. No cookies, no analytics, no third-party requests.
+The app repo (../zirve or $ZIRVE_APP_REPO) is read, when present, to check facts and in-app names.
 """
-import html, pathlib, re
+import argparse, datetime, gzip, hashlib, html, json, os, pathlib, re
+from dataclasses import dataclass
+from html.parser import HTMLParser
 
-ROOT = pathlib.Path(__file__).parent
-SRC = ROOT / "src"
-CONTACT = "destek@mm-apps.com"
-UPDATED = {"tr": "6.11.2026", "en": "6 November 2026"}
+ROOT = pathlib.Path(__file__).resolve().parent
+SRC, DATA, I18N = ROOT / "src", ROOT / "data", ROOT / "content" / "i18n"
+SITE = json.loads((DATA / "site.json").read_text())
+FACTS = json.loads((DATA / "facts.json").read_text())
+BASE = SITE["baseUrl"].rstrip("/")
+LIVE = FACTS["versions"][FACTS["live"]]
+APP_STORE_URL = f"https://apps.apple.com/app/id{FACTS['appStoreId']}"
 
-# The single switch for launch day: True turns every App Store badge into a real link and drops the "coming soon"
-# and TestFlight wording (landing chip and CTA, daily page note).
-APP_STORE_LIVE = True    # Zirve 1.0 went live on 10 November 2026
-APP_ID = "6823998367"   # App Store Connect → Apple ID (docs/SETUP_KEYS.md in the app repo)
-APP_STORE_URL = f"https://apps.apple.com/app/id{APP_ID}"
-# Smart App Banner on the daily page: Safari offers "Open" (app installed) or "View" (App Store), and the argument opens
-# the daily tower in the app (`AppRoute`). Safari shows the banner only once the app is live in the visitor's store.
-DAILY_BANNER = f'<meta name="apple-itunes-app" content="app-id={APP_ID}, app-argument=zirve://daily">'
 
-def live(t, key):
-    """The launch-day variant of a string (`<key>_live`) once the app is live, else the pre-launch one."""
-    return t.get(key + "_live", t[key]) if APP_STORE_LIVE else t[key]
+# ---------------------------------------------------------------------------------------------- languages
+@dataclass(frozen=True)
+class Lang:
+    code: str          # content/i18n/<code>.json, src/<doc>.<code>.html, facts language codes
+    prefix: str        # URL path prefix ("" = site root)
+    html_lang: str     # <html lang>, BCP 47
+    hreflang: tuple    # hreflang values pointing at this language's URL (pt-BR also answers for pt)
+    og_locale: str
+    badge: str         # assets/badges/app-store-<badge>.svg (Apple's own artwork; en-us where Apple has none)
+    script: str        # latin | cjk | thai | cyrillic | vietnamese | devanagari (fonts, page budget)
+    name: str          # the language's own name, shown in the language menu
+    published: bool    # intent to publish; the build fails if a published language has missing strings
+
+
+LANGS = (
+    Lang("tr", "", "tr", ("tr",), "tr_TR", "tr-tr", "latin", "Türkçe", True),
+    Lang("en", "en/", "en", ("en",), "en_US", "en-us", "latin", "English", True),
+    Lang("de", "de/", "de", ("de",), "de_DE", "de-de", "latin", "Deutsch", False),
+    Lang("fr", "fr/", "fr", ("fr",), "fr_FR", "fr-fr", "latin", "Français", False),
+    Lang("it", "it/", "it", ("it",), "it_IT", "it-it", "latin", "Italiano", False),
+    Lang("es", "es/", "es", ("es",), "es_ES", "es-es", "latin", "Español", False),
+    Lang("ja", "ja/", "ja", ("ja",), "ja_JP", "ja-jp", "cjk", "日本語", False),
+    Lang("ko", "ko/", "ko", ("ko",), "ko_KR", "ko-kr", "cjk", "한국어", False),
+    Lang("zh-Hant", "zh-hant/", "zh-Hant", ("zh-Hant",), "zh_TW", "zh-tw", "cjk", "繁體中文", False),
+    Lang("zh-Hans", "zh-hans/", "zh-Hans", ("zh-Hans",), "zh_CN", "zh-cn", "cjk", "简体中文", False),
+    Lang("nl", "nl/", "nl", ("nl",), "nl_NL", "nl-nl", "latin", "Nederlands", False),
+    Lang("pl", "pl/", "pl", ("pl",), "pl_PL", "pl-pl", "latin", "Polski", False),
+    Lang("sv", "sv/", "sv", ("sv",), "sv_SE", "sv-se", "latin", "Svenska", False),
+    Lang("th", "th/", "th", ("th",), "th_TH", "th-th", "thai", "ไทย", False),
+    Lang("id", "id/", "id", ("id",), "id_ID", "id-id", "latin", "Bahasa Indonesia", False),
+    Lang("uk", "uk/", "uk", ("uk",), "uk_UA", "en-us", "cyrillic", "Українська", False),
+    Lang("ru", "ru/", "ru", ("ru",), "ru_RU", "ru-ru", "cyrillic", "Русский", False),
+    # Not in the 1.1 app; kept so they can be switched on later (plan §4.2).
+    Lang("pt-BR", "pt-br/", "pt-BR", ("pt-BR", "pt"), "pt_BR", "pt-br", "latin", "Português (Brasil)", False),
+    Lang("vi", "vi/", "vi", ("vi",), "vi_VN", "vi-vn", "vietnamese", "Tiếng Việt", False),
+    Lang("hi", "hi/", "hi", ("hi",), "hi_IN", "en-us", "devanagari", "हिन्दी", False),
+)
+LANG = {l.code: l for l in LANGS}
+X_DEFAULT = "en"          # x-default → the English version when the page has one, else Turkish
+SOURCE_LANG = "tr"        # tr.json defines the full key set
+
+# Page table: slug per language (Turkish keeps its 1.0 slugs; other languages use English ASCII slugs).
+PAGES = {
+    "home":    {"tr": "", "*": ""},
+    "daily":   {"tr": "daily/", "*": "daily/"},
+    "privacy": {"tr": "gizlilik/", "*": "privacy/"},
+    "terms":   {"tr": "kosullar/", "*": "terms/"},
+    "kvkk":    {"tr": "kvkk/", "*": "kvkk/"},
+    "delete":  {"tr": "hesap-silme/", "*": "delete-account/"},
+    "support": {"tr": "destek/", "*": "support/"},
+}
+DOCS = ("privacy", "terms", "kvkk", "delete", "support")    # bodies in src/<doc>.<lang>.html
+SMART_BANNER_ARG = {"daily": "zirve://daily"}               # apple-itunes-app app-argument per page
+
+
+def page_path(page, lang):
+    """URL path without the leading slash ("" for the Turkish home)."""
+    slugs = PAGES[page]
+    return LANG[lang].prefix + slugs.get(lang, slugs["*"])
+
+
+def page_url(page, lang):
+    return f"{BASE}/{page_path(page, lang)}"
+
+
+# ---------------------------------------------------------------------------------------------- strings
+class Strings:
+    """content/i18n/<lang>.json. Values may be strings, lists or objects; strings are formatted with {placeholders}."""
+
+    def __init__(self, code):
+        self.code = code
+        path = I18N / f"{code}.json"
+        self.entries = json.loads(path.read_text())["strings"] if path.exists() else {}
+
+    def raw(self, key):
+        return self.entries[key]["value"]
+
+
+STRINGS = {l.code: Strings(l.code) for l in LANGS}
+
+
+def required_keys(code):
+    """Keys a language needs: every key of tr.json except the strings of legal pages it has no body for."""
+    keys = set(STRINGS[SOURCE_LANG].entries)
+    for doc in DOCS:
+        if not (SRC / f"{doc}.{code}.html").exists():
+            keys = {k for k in keys if not k.startswith(f"doc.{doc}.")}
+    return keys
+
+
+def gate(code):
+    """(missing keys, keys needing review) of a language."""
+    s = STRINGS[code]
+    missing = sorted(required_keys(code) - set(s.entries))
+    review = sorted(k for k, e in s.entries.items() if e.get("state") != "translated")
+    return missing, review
+
+
+ACTIVE = [l.code for l in LANGS if l.published]
+
+
+def doc_langs(page):
+    """Languages a page is built in (published languages that have its content)."""
+    if page in DOCS:
+        return [c for c in ACTIVE if (SRC / f"{page}.{c}.html").exists()]
+    return list(ACTIVE)
+
+
+def fact_context(code):
+    names = [LANG[c].name for c in LIVE["appLanguages"]]
+    return {
+        "puzzleTypes": len(FACTS["puzzleKinds"]),
+        "worlds": FACTS["worlds"],
+        "leagueSize": FACTS["league"]["size"],
+        "leaguePromote": FACTS["league"]["promote"],
+        "leagueRelegate": FACTS["league"]["relegate"],
+        "leagueTiers": len(LIVE["leagueTiers"]),
+        "dailyFloors": FACTS["dailyTower"]["floors"],
+        "dailyAttempts": FACTS["dailyTower"]["attempts"],
+        "appLanguageCount": len(names),
+        "appLanguageNames": ", ".join(names),
+        "storeName": FACTS["storeNames"].get(code, FACTS["storeNames"]["en"]),
+        "year": SITE["copyrightYear"],
+        "holder": SITE["copyrightHolder"],
+    }
+
+
+PLACEHOLDER = re.compile(r"\{([A-Za-z][A-Za-z0-9_]*(?::[a-z]+)?)\}")
+
+
+class T:
+    """Strings of one language, formatted for one page (links resolve per page)."""
+
+    def __init__(self, code):
+        self.code, self.lang = code, LANG[code]
+        self.s = STRINGS[code]
+        self.ctx = fact_context(code)
+
+    def href(self, page):
+        """Root-relative link to a page in this language, or in Turkish when it does not exist in this language."""
+        lang = self.code if self.code in doc_langs(page) else SOURCE_LANG
+        return "/" + page_path(page, lang)
+
+    def fmt(self, value, **extra):
+        if isinstance(value, str):
+            def sub(m):
+                name = m.group(1)
+                if name.startswith("href:"):
+                    return self.href(name[5:])
+                if name in extra:
+                    return str(extra[name])
+                if name in self.ctx:
+                    return str(self.ctx[name])
+                raise KeyError(f"{self.code}: unknown placeholder {{{name}}}")
+            return PLACEHOLDER.sub(sub, value)
+        if isinstance(value, list):
+            return [self.fmt(v, **extra) for v in value]
+        if isinstance(value, dict):
+            return {k: self.fmt(v, **extra) for k, v in value.items()}
+        return value
+
+    def __call__(self, key, **extra):
+        return self.fmt(self.s.raw(key), **extra)
+
+    def e(self, key, **extra):
+        """HTML-escaped string."""
+        return html.escape(self(key, **extra))
+
+    def date(self, iso):
+        d = datetime.date.fromisoformat(iso)
+        return self("date.format", d=d.day, month=self.s.raw("date.months")[d.month - 1], y=d.year)
+
+
+def requirement_met(item):
+    req = item.get("requires") if isinstance(item, dict) else None
+    return not req or bool(FACTS.get(req))
+
+
+# Sentinels replaced once the page's content hash is known (data/lastmod.json).
+LASTMOD_ISO, LASTMOD_HUMAN = "__LASTMOD_ISO__", "__LASTMOD_HUMAN__"
+
 
 # ---------------------------------------------------------------------------------------------- icons
 def icon(paths, fill=None, stroke="currentColor", width=2, size=24):
@@ -63,7 +245,6 @@ I = {
     "user": icon(["M16 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0z", "M4 21a8 8 0 0 1 16 0"]),
     "puzzle": icon(["M4 7h4a2 2 0 1 1 4 0h4v4a2 2 0 1 1 0 4v4H4z"]),
 }
-APPLE = '<svg viewBox="0 0 24 28" aria-hidden="true"><path fill="currentColor" d="M19.7 14.9c0-3.3 2.7-4.9 2.8-5-1.5-2.2-3.9-2.5-4.7-2.6-2-.2-3.9 1.2-4.9 1.2s-2.6-1.2-4.2-1.1c-2.2 0-4.2 1.3-5.3 3.2-2.3 4-.6 9.8 1.6 13 1.1 1.6 2.4 3.3 4.1 3.3 1.6-.1 2.3-1.1 4.2-1.1s2.5 1.1 4.2 1 2.8-1.6 3.8-3.2c1.2-1.8 1.7-3.6 1.7-3.7 0 0-3.3-1.3-3.3-5.0zM16.6 5.2c.9-1.1 1.5-2.6 1.3-4.1-1.3.1-2.8.9-3.8 2-.8.9-1.6 2.5-1.4 3.9 1.5.1 2.9-.7 3.9-1.8z"/></svg>'
 
 def mascot(body="#2E7D5B", hat="#F08A3C", band="#D9731F", cls=""):
     return (f'<svg class="{cls}" viewBox="0 0 64 68" aria-hidden="true">'
@@ -89,526 +270,953 @@ G = {
     "lights": '<svg viewBox="0 0 76 76" aria-hidden="true"><g fill="#F2B531"><rect x="2" y="2" width="22" height="22" rx="6"/><rect x="27" y="2" width="22" height="22" rx="6"/><rect x="52" y="27" width="22" height="22" rx="6"/><rect x="2" y="27" width="22" height="22" rx="6"/><rect x="27" y="52" width="22" height="22" rx="6"/></g><g fill="#F4F6F1" stroke="#E3E9E0" stroke-width="2"><rect x="52" y="2" width="22" height="22" rx="6"/><rect x="27" y="27" width="22" height="22" rx="6"/><rect x="2" y="52" width="22" height="22" rx="6"/><rect x="52" y="52" width="22" height="22" rx="6"/></g><g fill="#5A3E00"><circle cx="13" cy="13" r="4"/><circle cx="38" cy="13" r="4"/><circle cx="63" cy="38" r="4"/><circle cx="13" cy="38" r="4"/><circle cx="38" cy="63" r="4"/></g></svg>',
 }
 
-# ------------------------------------------------------------------------------------------- strings
-S = {
-"tr": {
-  "lang": "tr", "other_lang": "en", "other_label": "EN", "other_name": "English",
-  "title": "Zirve: Zeka Oyunları Kulesi · Her kat yeni bir bulmaca",
-  "desc": "Zirve, 30–60 saniyelik bulmacalardan oluşan sonsuz bir kule. Çöz, bir kat yüksel, haftalık ligde arkadaşlarını geç. iPhone ve iPad için.",
-  "nav": [("#nasil", "Nasıl oynanır"), ("#oyunlar", "Oyunlar"), ("#dunyalar", "Dünyalar"), ("#lig", "Lig"), ("#sss", "SSS")],
-  "soon": "iPhone ve iPad için · çok yakında", "soon_live": "iPhone ve iPad için · App Store'da",
-  "h1": "Kuleye tırman.<br><em>Her kat</em> bir bulmaca.",
-  "lead": "Zirve, kısa bulmacalardan oluşan sonsuz bir kule. Çöz, bir kat yüksel, kampa ulaş ve haftalık ligde arkadaşlarını geç.",
-  "badge_small": "Çok yakında", "badge_small_live": "App Store'dan", "badge_big": "App Store", "badge_big_live": "İndir", "how_btn": "Nasıl oynanır",
-  "trust": ["Ücretsiz", "Hesap gerekmez", "Çevrimdışı oynanır", "6 dil"],
-  "f1": ("2 gün", "seri"), "f2": ("Kat 6 geçildi", ""), "f3": ("3/3", "can"),
-  "how_eyebrow": "Nasıl oynanır", "how_h2": "Bir dakikadan kısa, beş saniyede anlaşılır.",
-  "how_p": "Her kat tek bir bulmaca. Kuralları ekrana bakar bakmaz anlarsın; zorluk yükseldikçe tahta değişir, süre değil.",
-  "steps": [("Katını aç", "Tırman'a bas, karşına o katın bulmacası gelsin: renkler, yollar, bloklar ya da kartlar."),
-            ("Süre bitmeden çöz", "30–60 saniyen var. Kıl payı kaçırırsan tahta aynen kalır; bir nefes al ve bitir."),
-            ("Yüksel, kampa ulaş", "Her 10 katta bir kamp: bir can geri gelir ve yeni bir oyun açılır. Canların bitse bile rekorun yerinde durur.")],
-  "games_eyebrow": "Oyunlar", "games_h2": "On bir bulmaca, tek kule.",
-  "games_p": "Her kat farklı bir oyunla gelir; her 10 katta bir kamp ve yeni bir oyun. İlk kez karşılaştığında süre başlamadan kısa bir animasyonla nasıl oynandığı gösterilir, oyun sırasında ? düğmesi aynı kartı açar. Her tahta üretilirken bilgisayar tarafından çözülerek doğrulanır: çözümsüz bulmaca yok.",
-  "how_label": "Nasıl oynanır", "harder_label": "Yükseldikçe",
-  "games": [
-    ("colorMatch", "Renk birleştirme", "Kat 1'den", "Aynı renkteki taşları buluştur, tahtayı temizle.",
-     ["Bir taşı aynı renkli komşusunun üstüne sürükle: ikisi birden kaybolur.", "Boş kareye sürüklersen taş kayar; eşine yaklaştırmak için kullan."],
-     ["Kat 10'dan duvarlar ve kayma hakkı sayılı taşlar (0'da donar)", "Kat 30'dan her taşın kayma hakkı var, 6 renge kadar", "Kat 60'tan kilitli taşlar: yanında eşleşme olunca açılır"]),
-    ("pathDraw", "Yol çizme", "Kat 1'den", "Parmağını kaldırmadan tek çizgiyle bayrağa ulaş.",
-     ["Başlangıçtan düğümden düğüme çiz; geri çekersen son adım silinir.", "Ara noktalardan geçip bayrakta bitir. Parmağını kaldırırsan yol sıfırlanır."],
-     ["Kat 20'den sis: yalnızca kalemin çevresi görünür", "Kat 30'dan ara noktalar sırayla geçilir", "Kat 60'tan bütün düğümlerden geçmen gerekir, duvarlar çoğalır"]),
-    ("blockFit", "Blok yerleştirme", "Kat 1'den", "Parçaları tahtadaki boşluklara tam oturt.",
-     ["Alttaki parçayı tahtaya sürükle; parçaya dokununca döner.", "Tahtadaki parçaya dokunursan geri gelir; bütün parçalar sığınca kat biter."],
-     ["6×6 tahtadan 8×8'e, 3 parçadan 6 parçaya", "Kat 30'dan aynalı parça: basılı tutup çevirmen gerekir", "Parçalar büyür, boşluklar daralır"]),
-    ("memory", "Hafıza", "Kat 1'den", "Kartları çevir, eşleri bul.",
-     ["İki kart çevir: aynı resimse açık kalır, değilse kısa süre sonra kapanır.", "Kartların yerini aklında tut ve bütün çiftleri bul."],
-     ["12 karttan 24 karta", "Kat 30'dan üçlüler: aynı resimden üç kartı bul", "Yanlış kartlar daha çabuk kapanır"]),
-    ("flow", "Akış", "Kat 11'den", "Aynı renkteki uçları birleştir, tahtayı doldur.",
-     ["Renkli bir noktadan aynı renkteki eşine çizgi çek.", "Çizgiler kesişmez ve bütün kareler dolmalı; yarım kalan çizgi parmak kalkınca silinir."],
-     ["5×5 tahtadan 7×7'ye", "3 renkten 6 renge", "Geçilemeyen engel kareler"]),
-    ("pipes", "Boru çevirme", "Kat 21'den", "Boruları döndür, suyu akıt.",
-     ["Bir boruya dokun: 90 derece döner.", "Suyu kaynaktan bayrağa kesintisiz ulaştır; akan borular dolu görünür."],
-     ["Kat 40'tan bütün borular bağlanmalı", "Daha çok kollu, daha karışık borular", "Kat 100'den 6×6 tahta"]),
-    ("colorSort", "Renk dizme", "Kat 31'den", "Tüplerdeki renkleri ayır, her tüpte tek renk kalsın.",
-     ["Bir tüpe, sonra başka bir tüpe dokun: üstteki renk oraya dökülür.", "Yalnızca aynı rengin üstüne ya da boş tüpe dökülür; sıkışırsan Geri al."],
-     ["4 renkten 8 renge", "Daha karışık başlangıçlar, daha uzun çözümler", "Hep iki boş tüp: plan yapmak sende"]),
-    ("arrows", "Oklar", "Kat 41'den", "Okları sırasıyla tahtadan çıkar.",
-     ["Bir oka dokun: ucunun gösterdiği yöne kayar, gövdesi ucunu izler ve yolu açıksa tahtadan çıkar.", "Önünde başka ok varsa çarpıp geri döner ve 3 saniye götürür; önce öndekileri çıkar."],
-     ["7×7 tahtadan 11×11'e, karelerin %85'ine kadar dolu", "Kısa oklarla 12 kareye varan kıvrımlı yılan oklar", "Daha uzun \"önce bu çıkmalı\" zincirleri"]),
-    ("gates", "Kapı", "Kat 51'den", "Blokları kendi renklerindeki kapılardan çıkar.",
-     ["Bir bloğu sürükle: yalnızca oklarının gösterdiği yönde kayar. Önü açıksa aynı renkli kapıdan çıkar; dokunman da yeter.", "İlk hamle hiçbir zaman çıkış değildir: önce bir bloğu kenara park edip yol açman gerekir."],
-     ["6×6 tahtadan 8×8'e, 7 bloktan 14 bloğa", "Her tahtada en az 3, sonra 4 planlı park", "Kat 80'den kilitli blok, kat 100'den dört yöne kayan 2×2 blok"]),
-    ("flags", "Gözcüler", "Kat 61'den", "Her satıra, sütuna ve renkli bölgeye bir gözcü kulesi yerleştir.",
-     ["Bir kareye dokun: önce ✕ (not), tekrar dokununca gözcü. Her satırda, sütunda ve bölgede tam bir gözcü olmalı.", "Gözcüler birbirine değmez, çaprazda bile. Her tahtanın tek çözümü var; tahmin gerekmez, mantıkla bulunur."],
-     ["6×6 tahtadan 8×8'e", "İlk tahtalarda elenen kareler noktayla gösterilir, sonra kendin işaretlersin", "Daha uzun çıkarım zincirleri"]),
-    ("lights", "Işık", "Kat 71'den", "Bütün kareleri yak.",
-     ["Bir kareye dokun: o kare ve üst, alt, sağ, sol komşuları (+ şekli) tersine döner. Sönük olan yanar, yanan söner.", "Parmağını basılı tutunca dönecek kareler çerçevelenir; çaprazlar etkilenmez."],
-     ["3×3 tahtadan 5×5'e", "Çözüm için gereken dokunuş 3'ten 10'a", "Sıra önemli: önce düşün, sonra dokun"])],
-  "shots": [("play-path", "Yol çizme"), ("play-color", "Renk birleştirme"), ("play-blocks", "Blok yerleştirme"), ("play-arrows", "Oklar")],
-  "worlds_eyebrow": "Dünyalar", "worlds_h2": "16 dünya, sonu olmayan bir kule.",
-  "worlds_p": "Her 20 katta yeni bir dünya: ormandan çiçekli yamaçlara, fırtınadan kuzey ışıklarına, galaksilerden Sonsuz Zirve'ye. Tırmandıkça bulmacalar zorlaşır, dünyalar daha da parlar.",
-  "worlds": [("forest", "Orman", "Kat 1–19"), ("dusk", "Gün Batımı", "Kat 80–99"), ("lights", "Kuzey Işıkları", "Kat 140–159"), ("summit", "Sonsuz Zirve", "Kat 300 ve ötesi")],
-  "floor": "Kat",
-  "league_eyebrow": "Lig ve arkadaşlar", "league_h2": "Kat numaran, senin puanın.",
-  "league_p": "Her hafta 30 kişilik bir ligdesin. Bu hafta geçtiğin katlar sıralamanı belirler; ilk yedi bir üst lige çıkar, son beş bir alta iner. Herkes seçtiği oyuncu adı, kıyafeti ve kule temasıyla görünür; listeyi aşağı çekip anında yenileyebilirsin.",
-  "tiers": ["Bronz", "Gümüş", "Altın", "Platin", "Elmas", "Usta", "Efsane"],
-  "zone": "YÜKSELME BÖLGESİ · İLK 7", "you": "Sen", "kat": "kat",
-  "rows": [("1", "Ece", "48"), ("2", "Sen", "41"), ("3", "Deniz", "37"), ("4", "Kerem", "33")],
-  "features": [("daily", "#E3EEF9", "#2B5E8E", "Günün kulesi", "Herkese aynı on kat, üç deneme. 3, 6 ve 10. katta elmas ödülü; herkes ve arkadaşların arasında kaçıncısın?"),
-               ("season", "#E6D9F7", "#6A45B8", "Aylık sezonlar", "Her ay yeni bir ödül yolu: tırmandıkça elmas, kıyafet ve kule teması kazan. Her sezonun o aya özel bir kıyafeti ve teması var."),
-               ("friends", "#DCEBD6", "#2E7D5B", "Arkadaşlar", "Davet kodunu paylaş, kulede kimin nerede olduğunu gör, geçince haberin olsun."),
-               ("flame", "#FBE3D1", "#D9731F", "Sandıklar ve seri", "Her 10 temiz katta bir sandık (5–20 elmas), her 20 yıldızda bir yıldız sandığı. Her gün bir kat bile serini büyütür.")],
-  "values_eyebrow": "Sakin ve adil", "values_h2": "Kafa dağıtmak için tasarlandı.",
-  "values": [("check", "#DCEBD6", "#2E7D5B", "Her bulmacanın çözümü var", "Tahtalar üretilirken çözülerek doğrulanır; şansa değil hamlene bağlısın."),
-             ("user", "#E3EEF9", "#2B5E8E", "Hesap gerekmez", "Hemen başla. İstersen Apple ile giriş yap; ilerlemen cihaz değiştirince de seninle gelir."),
-             ("offline", "#FCEFCB", "#8A6400", "Çevrimdışı da oynanır", "Metroda, uçakta tırmanmaya devam et; katların bağlantı gelince eşitlenir."),
-             ("eye", "#E6D9F7", "#6A45B8", "Herkes için", "Her taş renkle birlikte bir şekil taşır; VoiceOver ile oynanır; Süre yardımı daha fazla ya da sınırsız süre verir."),
-             ("life", "#FBE3E3", "#E0565B", "Reklam senin seçimin", "Reklamlar yalnızca sen istediğinde: can ya da ek süre için. Araya giren reklam yok."),
-             ("globe", "#E3EEF9", "#2B5E8E", "Altı dilde", "Türkçe, English, Deutsch, Français, Italiano, Español.")],
-  "faq_eyebrow": "SSS", "faq_h2": "Sık sorulanlar",
-  "faq": [("Zirve ücretsiz mi?", "Evet. İndirmek ve oynamak ücretsiz. Elmas paketleri, başlangıç paketi, sezon seti ve sezonun premium ödül yolu isteğe bağlı uygulama içi satın almalardır; ödemeyi Apple alır."),
-          ("Hangi cihazlarda oynanır?", "iOS 18 ve üzeri iPhone ve iPad'de. iPhone 11 ve sonrası desteklenir. Android sürümü şimdilik yok."),
-          ("Hesap açmam gerekiyor mu?", "Hayır. İlk açılışta senin için otomatik bir misafir hesabı oluşur. İlerlemeni başka cihaza taşımak istersen Apple ile giriş yapabilirsin."),
-          ("Süre yetmezse ne yapabilirim?", "Ayarlar → Süre yardımı ile her kata 1,5 kat ya da sınırsız süre alabilirsin. Yıldızlar normal süreye göre hesaplanır ve yardımlı katlar haftalık lige sayılmaz."),
-          ("Canlarım bitince ne olur?", "Üç canın var. Hepsi bitince kampa dönersin ama rekorun silinmez. Canlar zamanla dolar, kampa varınca bir can geri gelir; istersen reklam izleyerek ya da elmasla da doldurabilirsin."),
-          ("Verilerim nasıl işleniyor?", "Yalnızca oyunun çalışması için gereken verileri işleriz; ayrıntılar <a href=\"{r}gizlilik/\">Gizlilik Politikası</a> ve <a href=\"{r}kvkk/\">KVKK Aydınlatma Metni</a>'nde. Oyunun kuralları <a href=\"{r}kosullar/\">Kullanım Koşulları</a>'nda."),
-          ("Hesabımı nasıl silerim?", "Uygulamada Profil → Ayarlar → Hesap → Hesabı sil. Ayrıntılar <a href=\"{r}hesap-silme/\">Hesap silme</a> sayfasında.")],
-  "cta_h2": "Zirvede görüşürüz.", "cta_p": "Zirve çok yakında App Store'da. İlk katlar seni bekliyor.",
-  "cta_p_live": "Zirve App Store'da, ücretsiz. İlk katlar seni bekliyor.",
-  "footer_tag": "Kuleye tırman, her kat bir bulmaca.",
-  "footer_links": [("gizlilik/", "Gizlilik"), ("kosullar/", "Kullanım koşulları"), ("kvkk/", "KVKK"), ("hesap-silme/", "Hesap silme"), ("destek/", "Destek")],
-  "fine": "© 2026 Mehmet Mutlu · Zirve · Apple, App Store ve iPhone, Apple Inc.'in ticari markalarıdır. Bu sitede çerez ve izleme aracı kullanılmaz.",
-  "back": "Ana sayfa",
-},
-"en": {
-  "lang": "en", "other_lang": "tr", "other_label": "TR", "other_name": "Türkçe",
-  "title": "Zirve: Brain Puzzle Tower · Every floor, a new puzzle",
-  "desc": "Zirve is an endless tower of 30–60 second puzzles. Solve, climb a floor, pass your friends in the weekly league. For iPhone and iPad.",
-  "nav": [("#how", "How to play"), ("#games", "Games"), ("#worlds", "Worlds"), ("#league", "League"), ("#faq", "FAQ")],
-  "soon": "For iPhone and iPad · coming soon", "soon_live": "For iPhone and iPad · on the App Store",
-  "h1": "Climb the tower.<br><em>Every floor</em> a puzzle.",
-  "lead": "Zirve is an endless tower of quick puzzles. Solve one, climb a floor, reach the next camp and pass your friends in the weekly league.",
-  "badge_small": "Coming soon on the", "badge_small_live": "Download on the", "badge_big": "App Store", "how_btn": "How to play",
-  "trust": ["Free", "No account needed", "Plays offline", "6 languages"],
-  "f1": ("2 days", "streak"), "f2": ("Floor 6 cleared", ""), "f3": ("3/3", "lives"),
-  "how_eyebrow": "How to play", "how_h2": "Under a minute. Understood in five seconds.",
-  "how_p": "Every floor is a single puzzle. You get the rules at a glance; as you climb the board gets harder, not the clock.",
-  "steps": [("Open your floor", "Tap Climb and meet the floor's puzzle: colours, paths, blocks or cards."),
-            ("Solve before time runs out", "You have 30–60 seconds. Miss it by a hair and the board waits for you; take a breath and finish."),
-            ("Climb to the next camp", "A camp every 10 floors gives a life back and unlocks a new game. Even when your lives run out, your record stays.")],
-  "games_eyebrow": "Games", "games_h2": "Eleven puzzles, one tower.",
-  "games_p": "Each floor brings a different game; every 10 floors there is a camp and a new game. The first time you meet one, a short animation shows how it works before the clock starts, and the ? button brings it back during play. Every board is solved by the computer before you see it: no unsolvable puzzles.",
-  "how_label": "How to play", "harder_label": "Higher up",
-  "games": [
-    ("colorMatch", "Colour match", "From floor 1", "Bring matching tiles together and clear the board.",
-     ["Drag a tile onto a neighbour of the same colour: both disappear.", "Drag into an empty square to slide a tile closer to its pair."],
-     ["From floor 10: walls and tiles with a limited number of slides (frozen at 0)", "From floor 30: every tile has a slide limit, up to 6 colours", "From floor 60: locked tiles that open when a match happens next to them"]),
-    ("pathDraw", "Path draw", "From floor 1", "Reach the flag with one line, without lifting your finger.",
-     ["Draw from node to node; pull back to undo the last step.", "Pass the checkpoints and end on the flag. Lift your finger and the line resets."],
-     ["From floor 20: fog, you only see around your pen", "From floor 30: checkpoints in order", "From floor 60: visit every node, more walls"]),
-    ("blockFit", "Block fit", "From floor 1", "Fit every piece into the gaps on the board.",
-     ["Drag a piece from the tray onto the board; tap a piece to turn it.", "Tap a placed piece to take it back; the floor is done when everything fits."],
-     ["From a 6×6 board to 8×8, from 3 pieces to 6", "From floor 30: mirrored pieces you flip with a long press", "Bigger pieces, tighter gaps"]),
-    ("memory", "Memory", "From floor 1", "Flip the cards and find the matches.",
-     ["Turn two cards: a match stays open, otherwise they close again shortly.", "Remember where each card is and find every pair."],
-     ["From 12 cards to 24", "From floor 30: triples, find three of the same picture", "Wrong cards close faster"]),
-    ("flow", "Flow", "From floor 11", "Connect matching ends and fill the board.",
-     ["Draw a line from a coloured dot to its matching dot.", "Lines can't cross and every square must be filled; an unfinished line vanishes when you lift your finger."],
-     ["From a 5×5 board to 7×7", "From 3 colours to 6", "Blocked squares you have to route around"]),
-    ("pipes", "Pipes", "From floor 21", "Turn the pipes and get the water flowing.",
-     ["Tap a pipe to turn it 90 degrees.", "Lead the water from the source to the flag without a gap; flowing pipes fill up."],
-     ["From floor 40: every pipe must be connected", "More branches, more tangled pipes", "A 6×6 board from floor 100"]),
-    ("colorSort", "Colour sort", "From floor 31", "Sort the colours until every tube holds one.",
-     ["Tap a tube, then another: the top colour pours over.", "It only goes onto the same colour or into an empty tube; stuck? Undo."],
-     ["From 4 colours to 8", "More mixed starts, longer solutions", "Always two empty tubes: the planning is yours"]),
-    ("arrows", "Arrows", "From floor 41", "Clear the arrows in the right order.",
-     ["Tap an arrow: it slides the way its head points, its body follows, and it leaves the board if the way is clear.", "If another arrow is in the way, it bumps back and costs 3 seconds; clear the ones in front first."],
-     ["From a 7×7 board to 11×11, up to 85% full", "Short arrows next to winding snakes up to 12 cells long", "Longer \"this one first\" chains"]),
-    ("gates", "Gates", "From floor 51", "Lead every block out through the gate of its own colour.",
-     ["Drag a block: it only slides the way its arrows point. With a clear way it leaves through the matching gate; a tap is enough.", "The first move is never an exit: you have to park a block aside to open a way first."],
-     ["From a 6×6 board to 8×8, from 7 blocks to 14", "At least 3, later 4 planned parks on every board", "From floor 80 a locked block; from floor 100 a 2×2 block that slides any direction"]),
-    ("flags", "Lookouts", "From floor 61", "Place one lookout tower in every row, column and coloured region.",
-     ["Tap a square: first ✕ (a note), tap again for a lookout. Every row, column and region needs exactly one.", "Lookouts never touch, not even diagonally. Every board has exactly one solution; no guessing, just logic."],
-     ["From a 6×6 board to 8×8", "On the first boards ruled-out squares are dotted for you; later you mark them yourself", "Longer chains of deduction"]),
-    ("lights", "Lights", "From floor 71", "Light up every square.",
-     ["Tap a square: it and its up, down, left and right neighbours (a + shape) flip. Dark ones light up, lit ones go dark.", "Hold your finger down to see which squares will flip; diagonals are not affected."],
-     ["From a 3×3 board to 5×5", "From 3 to 10 taps to solve", "Order matters: think first, then tap"])],
-  "shots": [("play-path", "Path draw"), ("play-color", "Colour match"), ("play-blocks", "Block fit"), ("play-arrows", "Arrows")],
-  "worlds_eyebrow": "Worlds", "worlds_h2": "16 worlds, a tower without an end.",
-  "worlds_p": "A new world every 20 floors: from the forest to flower slopes, from storms to northern lights, from galaxies to the Endless Summit. The higher you climb, the harder the puzzles and the brighter the worlds.",
-  "worlds": [("forest", "Forest", "Floors 1–19"), ("dusk", "Sunset", "Floors 80–99"), ("lights", "Northern Lights", "Floors 140–159"), ("summit", "Endless Summit", "Floor 300 and beyond")],
-  "floor": "Floor",
-  "league_eyebrow": "League and friends", "league_h2": "Your floor is your score.",
-  "league_p": "Every week you join a league of 30 players. The floors you clear this week set your rank; the top seven move up a tier, the bottom five move down. Everyone shows with their chosen name, outfit and tower theme; pull down to refresh the standings instantly.",
-  "tiers": ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Master", "Legend"],
-  "zone": "PROMOTION ZONE · TOP 7", "you": "You", "kat": "floors",
-  "rows": [("1", "Ece", "48"), ("2", "You", "41"), ("3", "Deniz", "37"), ("4", "Kerem", "33")],
-  "features": [("daily", "#E3EEF9", "#2B5E8E", "Tower of the day", "The same ten floors for everyone, three attempts. Gems at floors 3, 6 and 10; where do you rank overall and among friends?"),
-               ("season", "#E6D9F7", "#6A45B8", "Monthly seasons", "A new reward track every month: earn gems, outfits and tower themes as you climb. Each season brings its own exclusive outfit and theme."),
-               ("friends", "#DCEBD6", "#2E7D5B", "Friends", "Share your invite code, see where everyone is in the tower, get a heads-up when you pass them."),
-               ("flame", "#FBE3D1", "#D9731F", "Chests and streaks", "A chest every 10 clean floors (5–20 gems), a star chest every 20 stars. One floor a day keeps your streak alive.")],
-  "values_eyebrow": "Calm and fair", "values_h2": "Made for a clear head.",
-  "values": [("check", "#DCEBD6", "#2E7D5B", "Every puzzle has a solution", "Boards are solved as they are generated; it comes down to your moves, not luck."),
-             ("user", "#E3EEF9", "#2B5E8E", "No account needed", "Start right away. Sign in with Apple if you like, and your progress follows you to a new device."),
-             ("offline", "#FCEFCB", "#8A6400", "Plays offline", "Keep climbing on the train or a plane; your floors sync when you are back online."),
-             ("eye", "#E6D9F7", "#6A45B8", "Made for everyone", "Every tile has a shape as well as a colour; playable with VoiceOver; Time assist gives more or unlimited time."),
-             ("life", "#FBE3E3", "#E0565B", "Ads only when you choose", "Ads appear only when you ask for one: for a life or extra time. No interruptions."),
-             ("globe", "#E3EEF9", "#2B5E8E", "Six languages", "Türkçe, English, Deutsch, Français, Italiano, Español.")],
-  "faq_eyebrow": "FAQ", "faq_h2": "Questions",
-  "faq": [("Is Zirve free?", "Yes. Downloading and playing are free. Gem packs, the starter pack, the season set and the season's premium reward track are optional in-app purchases, billed by Apple."),
-          ("Which devices are supported?", "iPhone and iPad on iOS 18 or later, iPhone 11 and newer. There is no Android version for now."),
-          ("Do I need an account?", "No. A guest account is created for you on first launch. To move your progress to another device, sign in with Apple."),
-          ("What if the time is too short for me?", "Turn on Settings → Time assist for 1.5× or unlimited time on every floor. Stars still use the normal time and assisted floors don't count for the weekly league."),
-          ("What happens when I run out of lives?", "You have three lives. When they are gone you return to camp, but your record stays. Lives refill over time and reaching a camp gives one back; you can also refill by watching an ad or with gems."),
-          ("How is my data handled?", "We only process what the game needs to work; see the <a href=\"{r}en/privacy/\">Privacy Policy</a>. The rules of the game are in the <a href=\"{r}en/terms/\">Terms of Use</a>."),
-          ("How do I delete my account?", "In the app: Profile → Settings → Account → Delete account. See <a href=\"{r}en/delete-account/\">Delete your account</a>.")],
-  "cta_h2": "See you at the summit.", "cta_p": "Zirve is coming soon to the App Store. The first floors are waiting.",
-  "cta_p_live": "Zirve is free on the App Store. The first floors are waiting.",
-  "footer_tag": "Climb the tower, every floor a puzzle.",
-  "footer_links": [("en/privacy/", "Privacy"), ("en/terms/", "Terms"), ("en/delete-account/", "Delete account"), ("en/support/", "Support"), ("kvkk/", "KVKK (TR)")],
-  "fine": "© 2026 Mehmet Mutlu · Zirve · Apple, App Store and iPhone are trademarks of Apple Inc. This site uses no cookies or trackers.",
-  "back": "Home",
-},
-}
+# ------------------------------------------------------------------------------------------- assets
+def asset_version(rel):
+    """Short content hash for cache busting (?v=…), so a changed file never hits a stale cache."""
+    return hashlib.sha256((ROOT / rel).read_bytes()).hexdigest()[:10]
+
+
+FONT_PRELOAD = ("assets/fonts/fredoka-latin.woff2", "assets/fonts/nunito-latin.woff2")
+HERO = "tower-forest"
+CSP = ("default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; "
+       "font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; "
+       "upgrade-insecure-requests")
+
+
+def badge_size(code):
+    """Official badge rendered 48 px high (Apple: at least 40 px); width from the SVG's own aspect ratio."""
+    svg = (ROOT / f"assets/badges/app-store-{LANG[code].badge}.svg").read_text()
+    w, h = (float(x) for x in re.search(r'width="([\d.]+)" height="([\d.]+)"', svg).groups())
+    return round(48 * w / h), 48
+
+
+def badge(t, cls=""):
+    w, h = badge_size(t.code)
+    klass = f"store-badge {cls}".strip()
+    return (f'<a class="{klass}" href="{APP_STORE_URL}"><img src="/assets/badges/app-store-{t.lang.badge}.svg" '
+            f'width="{w}" height="{h}" alt="{t.e("badge.alt")}"></a>')
+
+
+def og_image(code):
+    """Localised OG card when it is rendered and current (assets/og/rendered.json), else the Turkish default."""
+    path = f"assets/og/og-{code}.jpg"
+    if (ROOT / path).exists() and og_fresh(code):
+        return path
+    return "assets/og.jpg"
+
+
+def og_card(code):
+    t = T(code)
+    return {"file": f"assets/og/og-{code}.jpg", "line1": t("og.line1"), "line2": t("og.line2"), "subline": t("og.sub")}
+
+
+def og_fresh(code):
+    rendered = ROOT / "assets/og/rendered.json"
+    if not rendered.exists():
+        return False
+    cards = {c["file"]: c for c in json.loads(rendered.read_text()).get("cards", [])}
+    return cards.get(f"assets/og/og-{code}.jpg") == og_card(code)
+
+
+# ------------------------------------------------------------------------------------------- JSON-LD
+ORG_ID, SITE_ID, APP_ID = "https://mm-apps.com/#org", f"{BASE}/#site", f"{BASE}/#app"
+
+
+def jsonld(nodes):
+    data = {"@context": "https://schema.org", "@graph": nodes}
+    text = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+    return '<script type="application/ld+json">' + text.replace("</", "<\\/") + "</script>"
+
+
+def common_nodes(t, url, title, desc, *, types="WebPage", crumbs=None, image=None, extra=None):
+    page = {"@type": types, "@id": url + "#webpage", "url": url, "name": title, "description": desc,
+            "inLanguage": t.lang.html_lang, "isPartOf": {"@id": SITE_ID}, "about": {"@id": APP_ID},
+            "dateModified": LASTMOD_ISO}
+    if image:
+        page["primaryImageOfPage"] = {"@type": "ImageObject", "url": image}
+    nodes = [
+        {"@type": "Organization", "@id": ORG_ID, "name": FACTS["developer"], "url": SITE["developerUrl"]},
+        {"@type": "WebSite", "@id": SITE_ID, "url": BASE + "/", "name": "Zirve",
+         "inLanguage": [LANG[c].html_lang for c in ACTIVE], "publisher": {"@id": ORG_ID}},
+        page,
+    ]
+    if crumbs:
+        page["breadcrumb"] = {"@id": url + "#breadcrumb"}
+        items = []
+        for i, (name, link) in enumerate(crumbs, 1):
+            item = {"@type": "ListItem", "position": i, "name": name}
+            if link:
+                item["item"] = link
+            items.append(item)
+        nodes.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": items})
+    page.update(extra or {})
+    return nodes
+
+
+def app_node(t):
+    """The app (VideoGame + MobileApplication), same @id in every language; honest fields only (plan §5.14 B)."""
+    names = [FACTS["storeNames"][c] for c in LIVE["appLanguages"] if c in FACTS["storeNames"]]
+    node = {
+        "@type": ["VideoGame", "MobileApplication"], "@id": APP_ID, "name": "Zirve",
+        "alternateName": list(dict.fromkeys(names)),
+        "description": t("definition"),
+        "url": page_url("home", t.code),
+        "image": f"{BASE}/assets/icon-512.png",
+        "screenshot": [f"{BASE}/assets/shots/{n}.webp" for n in ("tower-forest", "play-path", "play-color", "play-blocks", "play-arrows")],
+        "applicationCategory": "GameApplication", "applicationSubCategory": "Puzzle",
+        "operatingSystem": f"iOS {FACTS['minOS']} or later, iPadOS {FACTS['minOS']} or later",
+        "gamePlatform": FACTS["platforms"], "genre": ["Puzzle", "Logic puzzle"], "playMode": "SinglePlayer",
+        "inLanguage": LIVE["appLanguages"], "isAccessibleForFree": True,
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "installUrl": APP_STORE_URL, "sameAs": [APP_STORE_URL, SITE["developerAppPage"]],
+        "datePublished": FACTS["datePublished"], "softwareVersion": LIVE["softwareVersion"],
+        "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID},
+    }
+    if FACTS["schemaAccessibilityFeature"]:
+        node["accessibilityFeature"] = FACTS["schemaAccessibilityFeature"]
+    if FACTS["ageRating"]:
+        node["contentRating"] = FACTS["ageRating"]
+    return node
+
 
 # ------------------------------------------------------------------------------------------- layout
-def head(t, r, title, desc, canonical, extra=""):
-    return f"""<!doctype html>
-<html lang="{t['lang']}">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(desc)}">
-{extra + chr(10) if extra else ""}<meta name="theme-color" content="#F4F6F1">
-<link rel="canonical" href="{canonical}">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{html.escape(title)}">
-<meta property="og:description" content="{html.escape(desc)}">
-<meta property="og:image" content="https://zirve.mm-apps.com/assets/og.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="{r}assets/icon-64.png" sizes="64x64" type="image/png">
-<link rel="apple-touch-icon" href="{r}assets/icon-180.png">
-<link rel="preload" href="{r}assets/fonts/Fredoka.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{r}assets/fonts/Nunito.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/site.css">
-</head>
-<body>
-"""
+def head(t, page, title, desc, *, graph=None, noindex=False, preload=False):
+    langs = doc_langs(page) if page else []
+    url = page_url(page, t.code) if page else None
+    out = [f'<!doctype html>\n<html lang="{t.lang.html_lang}">\n<head>\n<meta charset="utf-8">',
+           '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
+           f"<title>{html.escape(title)}</title>",
+           f'<meta name="description" content="{html.escape(desc)}">',
+           f'<meta http-equiv="Content-Security-Policy" content="{CSP}">',
+           '<meta name="referrer" content="strict-origin-when-cross-origin">',
+           '<meta name="theme-color" content="#F4F6F1">']
+    if noindex:
+        out.append('<meta name="robots" content="noindex">')
+    else:
+        out.append(f'<meta http-equiv="content-language" content="{t.lang.html_lang}">')
+        out.append(f'<link rel="canonical" href="{url}">')
+        for c in langs:
+            for code in LANG[c].hreflang:
+                out.append(f'<link rel="alternate" hreflang="{code}" href="{page_url(page, c)}">')
+        default = X_DEFAULT if X_DEFAULT in langs else SOURCE_LANG
+        out.append(f'<link rel="alternate" hreflang="x-default" href="{page_url(page, default)}">')
+    arg = SMART_BANNER_ARG.get(page)
+    out.append(f'<meta name="apple-itunes-app" content="app-id={FACTS["appStoreId"]}' + (f', app-argument={arg}"' if arg else '"') + ">")
+    og = og_image(t.code)
+    out += ['<meta property="og:type" content="website">', '<meta property="og:site_name" content="Zirve">',
+            f'<meta property="og:title" content="{html.escape(title)}">',
+            f'<meta property="og:description" content="{html.escape(desc)}">',
+            f'<meta property="og:locale" content="{t.lang.og_locale}">']
+    if url:
+        out.append(f'<meta property="og:url" content="{url}">')
+    out += [f'<meta property="og:locale:alternate" content="{LANG[c].og_locale}">' for c in langs if c != t.code]
+    out += [f'<meta property="og:image" content="{BASE}/{og}">', '<meta property="og:image:width" content="1200">',
+            '<meta property="og:image:height" content="630">',
+            f'<meta property="og:image:alt" content="{t.e("og.alt") if og.endswith(t.code + ".jpg") else html.escape(T(SOURCE_LANG)("og.alt"))}">',
+            '<meta name="twitter:card" content="summary_large_image">',
+            '<link rel="icon" href="/assets/icon-64.png" sizes="64x64" type="image/png">',
+            '<link rel="apple-touch-icon" href="/assets/icon-180.png">']
+    if preload and t.lang.script == "latin":
+        out += [f'<link rel="preload" href="/{f}" as="font" type="font/woff2" crossorigin>' for f in FONT_PRELOAD]
+    out += [f'<link rel="stylesheet" href="/assets/site.css?v={asset_version("assets/site.css")}">',
+            f'<script src="/assets/site.js?v={asset_version("assets/site.js")}" defer></script>']
+    if graph:
+        out.append(jsonld(graph))
+    out.append("</head>\n<body>")
+    return "\n".join(out) + "\n"
 
-def nav(t, r, home, links, other_href):
+
+def lang_menu(t, page):
+    """<details> language menu (no JS needed). Each language links to this page in that language, or to its home."""
+    available = doc_langs(page) if page else []
+    items = []
+    for c in ACTIVE:
+        other = T(c)
+        target = page if c in available else "home"
+        current = ' aria-current="true"' if c == t.code else ""
+        alt = ' data-alternate="1"' if target == page and c != t.code else ""
+        items.append(f'<li><a href="/{page_path(target, c)}" hreflang="{LANG[c].html_lang}" lang="{LANG[c].html_lang}"{current}{alt}'
+                     f' data-hint="{other.e("langhint.text")}" data-close="{other.e("langhint.close")}">{html.escape(LANG[c].name)}</a></li>')
+    return (f'<details class="langs"><summary aria-label="{t.e("nav.language")}: {html.escape(t.lang.name)}">{I["globe"]}'
+            f'<span>{html.escape(t.lang.html_lang if "-" in t.lang.html_lang else t.lang.html_lang.upper())}</span></summary><ul>{"".join(items)}</ul></details>')
+
+
+def nav(t, page, links):
+    home = t.href("home")
     items = "".join(f'<a href="{h}">{html.escape(l)}</a>' for h, l in links)
-    return f"""<header class="nav"><div class="wrap">
+    menu = (f'<details class="menu"><summary>{t.e("nav.menu")}</summary><nav aria-label="{t.e("nav.sections")}">{items}</nav></details>'
+            if links else "")
+    return f"""<a class="skip" href="#main">{t.e("nav.skip")}</a>
+<header class="nav"><div class="wrap">
   <a class="brand" href="{home}" aria-label="Zirve">{mascot()}<span>Zirve</span></a>
-  <nav class="nav-links" aria-label="{'Bölümler' if t['lang']=='tr' else 'Sections'}">{items}</nav>
-  <a class="lang" href="{other_href}" hreflang="{t['other_lang']}" lang="{t['other_lang']}" title="{t['other_name']}">{t['other_label']}</a>
+  <nav class="nav-links" aria-label="{t.e("nav.sections")}">{items}</nav>
+  {menu}{lang_menu(t, page)}
 </div></header>
 """
 
-SCRIPT = """<script>
-  // Header border after scrolling (progressive enhancement; the page works without it).
-  (function () { var n = document.querySelector('.nav'); if (!n) return;
-    var f = function () { n.classList.toggle('is-scrolled', window.scrollY > 8); }; f(); window.addEventListener('scroll', f, { passive: true }); })();
-</script>
+
+def footer(t):
+    links = "".join(f'<a href="{t.href(p)}">{html.escape(l)}</a>' for p, l in t("footer.links"))
+    links += f'<a href="mailto:{SITE["contact"]}">{SITE["contact"]}</a>'
+    updated = t.e("footer.updated", date="\x00").replace("\x00", f'<time datetime="{LASTMOD_ISO}">{LASTMOD_HUMAN}</time>')
+    return f"""<footer><div class="wrap">
+  <div class="footer-brand"><a class="brand" href="{t.href("home")}" aria-label="Zirve">{mascot()}<span>Zirve</span></a><p class="tag">{t.e("footer.tag")}</p><p class="definition">{t.e("definition")}</p></div>
+  <nav aria-label="{t.e("footer.links_label")}">{links}</nav>
+  <p class="fine">{t.e("footer.fine")} · <a href="{SITE["developerAppPage"]}">{t.e("footer.by")}</a> · {updated}</p>
+  <p class="fine" lang="en">{html.escape(SITE["trademarkLine"])}</p>
+</div></footer>
 </body>
 </html>
 """
 
-def footer(t, r):
-    links = "".join(f'<a href="{r}{h}">{html.escape(l)}</a>' for h, l in t["footer_links"])
-    links += f'<a href="mailto:{CONTACT}">{CONTACT}</a>'
-    return f"""<footer><div class="wrap">
-  <div><a class="brand" href="{r}{'en/' if t['lang']=='en' else ''}" aria-label="Zirve">{mascot()}<span>Zirve</span></a><p style="margin:12px 0 0">{html.escape(t['footer_tag'])}</p></div>
-  <nav aria-label="{'Bağlantılar' if t['lang']=='tr' else 'Links'}">{links}</nav>
-  <p class="fine">{html.escape(t['fine'])}</p>
-</div></footer>
-""" + SCRIPT
-
-def store_badge(t, cls=""):
-    small, big = live(t, "badge_small"), live(t, "badge_big")
-    target = f'href="{APP_STORE_URL}"' if APP_STORE_LIVE else 'aria-disabled="true" role="link"'
-    return (f'<a class="store-badge {cls}" {target} aria-label="{html.escape(small + " " + big)}">'
-            f'{APPLE}<span><small>{html.escape(small)}</small><b>{html.escape(big)}</b></span></a>')
 
 # ------------------------------------------------------------------------------------------- landing
-def landing(lang):
-    t = S[lang]
-    r = "" if lang == "tr" else "../"
-    ids = {"tr": ("nasil", "oyunlar", "dunyalar", "lig", "sss"), "en": ("how", "games", "worlds", "league", "faq")}[lang]
-    canonical = "https://zirve.mm-apps.com/" + ("" if lang == "tr" else "en/")
-    out = head(t, r, t["title"], t["desc"], canonical)
-    out += nav(t, r, "./", t["nav"], ("en/" if lang == "tr" else "../"))
-    trust = "".join(f"<li>{I['check']}{html.escape(x)}</li>" for x in t["trust"])
-    stars = "".join(f'<span style="color:#F2B531">{I["star"]}</span>' for _ in range(3))
-    out += f"""<main>
+WORLD_DECO = {
+    "forest": '<i class="deco" style="width:160px;height:120px;background:#A9CFA0;right:-50px;bottom:60px;opacity:.6"></i>',
+    # 16 zones since 31 Oct; the site shows four of them, the show growing with the climb.
+    "dusk": '<i class="deco" style="width:130px;height:130px;background:#F28C38;right:-40px;bottom:50px;border-radius:50%;opacity:.8"></i><i class="deco" style="width:180px;height:30px;background:#FCE9D6;left:-30px;bottom:40px;opacity:.9"></i>',
+    "lights": '<i class="deco" style="width:260px;height:60px;background:linear-gradient(90deg,transparent,#7FE0B0,transparent);left:-40px;top:30px;filter:blur(8px);opacity:.8"></i><i class="deco" style="width:240px;height:44px;background:linear-gradient(90deg,transparent,#A58AE0,transparent);right:-50px;top:90px;filter:blur(8px);opacity:.7"></i><i class="deco" style="width:3px;height:3px;background:#fff;left:70%;bottom:150px"></i>',
+    "summit": '<i class="deco" style="width:220px;height:220px;background:radial-gradient(circle,#F5C542 0%,transparent 65%);left:50%;top:-110px;transform:translateX(-50%);opacity:.7"></i><i class="deco" style="width:46px;height:46px;background:#B6E3EC;right:16px;bottom:120px;border-radius:10px;transform:rotate(45deg);box-shadow:0 0 18px #B6E3EC;opacity:.9"></i><i class="deco" style="width:5px;height:5px;background:#FFF4C2;left:24%;bottom:150px;box-shadow:0 0 8px #F5C542"></i>',
+}
+WORLD_BASE = {"forest": 6, "dusk": 86, "lights": 146, "summit": 306}
+UNLOCK = {k["id"]: k["unlockCamp"] for k in FACTS["puzzleKinds"]}
+
+
+def hero_picture(alt):
+    shots = "/assets/shots/" + HERO
+    sizes = "(max-width: 900px) min(74vw, 290px), 330px"
+    return (f'<picture><source type="image/avif" srcset="{shots}-320.avif 320w, {shots}.avif 603w" sizes="{sizes}">'
+            f'<source type="image/webp" srcset="{shots}-320.webp 320w, {shots}.webp 603w" sizes="{sizes}">'
+            f'<img src="{shots}.webp" width="603" height="1311" fetchpriority="high" decoding="async" alt="{html.escape(alt)}"></picture>')
+
+
+def landing(code):
+    t = T(code)
+    ids = [h[1:] for h, _ in t("home.nav")]
+    title, desc = t("home.title"), t("home.desc")
+    url = page_url("home", code)
+    graph = common_nodes(t, url, title, desc, image=f"{BASE}/assets/shots/{HERO}.webp") + [app_node(t)]
+    out = head(t, "home", title, desc, graph=graph, preload=True)
+    out += nav(t, "home", t("home.nav"))
+    trust = "".join(f"<li>{I['check']}{html.escape(x['text'])}</li>" for x in t("home.trust") if requirement_met(x))
+    stars = "".join(f'<span class="star">{I["star"]}</span>' for _ in range(3))
+    f1, f2, f3 = t("home.float")
+    out += f"""<main id="main">
 <section class="hero"><div class="wrap">
   <div>
-    <span class="chip-soon"><i></i>{html.escape(live(t, 'soon'))}</span>
-    <h1>{t['h1']}</h1>
-    <p class="lead">{html.escape(t['lead'])}</p>
-    <div class="hero-cta">{store_badge(t)}<a class="btn btn-ghost" href="#{ids[0]}">{html.escape(t['how_btn'])}</a></div>
+    <span class="chip-soon"><i></i>{t.e('home.chip')}</span>
+    <h1>{t('home.h1_html')}</h1>
+    <p class="lead">{t.e('home.lead')}</p>
+    <div class="hero-cta">{badge(t)}<a class="btn btn-ghost" href="#{ids[0]}">{t.e('home.how_btn')}</a></div>
     <ul class="trust">{trust}</ul>
   </div>
   <div class="hero-art">
-    <div class="phone"><img src="{r}assets/shots/tower-forest.webp" width="603" height="1311" alt="{'Zirve ana ekranı: orman temasında kule, kat 6' if lang=='tr' else 'Zirve home screen: the forest tower at floor 6'}"></div>
-    <div class="float f1"><span style="color:#D9731F">{I['flame']}</span><span>{t['f1'][0]}<small>{t['f1'][1]}</small></span></div>
-    <div class="float f2"><span class="stars">{stars}</span><span>{t['f2'][0]}</span></div>
-    <div class="float f3"><span style="color:#E0565B">{I['life']}</span><span>{t['f3'][0]}<small>{t['f3'][1]}</small></span></div>
+    <div class="phone">{hero_picture(t('home.hero_alt'))}</div>
+    <div class="float f1"><span class="ic-flame">{I['flame']}</span><span>{html.escape(f1[0])}<small>{html.escape(f1[1])}</small></span></div>
+    <div class="float f2"><span class="stars">{stars}</span><span>{html.escape(f2[0])}</span></div>
+    <div class="float f3"><span class="ic-life">{I['life']}</span><span>{html.escape(f3[0])}<small>{html.escape(f3[1])}</small></span></div>
   </div>
 </div></section>
 """
-    steps = "".join(f'<div class="step"><div class="num">{i+1}</div><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></div>' for i, (h, p) in enumerate(t["steps"]))
+    steps = "".join(f'<div class="step"><div class="num">{i+1}</div><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></div>'
+                    for i, (h, p) in enumerate(t("home.steps")))
     out += f"""<section id="{ids[0]}"><div class="wrap">
-  <div class="section-head"><span class="eyebrow">{t['how_eyebrow']}</span><h2>{html.escape(t['how_h2'])}</h2><p>{html.escape(t['how_p'])}</p></div>
+  <div class="section-head"><span class="eyebrow">{t.e('home.how_eyebrow')}</span><h2>{t.e('home.how_h2')}</h2><p>{t.e('home.how_p')}</p></div>
   <div class="steps">{steps}</div>
 </div></section>
 """
-    def game(k, n, unlock, goal, how, harder):
-        steps = "".join(f"<li>{html.escape(x)}</li>" for x in how)
-        more = "".join(f"<li>{html.escape(x)}</li>" for x in harder)
+
+    def game(g):
+        k = g["id"]
+        name = t(f"game.name.{k}")
+        how = "".join(f"<li>{html.escape(x)}</li>" for x in g["how"])
+        more = "".join(f"<li>{html.escape(x)}</li>" for x in g["harder"])
         return (f'<article class="game" id="{k}"><div class="art">{G[k]}</div><div class="body">'
-                f'<div class="game-head"><h3>{html.escape(n)}</h3><span class="unlock">{html.escape(unlock)}</span></div>'
-                f'<p class="goal">{html.escape(goal)}</p>'
-                f'<h4>{html.escape(t["how_label"])}</h4><ol>{steps}</ol>'
-                f'<h4>{html.escape(t["harder_label"])}</h4><ul>{more}</ul></div></article>')
-    games = "".join(game(*g) for g in t["games"])
-    shots = "".join(f'<figure><div class="phone sm"><img src="{r}assets/shots/{f}.webp" width="603" height="1311" loading="lazy" alt="{html.escape(c)}"></div><figcaption>{html.escape(c)}</figcaption></figure>' for f, c in t["shots"])
-    out += f"""<section id="{ids[1]}" style="background:#fff"><div class="wrap">
-  <div class="section-head"><span class="eyebrow">{t['games_eyebrow']}</span><h2>{html.escape(t['games_h2'])}</h2><p>{html.escape(t['games_p'])}</p></div>
+                f'<div class="game-head"><h3>{html.escape(name)}</h3><span class="unlock">{t.e("game.unlock", floor=UNLOCK[k] + 1)}</span></div>'
+                f'<p class="goal">{html.escape(g["goal"])}</p>'
+                f'<h4>{t.e("home.how_label")}</h4><ol>{how}</ol>'
+                f'<h4>{t.e("home.harder_label")}</h4><ul>{more}</ul></div></article>')
+
+    games = "".join(game(g) for g in t("home.games"))
+    shot = lambda f, cap: (f'<figure><div class="phone sm"><img src="/assets/shots/{f}.webp" width="603" height="1311" loading="lazy" '
+                           f'decoding="async" alt="{html.escape(cap)}"></div><figcaption>{html.escape(cap)}</figcaption></figure>')
+    shots = "".join(shot(f, t(f"game.name.{k}")) for f, k in t("home.shots"))
+    out += f"""<section id="{ids[1]}" class="white"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">{t.e('home.games_eyebrow')}</span><h2>{t.e('home.games_h2')}</h2><p>{t.e('home.games_p')}</p></div>
   <div class="games">{games}</div>
   <div class="shots">{shots}</div>
 </div></section>
 """
+
     def world(key, name, floors):
-        base = {"forest": 6, "dusk": 86, "lights": 146, "summit": 306}[key]
-        rows = "".join(f'<span>{t["floor"]} {base + i}</span>' for i in (3, 2, 1))
-        rows += f'<span class="you">{t["floor"]} {base}</span>'
-        deco = {"forest": '<i class="deco" style="width:160px;height:120px;background:#A9CFA0;right:-50px;bottom:60px;opacity:.6"></i>',
-                "clouds": '<i class="deco" style="width:170px;height:60px;background:#fff;right:-40px;bottom:90px;opacity:.9"></i><i class="deco" style="width:110px;height:44px;background:#fff;left:-30px;bottom:150px;opacity:.8"></i>',
-                "space": '<i class="deco" style="width:120px;height:120px;background:#8C8FA6;right:-40px;bottom:70px;opacity:.55"></i><i class="deco" style="width:4px;height:4px;background:#FFF4C2;left:30%;bottom:120px"></i><i class="deco" style="width:3px;height:3px;background:#fff;left:70%;bottom:150px"></i>',
-                "crystal": '<i class="deco" style="width:110px;height:110px;background:#B6E3EC;right:-30px;bottom:70px;border-radius:24px;transform:rotate(45deg);opacity:.8"></i>',
-                # 16 zones since 31 Oct; the site shows four of them, the show growing with the climb.
-                "dusk": '<i class="deco" style="width:130px;height:130px;background:#F28C38;right:-40px;bottom:50px;border-radius:50%;opacity:.8"></i><i class="deco" style="width:180px;height:30px;background:#FCE9D6;left:-30px;bottom:40px;opacity:.9"></i>',
-                "lights": '<i class="deco" style="width:260px;height:60px;background:linear-gradient(90deg,transparent,#7FE0B0,transparent);left:-40px;top:30px;filter:blur(8px);opacity:.8"></i><i class="deco" style="width:240px;height:44px;background:linear-gradient(90deg,transparent,#A58AE0,transparent);right:-50px;top:90px;filter:blur(8px);opacity:.7"></i><i class="deco" style="width:3px;height:3px;background:#fff;left:70%;bottom:150px"></i>',
-                "summit": '<i class="deco" style="width:220px;height:220px;background:radial-gradient(circle,#F5C542 0%,transparent 65%);left:50%;top:-110px;transform:translateX(-50%);opacity:.7"></i><i class="deco" style="width:46px;height:46px;background:#B6E3EC;right:16px;bottom:120px;border-radius:10px;transform:rotate(45deg);box-shadow:0 0 18px #B6E3EC;opacity:.9"></i><i class="deco" style="width:5px;height:5px;background:#FFF4C2;left:24%;bottom:150px;box-shadow:0 0 8px #F5C542"></i>'}[key]
-        return f'<article class="world {key}">{deco}<div class="rows" aria-hidden="true">{rows}</div><h3>{html.escape(name)}</h3><p>{html.escape(floors)}</p></article>'
-    worlds = "".join(world(*w) for w in t["worlds"])
+        base = WORLD_BASE[key]
+        rows = "".join(f'<span>{t.e("home.floor")} {base + i}</span>' for i in (3, 2, 1))
+        rows += f'<span class="you">{t.e("home.floor")} {base}</span>'
+        return (f'<article class="world {key}">{WORLD_DECO[key]}<div class="rows" aria-hidden="true">{rows}</div>'
+                f'<h3>{html.escape(name)}</h3><p>{html.escape(floors)}</p></article>')
+
+    worlds = t("home.worlds")
+    world_shots = "".join(shot(f"tower-{w[0]}", w[1]) for w in worlds)
     out += f"""<section id="{ids[2]}"><div class="wrap">
-  <div class="section-head"><span class="eyebrow">{t['worlds_eyebrow']}</span><h2>{html.escape(t['worlds_h2'])}</h2><p>{html.escape(t['worlds_p'])}</p></div>
-  <div class="worlds">{worlds}</div>
-  <div class="shots">""" + "".join(f'<figure><div class="phone sm"><img src="{r}assets/shots/{f}.webp" width="603" height="1311" loading="lazy" alt="{html.escape(c)}"></div><figcaption>{html.escape(c)}</figcaption></figure>'
-                                 for f, c in [("tower-forest", t["worlds"][0][1]), ("tower-dusk", t["worlds"][1][1]), ("tower-lights", t["worlds"][2][1]), ("tower-summit", t["worlds"][3][1])]) + """</div>
+  <div class="section-head"><span class="eyebrow">{t.e('home.worlds_eyebrow')}</span><h2>{t.e('home.worlds_h2')}</h2><p>{t.e('home.worlds_p')}</p></div>
+  <div class="worlds">{"".join(world(*w) for w in worlds)}</div>
+  <div class="shots">{world_shots}</div>
 </div></section>
 """
-    tiers = "".join(f'<span class="{"on" if i == 0 else ""}"><i></i>{html.escape(n)}</span>' for i, n in enumerate(t["tiers"]))
-    outfits = [("#2E7D5B", "#F08A3C", "#D9731F"), ("#2E7D5B", "#F08A3C", "#D9731F"), ("#E0A93A", "#E0A93A", "#B57F1A"), ("#2B5E8E", "#B6E3EC", "#6FA8DC")]
+    tiers = "".join(f'<span class="{"on" if i == 0 else ""}"><i></i>{t.e(f"tier.{tid}")}</span>' for i, tid in enumerate(LIVE["leagueTiers"]))
+    outfits = [("#E0A93A", "#E0A93A", "#B57F1A"), ("#2E7D5B", "#F08A3C", "#D9731F"), ("#2B5E8E", "#B6E3EC", "#6FA8DC"), ("#2E7D5B", "#F08A3C", "#D9731F")]
     rows = ""
-    for (rank, name, score), (b, h, bd) in zip(t["rows"], [outfits[2], outfits[0], outfits[3], outfits[1]]):
-        cls = "me" if name in ("Sen", "You") else "up"
-        rows += f'<div class="row {cls}"><span class="rank">{rank}</span><span class="av">{mascot(b, h, bd)}</span><span>{html.escape(name)}</span><span class="score">{score} {t["kat"]}</span></div>'
-    feats = "".join(f'<div class="feature"><span class="ic" style="background:{bg};color:{fg}">{I[ic]}</span><div><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></div></div>' for ic, bg, fg, h, p in t["features"])
-    out += f"""<section id="{ids[3]}" style="background:#fff"><div class="wrap league">
-  <div class="board" role="img" aria-label="{'Örnek lig sıralaması' if lang=='tr' else 'Sample league standings'}">
+    for (rank, name, score), (b, h, bd) in zip(t("home.rows"), outfits):
+        cls = "me" if name == t("home.you") else "up"
+        rows += (f'<div class="row {cls}"><span class="rank">{rank}</span><span class="av">{mascot(b, h, bd)}</span>'
+                 f'<span>{html.escape(name)}</span><span class="score">{t.e("home.score", n=score)}</span></div>')
+    feats = "".join(f'<div class="feature"><span class="ic" style="background:{bg};color:{fg}">{I[ic]}</span><div><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></div></div>'
+                    for ic, bg, fg, h, p in t("home.features"))
+    out += f"""<section id="{ids[3]}" class="white"><div class="wrap league">
+  <div class="board" role="img" aria-label="{t.e('home.board_label')}">
     <div class="tiers">{tiers}</div>
-    <div class="zone">↑ {t['zone']}</div>
+    <div class="zone">↑ {t.e('home.zone')}</div>
     {rows}
   </div>
   <div>
-    <div class="section-head" style="margin-bottom:0"><span class="eyebrow">{t['league_eyebrow']}</span><h2>{html.escape(t['league_h2'])}</h2><p>{html.escape(t['league_p'])}</p></div>
+    <div class="section-head flush"><span class="eyebrow">{t.e('home.league_eyebrow')}</span><h2>{t.e('home.league_h2')}</h2><p>{t.e('home.league_p')}</p></div>
     <div class="features">{feats}</div>
   </div>
 </div></section>
 """
-    values = "".join(f'<div class="value"><span class="ic" style="background:{bg};color:{fg}">{I[ic]}</span><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></div>' for ic, bg, fg, h, p in t["values"])
+    values = "".join(f'<div class="value"><span class="ic" style="background:{v["bg"]};color:{v["fg"]}">{I[v["icon"]]}</span><h3>{html.escape(v["h"])}</h3><p>{html.escape(v["p"])}</p></div>'
+                     for v in t("home.values") if requirement_met(v))
     out += f"""<section><div class="wrap">
-  <div class="section-head center"><span class="eyebrow">{t['values_eyebrow']}</span><h2>{html.escape(t['values_h2'])}</h2></div>
+  <div class="section-head center"><span class="eyebrow">{t.e('home.values_eyebrow')}</span><h2>{t.e('home.values_h2')}</h2></div>
   <div class="values">{values}</div>
 </div></section>
 """
-    faq = "".join(f"<details><summary>{html.escape(q)}</summary><p>{a.format(r=r)}</p></details>" for q, a in t["faq"])
-    out += f"""<section id="{ids[4]}" style="padding-top:0"><div class="wrap">
-  <div class="section-head center"><span class="eyebrow">{t['faq_eyebrow']}</span><h2>{html.escape(t['faq_h2'])}</h2></div>
+    faq = "".join(f"<details><summary>{html.escape(q)}</summary><p>{a}</p></details>" for q, a in t("home.faq_html"))
+    out += f"""<section id="{ids[4]}" class="flush-top"><div class="wrap">
+  <div class="section-head center"><span class="eyebrow">{t.e('home.faq_eyebrow')}</span><h2>{t.e('home.faq_h2')}</h2></div>
   <div class="faq">{faq}</div>
 </div></section>
 <div class="cta-band"><div class="wrap"><div class="cta-card">
   {mascot(cls="mascot")}
-  <div><h2>{html.escape(t['cta_h2'])}</h2><p>{html.escape(live(t, 'cta_p'))}</p></div>
-  {store_badge(t)}
+  <div><h2>{t.e('home.cta_h2')}</h2><p>{t.e('home.cta_p')}</p></div>
+  {badge(t)}
 </div></div></div>
 </main>
 """
-    out += footer(t, r)
-    return out
+    return out + footer(t)
+
 
 # ------------------------------------------------------------------------------------------- daily tower
 # The page a shared daily result links to (the app's "Sonucu paylaş"). Tile colours and icons match the share card.
-DAILY = {
-"tr": {
-  "title": "Günün kulesi · Zirve",
-  "desc": "Herkese aynı on kat, üç deneme. Zirve'de günün kulesine sen de tırman ve sonucunu paylaş.",
-  "chip": "Günün kulesi · her gece yenilenir",
-  "h1": "Bugün herkes <em>aynı kuleye</em> tırmanıyor.",
-  "lead": "Her gün herkese aynı on kat ve üç deneme. En iyi denemen sıralamaya girer. Sonucunu paylaştığında oyunlar ve tahtalar görünmez; kimsenin sürprizi bozulmaz.",
-  "note": "Zirve henüz App Store'da değil; şu an TestFlight'ta kapalı beta. Katılmak istersen <a href=\"mailto:{c}\">{c}</a> adresine yaz.",
-  "note_live": "Zirve yüklüyse sayfanın üstündeki bantta Aç'a dokun: günün kulesi açılır.",
-  "card_label": "Örnek sonuç: 10 kattan 7'si, 3 dakika 5 saniye",
-  "card_title": "Günün kulesi", "card_time": "3:05 toplam süre", "card_try": "Sen de dene",
-  "grid_eyebrow": "Sonuç", "grid_h2": "Kareler ne anlatıyor?",
-  "grid_p": "Paylaşılan sonuçta her kare bir kat: üst sıra 1–5, alt sıra 6–10. Her karenin rengi ve simgesi farklı, renk ayırt etmeden de okunur.",
-  "legend": [("perfect", "⭐", "3 yıldız hızında", "Kat, sürenin en az 15 saniyesi kala çözüldü."),
-             ("cleared", "🟩", "Çözüldü", "Kat, süre bitmeden çözüldü."),
-             ("continued", "🟨", "Devam ederek", "Süre bitti; reklam izleyerek ya da elmasla devam edilip çözüldü."),
-             ("failed", "🟥", "Süre bitti", "Deneme bu katta sona erdi."),
-             ("unreached", "⬜", "Ulaşılmadı", "Bu denemede o kata çıkılmadı.")],
-  "assist": "🕒 Süre yardımıyla satırı, denemede Süre yardımının açık olduğunu gösterir. Kareler yine normal süreye göre boyanır; yardımlı denemeler sıralamaya girmez.",
-  "how_eyebrow": "Nasıl oynanır", "how_h2": "On kat, üç deneme, bir sıralama.",
-  "steps": [("Kuleyi aç", "Zirve'de kule ekranındaki Günün kulesi kartına dokun. Kule her gece yarısı yenilenir ve herkes için aynıdır."),
-            ("Tırman", "Her kat kısa bir bulmaca. Üç denemen var; en iyisi ülke ve arkadaş sıralamasına girer. 3, 6 ve 10. katlarda elmas ödülü."),
-            ("Paylaş", "Deneme bitince Sonucu paylaş: kareler ve süre gider, oyunlar ve tahtalar gitmez.")],
-  "cta_h2": "Sıra sende.",
-  "cta_p": "Zirve çok yakında App Store'da. Bugünün kulesi seni bekliyor.",
-  "cta_p_live": "Zirve App Store'da, ücretsiz. Bugünün kulesi seni bekliyor.",
-},
-"en": {
-  "title": "Daily tower · Zirve",
-  "desc": "The same ten floors for everyone, three attempts. Climb today's tower in Zirve and share your result.",
-  "chip": "Daily tower · new every midnight",
-  "h1": "Today everyone climbs <em>the same tower</em>.",
-  "lead": "Every day, the same ten floors for everyone and three attempts. Your best attempt is ranked. When you share your result, the games and boards stay hidden, so nobody's surprise is spoiled.",
-  "note": "Zirve is not on the App Store yet; it is in a closed TestFlight beta. To join, write to <a href=\"mailto:{c}\">{c}</a>.",
-  "note_live": "Got Zirve? Tap Open in the banner at the top of this page to go straight to the daily tower.",
-  "card_label": "Sample result: 7 of 10 floors in 3 minutes 5 seconds",
-  "card_title": "Daily tower", "card_time": "3:05 total time", "card_try": "Your turn",
-  "grid_eyebrow": "Result", "grid_h2": "What do the squares mean?",
-  "grid_p": "Each square of a shared result is one floor: top row 1–5, bottom row 6–10. Every square has its own colour and icon, so it reads without colour too.",
-  "legend": [("perfect", "⭐", "At 3-star speed", "Solved with at least 15 seconds left."),
-             ("cleared", "🟩", "Solved", "Solved before the time ran out."),
-             ("continued", "🟨", "With a continue", "Time ran out; solved after continuing with an ad or gems."),
-             ("failed", "🟥", "Time ran out", "The attempt ended on this floor."),
-             ("unreached", "⬜", "Not reached", "The attempt did not get this far.")],
-  "assist": "A 🕒 With time assist line means Time assist was on during the attempt. The squares still follow the normal time; assisted attempts are not ranked.",
-  "how_eyebrow": "How to play", "how_h2": "Ten floors, three attempts, one ranking.",
-  "steps": [("Open the tower", "In Zirve, tap the Daily tower card on the tower screen. It renews every midnight and is the same for everyone."),
-            ("Climb", "Every floor is a quick puzzle. You get three attempts; the best one is ranked in your country and among friends. Gems at floors 3, 6 and 10."),
-            ("Share", "When the attempt is over, tap Share result: the squares and your time go out, the games and boards don't.")],
-  "cta_h2": "Your turn.",
-  "cta_p": "Zirve is coming soon to the App Store. Today's tower is waiting.",
-  "cta_p_live": "Zirve is free on the App Store. Today's tower is waiting.",
-},
-}
 DAILY_SAMPLE = ["perfect", "perfect", "cleared", "perfect", "perfect", "cleared", "continued", "failed", None, None]
 TILE_ICON = {"perfect": "star", "cleared": "check", "continued": "retry", "failed": "close"}
+
 
 def tile(kind):
     return f'<span class="tile {kind or "unreached"}">{I[TILE_ICON[kind]] if kind in TILE_ICON else ""}</span>'
 
-def daily(lang):
-    t, d = S[lang], DAILY[lang]
-    r = "../" if lang == "tr" else "../../"
-    home = r + ("en/" if lang == "en" else "")
-    out = head(t, r, d["title"], d["desc"], "https://zirve.mm-apps.com/" + ("daily/" if lang == "tr" else "en/daily/"), DAILY_BANNER)
-    out += nav(t, r, home, [(home, t["back"])], r + ("en/daily/" if lang == "tr" else "daily/"))
-    tiles = "".join(tile(k) for k in DAILY_SAMPLE)
-    note = live(d, "note").format(c=CONTACT)
+
+def daily(code):
+    t = T(code)
+    title, desc = t("daily.title"), t("daily.desc")
+    url = page_url("daily", code)
+    h1_text = re.sub(r"<[^>]+>", "", t("daily.h1_html"))
+    graph = common_nodes(t, url, title, desc, crumbs=[("Zirve", page_url("home", code)), (h1_text, None)])
+    out = head(t, "daily", title, desc, graph=graph, preload=True)
+    out += nav(t, "daily", [(t.href("home"), t("nav.back"))])
     legend = "".join(f'<li>{tile(None if k == "unreached" else k)}<div><h3><span aria-hidden="true">{e}</span> {html.escape(h)}</h3><p>{html.escape(p)}</p></div></li>'
-                     for k, e, h, p in d["legend"])
-    steps = "".join(f'<div class="step"><div class="num">{i+1}</div><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></div>' for i, (h, p) in enumerate(d["steps"]))
-    out += f"""<main>
+                     for k, e, h, p in t("daily.legend"))
+    steps = "".join(f'<div class="step"><div class="num">{i+1}</div><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></div>'
+                    for i, (h, p) in enumerate(t("daily.steps")))
+    out += f"""<main id="main">
 <section class="hero daily-hero"><div class="wrap">
   <div>
-    <span class="chip-soon"><i></i>{html.escape(d['chip'])}</span>
-    <h1>{d['h1']}</h1>
-    <p class="lead">{html.escape(d['lead'])}</p>
-    <div class="hero-cta">{store_badge(t)}</div>
-    <p class="store-note">{note}</p>
+    <span class="chip-soon"><i></i>{t.e('daily.chip')}</span>
+    <h1>{t('daily.h1_html')}</h1>
+    <p class="lead">{t.e('daily.lead')}</p>
+    <div class="hero-cta">{badge(t)}</div>
+    <p class="store-note">{t.e('daily.note')}</p>
   </div>
-  <div class="result-card" role="img" aria-label="{html.escape(d['card_label'])}">
-    <div class="result-head"><span class="brand">{mascot()}<span>Zirve</span></span><span class="result-day">{html.escape(d['card_title'])}</span></div>
+  <div class="result-card" role="img" aria-label="{t.e('daily.card_label')}">
+    <div class="result-head"><span class="brand">{mascot()}<span>Zirve</span></span><span class="result-day">{t.e('daily.card_title')}</span></div>
     <p class="result-score">7<small>/10</small></p>
-    <p class="result-time">{I['clock']}{html.escape(d['card_time'])}</p>
-    <div class="result-grid">{tiles}</div>
-    <p class="result-try">{html.escape(d['card_try'])}</p>
+    <p class="result-time">{I['clock']}{t.e('daily.card_time')}</p>
+    <div class="result-grid">{"".join(tile(k) for k in DAILY_SAMPLE)}</div>
+    <p class="result-try">{t.e('daily.card_try')}</p>
   </div>
 </div></section>
-<section style="background:#fff"><div class="wrap">
-  <div class="section-head"><span class="eyebrow">{d['grid_eyebrow']}</span><h2>{html.escape(d['grid_h2'])}</h2><p>{html.escape(d['grid_p'])}</p></div>
+<section class="white"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">{t.e('daily.grid_eyebrow')}</span><h2>{t.e('daily.grid_h2')}</h2><p>{t.e('daily.grid_p')}</p></div>
   <ul class="legend">{legend}</ul>
-  <p class="legend-assist">{html.escape(d['assist'])}</p>
+  <p class="legend-assist">{t.e('daily.assist')}</p>
 </div></section>
 <section><div class="wrap">
-  <div class="section-head"><span class="eyebrow">{d['how_eyebrow']}</span><h2>{html.escape(d['how_h2'])}</h2></div>
+  <div class="section-head"><span class="eyebrow">{t.e('daily.how_eyebrow')}</span><h2>{t.e('daily.how_h2')}</h2></div>
   <div class="steps">{steps}</div>
 </div></section>
 <div class="cta-band"><div class="wrap"><div class="cta-card">
   {mascot(cls="mascot")}
-  <div><h2>{html.escape(d['cta_h2'])}</h2><p>{html.escape(live(d, 'cta_p'))}</p></div>
-  {store_badge(t)}
+  <div><h2>{t.e('daily.cta_h2')}</h2><p>{t.e('daily.cta_p')}</p></div>
+  {badge(t)}
 </div></div></div>
 </main>
 """
-    out += footer(t, r)
-    return out
+    return out + footer(t)
+
 
 # ------------------------------------------------------------------------------------------- documents
-DOCS = [
-    # (output dir, lang, source file, title, description)
-    ("gizlilik", "tr", "privacy.tr.html", "Gizlilik Politikası · Zirve", "Zirve mobil oyununda kişisel verilerin nasıl işlendiği."),
-    ("en/privacy", "en", "privacy.en.html", "Privacy Policy · Zirve", "How the Zirve mobile game processes personal data."),
-    ("kosullar", "tr", "terms.tr.html", "Kullanım Koşulları · Zirve", "Zirve mobil oyununun kullanım koşulları."),
-    ("en/terms", "en", "terms.en.html", "Terms of Use · Zirve", "The terms of use of the Zirve mobile game."),
-    ("kvkk", "tr", "kvkk.tr.html", "KVKK Aydınlatma Metni · Zirve", "6698 sayılı Kanun m.10 kapsamında Zirve aydınlatma metni."),
-    ("hesap-silme", "tr", "delete.tr.html", "Hesap Silme · Zirve", "Zirve hesabını ve oyun verilerini silme."),
-    ("en/delete-account", "en", "delete.en.html", "Delete your account · Zirve", "How to delete your Zirve account and game data."),
-    ("destek", "tr", "support.tr.html", "Destek · Zirve", "Zirve için yardım ve iletişim."),
-    ("en/support", "en", "support.en.html", "Support · Zirve", "Help and contact for Zirve."),
-]
-OTHER = {"gizlilik": "en/privacy", "en/privacy": "gizlilik", "hesap-silme": "en/delete-account", "en/delete-account": "hesap-silme",
-         "destek": "en/support", "en/support": "destek", "kvkk": "en/privacy",
-         "kosullar": "en/terms", "en/terms": "kosullar"}
+def text_of(fragment):
+    """Visible text of an inline HTML fragment (tags removed, entities decoded, spaces collapsed)."""
+    return " ".join(html.unescape(re.sub(r"<[^>]+>", "", fragment)).split())
 
-def document(out_dir, lang, src, title, desc):
-    t = S[lang]
-    depth = out_dir.count("/") + 1
-    r = "../" * depth
-    body = (SRC / src).read_text().replace("{{CONTACT}}", CONTACT).replace("{{UPDATED}}", UPDATED[lang]).replace("{{R}}", r)
-    home = r + ("en/" if lang == "en" else "")
-    page = head(t, r, title, desc, f"https://zirve.mm-apps.com/{out_dir}/")
-    page += nav(t, r, home, [(home, t["back"])], r + OTHER[out_dir] + "/")
-    page += f'<main class="doc"><div class="wrap">{body}</div></main>\n'
-    page += footer(t, r)
-    return page
 
-def build():
-    written = []
+def faq_pairs(body):
+    """Question/answer pairs of the support page: every <h3> followed by its <p> (FAQPage source, plan §5.7)."""
+    return [(text_of(q), text_of(a)) for q, a in re.findall(r"<h3>(.*?)</h3>\s*<p>(.*?)</p>", body, re.S)]
+
+
+def document(doc, code):
+    t = T(code)
+    body = ((SRC / f"{doc}.{code}.html").read_text().replace("{{CONTACT}}", SITE["contact"])
+            .replace("{{UPDATED}}", t("legal.updated")).replace("{{R}}", "/"))
+    title, desc = t(f"doc.{doc}.title"), t(f"doc.{doc}.desc")
+    url = page_url(doc, code)
+    h1 = text_of(re.search(r"<h1>(.*?)</h1>", body, re.S).group(1))
+    extra, types = None, "WebPage"
+    if doc == "support":
+        pairs = faq_pairs(body)
+        types = ["WebPage", "FAQPage"]
+        extra = {"mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in pairs]}
+    graph = common_nodes(t, url, title, desc, types=types, crumbs=[("Zirve", page_url("home", code)), (h1, None)], extra=extra)
+    page = head(t, doc, title, desc, graph=graph)
+    page += nav(t, doc, [(t.href("home"), t("nav.back"))])
+    page += f'<main id="main" class="doc"><div class="wrap">{body}</div></main>\n'
+    return page + footer(t)
+
+
+def not_found():
+    """One page for every language (served for any missing path): noindex, no canonical, no hreflang (plan §5.13)."""
+    t = T(SOURCE_LANG)
+    lines = "".join(f'<li lang="{LANG[c].html_lang}"><span>{T(c).e("notfound.line")}</span> '
+                    f'<a href="/{page_path("home", c)}">{T(c).e("notfound.home")}</a></li>' for c in ACTIVE)
+    out = head(t, None, t("notfound.title"), t("notfound.line"), noindex=True)
+    out += nav(t, None, [])
+    out += (f'<main id="main" class="doc notfound"><div class="wrap"><h1>{t.e("notfound.h1")}</h1>'
+            f'<ul class="notfound-list">{lines}</ul></div></main>\n')
+    return out + footer(t)
+
+
+# ------------------------------------------------------------------------------------------- root files
+ROBOTS = """# Zirve: all crawlers welcome (search, user-initiated fetches and training)
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Google-Extended
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: CCBot
+Allow: /
+
+Sitemap: {base}/sitemap.xml
+"""
+
+
+def sitemap(pages, lastmod):
+    """Every indexable page with its real last change and its language alternates (xhtml:link)."""
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    for page, code in pages:
+        langs = doc_langs(page)
+        out.append(f"  <url><loc>{page_url(page, code)}</loc><lastmod>{lastmod[page_path(page, code)]['date']}</lastmod>")
+        for c in langs:
+            for h in LANG[c].hreflang:
+                out.append(f'    <xhtml:link rel="alternate" hreflang="{h}" href="{page_url(page, c)}"/>')
+        default = X_DEFAULT if X_DEFAULT in langs else SOURCE_LANG
+        out.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{page_url(page, default)}"/>')
+        out.append("  </url>")
+    out.append("</urlset>")
+    return "\n".join(out) + "\n"
+
+
+def llms_txt(lastmod):
+    """/llms.txt (plan §6.6, speculative): English, generated from facts.json, no claim the pages do not make."""
+    t = T("en")
+    kinds = ", ".join(t(f"game.name.{k['id']}") for k in FACTS["puzzleKinds"])
+    langs = ", ".join(LANG[c].name for c in LIVE["appLanguages"])
+    tiers = len(LIVE["leagueTiers"])
+    stores = {"CN": "mainland China", "BR": "Brazil", "RU": "Russia", "BY": "Belarus"}
+    missing = ", ".join(stores[s] for s in FACTS["unavailableStorefronts"])
+    updated = max(v["date"] for v in lastmod.values())
+    pages = [("Home", "home"), ("Daily tower", "daily"), ("Support", "support"), ("Privacy policy", "privacy"),
+             ("Terms of use", "terms"), ("Delete your account", "delete")]
+    lines = ["# Zirve", "", f"> {t('definition')}", "",
+             f"{FACTS['storeNames']['en']} is a free iPhone and iPad game by {FACTS['developer']} (Türkiye), released "
+             f"{t.date(FACTS['datePublished'])}.", "", "## Facts",
+             f"- Platforms: {', '.join(FACTS['platforms'])} (iOS/iPadOS {FACTS['minOS'].split('.')[0]} or later)",
+             "- Price: free; optional gem packs",
+             "- Ads: no forced or interstitial ads; rewarded ads only when the player chooses (lives, continue, double chest)",
+             f"- Puzzle types: {len(FACTS['puzzleKinds'])} ({kinds})",
+             f"- Modes: tower with camps every {FACTS['campEveryFloors']} floors; daily tower (same {FACTS['dailyTower']['floors']} floors "
+             f"for everyone, {FACTS['dailyTower']['attempts']} tries); weekly leagues ({tiers} tiers)",
+             f"- Accessibility labels declared on the App Store: {', '.join(FACTS['accessibilityLabels'])}",
+             f"- Languages: {langs}",
+             f"- Current version: {LIVE['softwareVersion']}",
+             f"- Not available in: {missing} App Stores",
+             f"- App Store: {APP_STORE_URL}",
+             f"- Last updated: {updated}", "", "## Pages"]
+    lines += [f"- [{name}]({page_url(p, 'en')})" for name, p in pages if "en" in doc_langs(p)]
+    lines += ["", "## Other languages"]
+    lines += [f"- {LANG[c].name}: {page_url('home', c)}" for c in ACTIVE if c != "en"]
+    lines += ["", "## Optional", f"- [Developer]({SITE['developerUrl']})", ""]
+    return "\n".join(lines)
+
+
+# ------------------------------------------------------------------------------------------- build
+def stamp(rel, text, code, lastmod, today):
+    """Replaces the last-modified sentinels: the date only moves when the page's content hash changes."""
+    content = re.sub(r"\?v=[0-9a-f]+", "", text)
+    digest = hashlib.sha256(content.encode()).hexdigest()[:16]
+    entry = lastmod.get(rel)
+    if not entry or entry["hash"] != digest:
+        entry = {"hash": digest, "date": today}
+    lastmod[rel] = entry
+    return text.replace(LASTMOD_ISO, entry["date"]).replace(LASTMOD_HUMAN, html.escape(T(code).date(entry["date"])))
+
+
+def build(today):
+    for code in ACTIVE:
+        missing, review = gate(code)
+        if missing or review:
+            raise SystemExit(f"{code} is published but not ready: missing {missing[:8]}… review {review[:8]}")
+    lastmod_path = DATA / "lastmod.json"
+    old = json.loads(lastmod_path.read_text()) if lastmod_path.exists() else {}
+    lastmod, written, pages = {}, [], []
+
     def write(rel, text):
-        p = ROOT / rel; p.parent.mkdir(parents=True, exist_ok=True); p.write_text(text); written.append(rel)
-    write("index.html", landing("tr"))
-    write("en/index.html", landing("en"))
-    write("daily/index.html", daily("tr"))
-    write("en/daily/index.html", daily("en"))
-    for d in DOCS:
-        write(f"{d[0]}/index.html", document(*d))
-    nf = S["tr"]
-    write("404.html", head(nf, "/", "Sayfa bulunamadı · Zirve", "Sayfa bulunamadı.", "https://zirve.mm-apps.com/")
-          + nav(nf, "/", "/", [], "/zirve-app/en/")
-          + '<main class="doc"><div class="wrap" style="text-align:center;padding:60px 0"><h1>Bu kat boş.</h1><p class="meta" style="margin:14px 0 28px">Aradığın sayfa yok. / This page does not exist.</p>'
-          + '<a class="btn btn-primary" href="/">Ana sayfa / Home</a></div></main>' + footer(nf, "/"))
-    # Every relative link must resolve to a built file or an asset.
-    missing = []
-    for rel in written:
-        page = (ROOT / rel).read_text()
-        for href in re.findall(r'(?:href|src)="([^"#:]+?)"', page):
-            if href.startswith("/") or href.startswith("mailto"):
+        p = ROOT / rel
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(text)
+        written.append(rel)
+
+    lastmod.update(old)
+    for page in PAGES:
+        for code in doc_langs(page):
+            render = landing if page == "home" else daily if page == "daily" else (lambda c, d=page: document(d, c))
+            text = render(code)
+            path = page_path(page, code)
+            write(path + "index.html", stamp(path, text, code, lastmod, today))
+            pages.append((page, code))
+    lastmod = {k: v for k, v in lastmod.items() if k in {page_path(p, c) for p, c in pages} | {"404.html"}}
+    write("404.html", stamp("404.html", not_found(), SOURCE_LANG, lastmod, today))
+    lastmod_path.write_text(json.dumps(lastmod, indent=1, sort_keys=True) + "\n")
+    write("robots.txt", ROBOTS.format(base=BASE))
+    write("sitemap.xml", sitemap(pages, lastmod))
+    write("llms.txt", llms_txt(lastmod))
+    write(f"{SITE['indexNowKey']}.txt", SITE["indexNowKey"])
+    (ROOT / "assets/og").mkdir(exist_ok=True)
+    cards = [og_card(c) for c in ACTIVE]
+    # The Turkish card also replaces assets/og.jpg, the image every page used before (and social caches still hold).
+    cards.append(dict(og_card(SOURCE_LANG), file="assets/og.jpg"))
+    write("assets/og/manifest.json", json.dumps({"base": "assets-src/og-base.jpg", "cards": cards}, ensure_ascii=False, indent=1) + "\n")
+    return written, pages, lastmod
+
+
+# ------------------------------------------------------------------------------------------- checks
+class Report:
+    def __init__(self):
+        self.errors, self.warnings, self.passed = [], [], []
+
+    def check(self, name, problems, warn=False):
+        (self.warnings if warn else self.errors).extend(f"{name}: {p}" for p in problems)
+        if not problems:
+            self.passed.append(name)
+
+
+class Page(HTMLParser):
+    """What the checks need from a built page."""
+    SKIP = {"script", "style", "head", "title"}
+    VOID = {"meta", "link", "img", "source", "br", "hr", "input", "wbr"}
+    BLOCK = {"p", "div", "li", "ul", "ol", "h1", "h2", "h3", "h4", "h5", "h6", "section", "header", "footer", "nav", "main",
+             "article", "details", "summary", "figure", "figcaption", "td", "th", "tr", "dt", "dd", "br", "table"}
+
+    def __init__(self, text):
+        super().__init__(convert_charrefs=True)
+        self.title = self.desc = self.canonical = self.robots = None
+        self.alternates, self.jsonld, self.links, self.imgs, self.h1 = [], [], [], [], []
+        self._stack, self._text, self._in_jsonld, self._in_h1, self._in_title = [], [], False, 0, False
+        self.feed(text)
+        self.text = " ".join("".join(self._text).split())
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag not in self.VOID:
+            self._stack.append(tag)
+        if tag in self.BLOCK:
+            self._text.append(" ")
+        if tag == "meta" and a.get("name") == "description":
+            self.desc = a.get("content")
+        if tag == "meta" and a.get("name") == "robots":
+            self.robots = a.get("content")
+        if tag == "link" and a.get("rel") == "canonical":
+            self.canonical = a.get("href")
+        if tag == "link" and a.get("rel") == "alternate" and a.get("hreflang"):
+            self.alternates.append((a["hreflang"], a["href"]))
+        if tag == "script" and a.get("type") == "application/ld+json":
+            self._in_jsonld = True
+            self.jsonld.append("")
+        if tag in ("a", "link") and a.get("href"):
+            self.links.append(a["href"])
+        if tag in ("img", "script", "source") and (a.get("src") or a.get("srcset")):
+            self.links += [s.split()[0] for s in (a.get("srcset") or a.get("src")).split(",")]
+        if tag == "img":
+            self.imgs.append(a)
+        if tag == "h1":
+            self._in_h1 += 1
+            self.h1.append("")
+        if tag == "title":
+            self._in_title = True
+            self.title = ""
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID:
+            self.handle_endtag(tag)
+
+    def handle_endtag(self, tag):
+        if tag in self.BLOCK:
+            self._text.append(" ")
+        if self._stack and tag in self._stack:
+            while self._stack.pop() != tag:
+                pass
+        if tag == "script":
+            self._in_jsonld = False
+        if tag == "h1":
+            self._in_h1 -= 1
+        if tag == "title":
+            self._in_title = False
+
+    def handle_data(self, data):
+        if self._in_jsonld:
+            self.jsonld[-1] += data
+            return
+        if self._in_title:
+            self.title += data
+            return
+        if self._in_h1:
+            self.h1[-1] += data
+        if not any(t in self.SKIP for t in self._stack):
+            self._text.append(data)
+
+
+def norm(s):
+    return " ".join((s or "").split())
+
+
+BANNED = ["reklamsız", "no ads", "ad-free", "takip yok", "no tracking", "veri toplamıyoruz", "#1", "en iyi", "best",
+          "Gehirnjogging", "치매", "dementia", "demans", "Alzheimer", "hafıza gelişir", "beyin geliştirir", "improves memory",
+          "Wordle", "Flow Free", "Rush Hour", "Unblock Me", "LinkedIn", "Queens", "Block Blast", "Two Dots"]
+BANNED_BARE = ["sans pub", "ohne Werbung"]     # banned unless qualified (plan §4.9 #7); flagged for a human look
+BANNED_UNLESS = {"macVerified": ["Mac"],
+                 "offlineVerified": ["offline", "internetsiz", "sin internet", "çevrimdışı", "hors ligne", "senza internet"]}
+
+
+def banned_in(text):
+    found = []
+    phrases = BANNED + BANNED_BARE + [p for flag, ps in BANNED_UNLESS.items() if not FACTS.get(flag) for p in ps]
+    for p in phrases:
+        if re.search(r"(?<![\w#])" + re.escape(p) + r"(?!\w)", text, 0 if p == "Mac" else re.I):
+            found.append(p)
+    return found
+
+
+def app_repo():
+    path = pathlib.Path(os.environ.get("ZIRVE_APP_REPO", ROOT.parent / "zirve"))
+    return path if (path / "Packages/ZirveCore").exists() else None
+
+
+def xcstrings(path):
+    data = json.loads(path.read_text())
+    langs, values = set(), {}
+    for key, entry in data["strings"].items():
+        for lang, loc in entry.get("localizations", {}).items():
+            langs.add(lang)
+            unit = loc.get("stringUnit")
+            if unit:
+                values[(key, lang)] = unit["value"]
+    return langs, values
+
+
+def check_facts(report):
+    """facts.json (and the in-app names in content/i18n) against the app repo; a mismatch fails the build."""
+    repo = app_repo()
+    if not repo:
+        report.warnings.append("facts vs app repo: skipped (no ../zirve; set ZIRVE_APP_REPO)")
+        return
+    res = repo / "Packages/ZirveCore/Sources/ZirveCore/Resources"
+    economy = json.loads((res / "economy.json").read_text())
+    balance = json.loads((res / "balance.json").read_text())
+    themes = json.loads((res / "themes.json").read_text())
+    core = (repo / "Packages/ZirveCore/Sources/ZirveCore/Puzzles/PuzzleCore.swift").read_text()
+    kinds = re.findall(r'public static let (\w+) = PuzzleKind\("(\w+)"\)', core)
+    p = []
+    site_kinds = [k["id"] for k in FACTS["puzzleKinds"]]
+    if sorted(k for _, k in kinds) != sorted(site_kinds):
+        p.append(f"puzzle kinds: app {sorted(k for _, k in kinds)} vs facts {sorted(site_kinds)}")
+    unlocks = balance.get("unlocks", {})
+    for k in FACTS["puzzleKinds"]:
+        if unlocks.get(k["id"], 0) != k["unlockCamp"]:
+            p.append(f"unlock camp of {k['id']}: app {unlocks.get(k['id'], 0)} vs facts {k['unlockCamp']}")
+    if len(themes["themes"]) != FACTS["worlds"]:
+        p.append(f"worlds: app {len(themes['themes'])} vs facts {FACTS['worlds']}")
+    if economy["league"]["tiers"] != FACTS["versions"]["1.1"]["leagueTiers"]:
+        p.append(f"league tiers (1.1): app {economy['league']['tiers']} vs facts")
+    if FACTS["versions"]["1.1"]["leagueTiers"][:len(FACTS["versions"]["1.0"]["leagueTiers"])] != FACTS["versions"]["1.0"]["leagueTiers"]:
+        p.append("league tiers: 1.0 tiers are not the first tiers of 1.1")
+    for key in ("size", "promote", "relegate"):
+        if economy["league"][key] != FACTS["league"][key]:
+            p.append(f"league {key}: app {economy['league'][key]} vs facts {FACTS['league'][key]}")
+    if economy["dailyTower"]["attempts"] != FACTS["dailyTower"]["attempts"]:
+        p.append("daily attempts differ")
+    if balance["dailyTower"]["floors"] != FACTS["dailyTower"]["floors"]:
+        p.append("daily floors differ")
+    if [r["floors"] for r in economy["dailyTower"]["rewards"]] != FACTS["dailyTower"]["rewardFloors"]:
+        p.append("daily reward floors differ")
+    if economy["camp"]["everyFloors"] != FACTS["campEveryFloors"]:
+        p.append("camp interval differs")
+    app_langs, app_strings = xcstrings(repo / "App/Resources/Localizable.xcstrings")
+    if app_langs != set(FACTS["versions"]["1.1"]["appLanguages"]):
+        p.append(f"app languages (1.1): app {sorted(app_langs)} vs facts {sorted(FACTS['versions']['1.1']['appLanguages'])}")
+    unknown = set(FACTS["versions"]["1.1"]["appLanguages"]) - set(LANG)
+    if unknown:
+        p.append(f"app languages missing from LANGS: {sorted(unknown)}")
+    _, design_strings = xcstrings(repo / "Packages/ZirveDesign/Sources/ZirveDesign/Resources/Localizable.xcstrings")
+    for code, s in STRINGS.items():
+        for key in s.entries:
+            if key.startswith("game.name."):
+                app = app_strings.get((key, code))
+            elif key.startswith("tier."):
+                app = design_strings.get((key, code))
+            else:
                 continue
-            target = (ROOT / rel).parent / href
-            if href.endswith("/"):
+            if app is not None and s.raw(key) != app:
+                p.append(f"{code} {key}: site '{s.raw(key)}' vs app '{app}'")
+    report.check("facts vs app repo", p)
+
+
+def check_release_flag(report):
+    p = []
+    if FACTS["live"] not in FACTS["versions"]:
+        p.append(f"live version {FACTS['live']} not in versions")
+    elif not LIVE["releaseDate"]:
+        p.append(f"live version {FACTS['live']} has no releaseDate")
+    report.check("release flag", p)
+
+
+FACT_NOUNS = r"(?:bulmaca|puzzles?|dil|dilde|languages?|dünya|worlds?|kademe|tiers?|kişilik|players)"
+
+
+def check_strings(report):
+    """Gate per language + facts written as placeholders, not literal numbers (plan §4.9 #3, #4)."""
+    status, problems, literal = [], [], []
+    for l in LANGS:
+        if not STRINGS[l.code].entries:
+            status.append(f"{l.code}: no strings (unpublished)")
+            continue
+        missing, review = gate(l.code)
+        state = "ready" if not (missing or review) else f"{len(missing)} missing, {len(review)} needs_review"
+        status.append(f"{l.code}: {state}{' (published)' if l.published else ' (unpublished)'}")
+        if l.published and (missing or review):
+            problems.append(f"{l.code} is published but {state}")
+        for key, entry in STRINGS[l.code].entries.items():
+            for s in json.dumps(entry["value"], ensure_ascii=False).split('"'):
+                if re.search(r"\b\d+\s+" + FACT_NOUNS + r"\b", s, re.I):
+                    literal.append(f"{l.code} {key}: '{s[:60]}'")
+    report.check("language gate", problems)
+    report.check("fact numbers as placeholders", literal)
+    return status
+
+
+def check_pages(report, written, pages):
+    built = {}
+    for rel in written:
+        if rel.endswith(".html"):
+            built[rel] = Page((ROOT / rel).read_text())
+    url_of = lambda rel: BASE + "/" + rel[: -len("index.html")] if rel.endswith("index.html") else BASE + "/" + rel
+    by_url = {url_of(rel): (rel, p) for rel, p in built.items()}
+
+    # 1 canonical self, hreflang targets exist and the sets are identical across a group (reciprocal), x-default
+    p = []
+    for rel, page in built.items():
+        if rel == "404.html":
+            if page.canonical or page.alternates or page.robots != "noindex" or page.jsonld:
+                p.append("404: needs noindex and no canonical, hreflang or JSON-LD")
+            continue
+        url = url_of(rel)
+        if page.canonical != url:
+            p.append(f"{rel}: canonical {page.canonical}")
+        alts = set(page.alternates)
+        if not any(h == "x-default" for h, _ in alts):
+            p.append(f"{rel}: no x-default")
+        if (page.canonical and not any(href == url for h, href in alts if h != "x-default")):
+            p.append(f"{rel}: hreflang set does not include itself")
+        for h, href in alts:
+            if href not in by_url:
+                p.append(f"{rel}: hreflang {h} → missing {href}")
+            elif set(by_url[href][1].alternates) != alts:
+                p.append(f"{rel}: hreflang set differs on {href}")
+    report.check("canonical + hreflang reciprocity", p)
+
+    # 2 sitemap == indexable files on disk
+    sm = (ROOT / "sitemap.xml").read_text()
+    sm_urls = set(re.findall(r"<loc>(.*?)</loc>", sm))
+    files = {url_of(str(f.relative_to(ROOT))) for f in ROOT.rglob("index.html")
+             if not any(part.startswith(".") or part in ("assets-src", "node_modules", "content", "data", "src") for part in f.relative_to(ROOT).parts)}
+    noindex = {url_of(rel) for rel, pg in built.items() if pg.robots and "noindex" in pg.robots}
+    p = [f"in sitemap, not a file: {u}" for u in sorted(sm_urls - files)]
+    p += [f"file not in sitemap: {u}" for u in sorted(files - sm_urls)]
+    p += [f"noindex page in sitemap: {u}" for u in sorted(sm_urls & noindex)]
+    sm_alts = re.findall(r'hreflang="([^"]+)" href="([^"]+)"', sm)
+    p += [f"sitemap alternate to missing page: {h} {u}" for h, u in sm_alts if u not in sm_urls]
+    report.check("sitemap vs files", p)
+
+    # 5 JSON-LD: valid JSON, one @graph, FAQPage only on support pages, texts visible on the page
+    p = []
+    support_urls = {page_url("support", c) for c in doc_langs("support")}
+    for rel, page in built.items():
+        if rel == "404.html":
+            continue
+        if len(page.jsonld) != 1:
+            p.append(f"{rel}: {len(page.jsonld)} JSON-LD blocks")
+            continue
+        try:
+            data = json.loads(page.jsonld[0])
+        except json.JSONDecodeError as e:
+            p.append(f"{rel}: invalid JSON-LD ({e})")
+            continue
+        nodes = data.get("@graph", [])
+        if data.get("@context") != "https://schema.org" or not nodes:
+            p.append(f"{rel}: no schema.org @graph")
+        url = url_of(rel)
+        visible = norm(page.text)
+        for n in nodes:
+            types = n["@type"] if isinstance(n["@type"], list) else [n["@type"]]
+            if "FAQPage" in types and url not in support_urls:
+                p.append(f"{rel}: FAQPage outside the support page")
+            for bad in ("aggregateRating", "review", "award", "accessibilityHazard"):
+                if bad in n:
+                    p.append(f"{rel}: forbidden {bad}")
+            if "WebPage" in types:
+                if norm(n.get("name")) != norm(page.title):
+                    p.append(f"{rel}: WebPage name ≠ <title>")
+                if norm(n.get("description")) != norm(page.desc):
+                    p.append(f"{rel}: WebPage description ≠ meta description")
+                for q in n.get("mainEntity", []):
+                    for txt in (q["name"], q["acceptedAnswer"]["text"]):
+                        if norm(txt) not in visible:
+                            p.append(f"{rel}: FAQ text not visible: {txt[:50]}")
+            if "VideoGame" in types and norm(n["description"]) not in visible:
+                p.append(f"{rel}: app description not visible")
+            if "BreadcrumbList" in types:
+                for item in n["itemListElement"]:
+                    if norm(item["name"]) not in visible:
+                        p.append(f"{rel}: breadcrumb '{item['name']}' not visible")
+    report.check("JSON-LD syntax + visible text", p)
+
+    # 6 links and images
+    p = []
+    for rel, page in built.items():
+        base = (ROOT / rel).parent
+        for href in page.links:
+            if re.match(r"^(https?:|mailto:|#)", href):
+                continue
+            path = href.split("#")[0].split("?")[0]
+            target = (ROOT / path.lstrip("/")) if path.startswith("/") else base / path
+            if path.endswith("/") or target.is_dir():
                 target = target / "index.html"
-            if not target.resolve().exists():
-                missing.append((rel, href))
-    print("built:", ", ".join(written))
-    if missing:
-        raise SystemExit(f"broken links: {missing}")
-    print("links ok")
+            if not target.exists():
+                p.append(f"{rel}: broken link {href}")
+        for img in page.imgs:
+            if not img.get("alt") or not img.get("width") or not img.get("height"):
+                p.append(f"{rel}: <img {img.get('src')}> needs alt, width and height")
+        if len(page.h1) != 1:
+            p.append(f"{rel}: {len(page.h1)} <h1>")
+    report.check("links, images, single h1", p)
+
+    # 7 banned phrases: title, H1 and URL fail; body and description warn
+    errors, warnings = [], []
+    allow = json.loads((DATA / "lint-allow.json").read_text()) if (DATA / "lint-allow.json").exists() else []
+    allowed = {(a["page"], a["phrase"]) for a in allow}
+    for rel, page in built.items():
+        for where, text in (("title", page.title), ("h1", " ".join(page.h1)), ("url", rel)):
+            errors += [f"{rel} {where}: '{w}'" for w in banned_in(text or "")]
+        for where, text in (("description", page.desc), ("body", page.text)):
+            warnings += [f"{rel} {where}: '{w}'" for w in banned_in(text or "") if (rel, w) not in allowed]
+    report.check("banned phrases in title/H1/URL", errors)
+    report.check("banned phrases in body (human review)", warnings, warn=True)
+
+    # 8 first-view budget (gzip): HTML + CSS + JS + preloaded fonts + hero + badge
+    p = []
+    css = len(gzip.compress((ROOT / "assets/site.css").read_bytes()))
+    js = len(gzip.compress((ROOT / "assets/site.js").read_bytes()))
+    fonts = sum((ROOT / f).stat().st_size for f in FONT_PRELOAD)
+    sizes = []
+    for page, code in pages:
+        if page not in ("home", "daily"):
+            continue
+        rel = page_path(page, code) + "index.html"
+        total = len(gzip.compress((ROOT / rel).read_bytes())) + css + js
+        total += len(gzip.compress((ROOT / f"assets/badges/app-store-{LANG[code].badge}.svg").read_bytes()))
+        if LANG[code].script == "latin":
+            total += fonts
+        if page == "home":
+            total += (ROOT / f"assets/shots/{HERO}.avif").stat().st_size
+        limit = 100 if LANG[code].script in ("latin", "cyrillic", "vietnamese") else 60
+        sizes.append(f"{rel} {total // 1024} KB")
+        if total > limit * 1024:
+            p.append(f"{rel}: first view {total // 1024} KB > {limit} KB")
+    report.check("first-view budget", p, warn=True)
+
+    # OG cards current
+    p = [f"assets/og/og-{c}.jpg missing or out of date (run scripts/og.swift; falling back to assets/og.jpg)" for c in ACTIVE if not og_fresh(c)]
+    report.check("OG images current", p, warn=True)
+    return sizes
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--today", default=datetime.date.today().isoformat(), help="date for pages whose content changed")
+    args = ap.parse_args()
+    report = Report()
+    status = check_strings(report)
+    if report.errors:
+        print("\n".join(report.errors))
+        raise SystemExit(1)
+    written, pages, _ = build(args.today)
+    check_release_flag(report)
+    check_facts(report)
+    sizes = check_pages(report, written, pages)
+    print(f"live version {FACTS['live']} · published: {', '.join(ACTIVE)} · {len(pages)} pages + 404")
+    print("languages: " + "; ".join(status))
+    print("first view: " + "; ".join(sizes))
+    print("passed: " + ", ".join(report.passed))
+    for w in report.warnings:
+        print("WARN  " + w)
+    for e in report.errors:
+        print("ERROR " + e)
+    if report.errors:
+        raise SystemExit(1)
+    print("all checks passed" + (f" ({len(report.warnings)} warnings)" if report.warnings else ""))
+
 
 if __name__ == "__main__":
-    build()
+    main()
