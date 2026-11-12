@@ -1,58 +1,418 @@
 {
  "": {
   "date": "2026-11-12",
-  "hash": "f03e04080d4f3f65"
+  "hash": "912a3f65235a74b3"
  },
  "404.html": {
   "date": "2026-11-12",
-  "hash": "370adde9ba59fc21"
+  "hash": "cebb4dd29dc1eff8"
  },
  "daily/": {
   "date": "2026-11-12",
-  "hash": "a9d878506be0ccc1"
+  "hash": "25fbc3539652c26a"
+ },
+ "de/": {
+  "date": "2026-11-12",
+  "hash": "8a45b2f3475c0055"
+ },
+ "de/daily/": {
+  "date": "2026-11-12",
+  "hash": "71db843224093f21"
+ },
+ "de/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "6793330447cb7487"
+ },
+ "de/privacy/": {
+  "date": "2026-11-12",
+  "hash": "6d79749b32df1a27"
+ },
+ "de/support/": {
+  "date": "2026-11-12",
+  "hash": "53c47008d0842c5a"
+ },
+ "de/terms/": {
+  "date": "2026-11-12",
+  "hash": "0aa616d8aa77c57b"
  },
  "destek/": {
   "date": "2026-11-12",
-  "hash": "6fcea5eaff44359b"
+  "hash": "c78a49bc071cb8ad"
  },
  "en/": {
   "date": "2026-11-12",
-  "hash": "d43c20ccbcf66e1c"
+  "hash": "bc9adedd8d45f11f"
  },
  "en/daily/": {
   "date": "2026-11-12",
-  "hash": "d50eefb87dfcfd1f"
+  "hash": "25e7a40140b5eb2a"
  },
  "en/delete-account/": {
   "date": "2026-11-12",
-  "hash": "3c839e8895ac8c35"
+  "hash": "6a1aeb426c92a4f2"
  },
  "en/privacy/": {
   "date": "2026-11-12",
-  "hash": "b8cb2ee2e30a342b"
+  "hash": "8924d3350f8f0ab8"
  },
  "en/support/": {
   "date": "2026-11-12",
-  "hash": "336e645b73cadff4"
+  "hash": "ed0759156cb269bc"
  },
  "en/terms/": {
   "date": "2026-11-12",
-  "hash": "c4da112207c8c6d2"
+  "hash": "081430c8b48e02d1"
+ },
+ "es/": {
+  "date": "2026-11-12",
+  "hash": "624d56cf20bd1e84"
+ },
+ "es/daily/": {
+  "date": "2026-11-12",
+  "hash": "49570a4ba003c485"
+ },
+ "es/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "ffe8daadb5f8fb44"
+ },
+ "es/privacy/": {
+  "date": "2026-11-12",
+  "hash": "b8b3fb69a9f0c654"
+ },
+ "es/support/": {
+  "date": "2026-11-12",
+  "hash": "e0b9f7717e508b58"
+ },
+ "es/terms/": {
+  "date": "2026-11-12",
+  "hash": "fdc1a88c454939d7"
+ },
+ "fr/": {
+  "date": "2026-11-12",
+  "hash": "9e7a753f083ac661"
+ },
+ "fr/daily/": {
+  "date": "2026-11-12",
+  "hash": "a4c4928659fcefc5"
+ },
+ "fr/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "c4bbdce291f84cbd"
+ },
+ "fr/privacy/": {
+  "date": "2026-11-12",
+  "hash": "b022c39ce395e2c9"
+ },
+ "fr/support/": {
+  "date": "2026-11-12",
+  "hash": "9109af59efdccaad"
+ },
+ "fr/terms/": {
+  "date": "2026-11-12",
+  "hash": "16da697e9c929cf5"
  },
  "gizlilik/": {
   "date": "2026-11-12",
-  "hash": "52b98afa0213e573"
+  "hash": "8542ea1a9390ef68"
  },
  "hesap-silme/": {
   "date": "2026-11-12",
-  "hash": "d84733e74e2485d4"
+  "hash": "969b3ea06e83e7da"
+ },
+ "id/": {
+  "date": "2026-11-12",
+  "hash": "c49f9a11cc21b3b0"
+ },
+ "id/daily/": {
+  "date": "2026-11-12",
+  "hash": "089869b4bafc699b"
+ },
+ "id/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "fc9ebf6384014acb"
+ },
+ "id/privacy/": {
+  "date": "2026-11-12",
+  "hash": "30097c5698786bd7"
+ },
+ "id/support/": {
+  "date": "2026-11-12",
+  "hash": "220c5a0993851c07"
+ },
+ "id/terms/": {
+  "date": "2026-11-12",
+  "hash": "22db0493a6c3e642"
+ },
+ "it/": {
+  "date": "2026-11-12",
+  "hash": "0a48b793fac8de1c"
+ },
+ "it/daily/": {
+  "date": "2026-11-12",
+  "hash": "4dee43b96bb5a82c"
+ },
+ "it/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "a05113465472505f"
+ },
+ "it/privacy/": {
+  "date": "2026-11-12",
+  "hash": "32b2021b765e0daa"
+ },
+ "it/support/": {
+  "date": "2026-11-12",
+  "hash": "b9af0f2b9178cc64"
+ },
+ "it/terms/": {
+  "date": "2026-11-12",
+  "hash": "07cc83613ac206b7"
+ },
+ "ja/": {
+  "date": "2026-11-12",
+  "hash": "4800f59e138ba657"
+ },
+ "ja/daily/": {
+  "date": "2026-11-12",
+  "hash": "b8cc61704b329f11"
+ },
+ "ja/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "b159ed1cda28ae2b"
+ },
+ "ja/privacy/": {
+  "date": "2026-11-12",
+  "hash": "3cf3f4a3eb731d65"
+ },
+ "ja/support/": {
+  "date": "2026-11-12",
+  "hash": "a30a4597aecb29ef"
+ },
+ "ja/terms/": {
+  "date": "2026-11-12",
+  "hash": "5e91607a0b46e029"
+ },
+ "ko/": {
+  "date": "2026-11-12",
+  "hash": "f5013283cc872a73"
+ },
+ "ko/daily/": {
+  "date": "2026-11-12",
+  "hash": "870176fcd93e1d47"
+ },
+ "ko/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "4685bd5eaa33118e"
+ },
+ "ko/privacy/": {
+  "date": "2026-11-12",
+  "hash": "e51d516d575e6d2b"
+ },
+ "ko/support/": {
+  "date": "2026-11-12",
+  "hash": "b85e473df1c8008e"
+ },
+ "ko/terms/": {
+  "date": "2026-11-12",
+  "hash": "c819f7d663ec325b"
  },
  "kosullar/": {
   "date": "2026-11-12",
-  "hash": "0863eaf2405c8ba5"
+  "hash": "724960f6a4530f33"
  },
  "kvkk/": {
   "date": "2026-11-12",
-  "hash": "617408e280a1dcd4"
+  "hash": "e4ee9719f8d9ba7d"
+ },
+ "nl/": {
+  "date": "2026-11-12",
+  "hash": "f15edd5e8b5b6d33"
+ },
+ "nl/daily/": {
+  "date": "2026-11-12",
+  "hash": "dc160b6aea758852"
+ },
+ "nl/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "1658c1ae429e14b5"
+ },
+ "nl/privacy/": {
+  "date": "2026-11-12",
+  "hash": "49e30cb11e3e71c8"
+ },
+ "nl/support/": {
+  "date": "2026-11-12",
+  "hash": "4ca7065f32293a79"
+ },
+ "nl/terms/": {
+  "date": "2026-11-12",
+  "hash": "8ae2b7e164cb4056"
+ },
+ "pl/": {
+  "date": "2026-11-12",
+  "hash": "9a2883badc40fceb"
+ },
+ "pl/daily/": {
+  "date": "2026-11-12",
+  "hash": "87c6eaabe0731d7a"
+ },
+ "pl/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "151a18a74f78f604"
+ },
+ "pl/privacy/": {
+  "date": "2026-11-12",
+  "hash": "6be0103f8f13bf60"
+ },
+ "pl/support/": {
+  "date": "2026-11-12",
+  "hash": "92ce23d9eb6d87dc"
+ },
+ "pl/terms/": {
+  "date": "2026-11-12",
+  "hash": "2b51211dbd37b033"
+ },
+ "ru/": {
+  "date": "2026-11-12",
+  "hash": "31d7b4078d5a7b8e"
+ },
+ "ru/daily/": {
+  "date": "2026-11-12",
+  "hash": "c037101d58d1d2f9"
+ },
+ "ru/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "d451af169a150367"
+ },
+ "ru/privacy/": {
+  "date": "2026-11-12",
+  "hash": "80e7c03182e54a12"
+ },
+ "ru/support/": {
+  "date": "2026-11-12",
+  "hash": "f59e1e984fdf0abc"
+ },
+ "ru/terms/": {
+  "date": "2026-11-12",
+  "hash": "f68f496f80687649"
+ },
+ "sv/": {
+  "date": "2026-11-12",
+  "hash": "0e5a20147bf80d0b"
+ },
+ "sv/daily/": {
+  "date": "2026-11-12",
+  "hash": "9f8ec87c27db92fa"
+ },
+ "sv/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "65939d3fc72a5d32"
+ },
+ "sv/privacy/": {
+  "date": "2026-11-12",
+  "hash": "e4914ab2945deab3"
+ },
+ "sv/support/": {
+  "date": "2026-11-12",
+  "hash": "01ebd6bd78b474d9"
+ },
+ "sv/terms/": {
+  "date": "2026-11-12",
+  "hash": "7798c439a76bb297"
+ },
+ "th/": {
+  "date": "2026-11-12",
+  "hash": "05688f34d910cfb8"
+ },
+ "th/daily/": {
+  "date": "2026-11-12",
+  "hash": "afc889c73775b715"
+ },
+ "th/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "13a9ec8d43410586"
+ },
+ "th/privacy/": {
+  "date": "2026-11-12",
+  "hash": "fb7699e8d5070132"
+ },
+ "th/support/": {
+  "date": "2026-11-12",
+  "hash": "d17aa47d89e98231"
+ },
+ "th/terms/": {
+  "date": "2026-11-12",
+  "hash": "9c9ade2cc277999a"
+ },
+ "uk/": {
+  "date": "2026-11-12",
+  "hash": "6ea50272eab1afb3"
+ },
+ "uk/daily/": {
+  "date": "2026-11-12",
+  "hash": "3738cebd0a929e48"
+ },
+ "uk/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "61c43ddeaa34419a"
+ },
+ "uk/privacy/": {
+  "date": "2026-11-12",
+  "hash": "7c87ce726c5001b0"
+ },
+ "uk/support/": {
+  "date": "2026-11-12",
+  "hash": "fd75d74c25aacb03"
+ },
+ "uk/terms/": {
+  "date": "2026-11-12",
+  "hash": "3be98a597974838a"
+ },
+ "zh-hans/": {
+  "date": "2026-11-12",
+  "hash": "7f56d24c85143feb"
+ },
+ "zh-hans/daily/": {
+  "date": "2026-11-12",
+  "hash": "fd14ac7274b28182"
+ },
+ "zh-hans/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "f76c20971ea49dc9"
+ },
+ "zh-hans/privacy/": {
+  "date": "2026-11-12",
+  "hash": "4b940abf8b64586b"
+ },
+ "zh-hans/support/": {
+  "date": "2026-11-12",
+  "hash": "c09cf83326d42f01"
+ },
+ "zh-hans/terms/": {
+  "date": "2026-11-12",
+  "hash": "2c790a7af2f61ddb"
+ },
+ "zh-hant/": {
+  "date": "2026-11-12",
+  "hash": "f321cd56ae8046db"
+ },
+ "zh-hant/daily/": {
+  "date": "2026-11-12",
+  "hash": "b887ef762bb5ca74"
+ },
+ "zh-hant/delete-account/": {
+  "date": "2026-11-12",
+  "hash": "7326d3dc5081ba5f"
+ },
+ "zh-hant/privacy/": {
+  "date": "2026-11-12",
+  "hash": "9e87c0c3cc13e15f"
+ },
+ "zh-hant/support/": {
+  "date": "2026-11-12",
+  "hash": "7ca9edc41fa81fe8"
+ },
+ "zh-hant/terms/": {
+  "date": "2026-11-12",
+  "hash": "6380efc6e99f0e1f"
  }
 }

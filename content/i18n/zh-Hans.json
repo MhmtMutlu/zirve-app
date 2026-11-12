@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "zh-Hans",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "简体中文",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "跳到正文",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "章节",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "菜单",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "语言",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "首页",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "其他语言版本：",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "关闭",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "链接",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "由 mm-apps 制作",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · 本网站不使用 Cookie 或跟踪器。",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "页面更新于：{date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "隐私"
+    ],
+    [
+     "terms",
+     "使用条款"
+    ],
+    [
+     "delete",
+     "删除账号"
+    ],
+    [
+     "support",
+     "支持"
+    ],
+    [
+     "kvkk",
+     "KVKK（土耳其语）"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{y}年{month}{d}日",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "1月",
+    "2月",
+    "3月",
+    "4月",
+    "5月",
+    "6月",
+    "7月",
+    "8月",
+    "9月",
+    "10月",
+    "11月",
+    "12月"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve 是一款适用于 iPhone 和 iPad 的免费逻辑谜题游戏，由土耳其独立开发者 mm-apps 制作。攀登一座高塔，每一层都是一道限时的简短谜题，共有 {puzzleTypes} 种类型。",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "在 App Store 下载",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "第 {floor} 层起",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "找不到页面 · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "这一层是空的。",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "此页面不存在。",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "简体中文首页",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "攀登高塔。",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "每层都是一道谜题。",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} 种谜题 · 每周联赛 · iPhone 和 iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve：攀登高塔。每层都是一道谜题。{puzzleTypes} 种谜题，每周联赛，iPhone 和 iPad。",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "2026年11月6日",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "隐私政策 · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Zirve 手机游戏如何处理个人数据。",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "使用条款 · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "Zirve 手机游戏的使用条款。",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "删除账号 · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "如何删除你的 Zirve 账号和游戏数据。",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "支持 · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Zirve 的帮助与联系方式。",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "适用于 iPhone 和 iPad 的 {storeName}",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve 是一款适用于 iPhone 和 iPad 的免费逻辑谜题游戏：攀登一座高塔，每一层都是一道简短的谜题，共有 {puzzleTypes} 种类型。每日之塔，每周联赛。没有强制广告。",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Zirve 主界面：第 16 层的森林之塔",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "联赛排名示例",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "已通过 {n} 层",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "每日之塔：所有人都是同样的 {dailyFloors} 层 · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "青铜",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "白银",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "黄金",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "铂金",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "钻石",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "大师",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "传奇",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "神话",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "泰坦",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "不朽",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "冠军",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "巅峰",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "颜色配对",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "画路线",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "方块拼放",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "记忆翻牌",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "色彩连线",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "转水管",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "颜色分类",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "箭头",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "过门",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "瞭望塔",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "点灯",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "玩法"
+    ],
+    [
+     "#games",
+     "游戏"
+    ],
+    [
+     "#worlds",
+     "区域"
+    ],
+    [
+     "#league",
+     "联赛"
+    ],
+    [
+     "#faq",
+     "常见问题"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "适用于 iPhone 和 iPad · 在 App Store 上架",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">攀登高塔。</span> <span class=\"line\"><em>每一层</em>都是一道谜题。</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve 是一座由快速谜题组成的无尽之塔。解开一道，爬上一层，到达下一个营地，在每周联赛中超过你的好友。",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "玩法",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "免费"
+    },
+    {
+     "text": "无需账号"
+    },
+    {
+     "text": "可离线游玩",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} 种语言"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 天",
+     "连胜"
+    ],
+    [
+     "第 6 层已通过",
+     ""
+    ],
+    [
+     "3/3",
+     "生命"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "玩法",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "不到一分钟，五秒就能看懂。",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "每一层都是一道谜题。规则一眼就能看懂；越往上爬，变难的是棋盘，而不是时间。",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "游戏",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "每一层都会带来不同的游戏；每 10 层有一个营地和一个新游戏。第一次遇到某个游戏时，计时开始前会有一段简短的动画演示玩法，游戏中点 ? 按钮可以再次查看。每个棋盘在你看到之前都已由电脑解出：没有无解的谜题。",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "玩法",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "越往上",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "区域",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "每 20 层就有一个新区域：从森林到繁花山坡，从风暴到北极光，从星系到无尽之巅。爬得越高，谜题越难，区域也越绚丽。",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "层",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "联赛与好友",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "你的层数就是你的分数。",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "轻松而公平",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "为清醒的头脑而设计。",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "常见问题",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "问题",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "巅峰见。",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "攀登高塔，每层都是一道谜题。",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve 在 App Store 上免费提供。第一层正在等你。",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "打开你的这一层",
+     "轻点“攀登”，迎接这一层的谜题：颜色、路线、方块或卡牌。"
+    ],
+    [
+     "在时间用完前解开",
+     "你有 30–60 秒。如果差一点没赶上，棋盘会等你；深呼吸，然后完成它。"
+    ],
+    [
+     "攀登到下一个营地",
+     "每 10 层有一个营地，会恢复一条生命并解锁一个新游戏。即使生命用完，你的纪录也会保留。"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} 种谜题，一座高塔。",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "把相同颜色的色块凑到一起，清空棋盘。",
+     "how": [
+      "把一个色块拖到相邻的同色色块上：两个都会消失。",
+      "拖进空格子，让色块滑得离它的同伴更近。"
+     ],
+     "harder": [
+      "第 10 层起：墙壁，以及滑动次数有限的色块（为 0 时冻结）",
+      "第 30 层起：每个色块都有滑动次数限制，最多 6 种颜色",
+      "第 60 层起：锁住的色块，旁边发生配对时才会打开"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "一笔画到旗子，手指不离开屏幕。",
+     "how": [
+      "从一个节点画到另一个节点；往回拉可撤销上一步。",
+      "经过检查点，最后停在旗子上。手指离开屏幕，线条就会重置。"
+     ],
+     "harder": [
+      "第 20 层起：迷雾，你只能看到笔尖周围",
+      "第 30 层起：按顺序经过检查点",
+      "第 60 层起：经过所有节点，墙壁更多"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "把每个拼块都放进棋盘的空隙里。",
+     "how": [
+      "把拼块从托盘拖到棋盘上；轻点拼块可以旋转它。",
+      "轻点已放好的拼块可以取回；全部放好，这一层就完成了。"
+     ],
+     "harder": [
+      "棋盘从 6×6 变成 8×8，拼块从 3 块变成 6 块",
+      "第 30 层起：镜像拼块，长按可翻转",
+      "拼块更大，空隙更紧"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "翻开卡牌，找出相同的牌。",
+     "how": [
+      "翻开两张牌：相同的会保持翻开，否则很快会再合上。",
+      "记住每张牌的位置，找出所有成对的牌。"
+     ],
+     "harder": [
+      "卡牌从 12 张增加到 24 张",
+      "第 30 层起：三张一组，找出三张相同图案的牌",
+      "翻错的牌合上得更快"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "连接相同颜色的两端，填满棋盘。",
+     "how": [
+      "从一个彩色圆点画线到同色的另一个圆点。",
+      "线条不能交叉，每个格子都必须填满；手指离开屏幕时，没画完的线会消失。"
+     ],
+     "harder": [
+      "棋盘从 5×5 变成 7×7",
+      "颜色从 3 种增加到 6 种",
+      "需要绕开的阻挡格子"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "转动水管，让水流起来。",
+     "how": [
+      "轻点水管，把它旋转 90 度。",
+      "把水从水源不间断地引到旗子；有水流过的水管会被填满。"
+     ],
+     "harder": [
+      "第 40 层起：每根水管都必须接通",
+      "分支更多，水管更乱",
+      "第 100 层起使用 6×6 棋盘"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "整理颜色，直到每根试管只有一种颜色。",
+     "how": [
+      "轻点一根试管，再轻点另一根：顶部的颜色会倒过去。",
+      "只能倒在相同颜色上或空试管里；卡住了？撤销。"
+     ],
+     "harder": [
+      "颜色从 4 种增加到 8 种",
+      "开局更混乱，解法更长",
+      "始终有两根空试管：怎么规划由你决定"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "按正确的顺序移出所有箭头。",
+     "how": [
+      "轻点一个箭头：它会朝箭头所指的方向滑动，身体跟在后面，如果前方畅通就会离开棋盘。",
+      "如果被另一个箭头挡住，它会弹回来并损失 3 秒；先移走前面的箭头。"
+     ],
+     "harder": [
+      "棋盘从 7×7 变成 11×11，最多填满 85%",
+      "短箭头旁边是长达 12 格的蜿蜒长蛇",
+      "更长的“先移这个”连锁"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "让每个方块都从同色的门离开。",
+     "how": [
+      "拖动方块：它只能沿箭头所指的方向滑动。前方畅通时，它会从同色的门离开；轻点一下就够了。",
+      "第一步永远不会是直接离开：你必须先把一个方块停放到一旁，才能让出通路。"
+     ],
+     "harder": [
+      "棋盘从 6×6 变成 8×8，方块从 7 个增加到 14 个",
+      "每个棋盘至少需要 3 次、之后 4 次有计划的停放",
+      "第 80 层起出现锁住的方块；第 100 层起出现可以朝任意方向滑动的 2×2 方块"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "在每行、每列和每个彩色区域各放一座瞭望塔。",
+     "how": [
+      "轻点一个格子：第一次是 ✕（标记），再点一次放上瞭望塔。每行、每列和每个区域都恰好需要一座。",
+      "瞭望塔互不相邻，斜向也不行。每个棋盘都只有唯一解；不用猜，只靠逻辑。"
+     ],
+     "harder": [
+      "棋盘从 6×6 变成 8×8",
+      "前几个棋盘会帮你用圆点标出排除的格子；之后由你自己标记",
+      "更长的推理链"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "点亮所有格子。",
+     "how": [
+      "轻点一个格子：它和上下左右的相邻格子（+ 形）都会翻转。暗的会亮，亮的会熄灭。",
+      "按住手指可以看到哪些格子会翻转；斜向的格子不受影响。"
+     ],
+     "harder": [
+      "棋盘从 3×3 变成 5×5",
+      "解开需要的点击次数从 3 次增加到 10 次",
+      "顺序很重要：先想，再点"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} 个区域，一座没有尽头的塔。",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "森林",
+     "第 1–19 层"
+    ],
+    [
+     "dusk",
+     "日落",
+     "第 80–99 层"
+    ],
+    [
+     "lights",
+     "北极光",
+     "第 140–159 层"
+    ],
+    [
+     "summit",
+     "无尽之巅",
+     "第 300 层及以上"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "每周你都会加入一个 {leagueSize} 人的联赛。你本周通过的层数决定你的名次；前 {leaguePromote} 名晋级到更高一级，后 {leagueRelegate} 名降到下一级。每个人都会以自己选择的名字、服装和塔主题出现；下拉即可立即刷新排名。",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "晋级区 · 前 {leaguePromote} 名",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "你",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "你",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "每日之塔",
+     "所有人都是同样的 {dailyFloors} 层，{dailyAttempts} 次机会。第 3、6、10 层可获得宝石；你在本国和好友中排第几？"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "每月赛季",
+     "每个月都有新的奖励路线：边攀登边赢取宝石、服装和塔主题。每个赛季都有专属的服装和主题。"
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "好友",
+     "分享你的邀请码，看看每个人在塔中的位置，超过他们时你会收到提醒。"
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "宝箱与连胜",
+     "每 10 层无失误通关得到一个宝箱（5–20 颗宝石），每集齐 20 颗星星得到一个星星宝箱。每天通过一层就能保持连胜。"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "每道谜题都有解",
+     "p": "棋盘在生成时就已解出；结果取决于你的操作，而不是运气。"
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "无需账号",
+     "p": "马上就能开始。愿意的话可以通过 Apple 登录，你的进度会跟着你转到新设备。"
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "可离线游玩",
+     "p": "在火车或飞机上也能继续攀登；重新联网后，你的层数会同步。",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "人人都能玩",
+     "p": "每个色块除了颜色还有形状；支持 VoiceOver；时间辅助可提供更多时间或不限时。"
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "只在你选择时才有广告",
+     "p": "只有你主动要求时才会出现广告：为了获得生命或加时。不会打断你。"
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} 种语言",
+     "p": "{appLanguageNames}。"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Zirve 免费吗？",
+     "是的。下载和游玩都是免费的。宝石包、新手礼包、赛季套装和赛季高级奖励路线都是可选的 App 内购买项目，由 Apple 收费。"
+    ],
+    [
+     "支持哪些设备？",
+     "运行 iOS 18 或更高版本的 iPhone 和 iPad，iPhone 11 及更新机型。目前还没有 Android 版本。"
+    ],
+    [
+     "需要账号吗？",
+     "不需要。首次启动时会为你创建一个游客账号。如果想把进度转移到另一台设备，请通过 Apple 登录。"
+    ],
+    [
+     "时间对我来说太短怎么办？",
+     "开启 设置 → 时间辅助，每一层都可获得 1.5 倍时间或不限时。星星仍按正常时间评定，使用辅助的层不计入每周联赛。"
+    ],
+    [
+     "生命用完了会怎样？",
+     "你有三条生命。用完后你会回到营地，但你的纪录会保留。生命会随时间恢复，到达营地也会恢复一条；你还可以看广告或用宝石补充。"
+    ],
+    [
+     "我的数据如何处理？",
+     "我们只处理游戏运行所需的数据；请参阅<a href=\"{href:privacy}\">隐私政策</a>。游戏规则请参阅<a href=\"{href:terms}\">使用条款</a>。"
+    ],
+    [
+     "如何删除我的账号？",
+     "在 App 中：我的 → 设置 → 账号 → 删除账号。请参阅<a href=\"{href:delete}\">删除账号</a>。"
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "所有人都是同样的 {dailyFloors} 层，{dailyAttempts} 次机会。在 Zirve 中攀登今天的塔，并分享你的结果。",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "每日之塔 · 每天午夜更新",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "每天，所有人都是同样的十层，有三次机会。你的最佳成绩会参与排名。分享结果时，游戏和棋盘会被隐藏，不会剧透给任何人。",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "结果示例：3 分 5 秒内通过 10 层中的 7 层",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "每日之塔",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "总用时 3:05",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "轮到你了",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "结果",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "这些方格是什么意思？",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "分享结果中的每个方格代表一层：上排是第 1–5 层，下排是第 6–10 层。每个方格都有自己的颜色和图标，不看颜色也能读懂。",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "出现“🕒 使用时间辅助”这一行，表示本次挑战中开启了时间辅助。方格仍按正常时间显示；使用辅助的挑战不参与排名。",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "玩法",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "轮到你了。",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "今天，所有人都在攀登<em>同一座塔</em>。",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "已经安装了 Zirve？轻点本页顶部横幅中的“打开”，直接进入每日之塔。",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve 在 App Store 上免费提供。今天的塔正在等你。",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "3 星速度",
+     "剩余至少 15 秒时解开。"
+    ],
+    [
+     "cleared",
+     "🟩",
+     "已解开",
+     "在时间用完前解开。"
+    ],
+    [
+     "continued",
+     "🟨",
+     "使用了继续",
+     "时间用完后，通过看广告或用宝石继续并解开。"
+    ],
+    [
+     "failed",
+     "🟥",
+     "时间用完",
+     "本次挑战在这一层结束。"
+    ],
+    [
+     "unreached",
+     "⬜",
+     "未到达",
+     "本次挑战没有到达这一层。"
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} 层，{dailyAttempts} 次机会，一个排名。",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "打开这座塔",
+     "在 Zirve 的塔界面中轻点“每日之塔”卡片。它每天午夜更新，所有人都一样。"
+    ],
+    [
+     "攀登",
+     "每一层都是一道快速谜题。你有三次机会；最好的一次会在本国和好友中参与排名。第 3、6、10 层可获得宝石。"
+    ],
+    [
+     "分享",
+     "挑战结束后，轻点“分享结果”：分享出去的是方格和你的用时，不包括游戏和棋盘。"
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

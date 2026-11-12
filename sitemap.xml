@@ -3,41 +3,1361 @@
   <url><loc>https://zirve.mm-apps.com/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/en/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/de/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/fr/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/it/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/es/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ja/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ko/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hant/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hans/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/nl/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/pl/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/sv/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/th/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/id/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/uk/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ru/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/daily/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/en/daily/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/de/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/fr/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/it/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/es/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ja/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ko/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hant/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hans/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/nl/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/pl/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/sv/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/th/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/id/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/uk/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ru/daily/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/daily/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/daily/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/daily/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/daily/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/daily/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/daily/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/daily/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/daily/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/daily/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/daily/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/daily/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/daily/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/daily/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/daily/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/gizlilik/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/en/privacy/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/de/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/fr/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/it/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/es/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ja/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ko/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hant/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hans/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/nl/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/pl/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/sv/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/th/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/id/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/uk/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ru/privacy/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/privacy/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/kosullar/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/en/terms/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/de/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/fr/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/it/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/es/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ja/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ko/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hant/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hans/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/nl/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/pl/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/sv/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/th/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/id/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/uk/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ru/terms/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/kosullar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/terms/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/kvkk/</loc><lastmod>2026-11-12</lastmod>
@@ -47,21 +1367,681 @@
   <url><loc>https://zirve.mm-apps.com/hesap-silme/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/en/delete-account/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/de/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/fr/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/it/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/es/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ja/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ko/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hant/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hans/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/nl/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/pl/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/sv/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/th/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/id/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/uk/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ru/delete-account/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/delete-account/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/delete-account/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/destek/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
   </url>
   <url><loc>https://zirve.mm-apps.com/en/support/</loc><lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/de/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/fr/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/it/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/es/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ja/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ko/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hant/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/zh-hans/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/nl/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/pl/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/sv/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/th/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/id/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/uk/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
+  </url>
+  <url><loc>https://zirve.mm-apps.com/ru/support/</loc><lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://zirve.mm-apps.com/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zirve.mm-apps.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zirve.mm-apps.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zirve.mm-apps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zirve.mm-apps.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zirve.mm-apps.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zirve.mm-apps.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://zirve.mm-apps.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zirve.mm-apps.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zirve.mm-apps.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://zirve.mm-apps.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://zirve.mm-apps.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zirve.mm-apps.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://zirve.mm-apps.com/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://zirve.mm-apps.com/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://zirve.mm-apps.com/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zirve.mm-apps.com/ru/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zirve.mm-apps.com/en/support/"/>
   </url>
 </urlset>

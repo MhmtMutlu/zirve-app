@@ -14,6 +14,96 @@
       "subline" : "11 puzzles · weekly league · iPhone and iPad"
     },
     {
+      "file" : "assets/og/og-de.jpg",
+      "line1" : "Erklimm den Turm.",
+      "line2" : "Jede Etage ein Rätsel.",
+      "subline" : "11 Rätsel · Wochenliga · iPhone und iPad"
+    },
+    {
+      "file" : "assets/og/og-fr.jpg",
+      "line1" : "Gravis la tour.",
+      "line2" : "Chaque étage, une énigme.",
+      "subline" : "11 énigmes · ligue hebdomadaire · iPhone et iPad"
+    },
+    {
+      "file" : "assets/og/og-it.jpg",
+      "line1" : "Scala la torre.",
+      "line2" : "Ogni piano, un rompicapo.",
+      "subline" : "11 rompicapi · lega settimanale · iPhone e iPad"
+    },
+    {
+      "file" : "assets/og/og-es.jpg",
+      "line1" : "Escala la torre.",
+      "line2" : "Cada piso, un puzle.",
+      "subline" : "11 puzles · liga semanal · iPhone y iPad"
+    },
+    {
+      "file" : "assets/og/og-ja.jpg",
+      "line1" : "タワーを登ろう。",
+      "line2" : "どの階もパズル。",
+      "subline" : "11種類のパズル · 毎週のリーグ · iPhoneとiPad"
+    },
+    {
+      "file" : "assets/og/og-ko.jpg",
+      "line1" : "탑을 오르세요.",
+      "line2" : "층마다 하나의 퍼즐.",
+      "subline" : "퍼즐 11종 · 주간 리그 · iPhone과 iPad"
+    },
+    {
+      "file" : "assets/og/og-zh-Hant.jpg",
+      "line1" : "攀登高塔。",
+      "line2" : "每一層都是一道謎題。",
+      "subline" : "11 種謎題 · 每週聯賽 · iPhone 與 iPad"
+    },
+    {
+      "file" : "assets/og/og-zh-Hans.jpg",
+      "line1" : "攀登高塔。",
+      "line2" : "每层都是一道谜题。",
+      "subline" : "11 种谜题 · 每周联赛 · iPhone 和 iPad"
+    },
+    {
+      "file" : "assets/og/og-nl.jpg",
+      "line1" : "Beklim de toren.",
+      "line2" : "Elke etage een puzzel.",
+      "subline" : "11 puzzels · weekcompetitie · iPhone en iPad"
+    },
+    {
+      "file" : "assets/og/og-pl.jpg",
+      "line1" : "Wspinaj się na wieżę.",
+      "line2" : "Każde piętro to łamigłówka.",
+      "subline" : "11 łamigłówek · liga tygodniowa · iPhone i iPad"
+    },
+    {
+      "file" : "assets/og/og-sv.jpg",
+      "line1" : "Klättra i tornet.",
+      "line2" : "Varje våning ett pussel.",
+      "subline" : "11 pussel · veckoliga · iPhone och iPad"
+    },
+    {
+      "file" : "assets/og/og-th.jpg",
+      "line1" : "ปีนหอคอย",
+      "line2" : "ทุกชั้นคือปริศนา",
+      "subline" : "ปริศนา 11 แบบ · ลีกประจำสัปดาห์ · iPhone และ iPad"
+    },
+    {
+      "file" : "assets/og/og-id.jpg",
+      "line1" : "Daki menaranya.",
+      "line2" : "Setiap lantai satu teka-teki.",
+      "subline" : "11 teka-teki · liga mingguan · iPhone dan iPad"
+    },
+    {
+      "file" : "assets/og/og-uk.jpg",
+      "line1" : "Піднімайся на вежу.",
+      "line2" : "Кожен поверх — головоломка.",
+      "subline" : "Головоломок: 11 · щотижнева ліга · iPhone та iPad"
+    },
+    {
+      "file" : "assets/og/og-ru.jpg",
+      "line1" : "Поднимайся на башню.",
+      "line2" : "Каждый этаж — головоломка.",
+      "subline" : "11 головоломок · еженедельная лига · iPhone и iPad"
+    },
+    {
       "file" : "assets/og.jpg",
       "line1" : "Kuleye tırman.",
       "line2" : "Her kat bir bulmaca.",

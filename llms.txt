@@ -27,6 +27,21 @@ Zirve: Logic Puzzle Tower is a free iPhone and iPad game by mm-apps (Türkiye), 
 
 ## Other languages
 - Türkçe: https://zirve.mm-apps.com/
+- Deutsch: https://zirve.mm-apps.com/de/
+- Français: https://zirve.mm-apps.com/fr/
+- Italiano: https://zirve.mm-apps.com/it/
+- Español: https://zirve.mm-apps.com/es/
+- 日本語: https://zirve.mm-apps.com/ja/
+- 한국어: https://zirve.mm-apps.com/ko/
+- 繁體中文: https://zirve.mm-apps.com/zh-hant/
+- 简体中文: https://zirve.mm-apps.com/zh-hans/
+- Nederlands: https://zirve.mm-apps.com/nl/
+- Polski: https://zirve.mm-apps.com/pl/
+- Svenska: https://zirve.mm-apps.com/sv/
+- ไทย: https://zirve.mm-apps.com/th/
+- Bahasa Indonesia: https://zirve.mm-apps.com/id/
+- Українська: https://zirve.mm-apps.com/uk/
+- Русский: https://zirve.mm-apps.com/ru/
 
 ## Optional
 - [Developer](https://mm-apps.com/)

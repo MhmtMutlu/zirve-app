@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "nl",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "Nederlands",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "Naar de inhoud",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Onderdelen",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Menu",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Taal",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Home",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "Ook beschikbaar in:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Sluiten",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Links",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Gemaakt door mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · Deze site gebruikt geen cookies of trackers.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Pagina bijgewerkt: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Privacy"
+    ],
+    [
+     "terms",
+     "Voorwaarden"
+    ],
+    [
+     "delete",
+     "Account verwijderen"
+    ],
+    [
+     "support",
+     "Ondersteuning"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d} {month} {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "januari",
+    "februari",
+    "maart",
+    "april",
+    "mei",
+    "juni",
+    "juli",
+    "augustus",
+    "september",
+    "oktober",
+    "november",
+    "december"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve is een gratis logische puzzelgame voor iPhone en iPad van mm-apps, een onafhankelijke ontwikkelaar in Turkije. Beklim een toren waarin elke etage een korte puzzel met tijdslimiet is uit {puzzleTypes} soorten.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "Download in de App Store",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "Vanaf etage {floor}",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Pagina niet gevonden · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "Deze etage is leeg.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "Deze pagina bestaat niet.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "Nederlandse startpagina",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Beklim de toren.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Elke etage een puzzel.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} puzzels · weekcompetitie · iPhone en iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Beklim de toren. Elke etage een puzzel. {puzzleTypes} puzzels, weekcompetitie, iPhone en iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6 november 2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Privacybeleid · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Hoe de mobiele game Zirve persoonsgegevens verwerkt.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Gebruiksvoorwaarden · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "De gebruiksvoorwaarden van de mobiele game Zirve.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Je account verwijderen · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "Zo verwijder je je Zirve-account en je spelgegevens.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Ondersteuning · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Hulp en contact voor Zirve.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} voor iPhone en iPad",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve is een gratis logische puzzelgame voor iPhone en iPad: beklim een toren waarin elke etage een korte puzzel is uit {puzzleTypes} soorten. Dagtoren, weekcompetitie. Geen verplichte advertenties.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Startscherm van Zirve: de bostoren op etage 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Voorbeeld van een competitiestand",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n} etages gehaald",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Dagtoren: dezelfde {dailyFloors} etages voor iedereen · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Brons",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Zilver",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Goud",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platina",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Diamant",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Meester",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Legende",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mythisch",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Titaan",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Onsterfelijk",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Kampioen",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Top",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Kleurparen",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Pad tekenen",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Blokken passen",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Memory",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Kleurstroom",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Buizen draaien",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Kleuren sorteren",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Pijlen",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Poorten",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Uitkijkposten",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Lichten",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "Zo speel je"
+    ],
+    [
+     "#games",
+     "Spellen"
+    ],
+    [
+     "#worlds",
+     "Werelden"
+    ],
+    [
+     "#league",
+     "Competitie"
+    ],
+    [
+     "#faq",
+     "FAQ"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "Voor iPhone en iPad · in de App Store",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Beklim de toren.</span> <span class=\"line\"><em>Elke etage</em> een puzzel.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve is een eindeloze toren vol snelle puzzels. Los er een op, klim een etage hoger, bereik het volgende kamp en haal je vrienden in de weekcompetitie in.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "Zo speel je",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Gratis"
+    },
+    {
+     "text": "Geen account nodig"
+    },
+    {
+     "text": "Offline te spelen",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} talen"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 dagen",
+     "reeks"
+    ],
+    [
+     "Etage 6 gehaald",
+     ""
+    ],
+    [
+     "3/3",
+     "levens"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "Zo speel je",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Korter dan een minuut. In vijf seconden begrepen.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Elke etage is één puzzel. De regels snap je in één oogopslag; hoe hoger je klimt, hoe moeilijker het bord wordt, niet de klok.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Spellen",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Elke etage brengt een ander spel; elke 10 etages is er een kamp en een nieuw spel. De eerste keer dat je een spel tegenkomt, laat een korte animatie zien hoe het werkt voordat de klok begint te lopen, en met de knop ? haal je die tijdens het spelen terug. Elk bord wordt door de computer opgelost voordat jij het ziet: geen onoplosbare puzzels.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "Zo speel je",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Hogerop",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Werelden",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "Elke 20 etages een nieuwe wereld: van het bos tot bloemenhellingen, van stormen tot noorderlicht, van sterrenstelsels tot de Eindeloze top. Hoe hoger je klimt, hoe moeilijker de puzzels en hoe stralender de werelden.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Etage",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "Competitie en vrienden",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Je etage is je score.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Rustig en eerlijk",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Gemaakt voor een helder hoofd.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "FAQ",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Vragen",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "Tot ziens op de top.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Beklim de toren, elke etage een puzzel.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve is gratis in de App Store. De eerste etages wachten op je.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Open je etage",
+     "Tik op Klimmen en maak kennis met de puzzel van de etage: kleuren, paden, blokken of kaarten."
+    ],
+    [
+     "Los hem op voordat de tijd om is",
+     "Je hebt 30–60 seconden. Net te laat? Dan wacht het bord op je; haal even adem en maak het af."
+    ],
+    [
+     "Klim naar het volgende kamp",
+     "Elke 10 etages geeft een kamp je een leven terug en ontgrendelt het een nieuw spel. Ook als je levens op zijn, blijft je record staan."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} puzzels, één toren.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "Breng gelijke tegels samen en maak het bord leeg.",
+     "how": [
+      "Sleep een tegel naar een buur met dezelfde kleur: ze verdwijnen allebei.",
+      "Sleep naar een leeg vakje om een tegel dichter bij zijn paar te schuiven."
+     ],
+     "harder": [
+      "Vanaf etage 10: muren en tegels met een beperkt aantal schuifbeurten (bevroren bij 0)",
+      "Vanaf etage 30: elke tegel heeft een limiet aan schuifbeurten, tot 6 kleuren",
+      "Vanaf etage 60: vergrendelde tegels die opengaan als ernaast een paar wordt gemaakt"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Bereik de vlag met één lijn, zonder je vinger op te tillen.",
+     "how": [
+      "Teken van knooppunt naar knooppunt; ga terug om de laatste stap ongedaan te maken.",
+      "Ga langs de checkpoints en eindig op de vlag. Til je je vinger op, dan begint de lijn opnieuw."
+     ],
+     "harder": [
+      "Vanaf etage 20: mist, je ziet alleen wat er rond je pen is",
+      "Vanaf etage 30: checkpoints op volgorde",
+      "Vanaf etage 60: bezoek elk knooppunt, meer muren"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Pas alle stukken in de gaten op het bord.",
+     "how": [
+      "Sleep een stuk vanuit de bak naar het bord; tik op een stuk om het te draaien.",
+      "Tik op een geplaatst stuk om het terug te nemen; de etage is klaar als alles past."
+     ],
+     "harder": [
+      "Van een bord van 6×6 tot 8×8, van 3 stukken tot 6",
+      "Vanaf etage 30: gespiegelde stukken die je omdraait door lang te drukken",
+      "Grotere stukken, krappere gaten"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Draai de kaarten om en vind de paren.",
+     "how": [
+      "Draai twee kaarten om: een paar blijft open, anders gaan ze snel weer dicht.",
+      "Onthoud waar elke kaart ligt en vind alle paren."
+     ],
+     "harder": [
+      "Van 12 kaarten tot 24",
+      "Vanaf etage 30: drietallen, vind drie keer hetzelfde plaatje",
+      "Verkeerde kaarten gaan sneller dicht"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Verbind gelijke uiteinden en vul het bord.",
+     "how": [
+      "Trek een lijn van een gekleurde stip naar de stip met dezelfde kleur.",
+      "Lijnen mogen elkaar niet kruisen en elk vakje moet gevuld zijn; een onafgemaakte lijn verdwijnt als je je vinger optilt."
+     ],
+     "harder": [
+      "Van een bord van 5×5 tot 7×7",
+      "Van 3 kleuren tot 6",
+      "Geblokkeerde vakjes waar je omheen moet"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Draai de buizen en laat het water stromen.",
+     "how": [
+      "Tik op een buis om hem 90 graden te draaien.",
+      "Leid het water zonder onderbreking van de bron naar de vlag; buizen waar water door stroomt, lopen vol."
+     ],
+     "harder": [
+      "Vanaf etage 40: elke buis moet aangesloten zijn",
+      "Meer aftakkingen, meer verwarde buizen",
+      "Een bord van 6×6 vanaf etage 100"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Sorteer de kleuren tot elk buisje één kleur heeft.",
+     "how": [
+      "Tik op een buisje en dan op een ander: de bovenste kleur wordt overgegoten.",
+      "Dat kan alleen op dezelfde kleur of in een leeg buisje; vast? Maak ongedaan."
+     ],
+     "harder": [
+      "Van 4 kleuren tot 8",
+      "Meer gemengde beginsituaties, langere oplossingen",
+      "Altijd twee lege buisjes: het plannen is aan jou"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Haal de pijlen in de juiste volgorde weg.",
+     "how": [
+      "Tik op een pijl: hij schuift in de richting van zijn punt, zijn lijf volgt, en hij verlaat het bord als de weg vrij is.",
+      "Staat er een andere pijl in de weg, dan botst hij terug en kost dat 3 seconden; haal eerst de pijlen ervoor weg."
+     ],
+     "harder": [
+      "Van een bord van 7×7 tot 11×11, tot 85% vol",
+      "Korte pijlen naast kronkelende slangen tot 12 vakjes lang",
+      "Langere ketens van \"deze eerst\""
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Leid elk blok naar buiten door de poort in zijn eigen kleur.",
+     "how": [
+      "Sleep een blok: het schuift alleen in de richting van zijn pijlen. Is de weg vrij, dan gaat het door de bijpassende poort naar buiten; een tik is genoeg.",
+      "De eerste zet is nooit een uitgang: je moet eerst een blok opzij parkeren om een weg vrij te maken."
+     ],
+     "harder": [
+      "Van een bord van 6×6 tot 8×8, van 7 blokken tot 14",
+      "Minstens 3, later 4 geplande parkeerzetten op elk bord",
+      "Vanaf etage 80 een vergrendeld blok; vanaf etage 100 een blok van 2×2 dat alle kanten op schuift"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Zet één uitkijkpost in elke rij, kolom en elk gekleurd gebied.",
+     "how": [
+      "Tik op een vakje: eerst een ✕ (een notitie), tik nog eens voor een uitkijkpost. Elke rij, kolom en elk gebied heeft er precies één nodig.",
+      "Uitkijkposten raken elkaar nooit, ook niet diagonaal. Elk bord heeft precies één oplossing; niet gokken, alleen logica."
+     ],
+     "harder": [
+      "Van een bord van 6×6 tot 8×8",
+      "Op de eerste borden krijgen uitgesloten vakjes al een stip; later markeer je ze zelf",
+      "Langere redeneerketens"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Laat elk vakje branden.",
+     "how": [
+      "Tik op een vakje: het vakje en zijn buren boven, onder, links en rechts (een +-vorm) schakelen om. Donkere gaan aan, brandende gaan uit.",
+      "Houd je vinger erop om te zien welke vakjes omschakelen; diagonale vakjes veranderen niet."
+     ],
+     "harder": [
+      "Van een bord van 3×3 tot 5×5",
+      "Van 3 tot 10 tikken om op te lossen",
+      "De volgorde telt: eerst denken, dan tikken"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} werelden, een toren zonder einde.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Bos",
+     "Etages 1–19"
+    ],
+    [
+     "dusk",
+     "Avondrood",
+     "Etages 80–99"
+    ],
+    [
+     "lights",
+     "Noorderlicht",
+     "Etages 140–159"
+    ],
+    [
+     "summit",
+     "Eindeloze top",
+     "Etage 300 en verder"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Elke week speel je in een competitie met {leagueSize} spelers. De etages die je deze week haalt, bepalen je plaats; de top {leaguePromote} promoveert naar de competitie erboven, de laatste {leagueRelegate} degraderen naar de competitie eronder. Iedereen verschijnt met zijn gekozen naam, outfit en torenthema; trek omlaag om de stand meteen te vernieuwen.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "PROMOTIEZONE · TOP {leaguePromote}",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "Jij",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "Jij",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Toren van de dag",
+     "Dezelfde {dailyFloors} etages voor iedereen, {dailyAttempts} pogingen. Edelstenen op etage 3, 6 en 10; op welke plaats sta jij in je land en tussen je vrienden?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Maandelijkse seizoenen",
+     "Elke maand een nieuw beloningspad: verdien edelstenen, outfits en torenthema's terwijl je klimt. Elk seizoen heeft een eigen exclusieve outfit en een eigen thema."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Vrienden",
+     "Deel je uitnodigingscode, zie waar iedereen in de toren is en krijg een seintje als je iemand inhaalt."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Kisten en reeksen",
+     "Een kist per 10 foutloze etages (5–20 edelstenen), een sterrenkist per 20 sterren. Eén etage per dag houdt je reeks in leven."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Elke puzzel heeft een oplossing",
+     "p": "Borden worden opgelost terwijl ze worden gemaakt; het draait om jouw zetten, niet om geluk."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "Geen account nodig",
+     "p": "Begin meteen. Log in met Apple als je wilt, dan gaat je voortgang mee naar een nieuw apparaat."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Offline te spelen",
+     "p": "Klim verder in de trein of het vliegtuig; je etages worden gesynchroniseerd zodra je weer online bent.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Gemaakt voor iedereen",
+     "p": "Elke tegel heeft naast een kleur ook een vorm; speelbaar met VoiceOver; Tijdhulp geeft meer of onbeperkte tijd."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Advertenties alleen als jij dat kiest",
+     "p": "Advertenties verschijnen alleen als je er zelf om vraagt: voor een leven of extra tijd. Geen onderbrekingen."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} talen",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Is Zirve gratis?",
+     "Ja. Downloaden en spelen zijn gratis. Edelsteenpakketten, het startpakket, de seizoensset en het premiumpad van het seizoen zijn optionele in-app-aankopen, gefactureerd door Apple."
+    ],
+    [
+     "Welke apparaten worden ondersteund?",
+     "iPhone en iPad met iOS 18 of later, iPhone 11 en nieuwer. Er is voorlopig geen Android-versie."
+    ],
+    [
+     "Heb ik een account nodig?",
+     "Nee. Bij de eerste keer openen wordt er een gastaccount voor je aangemaakt. Wil je je voortgang naar een ander apparaat overzetten, log dan in met Apple."
+    ],
+    [
+     "Wat als de tijd te kort voor me is?",
+     "Zet Instellingen → Tijdhulp aan voor 1,5× of onbeperkte tijd op elke etage. Sterren gebruiken nog steeds de normale tijd en etages met hulp tellen niet mee voor de weekcompetitie."
+    ],
+    [
+     "Wat gebeurt er als mijn levens op zijn?",
+     "Je hebt drie levens. Als ze op zijn, ga je terug naar het kamp, maar je record blijft staan. Levens vullen zich na verloop van tijd weer aan en als je een kamp bereikt, krijg je er een terug; je kunt ze ook aanvullen door een advertentie te bekijken of met edelstenen."
+    ],
+    [
+     "Hoe wordt er met mijn gegevens omgegaan?",
+     "We verwerken alleen wat de game nodig heeft om te werken; zie het <a href=\"{href:privacy}\">Privacybeleid</a>. De regels van het spel staan in de <a href=\"{href:terms}\">Gebruiksvoorwaarden</a>."
+    ],
+    [
+     "Hoe verwijder ik mijn account?",
+     "In de app: Profiel → Instellingen → Account → Account verwijderen. Zie <a href=\"{href:delete}\">Je account verwijderen</a>."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "Dezelfde {dailyFloors} etages voor iedereen, {dailyAttempts} pogingen. Beklim de toren van vandaag in Zirve en deel je resultaat.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Dagtoren · elke middernacht nieuw",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Elke dag dezelfde tien etages voor iedereen en drie pogingen. Je beste poging komt in de ranglijst. Als je je resultaat deelt, blijven de spellen en borden verborgen, zodat je de verrassing voor niemand verpest.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Voorbeeldresultaat: 7 van 10 etages in 3 minuten en 5 seconden",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Dagtoren",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "3:05 totale tijd",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Nu jij",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Resultaat",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "Wat betekenen de vakjes?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Elk vakje van een gedeeld resultaat is één etage: bovenste rij 1–5, onderste rij 6–10. Elk vakje heeft een eigen kleur en icoon, dus het is ook zonder kleur te lezen.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "Een regel 🕒 Met tijdhulp betekent dat Tijdhulp aan stond tijdens de poging. De vakjes volgen nog steeds de normale tijd; pogingen met hulp komen niet in de ranglijst.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "Zo speel je",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Nu jij.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "Vandaag beklimt iedereen <em>dezelfde toren</em>.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Heb je Zirve? Tik op Open in de banner boven aan deze pagina om meteen naar de Dagtoren te gaan.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve is gratis in de App Store. De toren van vandaag wacht op je.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "Op 3-sterrentempo",
+     "Opgelost met nog minstens 15 seconden over."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Opgelost",
+     "Opgelost voordat de tijd om was."
+    ],
+    [
+     "continued",
+     "🟨",
+     "Doorgegaan",
+     "De tijd was om; opgelost na doorgaan met een advertentie of edelstenen."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Tijd om",
+     "De poging eindigde op deze etage."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "Niet bereikt",
+     "De poging is niet zo ver gekomen."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} etages, {dailyAttempts} pogingen, één ranglijst.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Open de toren",
+     "Tik in Zirve op de kaart Dagtoren op het torenscherm. Hij wordt elke middernacht vernieuwd en is voor iedereen hetzelfde."
+    ],
+    [
+     "Klim",
+     "Elke etage is een snelle puzzel. Je krijgt drie pogingen; de beste komt in de ranglijst van je land en tussen je vrienden. Edelstenen op etage 3, 6 en 10."
+    ],
+    [
+     "Deel",
+     "Als de poging voorbij is, tik je op Resultaat delen: de vakjes en je tijd worden gedeeld, de spellen en borden niet."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

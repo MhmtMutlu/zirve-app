@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "pl",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "Polski",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "Przejdź do treści",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Sekcje",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Menu",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Język",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Strona główna",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "Dostępne także w językach:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Zamknij",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Linki",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Stworzone przez mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · Ta strona nie używa plików cookie ani narzędzi śledzących.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Aktualizacja strony: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Prywatność"
+    ],
+    [
+     "terms",
+     "Warunki"
+    ],
+    [
+     "delete",
+     "Usuń konto"
+    ],
+    [
+     "support",
+     "Wsparcie"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d} {month} {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "stycznia",
+    "lutego",
+    "marca",
+    "kwietnia",
+    "maja",
+    "czerwca",
+    "lipca",
+    "sierpnia",
+    "września",
+    "października",
+    "listopada",
+    "grudnia"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve to darmowa gra logiczna na iPhone'a i iPada od mm-apps, niezależnego dewelopera z Turcji. Wspinaj się na wieżę, w której każde piętro to krótka łamigłówka na czas jednego z {puzzleTypes} rodzajów.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "Pobierz w App Store",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "Od piętra {floor}",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Nie znaleziono strony · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "To piętro jest puste.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "Ta strona nie istnieje.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "Polska strona główna",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Wspinaj się na wieżę.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Każde piętro to łamigłówka.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} łamigłówek · liga tygodniowa · iPhone i iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Wspinaj się na wieżę. Każde piętro to łamigłówka. {puzzleTypes} łamigłówek, liga tygodniowa, iPhone i iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6 listopada 2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Polityka prywatności · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Jak gra mobilna Zirve przetwarza dane osobowe.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Warunki korzystania · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "Warunki korzystania z gry mobilnej Zirve.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Usuń swoje konto · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "Jak usunąć konto Zirve i dane z gry.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Wsparcie · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Pomoc i kontakt w sprawie Zirve.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} na iPhone'a i iPada",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve to darmowa gra logiczna na iPhone'a i iPada: wspinaj się na wieżę, w której każde piętro to krótka łamigłówka jednego z {puzzleTypes} rodzajów. Wieża dnia, liga tygodniowa. Bez wymuszonych reklam.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Ekran główny Zirve: leśna wieża na piętrze 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Przykładowa tabela ligi",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "Piętra: {n}",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Wieża dnia: te same {dailyFloors} pięter dla wszystkich · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Brąz",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Srebro",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Złoto",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platyna",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Diament",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Mistrz",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Legenda",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mityczny",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Tytan",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Nieśmiertelny",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Czempion",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Szczyt",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Pary kolorów",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Rysuj ścieżkę",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Dopasuj klocki",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Pamięć",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Przepływ",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Obracanie rur",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Sortowanie kolorów",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Strzałki",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Bramy",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Strażnice",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Światła",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "Jak grać"
+    ],
+    [
+     "#games",
+     "Gry"
+    ],
+    [
+     "#worlds",
+     "Krainy"
+    ],
+    [
+     "#league",
+     "Liga"
+    ],
+    [
+     "#faq",
+     "FAQ"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "Na iPhone'a i iPada · w App Store",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Wspinaj się na wieżę.</span> <span class=\"line\"><em>Każde piętro</em> to łamigłówka.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve to niekończąca się wieża szybkich łamigłówek. Rozwiąż jedną, wejdź piętro wyżej, dotrzyj do następnego obozu i wyprzedź znajomych w lidze tygodniowej.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "Jak grać",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Za darmo"
+    },
+    {
+     "text": "Bez zakładania konta"
+    },
+    {
+     "text": "Działa offline",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} języków"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 dni",
+     "seria"
+    ],
+    [
+     "Piętro 6 ukończone",
+     ""
+    ],
+    [
+     "3/3",
+     "życia"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "Jak grać",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Mniej niż minuta. Zrozumiesz w pięć sekund.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Każde piętro to jedna łamigłówka. Zasady łapiesz od razu; im wyżej się wspinasz, tym trudniejsza jest plansza, a nie zegar.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Gry",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Każde piętro to inna gra; co 10 pięter czeka obóz i nowa gra. Gdy spotykasz grę po raz pierwszy, krótka animacja pokazuje, jak działa, zanim ruszy zegar, a przycisk ? przywołuje ją w trakcie gry. Komputer rozwiązuje każdą planszę, zanim ją zobaczysz: nie ma łamigłówek bez rozwiązania.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "Jak grać",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Wyżej",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Krainy",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "Nowa kraina co 20 pięter: od lasu po kwieciste zbocza, od burzy po zorzę polarną, od galaktyk po Bezkresny Szczyt. Im wyżej się wspinasz, tym trudniejsze łamigłówki i jaśniejsze krainy.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Piętro",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "Liga i znajomi",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Twoje piętro to twój wynik.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Spokojnie i uczciwie",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Stworzone dla jasnego umysłu.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "FAQ",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Pytania",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "Do zobaczenia na szczycie.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Wspinaj się na wieżę, każde piętro to łamigłówka.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve jest za darmo w App Store. Pierwsze piętra czekają.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Otwórz swoje piętro",
+     "Dotknij Wspinaj się i poznaj łamigłówkę piętra: kolory, ścieżki, klocki albo karty."
+    ],
+    [
+     "Rozwiąż, zanim skończy się czas",
+     "Masz 30–60 sekund. Jeśli zabraknie ci odrobiny czasu, plansza na ciebie poczeka; weź oddech i dokończ."
+    ],
+    [
+     "Wspinaj się do następnego obozu",
+     "Obóz co 10 pięter oddaje jedno życie i odblokowuje nową grę. Nawet gdy skończą ci się życia, twój rekord zostaje."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} łamigłówek, jedna wieża.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "Łącz pasujące kafelki i wyczyść planszę.",
+     "how": [
+      "Przeciągnij kafelek na sąsiada w tym samym kolorze: oba znikają.",
+      "Przeciągnij na puste pole, aby przesunąć kafelek bliżej jego pary."
+     ],
+     "harder": [
+      "Od piętra 10: ściany i kafelki z ograniczoną liczbą przesunięć (zamrożone przy 0)",
+      "Od piętra 30: każdy kafelek ma limit przesunięć, do 6 kolorów",
+      "Od piętra 60: zablokowane kafelki, które otwierają się, gdy obok powstanie para"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Dotrzyj do flagi jedną linią, nie odrywając palca.",
+     "how": [
+      "Rysuj od węzła do węzła; cofnij się, aby wymazać ostatni krok.",
+      "Przejdź przez punkty kontrolne i zakończ na fladze. Gdy oderwiesz palec, linia się resetuje."
+     ],
+     "harder": [
+      "Od piętra 20: mgła, widzisz tylko okolicę pisaka",
+      "Od piętra 30: punkty kontrolne po kolei",
+      "Od piętra 60: odwiedź każdy węzeł, więcej ścian"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Zmieść wszystkie klocki w lukach na planszy.",
+     "how": [
+      "Przeciągnij klocek z tacy na planszę; dotknij klocka, aby go obrócić.",
+      "Dotknij położonego klocka, aby go zabrać; piętro jest ukończone, gdy wszystko pasuje."
+     ],
+     "harder": [
+      "Od planszy 6×6 do 8×8, od 3 klocków do 6",
+      "Od piętra 30: lustrzane klocki, które odwracasz długim przytrzymaniem",
+      "Większe klocki, ciaśniejsze luki"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Odwracaj karty i znajdź pary.",
+     "how": [
+      "Odwróć dwie karty: para zostaje odkryta, a jeśli nie pasują, po chwili znów się zakrywają.",
+      "Zapamiętaj, gdzie leży każda karta, i znajdź wszystkie pary."
+     ],
+     "harder": [
+      "Od 12 kart do 24",
+      "Od piętra 30: trójki, znajdź trzy takie same obrazki",
+      "Błędne karty zakrywają się szybciej"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Połącz pasujące końce i wypełnij planszę.",
+     "how": [
+      "Narysuj linię od kolorowej kropki do pasującej kropki.",
+      "Linie nie mogą się krzyżować, a każde pole musi być wypełnione; niedokończona linia znika, gdy oderwiesz palec."
+     ],
+     "harder": [
+      "Od planszy 5×5 do 7×7",
+      "Od 3 kolorów do 6",
+      "Zablokowane pola, które trzeba ominąć"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Obracaj rury i puść wodę.",
+     "how": [
+      "Dotknij rury, aby obrócić ją o 90 stopni.",
+      "Doprowadź wodę od źródła do flagi bez przerwy; rury, którymi płynie woda, się wypełniają."
+     ],
+     "harder": [
+      "Od piętra 40: każda rura musi być podłączona",
+      "Więcej rozgałęzień, bardziej splątane rury",
+      "Plansza 6×6 od piętra 100"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Sortuj kolory, aż każda probówka będzie w jednym kolorze.",
+     "how": [
+      "Dotknij probówki, a potem innej: górny kolor się przelewa.",
+      "Można go przelać tylko na ten sam kolor albo do pustej probówki; brak ruchu? Cofnij."
+     ],
+     "harder": [
+      "Od 4 kolorów do 8",
+      "Bardziej wymieszany start, dłuższe rozwiązania",
+      "Zawsze dwie puste probówki: planowanie należy do ciebie"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Usuń strzałki we właściwej kolejności.",
+     "how": [
+      "Dotknij strzałki: przesuwa się tam, gdzie wskazuje jej grot, reszta podąża za nią, a jeśli droga jest wolna, strzałka opuszcza planszę.",
+      "Jeśli na drodze stoi inna strzałka, odbija się i kosztuje cię to 3 sekundy; najpierw usuń te z przodu."
+     ],
+     "harder": [
+      "Od planszy 7×7 do 11×11, wypełnionej nawet w 85%",
+      "Krótkie strzałki obok krętych węży o długości do 12 pól",
+      "Dłuższe łańcuchy „najpierw ta”"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Wyprowadź każdy klocek przez bramę w jego kolorze.",
+     "how": [
+      "Przeciągnij klocek: przesuwa się tylko w kierunkach wskazanych przez jego strzałki. Gdy droga jest wolna, wychodzi przez pasującą bramę; wystarczy dotknięcie.",
+      "Pierwszy ruch nigdy nie jest wyjściem: najpierw musisz odstawić jakiś klocek na bok, aby otworzyć drogę."
+     ],
+     "harder": [
+      "Od planszy 6×6 do 8×8, od 7 klocków do 14",
+      "Na każdej planszy co najmniej 3, później 4 zaplanowane odstawienia",
+      "Od piętra 80 zablokowany klocek; od piętra 100 klocek 2×2, który przesuwa się w każdą stronę"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Postaw jedną strażnicę w każdym rzędzie, każdej kolumnie i każdym kolorowym obszarze.",
+     "how": [
+      "Dotknij pola: najpierw ✕ (notatka), dotknij jeszcze raz, aby postawić strażnicę. Każdy rząd, kolumna i obszar potrzebuje dokładnie jednej.",
+      "Strażnice nigdy się nie stykają, nawet po przekątnej. Każda plansza ma dokładnie jedno rozwiązanie; bez zgadywania, sama logika."
+     ],
+     "harder": [
+      "Od planszy 6×6 do 8×8",
+      "Na pierwszych planszach wykluczone pola są oznaczone kropką za ciebie; później oznaczasz je samodzielnie",
+      "Dłuższe łańcuchy dedukcji"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Zapal wszystkie pola.",
+     "how": [
+      "Dotknij pola: ono i jego sąsiedzi u góry, na dole, po lewej i po prawej (kształt +) zmieniają stan. Ciemne się zapalają, zapalone gasną.",
+      "Przytrzymaj palec, aby zobaczyć, które pola się zmienią; pól po przekątnej to nie dotyczy."
+     ],
+     "harder": [
+      "Od planszy 3×3 do 5×5",
+      "Od 3 do 10 dotknięć do rozwiązania",
+      "Kolejność ma znaczenie: najpierw pomyśl, potem dotykaj"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} krain, wieża bez końca.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Las",
+     "Piętra 1–19"
+    ],
+    [
+     "dusk",
+     "Zachód słońca",
+     "Piętra 80–99"
+    ],
+    [
+     "lights",
+     "Zorza polarna",
+     "Piętra 140–159"
+    ],
+    [
+     "summit",
+     "Bezkresny Szczyt",
+     "Piętro 300 i dalej"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Co tydzień dołączasz do ligi liczącej {leagueSize} graczy. Piętra ukończone w tym tygodniu wyznaczają twoje miejsce; {leaguePromote} najlepszych awansuje o ligę wyżej, a {leagueRelegate} ostatnich spada o ligę niżej. Każdy jest widoczny z wybraną nazwą, strojem i motywem wieży; pociągnij w dół, aby od razu odświeżyć tabelę.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "STREFA AWANSU · TOP {leaguePromote}",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "Ty",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "Ty",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Wieża dnia",
+     "Te same {dailyFloors} pięter dla wszystkich, {dailyAttempts} próby. Klejnoty na piętrach 3, 6 i 10; które miejsce zajmiesz w swoim kraju i wśród znajomych?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Sezony miesięczne",
+     "Co miesiąc nowa ścieżka nagród: zdobywaj klejnoty, stroje i motywy wieży, wspinając się wyżej. Każdy sezon ma własny, ekskluzywny strój i motyw."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Znajomi",
+     "Udostępnij swój kod zaproszenia, zobacz, gdzie w wieży jest każdy z was, i dostań powiadomienie, gdy kogoś wyprzedzisz."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Skrzynie i serie",
+     "Skrzynia co 10 bezbłędnych pięter (5–20 klejnotów), gwiezdna skrzynia co 20 gwiazdek. Jedno piętro dziennie podtrzymuje twoją serię."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Każda łamigłówka ma rozwiązanie",
+     "p": "Plansze są rozwiązywane już podczas tworzenia; liczą się twoje ruchy, nie szczęście."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "Bez zakładania konta",
+     "p": "Zacznij od razu. Jeśli chcesz, zaloguj się przez Apple, a twoje postępy przejdą z tobą na nowe urządzenie."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Działa offline",
+     "p": "Wspinaj się dalej w pociągu czy w samolocie; piętra zsynchronizują się, gdy znów połączysz się z internetem.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Dla każdego",
+     "p": "Każdy kafelek ma nie tylko kolor, ale i kształt; da się grać z VoiceOver; Pomoc z czasem daje więcej czasu albo czas bez limitu."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Reklamy tylko wtedy, gdy chcesz",
+     "p": "Reklama pojawia się tylko wtedy, gdy o nią poprosisz: po życie albo dodatkowy czas. Bez przerywania gry."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} języków",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Czy Zirve jest za darmo?",
+     "Tak. Pobieranie i granie są bezpłatne. Pakiety klejnotów, pakiet startowy, zestaw sezonowy i ścieżka nagród premium sezonu to opcjonalne zakupy w aplikacji rozliczane przez Apple."
+    ],
+    [
+     "Jakie urządzenia są obsługiwane?",
+     "iPhone i iPad z iOS 18 lub nowszym, iPhone 11 i nowsze. Na razie nie ma wersji na Androida."
+    ],
+    [
+     "Czy potrzebuję konta?",
+     "Nie. Przy pierwszym uruchomieniu tworzone jest dla ciebie konto gościa. Aby przenieść postępy na inne urządzenie, zaloguj się przez Apple."
+    ],
+    [
+     "Co, jeśli czas jest dla mnie za krótki?",
+     "Włącz Ustawienia → Pomoc z czasem, aby mieć 1,5× więcej czasu albo czas bez limitu na każdym piętrze. Gwiazdki nadal liczą się według zwykłego czasu, a piętra z pomocą nie liczą się do ligi tygodniowej."
+    ],
+    [
+     "Co się dzieje, gdy skończą mi się życia?",
+     "Masz trzy życia. Gdy się skończą, wracasz do obozu, ale twój rekord zostaje. Życia odnawiają się z czasem, a dotarcie do obozu oddaje jedno; możesz też je uzupełnić, oglądając reklamę albo za klejnoty."
+    ],
+    [
+     "Co dzieje się z moimi danymi?",
+     "Przetwarzamy tylko to, czego gra potrzebuje do działania; zobacz <a href=\"{href:privacy}\">Politykę prywatności</a>. Zasady gry znajdziesz w <a href=\"{href:terms}\">Warunkach korzystania</a>."
+    ],
+    [
+     "Jak usunąć konto?",
+     "W aplikacji: Profil → Ustawienia → Konto → Usuń konto. Zobacz <a href=\"{href:delete}\">Usuń swoje konto</a>."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "Te same {dailyFloors} pięter dla wszystkich, {dailyAttempts} próby. Wespnij się na dzisiejszą wieżę w Zirve i udostępnij wynik.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Wieża dnia · nowa o każdej północy",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Codziennie te same dziesięć pięter dla wszystkich i trzy próby. W rankingu liczy się twoja najlepsza próba. Gdy udostępniasz wynik, gry i plansze pozostają ukryte, więc nikomu nie psujesz niespodzianki.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Przykładowy wynik: 7 z 10 pięter w 3 minuty 5 sekund",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Wieża dnia",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "3:05 łącznie",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Twoja kolej",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Wynik",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "Co oznaczają kwadraty?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Każdy kwadrat udostępnionego wyniku to jedno piętro: górny rząd 1–5, dolny rząd 6–10. Każdy kwadrat ma własny kolor i ikonę, więc da się go odczytać także bez kolorów.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "Wiersz „🕒 Pomoc z czasem włączona” oznacza, że podczas próby była włączona Pomoc z czasem. Kwadraty nadal są liczone według zwykłego czasu; próby z pomocą nie trafiają do rankingu.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "Jak grać",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Twoja kolej.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "Dziś wszyscy wspinają się na <em>tę samą wieżę</em>.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Masz Zirve? Dotknij Otwórz na banerze u góry tej strony, aby przejść prosto do Wieży dnia.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve jest za darmo w App Store. Dzisiejsza wieża czeka.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "W tempie na 3 gwiazdki",
+     "Rozwiązane, gdy zostało co najmniej 15 sekund."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Rozwiązane",
+     "Rozwiązane przed upływem czasu."
+    ],
+    [
+     "continued",
+     "🟨",
+     "Z kontynuacją",
+     "Czas się skończył; rozwiązane po kontynuacji za reklamę albo klejnoty."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Koniec czasu",
+     "Próba zakończyła się na tym piętrze."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "Nieosiągnięte",
+     "Próba nie dotarła tak daleko."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} pięter, {dailyAttempts} próby, jeden ranking.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Otwórz wieżę",
+     "W Zirve dotknij karty Wieża dnia na ekranie wieży. Odnawia się o każdej północy i jest taka sama dla wszystkich."
+    ],
+    [
+     "Wspinaj się",
+     "Każde piętro to szybka łamigłówka. Masz trzy próby; najlepsza trafia do rankingu w twoim kraju i wśród znajomych. Klejnoty na piętrach 3, 6 i 10."
+    ],
+    [
+     "Udostępnij",
+     "Gdy próba się skończy, dotknij Udostępnij wynik: wysyłasz kwadraty i swój czas, ale nie gry ani plansze."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

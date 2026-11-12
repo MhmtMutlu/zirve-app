@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "de",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "Deutsch",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "Zum Inhalt springen",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Abschnitte",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Menü",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Sprache",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Startseite",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "Auch verfügbar auf:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Schließen",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Links",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Entwickelt von mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · Diese Website verwendet keine Cookies oder Tracker.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Seite aktualisiert: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Datenschutz"
+    ],
+    [
+     "terms",
+     "Nutzungsbedingungen"
+    ],
+    [
+     "delete",
+     "Konto löschen"
+    ],
+    [
+     "support",
+     "Support"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d}. {month} {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve ist ein kostenloses Logik-Rätselspiel für iPhone und iPad von mm-apps, einem unabhängigen Entwickler aus der Türkei. Erklimm einen Turm, in dem jede Etage ein kurzes Rätsel auf Zeit aus {puzzleTypes} Arten ist.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "Laden im App Store",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "Ab Etage {floor}",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Seite nicht gefunden · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "Diese Etage ist leer.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "Diese Seite gibt es nicht.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "Deutsche Startseite",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Erklimm den Turm.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Jede Etage ein Rätsel.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} Rätsel · Wochenliga · iPhone und iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Erklimm den Turm. Jede Etage ein Rätsel. {puzzleTypes} Rätsel, Wochenliga, iPhone und iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6. November 2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Datenschutzerklärung · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Wie das Mobilspiel Zirve personenbezogene Daten verarbeitet.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Nutzungsbedingungen · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "Die Nutzungsbedingungen des Mobilspiels Zirve.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Konto löschen · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "So löschst du dein Zirve-Konto und deine Spieldaten.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Support · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Hilfe und Kontakt für Zirve.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} für iPhone & iPad",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve ist ein kostenloses Logik-Rätselspiel für iPhone und iPad: Erklimm einen Turm, in dem jede Etage ein kurzes Rätsel aus {puzzleTypes} Arten ist. Tagesturm, Wochenliga. Keine aufgezwungene Werbung.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Zirve-Startbildschirm: der Waldturm auf Etage 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Beispiel einer Liga-Rangliste",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n} Etagen geschafft",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Tagesturm: dieselben {dailyFloors} Etagen für alle · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Bronze",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Silber",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Gold",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platin",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Diamant",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Meister",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Legende",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mythisch",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Titan",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Unsterblich",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Champion",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Gipfel",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Farbpaare",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Weg zeichnen",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Blöcke einpassen",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Gedächtnis",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Farbfluss",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Rohre drehen",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Farben sortieren",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Pfeile",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Tore",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Wachtürme",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Lichter",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "So wird gespielt"
+    ],
+    [
+     "#games",
+     "Spiele"
+    ],
+    [
+     "#worlds",
+     "Welten"
+    ],
+    [
+     "#league",
+     "Liga"
+    ],
+    [
+     "#faq",
+     "FAQ"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "Für iPhone und iPad · im App Store",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Erklimm den Turm.</span> <span class=\"line\"><em>Jede Etage</em> ein Rätsel.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve ist ein endloser Turm aus schnellen Rätseln. Löse eins, steig eine Etage höher, erreiche das nächste Lager und überhol deine Freunde in der Wochenliga.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "So wird gespielt",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Kostenlos"
+    },
+    {
+     "text": "Kein Konto nötig"
+    },
+    {
+     "text": "Offline spielbar",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} Sprachen"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 Tage",
+     "Serie"
+    ],
+    [
+     "Etage 6 geschafft",
+     ""
+    ],
+    [
+     "3/3",
+     "Leben"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "So wird gespielt",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Unter einer Minute. In fünf Sekunden verstanden.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Jede Etage ist ein einzelnes Rätsel. Die Regeln erfasst du auf einen Blick; je höher du kletterst, desto schwerer wird das Spielfeld, nicht die Uhr.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Spiele",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Jede Etage bringt ein anderes Spiel; alle 10 Etagen gibt es ein Lager und ein neues Spiel. Wenn du einem Spiel zum ersten Mal begegnest, zeigt dir eine kurze Animation, wie es funktioniert, bevor die Zeit läuft, und über die ?-Schaltfläche holst du sie während des Spiels zurück. Jedes Spielfeld wird vom Computer gelöst, bevor du es siehst: keine unlösbaren Rätsel.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "So wird gespielt",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Weiter oben",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Welten",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "Alle 20 Etagen eine neue Welt: vom Wald zum Blumenhang, vom Gewitter zum Nordlicht, von Galaxien bis zum Endlosen Gipfel. Je höher du kletterst, desto schwerer die Rätsel und desto strahlender die Welten.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Etage",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "Liga und Freunde",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Deine Etage ist dein Punktestand.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Ruhig und fair",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Gemacht für einen klaren Kopf.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "FAQ",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Fragen",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "Wir sehen uns am Gipfel.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Erklimm den Turm, jede Etage ein Rätsel.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve ist kostenlos im App Store. Die ersten Etagen warten.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Öffne deine Etage",
+     "Tippe auf Klettern und lerne das Rätsel der Etage kennen: Farben, Wege, Blöcke oder Karten."
+    ],
+    [
+     "Löse es, bevor die Zeit abläuft",
+     "Du hast 30–60 Sekunden. Knapp verpasst? Dann wartet das Spielfeld auf dich; atme durch und bring es zu Ende."
+    ],
+    [
+     "Klettere zum nächsten Lager",
+     "Alle 10 Etagen gibt dir ein Lager ein Leben zurück und schaltet ein neues Spiel frei. Auch wenn dir die Leben ausgehen, bleibt dein Rekord."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} Rätsel, ein Turm.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "Bring passende Steine zusammen und räum das Spielfeld ab.",
+     "how": [
+      "Zieh einen Stein auf einen gleichfarbigen Nachbarn: Beide verschwinden.",
+      "Zieh ihn auf ein leeres Feld, um einen Stein näher an sein Paar zu schieben."
+     ],
+     "harder": [
+      "Ab Etage 10: Wände und Steine mit begrenzten Zügen (bei 0 eingefroren)",
+      "Ab Etage 30: Jeder Stein hat ein Zuglimit, bis zu 6 Farben",
+      "Ab Etage 60: gesperrte Steine, die sich öffnen, wenn direkt daneben ein Paar entsteht"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Erreiche die Flagge mit einer einzigen Linie, ohne den Finger abzusetzen.",
+     "how": [
+      "Zeichne von Knoten zu Knoten; zieh zurück, um den letzten Schritt rückgängig zu machen.",
+      "Passiere die Kontrollpunkte und ende auf der Flagge. Setzt du den Finger ab, beginnt die Linie von vorn."
+     ],
+     "harder": [
+      "Ab Etage 20: Nebel, du siehst nur rund um deinen Stift",
+      "Ab Etage 30: Kontrollpunkte der Reihe nach",
+      "Ab Etage 60: jeden Knoten besuchen, mehr Wände"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Setze jedes Teil in die Lücken des Spielfelds.",
+     "how": [
+      "Zieh ein Teil aus der Ablage aufs Spielfeld; tippe auf ein Teil, um es zu drehen.",
+      "Tippe auf ein gesetztes Teil, um es zurückzunehmen; die Etage ist geschafft, wenn alles passt."
+     ],
+     "harder": [
+      "Vom 6×6- zum 8×8-Spielfeld, von 3 Teilen zu 6",
+      "Ab Etage 30: gespiegelte Teile, die du mit langem Drücken umdrehst",
+      "Größere Teile, engere Lücken"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Dreh die Karten um und finde die Paare.",
+     "how": [
+      "Dreh zwei Karten um: Ein Paar bleibt offen, sonst schließen sie sich gleich wieder.",
+      "Merk dir, wo jede Karte liegt, und finde alle Paare."
+     ],
+     "harder": [
+      "Von 12 Karten zu 24",
+      "Ab Etage 30: Dreier, finde drei gleiche Bilder",
+      "Falsche Karten schließen sich schneller"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Verbinde passende Enden und fülle das Spielfeld.",
+     "how": [
+      "Zieh eine Linie von einem farbigen Punkt zum passenden Punkt.",
+      "Linien dürfen sich nicht kreuzen und jedes Feld muss gefüllt sein; eine unfertige Linie verschwindet, wenn du den Finger absetzt."
+     ],
+     "harder": [
+      "Vom 5×5- zum 7×7-Spielfeld",
+      "Von 3 Farben zu 6",
+      "Gesperrte Felder, um die du herumführen musst"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Dreh die Rohre und bring das Wasser zum Fließen.",
+     "how": [
+      "Tippe auf ein Rohr, um es um 90 Grad zu drehen.",
+      "Leite das Wasser lückenlos von der Quelle zur Flagge; durchflossene Rohre füllen sich."
+     ],
+     "harder": [
+      "Ab Etage 40: Jedes Rohr muss verbunden sein",
+      "Mehr Abzweigungen, verwinkeltere Rohre",
+      "Ab Etage 100 ein 6×6-Spielfeld"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Sortiere die Farben, bis jedes Röhrchen nur noch eine enthält.",
+     "how": [
+      "Tippe auf ein Röhrchen, dann auf ein anderes: Die oberste Farbe wird umgefüllt.",
+      "Sie passt nur auf dieselbe Farbe oder in ein leeres Röhrchen; festgefahren? Mach den Zug rückgängig."
+     ],
+     "harder": [
+      "Von 4 Farben zu 8",
+      "Stärker gemischte Starts, längere Lösungen",
+      "Immer zwei leere Röhrchen: Die Planung liegt bei dir"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Räum die Pfeile in der richtigen Reihenfolge ab.",
+     "how": [
+      "Tippe auf einen Pfeil: Er gleitet in Richtung seiner Spitze, sein Körper folgt, und er verlässt das Spielfeld, wenn der Weg frei ist.",
+      "Steht ein anderer Pfeil im Weg, prallt er zurück und kostet 3 Sekunden; räum zuerst die vorderen ab."
+     ],
+     "harder": [
+      "Vom 7×7- zum 11×11-Spielfeld, bis zu 85 % gefüllt",
+      "Kurze Pfeile neben gewundenen Schlangen mit bis zu 12 Feldern Länge",
+      "Längere „Der hier zuerst“-Ketten"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Führe jeden Block durch das Tor seiner Farbe hinaus.",
+     "how": [
+      "Zieh einen Block: Er gleitet nur in die Richtung seiner Pfeile. Ist der Weg frei, verlässt er das Spielfeld durch das passende Tor; ein Tippen genügt.",
+      "Der erste Zug ist nie ein Ausgang: Du musst erst einen Block zur Seite parken, um einen Weg freizumachen."
+     ],
+     "harder": [
+      "Vom 6×6- zum 8×8-Spielfeld, von 7 Blöcken zu 14",
+      "Auf jedem Spielfeld mindestens 3, später 4 geplante Parkzüge",
+      "Ab Etage 80 ein gesperrter Block; ab Etage 100 ein 2×2-Block, der in jede Richtung gleitet"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Setze einen Wachturm in jede Reihe, jede Spalte und jeden farbigen Bereich.",
+     "how": [
+      "Tippe auf ein Feld: zuerst ✕ (eine Notiz), noch einmal tippen für einen Wachturm. Jede Reihe, jede Spalte und jeder Bereich braucht genau einen.",
+      "Wachtürme berühren sich nie, auch nicht diagonal. Jedes Spielfeld hat genau eine Lösung; kein Raten, nur Logik."
+     ],
+     "harder": [
+      "Vom 6×6- zum 8×8-Spielfeld",
+      "Auf den ersten Spielfeldern sind ausgeschlossene Felder schon mit Punkten markiert; später markierst du sie selbst",
+      "Längere Schlussfolgerungsketten"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Bring jedes Feld zum Leuchten.",
+     "how": [
+      "Tippe auf ein Feld: Es und seine Nachbarn oben, unten, links und rechts (ein +) schalten um. Dunkle gehen an, leuchtende gehen aus.",
+      "Halte den Finger gedrückt, um zu sehen, welche Felder umschalten; Diagonalen sind nicht betroffen."
+     ],
+     "harder": [
+      "Vom 3×3- zum 5×5-Spielfeld",
+      "3 bis 10 Mal Tippen bis zur Lösung",
+      "Die Reihenfolge zählt: erst denken, dann tippen"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} Welten, ein Turm ohne Ende.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Wald",
+     "Etagen 1–19"
+    ],
+    [
+     "dusk",
+     "Abendrot",
+     "Etagen 80–99"
+    ],
+    [
+     "lights",
+     "Nordlicht",
+     "Etagen 140–159"
+    ],
+    [
+     "summit",
+     "Endloser Gipfel",
+     "Etage 300 und höher"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Jede Woche trittst du einer Liga mit {leagueSize} Spielern bei. Die Etagen, die du diese Woche schaffst, bestimmen deinen Platz; die besten {leaguePromote} steigen eine Liga auf, die letzten {leagueRelegate} steigen eine Liga ab. Alle erscheinen mit ihrem gewählten Namen, Kostüm und Turmthema; zieh nach unten, um die Rangliste sofort zu aktualisieren.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "AUFSTIEGSZONE · TOP {leaguePromote}",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "Du",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "Du",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Tagesturm",
+     "Dieselben {dailyFloors} Etagen für alle, {dailyAttempts} Versuche. Juwelen auf den Etagen 3, 6 und 10; auf welchem Platz landest du in deinem Land und unter Freunden?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Monatliche Saisons",
+     "Jeden Monat ein neuer Belohnungspfad: Verdiene beim Klettern Juwelen, Kostüme und Turmthemen. Jede Saison bringt ein eigenes exklusives Kostüm und Thema."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Freunde",
+     "Teile deinen Einladungscode, sieh, wo alle im Turm stehen, und erfahre es, wenn du sie überholst."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Truhen und Serien",
+     "Alle 10 makellosen Etagen eine Truhe (5–20 Juwelen), alle 20 Sterne eine Sternentruhe. Eine Etage am Tag hält deine Serie am Leben."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Jedes Rätsel hat eine Lösung",
+     "p": "Spielfelder werden schon beim Erzeugen gelöst; es kommt auf deine Züge an, nicht auf Glück."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "Kein Konto nötig",
+     "p": "Leg sofort los. Wenn du möchtest, meldest du dich mit Apple an, und dein Fortschritt zieht mit auf ein neues Gerät."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Offline spielbar",
+     "p": "Klettere im Zug oder im Flugzeug weiter; deine Etagen werden synchronisiert, sobald du wieder online bist.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Für alle gemacht",
+     "p": "Jeder Stein hat neben einer Farbe auch eine Form; mit VoiceOver spielbar; die Zeithilfe gibt dir mehr oder unbegrenzt Zeit."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Werbung nur, wenn du willst",
+     "p": "Werbung erscheint nur, wenn du selbst darum bittest: für ein Leben oder Extrazeit. Keine Unterbrechungen."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} Sprachen",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Ist Zirve kostenlos?",
+     "Ja. Herunterladen und Spielen sind kostenlos. Juwelenpakete, das Startpaket, das Saisonset und der Premium-Pfad der Saison sind optionale In-App-Käufe, abgerechnet von Apple."
+    ],
+    [
+     "Welche Geräte werden unterstützt?",
+     "iPhone und iPad mit iOS 18 oder neuer, ab iPhone 11. Eine Android-Version gibt es vorerst nicht."
+    ],
+    [
+     "Brauche ich ein Konto?",
+     "Nein. Beim ersten Start wird automatisch ein Gastkonto für dich angelegt. Um deinen Fortschritt auf ein anderes Gerät zu übertragen, melde dich mit Apple an."
+    ],
+    [
+     "Was, wenn mir die Zeit zu knapp ist?",
+     "Schalte unter Einstellungen → Zeithilfe die 1,5-fache oder unbegrenzte Zeit für jede Etage ein. Sterne richten sich weiter nach der normalen Zeit, und Etagen mit Zeithilfe zählen nicht für die Wochenliga."
+    ],
+    [
+     "Was passiert, wenn mir die Leben ausgehen?",
+     "Du hast drei Leben. Sind sie weg, kehrst du ins Lager zurück, aber dein Rekord bleibt. Leben füllen sich mit der Zeit wieder auf, und wenn du ein Lager erreichst, bekommst du eins zurück; du kannst sie auch auffüllen, indem du dir Werbung ansiehst oder Juwelen einsetzt."
+    ],
+    [
+     "Wie werden meine Daten behandelt?",
+     "Wir verarbeiten nur, was das Spiel zum Funktionieren braucht; siehe die <a href=\"{href:privacy}\">Datenschutzerklärung</a>. Die Spielregeln stehen in den <a href=\"{href:terms}\">Nutzungsbedingungen</a>."
+    ],
+    [
+     "Wie lösche ich mein Konto?",
+     "In der App: Profil → Einstellungen → Konto → Konto löschen. Siehe <a href=\"{href:delete}\">Konto löschen</a>."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "Dieselben {dailyFloors} Etagen für alle, {dailyAttempts} Versuche. Erklimm den heutigen Turm in Zirve und teile dein Ergebnis.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Tagesturm · jeden Tag um Mitternacht neu",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Jeden Tag dieselben zehn Etagen für alle und drei Versuche. Dein bester Versuch kommt in die Rangliste. Wenn du dein Ergebnis teilst, bleiben die Spiele und Spielfelder verborgen, damit niemandem die Überraschung verdorben wird.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Beispielergebnis: 7 von 10 Etagen in 3 Minuten 5 Sekunden",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Tagesturm",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "3:05 Gesamtzeit",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Jetzt du",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Ergebnis",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "Was bedeuten die Quadrate?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Jedes Quadrat eines geteilten Ergebnisses steht für eine Etage: obere Reihe 1–5, untere Reihe 6–10. Jedes Quadrat hat eine eigene Farbe und ein eigenes Symbol, so ist es auch ohne Farbe lesbar.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "Eine Zeile „🕒 Mit Zeithilfe“ bedeutet, dass während des Versuchs die Zeithilfe an war. Die Quadrate richten sich trotzdem nach der normalen Zeit; Versuche mit Zeithilfe kommen nicht in die Rangliste.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "So wird gespielt",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Du bist dran.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "Heute klettern alle auf <em>denselben Turm</em>.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Hast du Zirve? Tippe im Banner oben auf dieser Seite auf Öffnen, um direkt zum Tagesturm zu gelangen.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve ist kostenlos im App Store. Der heutige Turm wartet.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "Mit 3-Sterne-Tempo",
+     "Gelöst mit mindestens 15 Sekunden Restzeit."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Gelöst",
+     "Gelöst, bevor die Zeit abgelaufen ist."
+    ],
+    [
+     "continued",
+     "🟨",
+     "Mit Weiterspielen",
+     "Zeit abgelaufen; gelöst nach dem Weiterspielen mit Werbung oder Juwelen."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Zeit abgelaufen",
+     "Der Versuch endete auf dieser Etage."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "Nicht erreicht",
+     "So weit kam der Versuch nicht."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} Etagen, {dailyAttempts} Versuche, eine Rangliste.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Öffne den Turm",
+     "Tippe in Zirve auf dem Turm-Bildschirm auf die Karte Tagesturm. Er wird jeden Tag um Mitternacht erneuert und ist für alle gleich."
+    ],
+    [
+     "Klettere",
+     "Jede Etage ist ein schnelles Rätsel. Du hast drei Versuche; der beste zählt für die Rangliste in deinem Land und unter Freunden. Juwelen auf den Etagen 3, 6 und 10."
+    ],
+    [
+     "Teile",
+     "Wenn der Versuch vorbei ist, tippe auf Ergebnis teilen: Die Quadrate und deine Zeit werden geteilt, die Spiele und Spielfelder nicht."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

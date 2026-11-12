@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "ja",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "日本語",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "本文へスキップ",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "セクション",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "メニュー",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "言語",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "ホーム",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "ほかの言語：",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "閉じる",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "リンク",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "制作：mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · このサイトはCookieやトラッカーを使用していません。",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "ページ更新日：{date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "プライバシー"
+    ],
+    [
+     "terms",
+     "利用規約"
+    ],
+    [
+     "delete",
+     "アカウントの削除"
+    ],
+    [
+     "support",
+     "サポート"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{y}年{month}{d}日",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "1月",
+    "2月",
+    "3月",
+    "4月",
+    "5月",
+    "6月",
+    "7月",
+    "8月",
+    "9月",
+    "10月",
+    "11月",
+    "12月"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirveは、トルコの個人開発者mm-appsが作った、iPhoneとiPad向けの無料ロジックパズルゲームです。タワーを登っていくゲームで、どの階も{puzzleTypes}種類のなかから出題される、短い時間制限つきのパズルです。",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "App Storeからダウンロード",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "{floor}階から",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "ページが見つかりません · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "この階は空っぽです。",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "このページは存在しません。",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "日本語のホームページ",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "タワーを登ろう。",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "どの階もパズル。",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes}種類のパズル · 毎週のリーグ · iPhoneとiPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve：タワーを登ろう。どの階もパズル。{puzzleTypes}種類のパズル、毎週のリーグ、iPhoneとiPad。",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "2026年11月6日",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "プライバシーポリシー · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Zirveモバイルゲームにおける個人データの取り扱いについて。",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "利用規約 · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "Zirveモバイルゲームの利用規約。",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "アカウントの削除 · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "Zirveのアカウントとゲームデータを削除する方法。",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "サポート · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Zirveのヘルプとお問い合わせ。",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName}（iPhone・iPad向け）",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "ZirveはiPhoneとiPad向けの無料ロジックパズルゲームです。タワーを登っていくゲームで、どの階も{puzzleTypes}種類のなかから出る短いパズルです。今日のタワー、毎週のリーグ。強制される広告はありません。",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Zirveのホーム画面：16階の森のタワー",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "リーグ順位の例",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n}階クリア",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "今日のタワー：全員に同じ{dailyFloors}階 · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "ブロンズ",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "シルバー",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "ゴールド",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "プラチナ",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "ダイヤモンド",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "マスター",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "レジェンド",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "ミシック",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "タイタン",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "イモータル",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "チャンピオン",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "頂点",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "カラーマッチ",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "一筆書き",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "ブロック詰め",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "神経衰弱",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "線つなぎ",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "パイプ回し",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "カラーソート",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "矢印",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "ゲート",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "見張り台",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "ライト",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "遊び方"
+    ],
+    [
+     "#games",
+     "ゲーム"
+    ],
+    [
+     "#worlds",
+     "ワールド"
+    ],
+    [
+     "#league",
+     "リーグ"
+    ],
+    [
+     "#faq",
+     "よくある質問"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "iPhone・iPad向け · App Storeで配信中",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">タワーを登ろう。</span> <span class=\"line\"><em>どの階も</em>パズル。</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirveは、すばやく解けるパズルがどこまでも続くタワーです。1つ解いて1階登り、次のキャンプを目指して、毎週のリーグでフレンドを追い越そう。",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "遊び方",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "無料"
+    },
+    {
+     "text": "アカウント不要"
+    },
+    {
+     "text": "オフラインでも遊べる",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount}言語"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2日",
+     "連続記録"
+    ],
+    [
+     "6階クリア",
+     ""
+    ],
+    [
+     "3/3",
+     "ライフ"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "遊び方",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "1分もかからない。5秒でわかる。",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "どの階もパズルは1つだけ。ルールはひと目でわかります。登るほど難しくなるのは盤面で、時間ではありません。",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "ゲーム",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "階ごとに違うゲームが登場し、10階ごとにキャンプと新しいゲームがあります。初めて出会うゲームは、タイマーが動き出す前に短いアニメーションで遊び方を紹介し、プレイ中も？ボタンでもう一度見られます。どの盤面も、あなたが見る前にコンピューターが解いています。解けないパズルはありません。",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "遊び方",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "上の階では",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "ワールド",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "20階ごとに新しいワールド。森から花咲く斜面へ、嵐からオーロラへ、銀河から果てなき頂へ。高く登るほど、パズルは難しく、ワールドはまぶしくなります。",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "フロア",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "リーグとフレンド",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "登った階が、あなたのスコア。",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "穏やかで公平",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "すっきりした頭で遊べるように。",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "よくある質問",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "質問",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "頂上で会いましょう。",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "タワーを登ろう、どの階もパズル。",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "ZirveはApp Storeで無料です。最初の階が待っています。",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "自分の階を開く",
+     "「登る」をタップして、その階のパズルに出会おう。色、道、ブロック、カードのどれかです。"
+    ],
+    [
+     "時間切れになる前に解く",
+     "持ち時間は30〜60秒。あと少しのところで時間切れになっても、盤面は待っていてくれます。ひと息ついて解き切ろう。"
+    ],
+    [
+     "次のキャンプまで登る",
+     "10階ごとのキャンプでライフが1個戻り、新しいゲームが解放されます。ライフがなくなっても、記録は残ります。"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes}種類のパズル、ひとつのタワー。",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "同じ色のタイルを合わせて、盤面を片づけよう。",
+     "how": [
+      "タイルを同じ色の隣のタイルにドラッグすると、両方が消えます。",
+      "空いているマスにドラッグすると、タイルをペアの近くまで滑らせられます。"
+     ],
+     "harder": [
+      "10階から：壁と、滑らせる回数に制限のあるタイル（0になると凍結）",
+      "30階から：すべてのタイルに回数制限、最大6色",
+      "60階から：隣でマッチが起きると開くロック中のタイル"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "指を離さずに、1本の線で旗までたどり着こう。",
+     "how": [
+      "点から点へ線を引きます。引き戻すと直前の1歩を取り消せます。",
+      "チェックポイントを通って、旗で終わろう。指を離すと線はリセットされます。"
+     ],
+     "harder": [
+      "20階から：霧。ペンの周りしか見えません",
+      "30階から：順番どおりに通るチェックポイント",
+      "60階から：すべての点を通る、壁が増える"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "すべてのピースを盤面のすき間にはめよう。",
+     "how": [
+      "トレイからピースを盤面にドラッグします。ピースをタップすると回転します。",
+      "置いたピースをタップすると戻せます。すべてはまれば、その階はクリアです。"
+     ],
+     "harder": [
+      "6×6の盤面から8×8へ、ピースは3個から6個へ",
+      "30階から：長押しで裏返す鏡像ピース",
+      "より大きなピース、より狭いすき間"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "カードをめくって、同じ絵を見つけよう。",
+     "how": [
+      "カードを2枚めくります。そろえば開いたまま、そろわなければすぐにまた閉じます。",
+      "どこに何のカードがあるかを覚えて、すべてのペアを見つけよう。"
+     ],
+     "harder": [
+      "12枚から24枚へ",
+      "30階から：3枚組。同じ絵を3枚見つけよう",
+      "まちがえたカードはより早く閉じる"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "同じ色の端どうしをつないで、盤面を埋めよう。",
+     "how": [
+      "色の点から、同じ色の点まで線を引きます。",
+      "線は交差できず、すべてのマスを埋める必要があります。つながっていない線は、指を離すと消えます。"
+     ],
+     "harder": [
+      "5×5の盤面から7×7へ",
+      "3色から6色へ",
+      "よけて通る必要がある、ふさがれたマス"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "パイプを回して、水を流そう。",
+     "how": [
+      "パイプをタップすると90度回転します。",
+      "水源から旗まで、すき間なく水を導こう。水が流れているパイプは満たされます。"
+     ],
+     "harder": [
+      "40階から：すべてのパイプをつなぐ必要があります",
+      "分岐が増え、パイプがより入り組む",
+      "100階から6×6の盤面"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "どのチューブも1色になるまで、色を仕分けよう。",
+     "how": [
+      "チューブをタップし、次に別のチューブをタップすると、一番上の色が移ります。",
+      "移せるのは同じ色の上か、空のチューブだけ。行き詰まったら取り消そう。"
+     ],
+     "harder": [
+      "4色から8色へ",
+      "よりバラバラな初期配置、より長い解き方",
+      "空のチューブは常に2本。計画はあなた次第"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "正しい順番で矢印を片づけよう。",
+     "how": [
+      "矢印をタップすると、頭の向きに滑り、胴体がついていきます。道が空いていれば盤面から出ていきます。",
+      "別の矢印が邪魔をしていると、ぶつかって戻り、3秒失います。前にある矢印から先に片づけよう。"
+     ],
+     "harder": [
+      "7×7の盤面から11×11へ、最大85%が埋まる",
+      "短い矢印の隣に、最大12マスの曲がりくねったヘビ",
+      "より長い「こっちが先」の連鎖"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "すべてのブロックを、同じ色のゲートから外に出そう。",
+     "how": [
+      "ブロックをドラッグします。矢印の向きにしか滑りません。道が空いていれば同じ色のゲートから出ていきます。タップだけでも大丈夫です。",
+      "最初の1手で出られることはありません。まずブロックをわきによけて、道を開けよう。"
+     ],
+     "harder": [
+      "6×6の盤面から8×8へ、ブロックは7個から14個へ",
+      "どの盤面でも、計画的にブロックをわきによける手が最低3回、のちに4回必要",
+      "80階からロック中のブロック、100階からどの方向にも滑る2×2のブロック"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "どの行、列、色のエリアにも、見張り台を1つずつ置こう。",
+     "how": [
+      "マスをタップすると、まず✕（メモ）、もう一度タップすると見張り台になります。どの行、列、エリアにも、ちょうど1つずつ必要です。",
+      "見張り台どうしは、斜めも含めて隣り合いません。どの盤面も答えはちょうど1つ。当て推量はいらず、論理だけで解けます。"
+     ],
+     "harder": [
+      "6×6の盤面から8×8へ",
+      "最初の盤面では、置けないマスに点が打たれています。のちに自分で印をつけます",
+      "より長い推理の連鎖"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "すべてのマスを明るくしよう。",
+     "how": [
+      "マスをタップすると、そのマスと上下左右の隣（＋の形）が反転します。暗いマスは明るく、明るいマスは暗くなります。",
+      "指を押したままにすると、どのマスが反転するかが見えます。斜めのマスは変わりません。"
+     ],
+     "harder": [
+      "3×3の盤面から5×5へ",
+      "解くのに必要なタップは3回から10回へ",
+      "順番が大事。まず考えてから、タップしよう"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds}のワールド、終わりのないタワー。",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "森",
+     "1〜19階"
+    ],
+    [
+     "dusk",
+     "夕焼け",
+     "80〜99階"
+    ],
+    [
+     "lights",
+     "オーロラ",
+     "140〜159階"
+    ],
+    [
+     "summit",
+     "果てなき頂",
+     "300階から先"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "毎週、{leagueSize}人のリーグに参加します。今週クリアした階で順位が決まり、上位{leaguePromote}人は1つ上のリーグに昇格、下位{leagueRelegate}人は1つ下のリーグに降格します。全員が自分で選んだ名前、衣装、タワーテーマで表示されます。下に引くと、順位がすぐに更新されます。",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "昇格圏 · 上位{leaguePromote}人",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "あなた",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "あなた",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "今日のタワー",
+     "全員に同じ{dailyFloors}階、挑戦は{dailyAttempts}回。3階、6階、10階でジェムがもらえます。国内やフレンドのなかで、あなたは何位？"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "毎月のシーズン",
+     "毎月新しい報酬ライン。登るほどジェム、衣装、タワーテーマを獲得できます。シーズンごとに、そのシーズンだけの限定衣装とテーマがあります。"
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "フレンド",
+     "招待コードをシェアして、みんながタワーのどこにいるかをチェック。追い越すとお知らせが届きます。"
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "宝箱と連続記録",
+     "ノーミス10階ごとに宝箱（5〜20ジェム）、星20個ごとに星の宝箱。1日1階で連続記録が続きます。"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "どのパズルにも答えがある",
+     "p": "盤面は生成されるときに解かれています。決め手は運ではなく、あなたの手です。"
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "アカウント不要",
+     "p": "すぐに始められます。お好みでAppleでサインインすれば、新しい端末にも進行状況を引き継げます。"
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "オフラインでも遊べる",
+     "p": "電車や飛行機のなかでも登り続けられます。オンラインに戻ると、登った階が同期されます。",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "誰でも遊べるように",
+     "p": "どのタイルにも色だけでなく形があります。VoiceOverで遊べます。時間アシストで、時間を延長したり無制限にしたりできます。"
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "広告は選んだときだけ",
+     "p": "広告が表示されるのは、ライフや追加時間のためにあなたが自分で求めたときだけです。プレイが中断されることはありません。"
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount}言語",
+     "p": "{appLanguageNames}。"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Zirveは無料ですか？",
+     "はい。ダウンロードもプレイも無料です。ジェムパック、スターターパック、シーズンセット、シーズンのプレミアム報酬は任意のApp内課金で、Appleが請求します。"
+    ],
+    [
+     "対応している端末は？",
+     "iOS 18以降のiPhoneとiPad、iPhone 11以降の機種です。現在、Android版はありません。"
+    ],
+    [
+     "アカウントは必要ですか？",
+     "いいえ。最初の起動時にゲストアカウントが作成されます。進行状況を別の端末に移すには、Appleでサインインしてください。"
+    ],
+    [
+     "時間が足りないときは？",
+     "「設定」→「時間アシスト」をオンにすると、すべての階で1.5倍または無制限の時間になります。星は通常の時間で判定され、アシストを使った階は毎週のリーグにカウントされません。"
+    ],
+    [
+     "ライフがなくなったら？",
+     "ライフは3個です。なくなるとキャンプに戻りますが、記録は残ります。ライフは時間がたつと回復し、キャンプに着くと1個戻ります。広告を見たり、ジェムを使ったりして回復することもできます。"
+    ],
+    [
+     "データはどのように扱われますか？",
+     "ゲームの動作に必要なものだけを処理します。<a href=\"{href:privacy}\">プライバシーポリシー</a>をご覧ください。ゲームのルールは<a href=\"{href:terms}\">利用規約</a>にあります。"
+    ],
+    [
+     "アカウントを削除するには？",
+     "アプリで「プロフィール」→「設定」→「アカウント」→「アカウントを削除」に進みます。<a href=\"{href:delete}\">アカウントの削除</a>をご覧ください。"
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "全員に同じ{dailyFloors}階、挑戦は{dailyAttempts}回。Zirveで今日のタワーを登って、結果をシェアしよう。",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "今日のタワー · 毎日0時に更新",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "毎日、全員に同じ10階と3回の挑戦。一番よい挑戦がランキングに入ります。結果をシェアしても、ゲームと盤面は表示されないので、誰の楽しみも台無しになりません。",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "結果の例：3分5秒で10階中7階",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "今日のタワー",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "合計タイム：3:05",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "あなたも挑戦しよう",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "結果",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "マスの意味は？",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "シェアした結果のマス1つが1つの階です。上の段が1〜5階、下の段が6〜10階。マスごとに色とアイコンがあるので、色がなくても読み取れます。",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "「🕒 時間アシストあり」の行は、挑戦中に時間アシストがオンだったことを示します。マスは通常の時間で判定され、アシストを使った挑戦はランキングに入りません。",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "遊び方",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "あなたの番です。",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "今日はみんなが<em>同じタワー</em>を登ります。",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Zirveをお持ちですか？このページ上部のバナーにある「開く」をタップすると、今日のタワーに直接移動します。",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "ZirveはApp Storeで無料です。今日のタワーが待っています。",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "星3つのスピード",
+     "残り15秒以上で解きました。"
+    ],
+    [
+     "cleared",
+     "🟩",
+     "クリア",
+     "時間切れになる前に解きました。"
+    ],
+    [
+     "continued",
+     "🟨",
+     "コンティニューあり",
+     "時間切れのあと、広告かジェムでコンティニューして解きました。"
+    ],
+    [
+     "failed",
+     "🟥",
+     "時間切れ",
+     "この階で挑戦が終わりました。"
+    ],
+    [
+     "unreached",
+     "⬜",
+     "未到達",
+     "挑戦がここまで届きませんでした。"
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors}階、{dailyAttempts}回の挑戦、ひとつのランキング。",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "タワーを開く",
+     "Zirveのタワー画面で「今日のタワー」カードをタップします。毎日0時に更新され、全員に同じタワーです。"
+    ],
+    [
+     "登る",
+     "どの階もすぐに解けるパズルです。挑戦は3回。一番よい挑戦が、国内とフレンドのランキングに入ります。3階、6階、10階でジェムがもらえます。"
+    ],
+    [
+     "シェアする",
+     "挑戦が終わったら「結果を共有」をタップ。マスとタイムはシェアされますが、ゲームと盤面はシェアされません。"
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

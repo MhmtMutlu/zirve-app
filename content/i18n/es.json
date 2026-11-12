@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "es",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "Español",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "Saltar al contenido",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Secciones",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Menú",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Idioma",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Inicio",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "También disponible en:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Cerrar",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Enlaces",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Creado por mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · Este sitio no usa cookies ni rastreadores.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Página actualizada: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Privacidad"
+    ],
+    [
+     "terms",
+     "Condiciones"
+    ],
+    [
+     "delete",
+     "Eliminar cuenta"
+    ],
+    [
+     "support",
+     "Soporte"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d} de {month} de {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "enero",
+    "febrero",
+    "marzo",
+    "abril",
+    "mayo",
+    "junio",
+    "julio",
+    "agosto",
+    "septiembre",
+    "octubre",
+    "noviembre",
+    "diciembre"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve es un juego gratuito de puzles de lógica para iPhone y iPad de mm-apps, un desarrollador independiente de Türkiye. Escala una torre en la que cada piso es un puzle corto con tiempo, de {puzzleTypes} tipos.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "Descárgalo en el App Store",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "Desde el piso {floor}",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Página no encontrada · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "Este piso está vacío.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "Esta página no existe.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "Página de inicio en español",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Escala la torre.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Cada piso, un puzle.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} puzles · liga semanal · iPhone y iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Escala la torre. Cada piso, un puzle. {puzzleTypes} puzles, liga semanal, iPhone y iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6 de noviembre de 2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Política de privacidad · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Cómo trata los datos personales el juego para móviles Zirve.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Condiciones de uso · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "Las condiciones de uso del juego para móviles Zirve.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Eliminar tu cuenta · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "Cómo eliminar tu cuenta de Zirve y tus datos de juego.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Soporte · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Ayuda y contacto de Zirve.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} para iPhone y iPad",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve es un juego gratuito de puzles de lógica para iPhone y iPad: escala una torre en la que cada piso es un puzle corto de {puzzleTypes} tipos. Torre del día, liga semanal. Sin anuncios obligatorios.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Pantalla de inicio de Zirve: la torre del bosque en el piso 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Ejemplo de clasificación de la liga",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n} pisos superados",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Torre del día: los mismos {dailyFloors} pisos para todos · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Bronce",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Plata",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Oro",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platino",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Diamante",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Maestro",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Leyenda",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mítico",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Titán",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Inmortal",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Campeón",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Cumbre",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Une colores",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Dibuja el camino",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Encaja bloques",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Memoria",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Flujo",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Gira tuberías",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Ordena colores",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Flechas",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Puertas",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Atalayas",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Luces",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "Cómo se juega"
+    ],
+    [
+     "#games",
+     "Juegos"
+    ],
+    [
+     "#worlds",
+     "Mundos"
+    ],
+    [
+     "#league",
+     "Liga"
+    ],
+    [
+     "#faq",
+     "Preguntas"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "Para iPhone y iPad · en el App Store",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Escala la torre.</span> <span class=\"line\"><em>Cada piso</em>, un puzle.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve es una torre sin fin de puzles rápidos. Resuelve uno, sube un piso, llega al siguiente campamento y adelanta a tus amigos en la liga semanal.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "Cómo se juega",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Gratis"
+    },
+    {
+     "text": "Sin necesidad de cuenta"
+    },
+    {
+     "text": "Se juega sin conexión",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} idiomas"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 días",
+     "racha"
+    ],
+    [
+     "Piso 6 superado",
+     ""
+    ],
+    [
+     "3/3",
+     "vidas"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "Cómo se juega",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Menos de un minuto. Se entiende en cinco segundos.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Cada piso es un solo puzle. Entiendes las reglas de un vistazo; a medida que subes, se complica el tablero, no el tiempo.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Juegos",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Cada piso trae un juego distinto; cada 10 pisos hay un campamento y un juego nuevo. La primera vez que te encuentras uno, una breve animación te muestra cómo funciona antes de que empiece el tiempo, y el botón ? la vuelve a abrir durante la partida. El ordenador resuelve cada tablero antes de que lo veas: no hay puzles sin solución.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "Cómo se juega",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Más arriba",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Mundos",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "Un mundo nuevo cada 20 pisos: del bosque a las laderas en flor, de las tormentas a la aurora boreal, de las galaxias a la Cumbre infinita. Cuanto más alto subes, más difíciles son los puzles y más brillantes los mundos.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Piso",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "Liga y amigos",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Tu piso es tu puntuación.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Tranquilo y justo",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Hecho para una mente despejada.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "Preguntas",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Preguntas frecuentes",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "Nos vemos en la cumbre.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Escala la torre, cada piso un puzle.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve es gratis en el App Store. Los primeros pisos te esperan.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Abre tu piso",
+     "Toca Escalar y descubre el puzle del piso: colores, caminos, bloques o cartas."
+    ],
+    [
+     "Resuelve antes de que se acabe el tiempo",
+     "Tienes de 30 a 60 segundos. Si te falta un pelo, el tablero te espera; respira y termina."
+    ],
+    [
+     "Sube al siguiente campamento",
+     "Un campamento cada 10 pisos te devuelve una vida y desbloquea un juego nuevo. Aunque te quedes sin vidas, tu récord se mantiene."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} puzles, una torre.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "Junta las fichas iguales y despeja el tablero.",
+     "how": [
+      "Arrastra una ficha sobre una vecina del mismo color: las dos desaparecen.",
+      "Arrastra a una casilla vacía para acercar una ficha a su pareja."
+     ],
+     "harder": [
+      "Desde el piso 10: muros y fichas con un número limitado de deslizamientos (congeladas en 0)",
+      "Desde el piso 30: todas las fichas tienen un límite de deslizamientos, hasta 6 colores",
+      "Desde el piso 60: fichas bloqueadas que se abren cuando se hace una pareja a su lado"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Llega a la bandera con una sola línea, sin levantar el dedo.",
+     "how": [
+      "Dibuja de nodo en nodo; retrocede para deshacer el último paso.",
+      "Pasa por los puntos de control y termina en la bandera. Si levantas el dedo, la línea se reinicia."
+     ],
+     "harder": [
+      "Desde el piso 20: niebla, solo ves alrededor de tu lápiz",
+      "Desde el piso 30: puntos de control en orden",
+      "Desde el piso 60: visita todos los nodos, más muros"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Encaja todas las piezas en los huecos del tablero.",
+     "how": [
+      "Arrastra una pieza de la bandeja al tablero; toca una pieza para girarla.",
+      "Toca una pieza colocada para recuperarla; el piso se supera cuando todo encaja."
+     ],
+     "harder": [
+      "De un tablero de 6×6 a uno de 8×8, de 3 piezas a 6",
+      "Desde el piso 30: piezas en espejo que volteas manteniendo presionado",
+      "Piezas más grandes, huecos más ajustados"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Voltea las cartas y encuentra las parejas.",
+     "how": [
+      "Voltea dos cartas: si coinciden se quedan abiertas; si no, se vuelven a cerrar enseguida.",
+      "Recuerda dónde está cada carta y encuentra todas las parejas."
+     ],
+     "harder": [
+      "De 12 cartas a 24",
+      "Desde el piso 30: tríos, encuentra tres con el mismo dibujo",
+      "Las cartas equivocadas se cierran más rápido"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Une los extremos iguales y llena el tablero.",
+     "how": [
+      "Dibuja una línea desde un punto de color hasta su pareja.",
+      "Las líneas no pueden cruzarse y hay que llenar todas las casillas; una línea sin terminar desaparece al levantar el dedo."
+     ],
+     "harder": [
+      "De un tablero de 5×5 a uno de 7×7",
+      "De 3 colores a 6",
+      "Casillas bloqueadas que tienes que rodear"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Gira las tuberías y haz que el agua fluya.",
+     "how": [
+      "Toca una tubería para girarla 90 grados.",
+      "Lleva el agua de la fuente a la bandera sin huecos; las tuberías por las que fluye se llenan."
+     ],
+     "harder": [
+      "Desde el piso 40: todas las tuberías deben estar conectadas",
+      "Más ramas, tuberías más enredadas",
+      "Un tablero de 6×6 desde el piso 100"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Ordena los colores hasta que cada tubo tenga uno solo.",
+     "how": [
+      "Toca un tubo y luego otro: el color de arriba se vierte.",
+      "Solo cae sobre el mismo color o en un tubo vacío; ¿te atascas? Deshaz."
+     ],
+     "harder": [
+      "De 4 colores a 8",
+      "Inicios más mezclados, soluciones más largas",
+      "Siempre dos tubos vacíos: la planificación es cosa tuya"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Saca las flechas en el orden correcto.",
+     "how": [
+      "Toca una flecha: se desliza hacia donde apunta su punta, el cuerpo la sigue y sale del tablero si el camino está libre.",
+      "Si otra flecha le cierra el paso, rebota y te cuesta 3 segundos; saca primero las que tiene delante."
+     ],
+     "harder": [
+      "De un tablero de 7×7 a uno de 11×11, hasta un 85 % lleno",
+      "Flechas cortas junto a serpientes sinuosas de hasta 12 casillas",
+      "Cadenas más largas de \"esta primero\""
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Saca cada bloque por la puerta de su color.",
+     "how": [
+      "Arrastra un bloque: solo se desliza hacia donde apuntan sus flechas. Con el camino libre sale por la puerta de su color; basta con un toque.",
+      "El primer movimiento nunca es una salida: primero tienes que aparcar un bloque a un lado para abrir paso."
+     ],
+     "harder": [
+      "De un tablero de 6×6 a uno de 8×8, de 7 bloques a 14",
+      "Al menos 3, más adelante 4 aparcamientos planificados en cada tablero",
+      "Desde el piso 80, un bloque cerrado con candado; desde el piso 100, un bloque de 2×2 que se desliza en cualquier dirección"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Pon una atalaya en cada fila, columna y zona de color.",
+     "how": [
+      "Toca una casilla: primero ✕ (una nota); vuelve a tocar para poner una atalaya. Cada fila, columna y zona necesita exactamente una.",
+      "Las atalayas nunca se tocan, ni siquiera en diagonal. Cada tablero tiene exactamente una solución; sin adivinar, solo lógica."
+     ],
+     "harder": [
+      "De un tablero de 6×6 a uno de 8×8",
+      "En los primeros tableros, las casillas descartadas aparecen marcadas con un punto; más adelante las marcas tú",
+      "Cadenas de deducción más largas"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Enciende todas las casillas.",
+     "how": [
+      "Toca una casilla: ella y sus vecinas de arriba, abajo, izquierda y derecha (en forma de +) se invierten. Las apagadas se encienden y las encendidas se apagan.",
+      "Mantén el dedo presionado para ver qué casillas se invertirán; las diagonales no cambian."
+     ],
+     "harder": [
+      "De un tablero de 3×3 a uno de 5×5",
+      "De 3 a 10 toques para resolverlo",
+      "El orden importa: piensa primero y luego toca"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} mundos, una torre sin final.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Bosque",
+     "Pisos 1–19"
+    ],
+    [
+     "dusk",
+     "Atardecer",
+     "Pisos 80–99"
+    ],
+    [
+     "lights",
+     "Aurora boreal",
+     "Pisos 140–159"
+    ],
+    [
+     "summit",
+     "Cumbre infinita",
+     "Piso 300 y más allá"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Cada semana entras en una liga de {leagueSize} jugadores. Los pisos que superas esta semana deciden tu puesto; los {leaguePromote} primeros suben de categoría y los {leagueRelegate} últimos bajan. Todos aparecen con el nombre, el traje y el tema de torre que eligieron; desliza hacia abajo para actualizar la clasificación al instante.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "ZONA DE ASCENSO · LOS {leaguePromote} PRIMEROS",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "Tú",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "Tú",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Torre del día",
+     "Los mismos {dailyFloors} pisos para todos, {dailyAttempts} intentos. Gemas en los pisos 3, 6 y 10; ¿en qué puesto quedas en tu país y entre tus amigos?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Temporadas mensuales",
+     "Una ruta de recompensas nueva cada mes: gana gemas, trajes y temas de torre mientras escalas. Cada temporada trae su propio traje y tema exclusivos."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Amigos",
+     "Comparte tu código de invitación, mira dónde está cada uno en la torre y entérate cuando los adelantes."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Cofres y rachas",
+     "Un cofre cada 10 pisos impecables (5–20 gemas), un cofre de estrellas cada 20 estrellas. Con un piso al día mantienes viva tu racha."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Todos los puzles tienen solución",
+     "p": "Los tableros se resuelven mientras se generan; todo depende de tus movimientos, no de la suerte."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "Sin necesidad de cuenta",
+     "p": "Empieza ya. Si quieres, inicia sesión con Apple y tu progreso te acompañará a un dispositivo nuevo."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Se juega sin conexión",
+     "p": "Sigue escalando en el tren o en el avión; tus pisos se sincronizan cuando vuelves a tener conexión.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Hecho para todos",
+     "p": "Cada ficha tiene una forma además de un color; se puede jugar con VoiceOver; la Ayuda de tiempo da más tiempo o tiempo ilimitado."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Anuncios solo cuando tú eliges",
+     "p": "Los anuncios solo aparecen cuando tú pides uno: para una vida o tiempo extra. Sin interrupciones."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} idiomas",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "¿Zirve es gratis?",
+     "Sí. Descargarlo y jugar es gratis. Los paquetes de gemas, el pack de inicio, el pack de temporada y la ruta de recompensas premium de la temporada son compras dentro de la app opcionales, cobradas por Apple."
+    ],
+    [
+     "¿Qué dispositivos son compatibles?",
+     "iPhone y iPad con iOS 18 o posterior, iPhone 11 y modelos más recientes. Por ahora no hay versión para Android."
+    ],
+    [
+     "¿Necesito una cuenta?",
+     "No. La primera vez que abres el juego se crea una cuenta de invitado para ti. Para pasar tu progreso a otro dispositivo, inicia sesión con Apple."
+    ],
+    [
+     "¿Y si el tiempo se me queda corto?",
+     "Activa Ajustes → Ayuda de tiempo para tener ×1,5 o tiempo ilimitado en cada piso. Las estrellas siguen usando el tiempo normal y los pisos con ayuda no cuentan para la liga semanal."
+    ],
+    [
+     "¿Qué pasa cuando me quedo sin vidas?",
+     "Tienes tres vidas. Cuando se acaban vuelves al campamento, pero tu récord se mantiene. Las vidas se recargan con el tiempo y al llegar a un campamento recuperas una; también puedes recargarlas viendo un anuncio o con gemas."
+    ],
+    [
+     "¿Cómo se tratan mis datos?",
+     "Solo tratamos lo que el juego necesita para funcionar; consulta la <a href=\"{href:privacy}\">Política de privacidad</a>. Las reglas del juego están en las <a href=\"{href:terms}\">Condiciones de uso</a>."
+    ],
+    [
+     "¿Cómo elimino mi cuenta?",
+     "En la app: Perfil → Ajustes → Cuenta → Eliminar cuenta. Consulta <a href=\"{href:delete}\">Eliminar tu cuenta</a>."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "Los mismos {dailyFloors} pisos para todos, {dailyAttempts} intentos. Escala la torre de hoy en Zirve y comparte tu resultado.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Torre del día · nueva cada medianoche",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Cada día, los mismos diez pisos para todos y tres intentos. Tu mejor intento entra en la clasificación. Cuando compartes tu resultado, los juegos y los tableros quedan ocultos, así no se le estropea la sorpresa a nadie.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Resultado de ejemplo: 7 de 10 pisos en 3 minutos y 5 segundos",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Torre del día",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "3:05 de tiempo total",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Te toca",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Resultado",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "¿Qué significan los cuadrados?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Cada cuadrado de un resultado compartido es un piso: fila de arriba 1–5, fila de abajo 6–10. Cada cuadrado tiene su propio color e icono, así que se entiende también sin color.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "Una línea 🕒 Con ayuda de tiempo indica que la Ayuda de tiempo estaba activada durante el intento. Los cuadrados siguen el tiempo normal; los intentos con ayuda no entran en la clasificación.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "Cómo se juega",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Te toca.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "Hoy todos escalan <em>la misma torre</em>.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "¿Tienes Zirve? Toca Abrir en el banner de la parte superior de esta página para ir directamente a la torre del día.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve es gratis en el App Store. La torre de hoy te espera.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "A velocidad de 3 estrellas",
+     "Resuelto con al menos 15 segundos de sobra."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Resuelto",
+     "Resuelto antes de que se acabara el tiempo."
+    ],
+    [
+     "continued",
+     "🟨",
+     "Tras continuar",
+     "Se acabó el tiempo; resuelto tras continuar con un anuncio o con gemas."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Se acabó el tiempo",
+     "El intento terminó en este piso."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "No alcanzado",
+     "El intento no llegó hasta aquí."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} pisos, {dailyAttempts} intentos, una clasificación.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Abre la torre",
+     "En Zirve, toca la tarjeta Torre del día en la pantalla de la torre. Se renueva cada medianoche y es la misma para todos."
+    ],
+    [
+     "Escala",
+     "Cada piso es un puzle rápido. Tienes tres intentos; el mejor entra en la clasificación de tu país y de tus amigos. Gemas en los pisos 3, 6 y 10."
+    ],
+    [
+     "Comparte",
+     "Cuando termine el intento, toca Compartir resultado: se comparten los cuadrados y tu tiempo, no los juegos ni los tableros."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

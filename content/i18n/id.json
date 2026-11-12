@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "id",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "Bahasa Indonesia",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "Langsung ke konten",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Bagian",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Menu",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Bahasa",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Beranda",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "Juga tersedia dalam:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Tutup",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Tautan",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Dibuat oleh mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · Situs ini tidak memakai cookie atau pelacak.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Halaman diperbarui: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Privasi"
+    ],
+    [
+     "terms",
+     "Ketentuan"
+    ],
+    [
+     "delete",
+     "Hapus akun"
+    ],
+    [
+     "support",
+     "Dukungan"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d} {month} {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "Januari",
+    "Februari",
+    "Maret",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Agustus",
+    "September",
+    "Oktober",
+    "November",
+    "Desember"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve adalah game teka-teki logika gratis untuk iPhone dan iPad buatan mm-apps, pengembang independen di Türkiye. Daki menara yang setiap lantainya berisi teka-teki singkat berbatas waktu dari {puzzleTypes} jenis.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "Unduh di App Store",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "Mulai lantai {floor}",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Halaman tidak ditemukan · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "Lantai ini kosong.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "Halaman ini tidak ada.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "Beranda bahasa Indonesia",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Daki menaranya.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Setiap lantai satu teka-teki.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} teka-teki · liga mingguan · iPhone dan iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Daki menaranya. Setiap lantai satu teka-teki. {puzzleTypes} teka-teki, liga mingguan, iPhone dan iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6 November 2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Kebijakan Privasi · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Cara game seluler Zirve memproses data pribadi.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Ketentuan Penggunaan · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "Ketentuan penggunaan game seluler Zirve.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Hapus akunmu · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "Cara menghapus akun dan data game Zirve-mu.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Dukungan · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Bantuan dan kontak untuk Zirve.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} untuk iPhone & iPad",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve adalah game teka-teki logika gratis untuk iPhone dan iPad: daki menara yang setiap lantainya berisi teka-teki singkat dari {puzzleTypes} jenis. Menara Harian, liga mingguan. Iklan tidak dipaksakan.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Layar utama Zirve: menara hutan di lantai 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Contoh klasemen liga",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n} lantai selesai",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Menara Harian: {dailyFloors} lantai yang sama untuk semua · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Perunggu",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Perak",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Emas",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platinum",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Berlian",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Master",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Legenda",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mitis",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Titan",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Abadi",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Juara",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Puncak",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Gabung Warna",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Gambar Jalur",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Pasang Balok",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Memori",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Alir Warna",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Putar Pipa",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Sortir Warna",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Panah",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Gerbang",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Menara Pantau",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Lampu",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "Cara main"
+    ],
+    [
+     "#games",
+     "Game"
+    ],
+    [
+     "#worlds",
+     "Dunia"
+    ],
+    [
+     "#league",
+     "Liga"
+    ],
+    [
+     "#faq",
+     "FAQ"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "Untuk iPhone dan iPad · di App Store",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Daki menaranya.</span> <span class=\"line\"><em>Setiap lantai</em> satu teka-teki.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve adalah menara tanpa ujung berisi teka-teki cepat. Selesaikan satu, naik satu lantai, capai kamp berikutnya, dan salip teman-temanmu di liga mingguan.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "Cara main",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Gratis"
+    },
+    {
+     "text": "Tanpa perlu akun"
+    },
+    {
+     "text": "Bisa dimainkan offline",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} bahasa"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 hari",
+     "runtunan"
+    ],
+    [
+     "Lantai 6 selesai",
+     ""
+    ],
+    [
+     "3/3",
+     "nyawa"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "Cara main",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Kurang dari semenit. Paham dalam lima detik.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Setiap lantai adalah satu teka-teki. Aturannya langsung kamu pahami sekilas; makin tinggi kamu mendaki, papannya yang makin sulit, bukan waktunya.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Game",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Setiap lantai menghadirkan game yang berbeda; setiap 10 lantai ada kamp dan game baru. Saat pertama kali bertemu sebuah game, animasi singkat menunjukkan cara mainnya sebelum waktu berjalan, dan tombol ? menampilkannya lagi saat bermain. Setiap papan diselesaikan oleh komputer sebelum kamu melihatnya: tidak ada teka-teki yang mustahil diselesaikan.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "Cara main",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Makin tinggi",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Dunia",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "Dunia baru setiap 20 lantai: dari hutan ke lereng bunga, dari badai ke aurora utara, dari galaksi ke Puncak Tanpa Akhir. Makin tinggi kamu mendaki, makin sulit teka-tekinya dan makin cerah dunianya.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Lantai",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "Liga dan teman",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Lantaimu adalah skormu.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Tenang dan adil",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Dibuat untuk pikiran yang jernih.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "FAQ",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Pertanyaan",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "Sampai jumpa di puncak.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Daki menara, setiap lantai satu teka-teki.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve gratis di App Store. Lantai-lantai pertama sudah menunggu.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Buka lantaimu",
+     "Ketuk Daki dan temui teka-teki lantai itu: warna, jalur, balok, atau kartu."
+    ],
+    [
+     "Selesaikan sebelum waktu habis",
+     "Kamu punya 30–60 detik. Meleset sedikit saja, papannya tetap menunggumu; tarik napas dan selesaikan."
+    ],
+    [
+     "Daki ke kamp berikutnya",
+     "Kamp setiap 10 lantai mengembalikan satu nyawa dan membuka game baru. Bahkan saat nyawamu habis, rekormu tetap tersimpan."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} teka-teki, satu menara.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "Satukan ubin yang sama dan kosongkan papan.",
+     "how": [
+      "Seret ubin ke ubin tetangga yang warnanya sama: keduanya hilang.",
+      "Seret ke kotak kosong untuk menggeser ubin lebih dekat ke pasangannya."
+     ],
+     "harder": [
+      "Mulai lantai 10: dinding dan ubin dengan jumlah geseran terbatas (beku di 0)",
+      "Mulai lantai 30: setiap ubin punya batas geseran, hingga 6 warna",
+      "Mulai lantai 60: ubin terkunci yang terbuka saat ada pasangan cocok di sebelahnya"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Capai bendera dengan satu garis, tanpa mengangkat jari.",
+     "how": [
+      "Gambar dari titik ke titik; tarik mundur untuk membatalkan langkah terakhir.",
+      "Lewati pos-posnya dan akhiri di bendera. Angkat jari dan garisnya kembali ke awal."
+     ],
+     "harder": [
+      "Mulai lantai 20: kabut, kamu hanya melihat sekitar penamu",
+      "Mulai lantai 30: pos harus dilewati berurutan",
+      "Mulai lantai 60: kunjungi setiap titik, lebih banyak dinding"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Pasang setiap keping ke celah di papan.",
+     "how": [
+      "Seret keping dari baki ke papan; ketuk keping untuk memutarnya.",
+      "Ketuk keping yang sudah terpasang untuk mengambilnya kembali; lantai selesai saat semuanya pas."
+     ],
+     "harder": [
+      "Dari papan 6×6 ke 8×8, dari 3 keping ke 6",
+      "Mulai lantai 30: keping cermin yang kamu balik dengan tekan lama",
+      "Keping lebih besar, celah lebih sempit"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Balik kartu dan temukan pasangannya.",
+     "how": [
+      "Buka dua kartu: yang cocok tetap terbuka, kalau tidak keduanya segera tertutup lagi.",
+      "Ingat letak setiap kartu dan temukan semua pasangan."
+     ],
+     "harder": [
+      "Dari 12 kartu ke 24",
+      "Mulai lantai 30: trio, temukan tiga gambar yang sama",
+      "Kartu yang salah tertutup lebih cepat"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Hubungkan ujung yang sama warnanya dan penuhi papan.",
+     "how": [
+      "Tarik garis dari titik berwarna ke titik pasangannya.",
+      "Garis tidak boleh bersilangan dan setiap kotak harus terisi; garis yang belum selesai hilang saat kamu mengangkat jari."
+     ],
+     "harder": [
+      "Dari papan 5×5 ke 7×7",
+      "Dari 3 warna ke 6",
+      "Kotak terhalang yang harus kamu hindari"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Putar pipa dan alirkan airnya.",
+     "how": [
+      "Ketuk pipa untuk memutarnya 90 derajat.",
+      "Alirkan air dari sumber ke bendera tanpa putus; pipa yang dialiri air akan terisi."
+     ],
+     "harder": [
+      "Mulai lantai 40: setiap pipa harus terhubung",
+      "Lebih banyak cabang, pipa lebih kusut",
+      "Papan 6×6 mulai lantai 100"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Sortir warnanya sampai setiap tabung berisi satu warna.",
+     "how": [
+      "Ketuk satu tabung, lalu tabung lain: warna paling atas dituang ke sana.",
+      "Warna hanya bisa dituang ke warna yang sama atau ke tabung kosong; buntu? Batalkan."
+     ],
+     "harder": [
+      "Dari 4 warna ke 8",
+      "Awal yang lebih acak, solusi yang lebih panjang",
+      "Selalu ada dua tabung kosong: perencanaannya di tanganmu"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Keluarkan panah dengan urutan yang benar.",
+     "how": [
+      "Ketuk panah: panah meluncur ke arah kepalanya, badannya mengikuti, dan keluar dari papan jika jalannya kosong.",
+      "Jika ada panah lain menghalangi, panah memantul kembali dan memakan 3 detik; keluarkan dulu yang ada di depannya."
+     ],
+     "harder": [
+      "Dari papan 7×7 ke 11×11, hingga 85% penuh",
+      "Panah pendek di samping ular berliku sepanjang hingga 12 kotak",
+      "Rantai “yang ini dulu” yang lebih panjang"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Keluarkan setiap balok lewat gerbang warnanya sendiri.",
+     "how": [
+      "Seret balok: balok hanya bergeser ke arah panahnya. Jika jalannya kosong, balok keluar lewat gerbang yang cocok; cukup sekali ketuk.",
+      "Langkah pertama tidak pernah langsung keluar: kamu harus memarkir balok ke samping dulu untuk membuka jalan."
+     ],
+     "harder": [
+      "Dari papan 6×6 ke 8×8, dari 7 balok ke 14",
+      "Setidaknya 3, lalu 4 parkir terencana di setiap papan",
+      "Mulai lantai 80 ada balok terkunci; mulai lantai 100 ada balok 2×2 yang bisa bergeser ke segala arah"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Tempatkan satu menara pantau di setiap baris, kolom, dan wilayah berwarna.",
+     "how": [
+      "Ketuk kotak: pertama ✕ (catatan), ketuk lagi untuk menara pantau. Setiap baris, kolom, dan wilayah butuh tepat satu.",
+      "Menara pantau tidak pernah bersentuhan, bahkan secara diagonal. Setiap papan punya tepat satu solusi; tanpa menebak, hanya logika."
+     ],
+     "harder": [
+      "Dari papan 6×6 ke 8×8",
+      "Di papan-papan awal, kotak yang tidak mungkin sudah diberi titik untukmu; nanti kamu menandainya sendiri",
+      "Rantai deduksi yang lebih panjang"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Nyalakan setiap kotak.",
+     "how": [
+      "Ketuk kotak: kotak itu dan tetangganya di atas, bawah, kiri, dan kanan (berbentuk +) berbalik. Yang gelap menyala, yang menyala jadi gelap.",
+      "Tahan jarimu untuk melihat kotak mana yang akan berbalik; kotak diagonal tidak terpengaruh."
+     ],
+     "harder": [
+      "Dari papan 3×3 ke 5×5",
+      "Dari 3 hingga 10 ketukan untuk menyelesaikan",
+      "Urutan penting: pikir dulu, baru ketuk"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} dunia, satu menara tanpa ujung.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Hutan",
+     "Lantai 1–19"
+    ],
+    [
+     "dusk",
+     "Senja",
+     "Lantai 80–99"
+    ],
+    [
+     "lights",
+     "Aurora Utara",
+     "Lantai 140–159"
+    ],
+    [
+     "summit",
+     "Puncak Tanpa Akhir",
+     "Lantai 300 dan seterusnya"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Setiap minggu kamu bergabung dengan liga berisi {leagueSize} pemain. Lantai yang kamu selesaikan minggu ini menentukan peringkatmu; {leaguePromote} teratas naik satu tingkat, {leagueRelegate} terbawah turun satu tingkat. Semua tampil dengan nama, kostum, dan tema menara pilihannya; tarik ke bawah untuk langsung memperbarui klasemen.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "ZONA PROMOSI · {leaguePromote} TERATAS",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "Kamu",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "Kamu",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Menara hari ini",
+     "{dailyFloors} lantai yang sama untuk semua, {dailyAttempts} percobaan. Permata di lantai 3, 6, dan 10; di peringkat berapa kamu di negaramu dan di antara teman?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Musim bulanan",
+     "Jalur hadiah baru setiap bulan: dapatkan permata, kostum, dan tema menara sambil mendaki. Setiap musim membawa kostum dan tema eksklusifnya sendiri."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Teman",
+     "Bagikan kode undanganmu, lihat posisi semua orang di menara, dan dapat kabar saat kamu menyalip mereka."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Peti dan runtunan",
+     "Peti setiap 10 lantai bersih (5–20 permata), Peti Bintang setiap 20 bintang. Satu lantai sehari menjaga runtunanmu tetap hidup."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Setiap teka-teki ada solusinya",
+     "p": "Papan diselesaikan saat dibuat; hasilnya bergantung pada langkahmu, bukan keberuntungan."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "Tanpa perlu akun",
+     "p": "Langsung mulai. Masuk dengan Apple kalau mau, dan progresmu ikut pindah ke perangkat baru."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Bisa dimainkan offline",
+     "p": "Terus mendaki di kereta atau pesawat; lantaimu disinkronkan saat kamu online lagi.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Dibuat untuk semua",
+     "p": "Setiap ubin punya bentuk selain warna; bisa dimainkan dengan VoiceOver; Bantuan waktu memberi waktu lebih atau tanpa batas."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Iklan hanya saat kamu memilih",
+     "p": "Iklan hanya muncul saat kamu memintanya: untuk nyawa atau waktu tambahan. Tanpa gangguan."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} bahasa",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Apakah Zirve gratis?",
+     "Ya. Mengunduh dan bermain gratis. Paket permata, paket pemula, set musim, dan jalur hadiah Premium musim adalah pembelian dalam aplikasi opsional yang ditagih oleh Apple."
+    ],
+    [
+     "Perangkat apa saja yang didukung?",
+     "iPhone dan iPad dengan iOS 18 atau lebih baru, iPhone 11 dan yang lebih baru. Untuk saat ini belum ada versi Android."
+    ],
+    [
+     "Apakah aku perlu akun?",
+     "Tidak. Akun tamu dibuat untukmu saat pertama kali membuka game. Untuk memindahkan progresmu ke perangkat lain, masuk dengan Apple."
+    ],
+    [
+     "Bagaimana kalau waktunya terlalu singkat untukku?",
+     "Aktifkan Pengaturan → Bantuan waktu untuk waktu 1,5× atau tanpa batas di setiap lantai. Bintang tetap memakai waktu normal dan lantai dengan bantuan tidak dihitung untuk liga mingguan."
+    ],
+    [
+     "Apa yang terjadi kalau nyawaku habis?",
+     "Kamu punya tiga nyawa. Saat habis, kamu kembali ke kamp, tapi rekormu tetap tersimpan. Nyawa terisi lagi seiring waktu dan mencapai kamp mengembalikan satu nyawa; kamu juga bisa mengisinya dengan menonton iklan atau dengan permata."
+    ],
+    [
+     "Bagaimana dataku ditangani?",
+     "Kami hanya memproses yang dibutuhkan game agar berfungsi; lihat <a href=\"{href:privacy}\">Kebijakan Privasi</a>. Aturan game ada di <a href=\"{href:terms}\">Ketentuan Penggunaan</a>."
+    ],
+    [
+     "Bagaimana cara menghapus akunku?",
+     "Di aplikasi: Profil → Pengaturan → Akun → Hapus akun. Lihat <a href=\"{href:delete}\">Hapus akunmu</a>."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "{dailyFloors} lantai yang sama untuk semua, {dailyAttempts} percobaan. Daki menara hari ini di Zirve dan bagikan hasilmu.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Menara Harian · baru setiap tengah malam",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Setiap hari, sepuluh lantai yang sama untuk semua dan tiga percobaan. Percobaan terbaikmu yang masuk peringkat. Saat kamu membagikan hasil, game dan papannya tetap tersembunyi, jadi tidak ada kejutan yang terbongkar.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Contoh hasil: 7 dari 10 lantai dalam 3 menit 5 detik",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Menara Harian",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "Total waktu 3:05",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Giliranmu",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Hasil",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "Apa arti kotak-kotaknya?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Setiap kotak di hasil yang dibagikan adalah satu lantai: baris atas 1–5, baris bawah 6–10. Setiap kotak punya warna dan ikonnya sendiri, jadi tetap bisa dibaca tanpa warna.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "Baris 🕒 Dengan bantuan waktu berarti Bantuan waktu aktif selama percobaan. Kotak-kotaknya tetap mengikuti waktu normal; percobaan dengan bantuan tidak masuk peringkat.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "Cara main",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Giliranmu.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "Hari ini semua mendaki <em>menara yang sama</em>.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Sudah punya Zirve? Ketuk Buka di banner bagian atas halaman ini untuk langsung ke Menara Harian.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve gratis di App Store. Menara hari ini sudah menunggu.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "Kecepatan 3 bintang",
+     "Selesai dengan sisa waktu minimal 15 detik."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Selesai",
+     "Selesai sebelum waktu habis."
+    ],
+    [
+     "continued",
+     "🟨",
+     "Dengan lanjutan",
+     "Waktu habis; selesai setelah melanjutkan dengan iklan atau permata."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Waktu habis",
+     "Percobaan berakhir di lantai ini."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "Tidak tercapai",
+     "Percobaan tidak sampai sejauh ini."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} lantai, {dailyAttempts} percobaan, satu peringkat.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Buka menaranya",
+     "Di Zirve, ketuk kartu Menara Harian di layar menara. Menara ini diperbarui setiap tengah malam dan sama untuk semua."
+    ],
+    [
+     "Daki",
+     "Setiap lantai adalah teka-teki cepat. Kamu punya tiga percobaan; yang terbaik masuk peringkat di negaramu dan di antara teman. Permata di lantai 3, 6, dan 10."
+    ],
+    [
+     "Bagikan",
+     "Saat percobaan selesai, ketuk Bagikan hasil: kotak-kotak dan waktumu ikut dibagikan, game dan papannya tidak."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

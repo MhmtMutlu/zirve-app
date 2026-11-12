@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "it",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "Italiano",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "Vai al contenuto",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Sezioni",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Menu",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Lingua",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Home",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "Disponibile anche in:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Chiudi",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Link",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Creato da mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · Questo sito non usa cookie né tracker.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Pagina aggiornata: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Privacy"
+    ],
+    [
+     "terms",
+     "Termini"
+    ],
+    [
+     "delete",
+     "Elimina account"
+    ],
+    [
+     "support",
+     "Assistenza"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d} {month} {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "gennaio",
+    "febbraio",
+    "marzo",
+    "aprile",
+    "maggio",
+    "giugno",
+    "luglio",
+    "agosto",
+    "settembre",
+    "ottobre",
+    "novembre",
+    "dicembre"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve è un gioco di rompicapi logici gratuito per iPhone e iPad creato da mm-apps, sviluppatore indipendente in Turchia. Scala una torre in cui ogni piano è un breve rompicapo a tempo tra {puzzleTypes} tipi.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "Scarica su App Store",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "Dal piano {floor}",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Pagina non trovata · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "Questo piano è vuoto.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "Questa pagina non esiste.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "Home page in italiano",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Scala la torre.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Ogni piano, un rompicapo.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} rompicapi · lega settimanale · iPhone e iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Scala la torre. Ogni piano, un rompicapo. {puzzleTypes} rompicapi, lega settimanale, iPhone e iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6 novembre 2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Informativa sulla privacy · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Come il gioco per dispositivi mobili Zirve tratta i dati personali.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Termini d'uso · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "I termini d'uso del gioco per dispositivi mobili Zirve.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Elimina il tuo account · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "Come eliminare il tuo account Zirve e i dati di gioco.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Assistenza · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Aiuto e contatti per Zirve.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} per iPhone e iPad",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve è un gioco di rompicapi logici gratuito per iPhone e iPad: scala una torre in cui ogni piano è un breve rompicapo tra {puzzleTypes} tipi. Torre del giorno, lega settimanale. Nessuna pubblicità forzata.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Schermata principale di Zirve: la torre della foresta al piano 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Esempio di classifica della lega",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n} piani superati",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Torre del giorno: gli stessi {dailyFloors} piani per tutti · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Bronzo",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Argento",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Oro",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platino",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Diamante",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Maestro",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Leggenda",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mitico",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Titano",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Immortale",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Campione",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Vetta",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Unisci i colori",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Disegna il percorso",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Incastra i blocchi",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Memoria",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Flusso",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Gira i tubi",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Ordina i colori",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Frecce",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Porte",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Torri di guardia",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Luci",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "Come si gioca"
+    ],
+    [
+     "#games",
+     "Giochi"
+    ],
+    [
+     "#worlds",
+     "Mondi"
+    ],
+    [
+     "#league",
+     "Lega"
+    ],
+    [
+     "#faq",
+     "FAQ"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "Per iPhone e iPad · su App Store",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Scala la torre.</span> <span class=\"line\"><em>Ogni piano</em> un rompicapo.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve è una torre infinita di rompicapi veloci. Risolvine uno, sali di un piano, raggiungi il prossimo campo e supera i tuoi amici nella lega settimanale.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "Come si gioca",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Gratis"
+    },
+    {
+     "text": "Nessun account richiesto"
+    },
+    {
+     "text": "Si gioca offline",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} lingue"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 giorni",
+     "serie"
+    ],
+    [
+     "Piano 6 superato",
+     ""
+    ],
+    [
+     "3/3",
+     "vite"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "Come si gioca",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Meno di un minuto. Si capisce in cinque secondi.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Ogni piano è un solo rompicapo. Capisci le regole a colpo d'occhio; salendo diventa più difficile la griglia, non il tempo.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Giochi",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Ogni piano porta un gioco diverso; ogni 10 piani c'è un campo e un nuovo gioco. La prima volta che ne incontri uno, una breve animazione ti mostra come funziona prima che parta il tempo, e il pulsante ? te la ripropone durante il gioco. Ogni griglia viene risolta dal computer prima che tu la veda: nessun rompicapo impossibile.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "Come si gioca",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Più in alto",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Mondi",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "Un nuovo mondo ogni 20 piani: dalla foresta al pendio fiorito, dalla tempesta all'aurora boreale, dalle galassie alla Vetta infinita. Più sali, più i rompicapi sono difficili e i mondi luminosi.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Piano",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "Lega e amici",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Il tuo piano è il tuo punteggio.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Calmo e corretto",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Fatto per una mente lucida.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "FAQ",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Domande",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "Ci vediamo in vetta.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Scala la torre, ogni piano un rompicapo.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve è gratis su App Store. I primi piani ti aspettano.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Apri il tuo piano",
+     "Tocca Sali e scopri il rompicapo del piano: colori, percorsi, blocchi o carte."
+    ],
+    [
+     "Risolvi prima che scada il tempo",
+     "Hai 30–60 secondi. Se non ce la fai per un soffio, la griglia ti aspetta: prendi fiato e finisci."
+    ],
+    [
+     "Sali al prossimo campo",
+     "Ogni 10 piani un campo ti restituisce una vita e sblocca un nuovo gioco. Anche quando finisci le vite, il tuo record resta."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} rompicapi, una torre.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "Avvicina le tessere uguali e svuota la griglia.",
+     "how": [
+      "Trascina una tessera su una vicina dello stesso colore: spariscono entrambe.",
+      "Trascinala in una casella vuota per avvicinarla alla sua coppia."
+     ],
+     "harder": [
+      "Dal piano 10: muri e tessere con un numero limitato di spostamenti (congelate a 0)",
+      "Dal piano 30: ogni tessera ha un limite di spostamenti, fino a 6 colori",
+      "Dal piano 60: tessere bloccate che si aprono quando accanto a loro avviene un abbinamento"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Raggiungi la bandiera con una sola linea, senza alzare il dito.",
+     "how": [
+      "Traccia da nodo a nodo; torna indietro per annullare l'ultimo passo.",
+      "Passa dai checkpoint e finisci sulla bandiera. Se alzi il dito, la linea si azzera."
+     ],
+     "harder": [
+      "Dal piano 20: nebbia, vedi solo intorno alla tua penna",
+      "Dal piano 30: checkpoint in ordine",
+      "Dal piano 60: visita ogni nodo, più muri"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Incastra tutti i pezzi negli spazi della griglia.",
+     "how": [
+      "Trascina un pezzo dal vassoio sulla griglia; tocca un pezzo per ruotarlo.",
+      "Tocca un pezzo già posizionato per riprenderlo; il piano è finito quando tutto combacia."
+     ],
+     "harder": [
+      "Da una griglia 6×6 a 8×8, da 3 pezzi a 6",
+      "Dal piano 30: pezzi speculari da capovolgere con una pressione prolungata",
+      "Pezzi più grandi, spazi più stretti"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Gira le carte e trova le coppie.",
+     "how": [
+      "Gira due carte: se sono uguali restano scoperte, altrimenti si richiudono poco dopo.",
+      "Ricorda dove si trova ogni carta e trova tutte le coppie."
+     ],
+     "harder": [
+      "Da 12 carte a 24",
+      "Dal piano 30: tris, trova tre carte con la stessa immagine",
+      "Le carte sbagliate si richiudono più in fretta"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Collega le estremità uguali e riempi la griglia.",
+     "how": [
+      "Traccia una linea da un punto colorato al punto dello stesso colore.",
+      "Le linee non possono incrociarsi e ogni casella va riempita; una linea incompleta sparisce quando alzi il dito."
+     ],
+     "harder": [
+      "Da una griglia 5×5 a 7×7",
+      "Da 3 colori a 6",
+      "Caselle bloccate da aggirare"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Gira i tubi e fai scorrere l'acqua.",
+     "how": [
+      "Tocca un tubo per ruotarlo di 90 gradi.",
+      "Porta l'acqua dalla sorgente alla bandiera senza interruzioni; i tubi in cui scorre si riempiono."
+     ],
+     "harder": [
+      "Dal piano 40: tutti i tubi devono essere collegati",
+      "Più diramazioni, tubi più aggrovigliati",
+      "Una griglia 6×6 dal piano 100"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Ordina i colori finché ogni provetta ne contiene uno solo.",
+     "how": [
+      "Tocca una provetta, poi un'altra: il colore in cima si versa.",
+      "Va solo sullo stesso colore o in una provetta vuota; nessuna via d'uscita? Annulla."
+     ],
+     "harder": [
+      "Da 4 colori a 8",
+      "Partenze più mescolate, soluzioni più lunghe",
+      "Sempre due provette vuote: la strategia è tua"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Fai uscire le frecce nell'ordine giusto.",
+     "how": [
+      "Tocca una freccia: scivola nella direzione in cui punta la testa, il corpo la segue, ed esce dalla griglia se la via è libera.",
+      "Se c'è un'altra freccia di mezzo, rimbalza indietro e ti costa 3 secondi; libera prima quelle davanti."
+     ],
+     "harder": [
+      "Da una griglia 7×7 a 11×11, piena fino all'85%",
+      "Frecce corte accanto a serpenti tortuosi lunghi fino a 12 caselle",
+      "Catene «prima questa» più lunghe"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Porta ogni blocco fuori dalla porta del suo colore.",
+     "how": [
+      "Trascina un blocco: scorre solo nella direzione delle sue frecce. Se la via è libera esce dalla porta del suo colore; basta un tocco.",
+      "La prima mossa non è mai un'uscita: prima devi spostare di lato un blocco per aprire la strada."
+     ],
+     "harder": [
+      "Da una griglia 6×6 a 8×8, da 7 blocchi a 14",
+      "Su ogni griglia almeno 3, poi 4 spostamenti di lato da pianificare",
+      "Dal piano 80 un blocco con il lucchetto; dal piano 100 un blocco 2×2 che scorre in ogni direzione"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Metti una torre di guardia in ogni riga, colonna e zona colorata.",
+     "how": [
+      "Tocca una casella: prima ✕ (un appunto), tocca di nuovo per una torre. Ogni riga, colonna e zona ne vuole esattamente una.",
+      "Le torri non si toccano mai, nemmeno in diagonale. Ogni griglia ha una sola soluzione; niente tentativi a caso, solo logica."
+     ],
+     "harder": [
+      "Da una griglia 6×6 a 8×8",
+      "Nelle prime griglie le caselle escluse sono segnate con un punto per te; più avanti le segni tu",
+      "Catene di deduzioni più lunghe"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Accendi tutte le caselle.",
+     "how": [
+      "Tocca una casella: lei e le vicine sopra, sotto, a sinistra e a destra (a forma di +) si invertono. Quelle spente si accendono, quelle accese si spengono.",
+      "Tieni premuto il dito per vedere quali caselle si invertiranno; le diagonali non cambiano."
+     ],
+     "harder": [
+      "Da una griglia 3×3 a 5×5",
+      "Da 3 a 10 tocchi per risolvere",
+      "L'ordine conta: prima pensa, poi tocca"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} mondi, una torre senza fine.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Foresta",
+     "Piani 1–19"
+    ],
+    [
+     "dusk",
+     "Tramonto",
+     "Piani 80–99"
+    ],
+    [
+     "lights",
+     "Aurora boreale",
+     "Piani 140–159"
+    ],
+    [
+     "summit",
+     "Vetta infinita",
+     "Dal piano 300 in poi"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Ogni settimana entri in una lega di {leagueSize} giocatori. I piani che superi questa settimana decidono la tua posizione; i primi {leaguePromote} salgono alla lega superiore, gli ultimi {leagueRelegate} scendono a quella inferiore. Ognuno compare con il nome, il costume e il tema della torre che ha scelto; trascina giù per aggiornare subito la classifica.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "ZONA PROMOZIONE · PRIMI {leaguePromote}",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "Tu",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "Tu",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Torre del giorno",
+     "Gli stessi {dailyFloors} piani per tutti, {dailyAttempts} tentativi. Gemme ai piani 3, 6 e 10; che posizione hai nel tuo paese e tra gli amici?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Stagioni mensili",
+     "Un nuovo percorso premi ogni mese: guadagna gemme, costumi e temi della torre salendo. Ogni stagione porta un costume e un tema esclusivi."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Amici",
+     "Condividi il tuo codice invito, guarda a che punto della torre è ognuno e ricevi un avviso quando li superi."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Forzieri e serie",
+     "Un forziere ogni 10 piani puliti (5–20 gemme), un forziere stellare ogni 20 stelle. Un piano al giorno mantiene viva la tua serie."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Ogni rompicapo ha una soluzione",
+     "p": "Le griglie vengono risolte già in fase di generazione; contano le tue mosse, non la fortuna."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "Nessun account richiesto",
+     "p": "Inizia subito. Se vuoi, accedi con Apple e i tuoi progressi ti seguono su un nuovo dispositivo."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Si gioca offline",
+     "p": "Continua a salire in treno o in aereo; i tuoi piani si sincronizzano quando torni online.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Fatto per tutti",
+     "p": "Ogni tessera ha una forma oltre a un colore; si gioca con VoiceOver; Aiuto tempo dà più tempo o tempo illimitato."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Pubblicità solo se lo scegli tu",
+     "p": "La pubblicità compare solo quando la chiedi tu: per una vita o per tempo extra. Nessuna interruzione."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} lingue",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Zirve è gratis?",
+     "Sì. Scaricarlo e giocare è gratis. I pacchetti di gemme, il pacchetto iniziale, il set stagionale e il percorso premium della stagione sono acquisti in-app facoltativi, addebitati da Apple."
+    ],
+    [
+     "Quali dispositivi sono supportati?",
+     "iPhone e iPad con iOS 18 o versioni successive, da iPhone 11 in poi. Per ora non esiste una versione Android."
+    ],
+    [
+     "Mi serve un account?",
+     "No. Al primo avvio viene creato per te un account ospite. Per trasferire i progressi su un altro dispositivo, accedi con Apple."
+    ],
+    [
+     "E se il tempo non mi basta?",
+     "Attiva Impostazioni → Aiuto tempo per avere tempo ×1,5 o illimitato su ogni piano. Le stelle usano comunque il tempo normale e i piani con aiuto non contano per la lega settimanale."
+    ],
+    [
+     "Cosa succede quando finisco le vite?",
+     "Hai tre vite. Quando le finisci torni al campo, ma il tuo record resta. Le vite si ricaricano col tempo e raggiungere un campo te ne restituisce una; puoi ricaricarle anche guardando una pubblicità o con le gemme."
+    ],
+    [
+     "Come vengono trattati i miei dati?",
+     "Trattiamo solo ciò che serve al funzionamento del gioco; consulta l'<a href=\"{href:privacy}\">Informativa sulla privacy</a>. Le regole del gioco sono nei <a href=\"{href:terms}\">Termini d'uso</a>."
+    ],
+    [
+     "Come elimino il mio account?",
+     "Nell'app: Profilo → Impostazioni → Account → Elimina account. Vedi <a href=\"{href:delete}\">Elimina il tuo account</a>."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "Gli stessi {dailyFloors} piani per tutti, {dailyAttempts} tentativi. Scala la torre di oggi in Zirve e condividi il tuo risultato.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Torre del giorno · nuova ogni mezzanotte",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Ogni giorno gli stessi dieci piani per tutti e tre tentativi. Il tuo tentativo migliore entra in classifica. Quando condividi il risultato, giochi e griglie restano nascosti, così non rovini la sorpresa a nessuno.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Risultato di esempio: 7 piani su 10 in 3 minuti e 5 secondi",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Torre del giorno",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "3:05 in totale",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Tocca a te",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Risultato",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "Cosa significano i quadratini?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Ogni quadratino di un risultato condiviso è un piano: riga in alto 1–5, riga in basso 6–10. Ogni quadratino ha un colore e un'icona propri, quindi si legge anche senza colori.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "Una riga 🕒 Con aiuto tempo indica che durante il tentativo era attivo Aiuto tempo. I quadratini seguono comunque il tempo normale; i tentativi con aiuto non entrano in classifica.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "Come si gioca",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Tocca a te.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "Oggi tutti scalano <em>la stessa torre</em>.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Hai Zirve? Tocca Apri nel banner in cima a questa pagina per andare direttamente alla torre del giorno.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve è gratis su App Store. La torre di oggi ti aspetta.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "A velocità da 3 stelle",
+     "Risolto con almeno 15 secondi rimasti."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Risolto",
+     "Risolto prima che scadesse il tempo."
+    ],
+    [
+     "continued",
+     "🟨",
+     "Con ripresa",
+     "Tempo scaduto; risolto dopo aver continuato con una pubblicità o con le gemme."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Tempo scaduto",
+     "Il tentativo è finito su questo piano."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "Non raggiunto",
+     "Il tentativo non è arrivato fin qui."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} piani, {dailyAttempts} tentativi, una classifica.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Apri la torre",
+     "In Zirve, tocca il riquadro Torre del giorno nella schermata della torre. Si rinnova ogni mezzanotte ed è uguale per tutti."
+    ],
+    [
+     "Sali",
+     "Ogni piano è un rompicapo veloce. Hai tre tentativi; il migliore entra in classifica nel tuo paese e tra gli amici. Gemme ai piani 3, 6 e 10."
+    ],
+    [
+     "Condividi",
+     "Alla fine del tentativo tocca Condividi il risultato: partono i quadratini e il tuo tempo, non i giochi né le griglie."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}

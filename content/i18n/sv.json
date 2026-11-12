@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "lang": "sv",
+  "note": "Site strings. Every key: {value, state}; state is translated or needs_review. A language is published only when it has every key of tr.json and none needs_review. Keys ending in _html may contain markup; {placeholders} come from data/facts.json, {href:<page>} from the page table."
+ },
+ "strings": {
+  "lang.name": {
+   "value": "Svenska",
+   "state": "translated"
+  },
+  "nav.skip": {
+   "value": "Hoppa till innehållet",
+   "state": "translated"
+  },
+  "nav.sections": {
+   "value": "Avsnitt",
+   "state": "translated"
+  },
+  "nav.menu": {
+   "value": "Meny",
+   "state": "translated"
+  },
+  "nav.language": {
+   "value": "Språk",
+   "state": "translated"
+  },
+  "nav.back": {
+   "value": "Startsida",
+   "state": "translated"
+  },
+  "langhint.text": {
+   "value": "Finns även på:",
+   "state": "translated"
+  },
+  "langhint.close": {
+   "value": "Stäng",
+   "state": "translated"
+  },
+  "footer.links_label": {
+   "value": "Länkar",
+   "state": "translated"
+  },
+  "footer.by": {
+   "value": "Gjort av mm-apps",
+   "state": "translated"
+  },
+  "footer.fine": {
+   "value": "© {year} {holder} · Zirve · Den här webbplatsen använder inga cookies eller spårare.",
+   "state": "translated"
+  },
+  "footer.updated": {
+   "value": "Sidan uppdaterad: {date}",
+   "state": "translated"
+  },
+  "footer.links": {
+   "value": [
+    [
+     "privacy",
+     "Integritet"
+    ],
+    [
+     "terms",
+     "Villkor"
+    ],
+    [
+     "delete",
+     "Radera konto"
+    ],
+    [
+     "support",
+     "Support"
+    ],
+    [
+     "kvkk",
+     "KVKK (TR)"
+    ]
+   ],
+   "state": "translated"
+  },
+  "date.format": {
+   "value": "{d} {month} {y}",
+   "state": "translated"
+  },
+  "date.months": {
+   "value": [
+    "januari",
+    "februari",
+    "mars",
+    "april",
+    "maj",
+    "juni",
+    "juli",
+    "augusti",
+    "september",
+    "oktober",
+    "november",
+    "december"
+   ],
+   "state": "translated"
+  },
+  "definition": {
+   "value": "Zirve är ett gratis logikpusselspel för iPhone och iPad från mm-apps, en oberoende utvecklare i Turkiet. Klättra i ett torn där varje våning är ett kort pussel på tid, av {puzzleTypes} olika typer.",
+   "state": "translated"
+  },
+  "badge.alt": {
+   "value": "Hämta i App Store",
+   "state": "translated"
+  },
+  "game.unlock": {
+   "value": "Från våning {floor}",
+   "state": "translated"
+  },
+  "notfound.title": {
+   "value": "Sidan hittades inte · Zirve",
+   "state": "translated"
+  },
+  "notfound.h1": {
+   "value": "Den här våningen är tom.",
+   "state": "translated"
+  },
+  "notfound.line": {
+   "value": "Den här sidan finns inte.",
+   "state": "translated"
+  },
+  "notfound.home": {
+   "value": "Svensk startsida",
+   "state": "translated"
+  },
+  "og.line1": {
+   "value": "Klättra i tornet.",
+   "state": "translated"
+  },
+  "og.line2": {
+   "value": "Varje våning ett pussel.",
+   "state": "translated"
+  },
+  "og.sub": {
+   "value": "{puzzleTypes} pussel · veckoliga · iPhone och iPad",
+   "state": "translated"
+  },
+  "og.alt": {
+   "value": "Zirve: Klättra i tornet. Varje våning ett pussel. {puzzleTypes} pussel, veckoliga, iPhone och iPad.",
+   "state": "translated"
+  },
+  "legal.updated": {
+   "value": "6 november 2026",
+   "state": "translated"
+  },
+  "doc.privacy.title": {
+   "value": "Integritetspolicy · Zirve",
+   "state": "translated"
+  },
+  "doc.privacy.desc": {
+   "value": "Hur mobilspelet Zirve behandlar personuppgifter.",
+   "state": "translated"
+  },
+  "doc.terms.title": {
+   "value": "Användarvillkor · Zirve",
+   "state": "translated"
+  },
+  "doc.terms.desc": {
+   "value": "Användarvillkoren för mobilspelet Zirve.",
+   "state": "translated"
+  },
+  "doc.delete.title": {
+   "value": "Radera ditt konto · Zirve",
+   "state": "translated"
+  },
+  "doc.delete.desc": {
+   "value": "Så raderar du ditt konto och dina speldata i Zirve.",
+   "state": "translated"
+  },
+  "doc.support.title": {
+   "value": "Support · Zirve",
+   "state": "translated"
+  },
+  "doc.support.desc": {
+   "value": "Hjälp och kontakt för Zirve.",
+   "state": "translated"
+  },
+  "home.title": {
+   "value": "{storeName} för iPhone & iPad",
+   "state": "translated"
+  },
+  "home.desc": {
+   "value": "Zirve är ett gratis logikpusselspel för iPhone och iPad: klättra i ett torn där varje våning är ett kort pussel av {puzzleTypes} olika typer. Dagens torn, veckoliga. Ingen påtvingad reklam.",
+   "state": "translated"
+  },
+  "home.hero_alt": {
+   "value": "Startskärmen i Zirve: skogstornet på våning 16",
+   "state": "translated"
+  },
+  "home.board_label": {
+   "value": "Exempel på ligatabell",
+   "state": "translated"
+  },
+  "home.score": {
+   "value": "{n} våningar klarade",
+   "state": "translated"
+  },
+  "daily.title": {
+   "value": "Dagens torn: samma {dailyFloors} våningar för alla · Zirve",
+   "state": "translated"
+  },
+  "tier.bronze": {
+   "value": "Brons",
+   "state": "translated"
+  },
+  "tier.silver": {
+   "value": "Silver",
+   "state": "translated"
+  },
+  "tier.gold": {
+   "value": "Guld",
+   "state": "translated"
+  },
+  "tier.platinum": {
+   "value": "Platina",
+   "state": "translated"
+  },
+  "tier.diamond": {
+   "value": "Diamant",
+   "state": "translated"
+  },
+  "tier.master": {
+   "value": "Mästare",
+   "state": "translated"
+  },
+  "tier.legend": {
+   "value": "Legend",
+   "state": "translated"
+  },
+  "tier.mythic": {
+   "value": "Mytisk",
+   "state": "translated"
+  },
+  "tier.titan": {
+   "value": "Titan",
+   "state": "translated"
+  },
+  "tier.immortal": {
+   "value": "Odödlig",
+   "state": "translated"
+  },
+  "tier.champion": {
+   "value": "Champion",
+   "state": "translated"
+  },
+  "tier.summit": {
+   "value": "Topp",
+   "state": "translated"
+  },
+  "game.name.colorMatch": {
+   "value": "Färgpar",
+   "state": "translated"
+  },
+  "game.name.pathDraw": {
+   "value": "Rita vägen",
+   "state": "translated"
+  },
+  "game.name.blockFit": {
+   "value": "Blockpussel",
+   "state": "translated"
+  },
+  "game.name.memory": {
+   "value": "Memory",
+   "state": "translated"
+  },
+  "game.name.flow": {
+   "value": "Flöde",
+   "state": "translated"
+  },
+  "game.name.pipes": {
+   "value": "Vrid rören",
+   "state": "translated"
+  },
+  "game.name.colorSort": {
+   "value": "Färgsortering",
+   "state": "translated"
+  },
+  "game.name.arrows": {
+   "value": "Pilar",
+   "state": "translated"
+  },
+  "game.name.gates": {
+   "value": "Portar",
+   "state": "translated"
+  },
+  "game.name.flags": {
+   "value": "Utkikar",
+   "state": "translated"
+  },
+  "game.name.lights": {
+   "value": "Ljus",
+   "state": "translated"
+  },
+  "home.nav": {
+   "value": [
+    [
+     "#how",
+     "Så spelar du"
+    ],
+    [
+     "#games",
+     "Spel"
+    ],
+    [
+     "#worlds",
+     "Världar"
+    ],
+    [
+     "#league",
+     "Liga"
+    ],
+    [
+     "#faq",
+     "Vanliga frågor"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.chip": {
+   "value": "För iPhone och iPad · i App Store",
+   "state": "translated"
+  },
+  "home.h1_html": {
+   "value": "<span class=\"line\">Klättra i tornet.</span> <span class=\"line\"><em>Varje våning</em> ett pussel.</span>",
+   "state": "translated"
+  },
+  "home.lead": {
+   "value": "Zirve är ett ändlöst torn av snabba pussel. Lös ett, klättra en våning, nå nästa läger och gå om dina vänner i veckoligan.",
+   "state": "translated"
+  },
+  "home.how_btn": {
+   "value": "Så spelar du",
+   "state": "translated"
+  },
+  "home.trust": {
+   "value": [
+    {
+     "text": "Gratis"
+    },
+    {
+     "text": "Inget konto behövs"
+    },
+    {
+     "text": "Spelbart offline",
+     "requires": "offlineVerified"
+    },
+    {
+     "text": "{appLanguageCount} språk"
+    }
+   ],
+   "state": "translated"
+  },
+  "home.float": {
+   "value": [
+    [
+     "2 dagar",
+     "svit"
+    ],
+    [
+     "Våning 6 klarad",
+     ""
+    ],
+    [
+     "3/3",
+     "liv"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.how_eyebrow": {
+   "value": "Så spelar du",
+   "state": "translated"
+  },
+  "home.how_h2": {
+   "value": "Under en minut. Begripligt på fem sekunder.",
+   "state": "translated"
+  },
+  "home.how_p": {
+   "value": "Varje våning är ett enda pussel. Du förstår reglerna med en blick; när du klättrar blir spelplanen svårare, inte klockan.",
+   "state": "translated"
+  },
+  "home.games_eyebrow": {
+   "value": "Spel",
+   "state": "translated"
+  },
+  "home.games_p": {
+   "value": "Varje våning bjuder på ett annat spel; var 10:e våning finns ett läger och ett nytt spel. Första gången du möter ett spel visar en kort animation hur det fungerar innan klockan startar, och ?-knappen tar fram den igen under spelet. Varje spelplan löses av datorn innan du ser den: inga olösliga pussel.",
+   "state": "translated"
+  },
+  "home.how_label": {
+   "value": "Så spelar du",
+   "state": "translated"
+  },
+  "home.harder_label": {
+   "value": "Högre upp",
+   "state": "translated"
+  },
+  "home.worlds_eyebrow": {
+   "value": "Världar",
+   "state": "translated"
+  },
+  "home.worlds_p": {
+   "value": "En ny värld var 20:e våning: från skogen till blomstersluttningar, från stormar till norrsken, från galaxer till Ändlösa toppen. Ju högre du klättrar, desto svårare pussel och desto mer lysande världar.",
+   "state": "translated"
+  },
+  "home.floor": {
+   "value": "Våning",
+   "state": "translated"
+  },
+  "home.league_eyebrow": {
+   "value": "Liga och vänner",
+   "state": "translated"
+  },
+  "home.league_h2": {
+   "value": "Din våning är din poäng.",
+   "state": "translated"
+  },
+  "home.values_eyebrow": {
+   "value": "Lugnt och rättvist",
+   "state": "translated"
+  },
+  "home.values_h2": {
+   "value": "Gjort för ett klart huvud.",
+   "state": "translated"
+  },
+  "home.faq_eyebrow": {
+   "value": "Vanliga frågor",
+   "state": "translated"
+  },
+  "home.faq_h2": {
+   "value": "Frågor",
+   "state": "translated"
+  },
+  "home.cta_h2": {
+   "value": "Vi ses på toppen.",
+   "state": "translated"
+  },
+  "footer.tag": {
+   "value": "Klättra i tornet, varje våning ett pussel.",
+   "state": "translated"
+  },
+  "home.cta_p": {
+   "value": "Zirve är gratis i App Store. De första våningarna väntar.",
+   "state": "translated"
+  },
+  "home.steps": {
+   "value": [
+    [
+     "Öppna din våning",
+     "Tryck på Klättra och möt våningens pussel: färger, vägar, block eller kort."
+    ],
+    [
+     "Lös innan tiden tar slut",
+     "Du har 30–60 sekunder. Missar du med en hårsmån väntar spelplanen på dig; ta ett andetag och gör klart."
+    ],
+    [
+     "Klättra till nästa läger",
+     "Ett läger var 10:e våning ger tillbaka ett liv och låser upp ett nytt spel. Även när dina liv tar slut finns ditt rekord kvar."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.games_h2": {
+   "value": "{puzzleTypes} pussel, ett torn.",
+   "state": "translated"
+  },
+  "home.games": {
+   "value": [
+    {
+     "id": "colorMatch",
+     "goal": "För ihop likadana brickor och töm spelplanen.",
+     "how": [
+      "Dra en bricka till en granne med samma färg: båda försvinner.",
+      "Dra till en tom ruta för att skjuta en bricka närmare sitt par."
+     ],
+     "harder": [
+      "Från våning 10: väggar och brickor med ett begränsat antal förflyttningar (frysta vid 0)",
+      "Från våning 30: varje bricka har en gräns för förflyttningar, upp till 6 färger",
+      "Från våning 60: låsta brickor som öppnas när ett par matchas bredvid dem"
+     ]
+    },
+    {
+     "id": "pathDraw",
+     "goal": "Nå flaggan med en enda linje, utan att lyfta fingret.",
+     "how": [
+      "Rita från punkt till punkt; dra tillbaka för att ångra det senaste steget.",
+      "Passera kontrollpunkterna och sluta på flaggan. Lyfter du fingret börjar linjen om."
+     ],
+     "harder": [
+      "Från våning 20: dimma, du ser bara runt pennan",
+      "Från våning 30: kontrollpunkter i ordning",
+      "Från våning 60: besök varje punkt, fler väggar"
+     ]
+    },
+    {
+     "id": "blockFit",
+     "goal": "Passa in varje bit i luckorna på spelplanen.",
+     "how": [
+      "Dra en bit nedifrån till spelplanen; tryck på en bit för att vrida den.",
+      "Tryck på en placerad bit för att ta tillbaka den; våningen är klar när allt passar."
+     ],
+     "harder": [
+      "Från en 6×6-spelplan till 8×8, från 3 bitar till 6",
+      "Från våning 30: spegelvända bitar som du vänder med en lång tryckning",
+      "Större bitar, trängre luckor"
+     ]
+    },
+    {
+     "id": "memory",
+     "goal": "Vänd korten och hitta paren.",
+     "how": [
+      "Vänd två kort: ett par förblir öppet, annars stängs de igen efter en kort stund.",
+      "Kom ihåg var varje kort ligger och hitta alla par."
+     ],
+     "harder": [
+      "Från 12 kort till 24",
+      "Från våning 30: trior, hitta tre av samma bild",
+      "Fel kort stängs snabbare"
+     ]
+    },
+    {
+     "id": "flow",
+     "goal": "Koppla ihop likadana ändar och fyll spelplanen.",
+     "how": [
+      "Rita en linje från en färgad prick till den matchande pricken.",
+      "Linjer får inte korsas och varje ruta måste fyllas; en ofärdig linje försvinner när du lyfter fingret."
+     ],
+     "harder": [
+      "Från en 5×5-spelplan till 7×7",
+      "Från 3 färger till 6",
+      "Blockerade rutor som du måste ta dig runt"
+     ]
+    },
+    {
+     "id": "pipes",
+     "goal": "Vrid rören och få vattnet att flöda.",
+     "how": [
+      "Tryck på ett rör för att vrida det 90 grader.",
+      "Led vattnet från källan till flaggan utan avbrott; rör som vattnet flödar genom fylls."
+     ],
+     "harder": [
+      "Från våning 40: varje rör måste vara anslutet",
+      "Fler förgreningar, mer trassliga rör",
+      "En 6×6-spelplan från våning 100"
+     ]
+    },
+    {
+     "id": "colorSort",
+     "goal": "Sortera färgerna tills varje provrör bara har en.",
+     "how": [
+      "Tryck på ett provrör och sedan på ett annat: den översta färgen hälls över.",
+      "Den kan bara hällas på samma färg eller i ett tomt provrör; fastnat? Ångra."
+     ],
+     "harder": [
+      "Från 4 färger till 8",
+      "Mer blandade starter, längre lösningar",
+      "Alltid två tomma provrör: planeringen är din"
+     ]
+    },
+    {
+     "id": "arrows",
+     "goal": "Rensa bort pilarna i rätt ordning.",
+     "how": [
+      "Tryck på en pil: den glider åt det håll spetsen pekar, kroppen följer efter, och den lämnar spelplanen om vägen är fri.",
+      "Om en annan pil står i vägen studsar den tillbaka och kostar 3 sekunder; rensa bort dem framför först."
+     ],
+     "harder": [
+      "Från en 7×7-spelplan till 11×11, upp till 85 % full",
+      "Korta pilar bredvid slingrande ormar upp till 12 rutor långa",
+      "Längre kedjor av ”den här först”"
+     ]
+    },
+    {
+     "id": "gates",
+     "goal": "Led ut varje block genom porten i sin egen färg.",
+     "how": [
+      "Dra ett block: det glider bara åt det håll pilarna pekar. Med fri väg lämnar det spelplanen genom porten i samma färg; det räcker att trycka.",
+      "Första draget är aldrig en utgång: du måste först parkera ett block åt sidan för att öppna en väg."
+     ],
+     "harder": [
+      "Från en 6×6-spelplan till 8×8, från 7 block till 14",
+      "Minst 3, senare 4 planerade parkeringar på varje spelplan",
+      "Från våning 80 ett låst block; från våning 100 ett 2×2-block som glider åt alla håll"
+     ]
+    },
+    {
+     "id": "flags",
+     "goal": "Placera en utkik i varje rad, kolumn och färgat område.",
+     "how": [
+      "Tryck på en ruta: först ✕ (en anteckning), tryck igen för en utkik. Varje rad, kolumn och område behöver exakt en.",
+      "Utkikar rör aldrig varandra, inte ens diagonalt. Varje spelplan har exakt en lösning; ingen gissning, bara logik."
+     ],
+     "harder": [
+      "Från en 6×6-spelplan till 8×8",
+      "På de första spelplanerna är uteslutna rutor prickade åt dig; senare markerar du dem själv",
+      "Längre slutledningskedjor"
+     ]
+    },
+    {
+     "id": "lights",
+     "goal": "Tänd alla rutor.",
+     "how": [
+      "Tryck på en ruta: den och dess grannar uppåt, nedåt, till vänster och till höger (ett +) vänds. Mörka rutor tänds, tända släcks.",
+      "Håll fingret nere för att se vilka rutor som vänds; diagonaler påverkas inte."
+     ],
+     "harder": [
+      "Från en 3×3-spelplan till 5×5",
+      "Från 3 till 10 tryck för att lösa",
+      "Ordningen spelar roll: tänk först, tryck sedan"
+     ]
+    }
+   ],
+   "state": "translated"
+  },
+  "home.shots": {
+   "value": [
+    [
+     "play-path",
+     "pathDraw"
+    ],
+    [
+     "play-color",
+     "colorMatch"
+    ],
+    [
+     "play-blocks",
+     "blockFit"
+    ],
+    [
+     "play-arrows",
+     "arrows"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.worlds_h2": {
+   "value": "{worlds} världar, ett torn utan slut.",
+   "state": "translated"
+  },
+  "home.worlds": {
+   "value": [
+    [
+     "forest",
+     "Skog",
+     "Våning 1–19"
+    ],
+    [
+     "dusk",
+     "Solnedgång",
+     "Våning 80–99"
+    ],
+    [
+     "lights",
+     "Norrsken",
+     "Våning 140–159"
+    ],
+    [
+     "summit",
+     "Ändlösa toppen",
+     "Våning 300 och uppåt"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.league_p": {
+   "value": "Varje vecka går du med i en liga med {leagueSize} spelare. Våningarna du klarar den här veckan avgör din placering; de {leaguePromote} främsta flyttas upp en liga, de {leagueRelegate} sista flyttas ned en liga. Alla visas med sitt valda namn, sin dräkt och sitt torntema; dra nedåt för att uppdatera tabellen direkt.",
+   "state": "translated"
+  },
+  "home.zone": {
+   "value": "UPPFLYTTNINGSZON · TOPP {leaguePromote}",
+   "state": "translated"
+  },
+  "home.you": {
+   "value": "Du",
+   "state": "translated"
+  },
+  "home.rows": {
+   "value": [
+    [
+     "1",
+     "Ece",
+     "48"
+    ],
+    [
+     "2",
+     "Du",
+     "41"
+    ],
+    [
+     "3",
+     "Deniz",
+     "37"
+    ],
+    [
+     "4",
+     "Kerem",
+     "33"
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.features": {
+   "value": [
+    [
+     "daily",
+     "#E3EEF9",
+     "#2B5E8E",
+     "Dagens torn",
+     "Samma {dailyFloors} våningar för alla, {dailyAttempts} försök. Ädelstenar på våning 3, 6 och 10; var hamnar du i ditt land och bland dina vänner?"
+    ],
+    [
+     "season",
+     "#E6D9F7",
+     "#6A45B8",
+     "Månadssäsonger",
+     "Ett nytt belöningsspår varje månad: tjäna ädelstenar, dräkter och tornteman medan du klättrar. Varje säsong har sin egen exklusiva dräkt och sitt eget tema."
+    ],
+    [
+     "friends",
+     "#DCEBD6",
+     "#2E7D5B",
+     "Vänner",
+     "Dela din inbjudningskod, se var alla befinner sig i tornet och få besked när du går om dem."
+    ],
+    [
+     "flame",
+     "#FBE3D1",
+     "#D9731F",
+     "Kistor och sviter",
+     "En kista var 10:e felfria våning (5–20 ädelstenar), en stjärnkista var 20:e stjärna. En våning om dagen håller din svit vid liv."
+    ]
+   ],
+   "state": "translated"
+  },
+  "home.values": {
+   "value": [
+    {
+     "icon": "check",
+     "bg": "#DCEBD6",
+     "fg": "#2E7D5B",
+     "h": "Varje pussel har en lösning",
+     "p": "Spelplanerna löses när de skapas; det avgörs av dina drag, inte av tur."
+    },
+    {
+     "icon": "user",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "Inget konto behövs",
+     "p": "Börja direkt. Logga in med Apple om du vill, så följer dina framsteg med till en ny enhet."
+    },
+    {
+     "icon": "offline",
+     "bg": "#FCEFCB",
+     "fg": "#8A6400",
+     "h": "Spelbart offline",
+     "p": "Fortsätt klättra på tåget eller flygplanet; dina våningar synkas när du är online igen.",
+     "requires": "offlineVerified"
+    },
+    {
+     "icon": "eye",
+     "bg": "#E6D9F7",
+     "fg": "#6A45B8",
+     "h": "Gjort för alla",
+     "p": "Varje bricka har en form utöver en färg; spelbart med VoiceOver; Tidshjälp ger mer eller obegränsad tid."
+    },
+    {
+     "icon": "life",
+     "bg": "#FBE3E3",
+     "fg": "#E0565B",
+     "h": "Reklam bara när du väljer det",
+     "p": "Reklam visas bara när du själv ber om det: för ett liv eller extra tid. Inga avbrott."
+    },
+    {
+     "icon": "globe",
+     "bg": "#E3EEF9",
+     "fg": "#2B5E8E",
+     "h": "{appLanguageCount} språk",
+     "p": "{appLanguageNames}."
+    }
+   ],
+   "state": "translated"
+  },
+  "home.faq_html": {
+   "value": [
+    [
+     "Är Zirve gratis?",
+     "Ja. Det är gratis att ladda ned och spela. Ädelstenspaket, startpaketet, säsongssetet och säsongens premiumspår är valfria köp i appen som debiteras av Apple."
+    ],
+    [
+     "Vilka enheter stöds?",
+     "iPhone och iPad med iOS 18 eller senare, iPhone 11 och nyare. Det finns ingen Android-version just nu."
+    ],
+    [
+     "Behöver jag ett konto?",
+     "Nej. Ett gästkonto skapas åt dig första gången du öppnar appen. Logga in med Apple för att flytta dina framsteg till en annan enhet."
+    ],
+    [
+     "Vad gör jag om tiden är för kort för mig?",
+     "Slå på Inställningar → Tidshjälp för 1,5× eller obegränsad tid på varje våning. Stjärnor räknas fortfarande med normal tid och våningar med tidshjälp räknas inte i veckoligan."
+    ],
+    [
+     "Vad händer när mina liv tar slut?",
+     "Du har tre liv. När de är slut återvänder du till lägret, men ditt rekord finns kvar. Liven fylls på med tiden och när du når ett läger får du tillbaka ett; du kan också fylla på genom att se en reklamfilm eller med ädelstenar."
+    ],
+    [
+     "Hur hanteras mina uppgifter?",
+     "Vi behandlar bara det som spelet behöver för att fungera; se <a href=\"{href:privacy}\">integritetspolicyn</a>. Spelets regler finns i <a href=\"{href:terms}\">användarvillkoren</a>."
+    ],
+    [
+     "Hur raderar jag mitt konto?",
+     "I appen: Profil → Inställningar → Konto → Radera konto. Se <a href=\"{href:delete}\">Radera ditt konto</a>."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.desc": {
+   "value": "Samma {dailyFloors} våningar för alla, {dailyAttempts} försök. Klättra i dagens torn i Zirve och dela ditt resultat.",
+   "state": "translated"
+  },
+  "daily.chip": {
+   "value": "Dagens torn · nytt varje midnatt",
+   "state": "translated"
+  },
+  "daily.lead": {
+   "value": "Varje dag samma tio våningar för alla och tre försök. Ditt bästa försök rankas. När du delar ditt resultat förblir spelen och spelplanerna dolda, så ingen får överraskningen förstörd.",
+   "state": "translated"
+  },
+  "daily.card_label": {
+   "value": "Exempelresultat: 7 av 10 våningar på 3 minuter 5 sekunder",
+   "state": "translated"
+  },
+  "daily.card_title": {
+   "value": "Dagens torn",
+   "state": "translated"
+  },
+  "daily.card_time": {
+   "value": "3:05 totalt",
+   "state": "translated"
+  },
+  "daily.card_try": {
+   "value": "Din tur",
+   "state": "translated"
+  },
+  "daily.grid_eyebrow": {
+   "value": "Resultat",
+   "state": "translated"
+  },
+  "daily.grid_h2": {
+   "value": "Vad betyder rutorna?",
+   "state": "translated"
+  },
+  "daily.grid_p": {
+   "value": "Varje ruta i ett delat resultat är en våning: översta raden 1–5, nedersta raden 6–10. Varje ruta har sin egen färg och ikon, så den går att läsa även utan färg.",
+   "state": "translated"
+  },
+  "daily.assist": {
+   "value": "En rad med 🕒 Med tidshjälp betyder att Tidshjälp var på under försöket. Rutorna följer fortfarande normal tid; försök med tidshjälp rankas inte.",
+   "state": "translated"
+  },
+  "daily.how_eyebrow": {
+   "value": "Så spelar du",
+   "state": "translated"
+  },
+  "daily.cta_h2": {
+   "value": "Din tur.",
+   "state": "translated"
+  },
+  "daily.h1_html": {
+   "value": "I dag klättrar alla i <em>samma torn</em>.",
+   "state": "translated"
+  },
+  "daily.note": {
+   "value": "Har du Zirve? Tryck på Öppna i bannern högst upp på den här sidan för att gå direkt till Dagens torn.",
+   "state": "translated"
+  },
+  "daily.cta_p": {
+   "value": "Zirve är gratis i App Store. Dagens torn väntar.",
+   "state": "translated"
+  },
+  "daily.legend": {
+   "value": [
+    [
+     "perfect",
+     "⭐",
+     "I 3-stjärnigt tempo",
+     "Löst med minst 15 sekunder kvar."
+    ],
+    [
+     "cleared",
+     "🟩",
+     "Löst",
+     "Löst innan tiden tog slut."
+    ],
+    [
+     "continued",
+     "🟨",
+     "Med fortsättning",
+     "Tiden tog slut; löst efter att ha fortsatt med en reklamfilm eller ädelstenar."
+    ],
+    [
+     "failed",
+     "🟥",
+     "Tiden tog slut",
+     "Försöket slutade på den här våningen."
+    ],
+    [
+     "unreached",
+     "⬜",
+     "Inte nådd",
+     "Försöket kom inte så här långt."
+    ]
+   ],
+   "state": "translated"
+  },
+  "daily.how_h2": {
+   "value": "{dailyFloors} våningar, {dailyAttempts} försök, en rankning.",
+   "state": "translated"
+  },
+  "daily.steps": {
+   "value": [
+    [
+     "Öppna tornet",
+     "Tryck på kortet Dagens torn på tornskärmen i Zirve. Det förnyas varje midnatt och är samma för alla."
+    ],
+    [
+     "Klättra",
+     "Varje våning är ett snabbt pussel. Du får tre försök; det bästa rankas i ditt land och bland dina vänner. Ädelstenar på våning 3, 6 och 10."
+    ],
+    [
+     "Dela",
+     "När försöket är över trycker du på Dela resultatet: rutorna och din tid delas, men inte spelen och spelplanerna."
+    ]
+   ],
+   "state": "translated"
+  }
+ }
+}
