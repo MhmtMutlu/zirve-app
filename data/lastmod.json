@@ -25,7 +25,7 @@
  },
  "de/privacy/": {
   "date": "2026-11-13",
-  "hash": "1eb65b95f6d8a073"
+  "hash": "22744d4912ad6662"
  },
  "de/support/": {
   "date": "2026-11-12",
@@ -53,7 +53,7 @@
  },
  "en/privacy/": {
   "date": "2026-11-13",
-  "hash": "07541de95866fa43"
+  "hash": "27e5f5a0cbbca73f"
  },
  "en/support/": {
   "date": "2026-11-12",
@@ -77,7 +77,7 @@
  },
  "es/privacy/": {
   "date": "2026-11-13",
-  "hash": "1453c8ddbcf486c9"
+  "hash": "68c613cbc9cf4e01"
  },
  "es/support/": {
   "date": "2026-11-12",
@@ -101,7 +101,7 @@
  },
  "fr/privacy/": {
   "date": "2026-11-13",
-  "hash": "f1045375fb617e35"
+  "hash": "8ff27a937cfd4f90"
  },
  "fr/support/": {
   "date": "2026-11-12",
@@ -113,7 +113,7 @@
  },
  "gizlilik/": {
   "date": "2026-11-13",
-  "hash": "f19b1deb46cc5a19"
+  "hash": "367404a5a466a089"
  },
  "hesap-silme/": {
   "date": "2026-11-12",
@@ -133,7 +133,7 @@
  },
  "id/privacy/": {
   "date": "2026-11-13",
-  "hash": "844de76fe9cc0352"
+  "hash": "fbfed72a35bc4313"
  },
  "id/support/": {
   "date": "2026-11-12",
@@ -157,7 +157,7 @@
  },
  "it/privacy/": {
   "date": "2026-11-13",
-  "hash": "ec28c2603e43158f"
+  "hash": "a582e098c18b0537"
  },
  "it/support/": {
   "date": "2026-11-12",
@@ -181,7 +181,7 @@
  },
  "ja/privacy/": {
   "date": "2026-11-13",
-  "hash": "ff906b71d0864e6b"
+  "hash": "5d15ca9898421c96"
  },
  "ja/support/": {
   "date": "2026-11-12",
@@ -205,7 +205,7 @@
  },
  "ko/privacy/": {
   "date": "2026-11-13",
-  "hash": "c6734e76aaef7d90"
+  "hash": "2e75e15826fb679c"
  },
  "ko/support/": {
   "date": "2026-11-12",
@@ -237,7 +237,7 @@
  },
  "nl/privacy/": {
   "date": "2026-11-13",
-  "hash": "8ccc636212b0ed4a"
+  "hash": "8d6bebf2dade8b75"
  },
  "nl/support/": {
   "date": "2026-11-12",
@@ -261,7 +261,7 @@
  },
  "pl/privacy/": {
   "date": "2026-11-13",
-  "hash": "fb6251abb3b7d919"
+  "hash": "551a2fb1e4429a11"
  },
  "pl/support/": {
   "date": "2026-11-12",
@@ -285,7 +285,7 @@
  },
  "ru/privacy/": {
   "date": "2026-11-13",
-  "hash": "da792205a11f53b0"
+  "hash": "0a1096c57c498177"
  },
  "ru/support/": {
   "date": "2026-11-12",
@@ -309,7 +309,7 @@
  },
  "sv/privacy/": {
   "date": "2026-11-13",
-  "hash": "d1a6ef86413497d5"
+  "hash": "724867064a33ec9a"
  },
  "sv/support/": {
   "date": "2026-11-12",
@@ -333,7 +333,7 @@
  },
  "th/privacy/": {
   "date": "2026-11-13",
-  "hash": "a11e2e855e1b6a1b"
+  "hash": "ad20d1c4fa238055"
  },
  "th/support/": {
   "date": "2026-11-12",
@@ -357,7 +357,7 @@
  },
  "uk/privacy/": {
   "date": "2026-11-13",
-  "hash": "22ecd840fbedc132"
+  "hash": "a74e053eae8cfee6"
  },
  "uk/support/": {
   "date": "2026-11-12",
@@ -381,7 +381,7 @@
  },
  "zh-hans/privacy/": {
   "date": "2026-11-13",
-  "hash": "db425ba4290775ea"
+  "hash": "c85e286f4d1cfc83"
  },
  "zh-hans/support/": {
   "date": "2026-11-12",
@@ -405,7 +405,7 @@
  },
  "zh-hant/privacy/": {
   "date": "2026-11-13",
-  "hash": "6b150ac1862d871a"
+  "hash": "c57a55481c548da9"
  },
  "zh-hant/support/": {
   "date": "2026-11-12",
