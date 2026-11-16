@@ -935,6 +935,267 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Geen verplichte advertenties",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Puzzels",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Kruimelpad",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "De {puzzleTypes} puzzelsoorten van Zirve: regels en tips",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "Alle {puzzleTypes} puzzelsoorten van Zirve, de gratis logische puzzelgame voor iPhone en iPad: wat elk spel vraagt, wanneer het vrijkomt en hoe het moeilijker wordt.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "De {puzzleTypes} puzzelsoorten van Zirve",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Elke etage van de toren is een van deze spellen. Vier speel je al vanaf de eerste etage, en daarna komt er bij elk kamp een nieuw spel bij. Op elke pagina hieronder vind je de regels, hoe de puzzel meegroeit naarmate je klimt, tips en een echte schermafbeelding.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "Zo speel je {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type}, regels en tips | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} in Zirve: een echte etage uit het spel",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Tips",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Waar het in de toren voorkomt",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "{name} is een van de vier spellen van de eerste etages. Daarna keert het terug tussen de andere spellen en wordt het moeilijker naarmate je hoger klimt.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "{name} wordt ontgrendeld op etage {floor}, direct na kamp {camp}, en die etage is altijd {name}. Daarna keert het terug tussen de andere spellen en wordt het moeilijker naarmate je hoger klimt.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "In de rustmodus speel je elk spel dat je hebt ontgrendeld zonder klok en zonder levens te verbruiken. Het levert geen voortgang op; het is bedoeld om te oefenen.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Hoe dit soort puzzel heet",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Meer puzzels",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Alle puzzels",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "matchpuzzel met schuivende tegels",
+    "desc": "Kleurparen in Zirve: sleep een tegel naar een buur met dezelfde kleur en ze verdwijnen allebei. Regels, schuifbeurten, vergrendelde tegels en tips.",
+    "intro": "Kleurparen is het eerste spel van de toren: sleep een tegel naar een buur met dezelfde kleur en ze verdwijnen allebei van het bord. Tegels schuiven vakje voor vakje, en hogerop kan elke tegel maar een beperkt aantal keer schuiven.",
+    "controls": "Slepen",
+    "tips": [
+     "Vanaf etage 10 geeft het getal in de hoek van een tegel aan hoeveel vakjes hij nog kan schuiven. Besteed schuifbeurten aan de tegel die ver van zijn paar af ligt.",
+     "Een tegel op 0 kan niet meer schuiven, maar wel nog een paar vormen: breng dan zijn partner naar hem toe.",
+     "Door muren kun je niet heen. Zoek de route eromheen voordat je begint te slepen.",
+     "Vanaf etage 60 gaat een vergrendelde tegel open zodra er vlak naast hem een paar wordt gemaakt. Plan dat paar op tijd.",
+     "Zijn de resterende schuifbeurten niet genoeg om af te maken, tik dan op Opnieuw om het bord terug te zetten naar het begin. De klok loopt door, dus doe het op tijd."
+    ],
+    "aka": "Het hoort bij de familie van matchpuzzels met tegels, waarin twee gelijke stukken samenkomen en verdwijnen. In Zirve schuiven tegels vakje voor vakje en vanaf etage 10 telt elke schuifbeurt. Elke kleur heeft bovendien een eigen vorm, zodat je het bord ook zonder kleuren kunt lezen."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "puzzel in één lijn",
+    "desc": "Pad tekenen in Zirve: trek één lijn van knooppunt naar knooppunt en bereik de vlag zonder je vinger op te tillen. Regels, mist, checkpoints op volgorde en tips.",
+    "intro": "Pad tekenen vraagt om één enkele lijn: ga van knooppunt naar knooppunt zonder je vinger op te tillen, ga langs de checkpoints en eindig op de vlag. Hogerop komen er steeds meer muren en mist bij, en uiteindelijk moet de lijn elk knooppunt bezoeken.",
+    "controls": "Tekenen",
+    "tips": [
+     "Houd je vinger op het scherm. Til je hem op voordat het bord is opgelost, dan springt de lijn terug naar het begin.",
+     "Ga terug over je lijn om de laatste stappen ongedaan te maken; dat is sneller dan opnieuw beginnen.",
+     "Splits het bord niet in tweeën: als je lijn de vrije knooppunten in losse stukken verdeelt, kun je niet in beide stukken komen.",
+     "Op borden waar je elk knooppunt moet bezoeken, moet je een knooppunt met maar twee vrije buren via de ene buur binnenkomen en via de andere verlaten. Leg die gedwongen stappen eerst in je hoofd vast.",
+     "Vanaf etage 30 zijn de checkpoints genummerd en kun je er geen betreden voordat het aan de beurt is, dus plan een route die ze op volgorde langsgaat."
+    ],
+    "aka": "Dit is een puzzel in één lijn, ook wel tekenen in één haal genoemd. Klassieke varianten vragen je elke lijn van een figuur na te trekken; in Zirve bezoek je juist knooppunten, dus de oude regel over een oneven aantal verbindingen geldt hier niet."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "blokpuzzel",
+    "desc": "Blokken passen in Zirve: sleep en draai stukken tot ze de gaten op het bord precies vullen. Regels, gespiegelde stukken vanaf etage 30 en tips.",
+    "intro": "Blokken passen is een inpaspuzzel: sleep de stukken vanuit de bak naar het bord tot elk gat gevuld is. Tik om te draaien; hogerop passen sommige stukken pas als je ze spiegelt.",
+    "controls": "Slepen, tik om te draaien",
+    "tips": [
+     "Begin met het grootste of grilligste stuk. Kleine stukken vullen wel wat er overblijft.",
+     "Vul eerst hoeken en smalle gaten: daar passen maar weinig stukken.",
+     "Tel de vakjes. Heeft een gat een aantal vakjes dat je met de overgebleven stukken niet kunt maken, dan ligt er iets verkeerd: tik op een geplaatst stuk om het terug naar de bak te sturen.",
+     "Vanaf etage 30 past een stuk met het ↻-teken niet door alleen te draaien. Houd het ingedrukt om het te spiegelen.",
+     "Wordt de regel onder het bord rood en zegt hij dat je een stuk moet terugnemen, dan blokkeert een al geplaatst stuk de rest."
+    ],
+    "aka": "Inpaspuzzels met stukken die uit vakjes bestaan, staan bekend als polyomino- of pentominopuzzels, en tangram werkt op dezelfde manier met driehoeken. In Zirve wordt de lege ruimte uit de stukken zelf gesneden, dus op elk bord past alles precies."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "memoryspel met kaarten",
+    "desc": "Memory in Zirve: draai steeds twee kaarten om en vind alle paren. Bordgroottes, drietallen vanaf etage 30 en tips om posities te onthouden.",
+    "intro": "Memory is het klassieke kaartspel: draai twee kaarten om, laat ze open liggen als ze een paar vormen en probeer het opnieuw als dat niet zo is. Naarmate je klimt, wordt het bord groter, gaan verkeerde kaarten sneller dicht en zoek je vanaf etage 30 naar drietallen.",
+    "controls": "Tikken",
+    "tips": [
+     "Draai in de eerste ronde de kaarten in een vaste volgorde om, rij voor rij. Zo onthoud je posities makkelijker.",
+     "Past een kaart bij een kaart die je al hebt gezien, ga dan meteen voor het paar.",
+     "Verkeerde kaarten gaan sneller dicht naarmate je klimt. Noem in gedachten het plaatje en de plek terwijl je omdraait.",
+     "Bij drietallen beëindigen twee open kaarten die verschillen meteen de poging, dus draai de kaart waar je zeker van bent als tweede om."
+    ],
+    "aka": "Het staat ook bekend als geheugenspel, concentratiespel of paren zoeken. Zirve voegt vanaf etage 30 een versie met drie gelijke kaarten toe."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "lijnpuzzel om stippen te verbinden",
+    "desc": "Kleurstroom in Zirve: verbind elk paar gelijke uiteinden met lijnen die elkaar nooit kruisen en vul het hele bord. Regels, bordgroottes en tips.",
+    "intro": "Kleurstroom vraagt je elk paar gelijke uiteinden met een lijn te verbinden. Lijnen mogen elkaar niet kruisen, in elk vakje past maar één lijn, en het bord is pas opgelost als elk vakje gevuld is.",
+    "controls": "Tekenen",
+    "tips": [
+     "Begin met paren langs de randen en in de hoeken: hun lijnen hebben de minste mogelijkheden.",
+     "Elk vakje moet gevuld zijn, dus een lijn die een gaatje van één vakje overlaat, is fout. Laat lijnen langs de muren en tegen elkaar aan lopen.",
+     "Een leeg hoekvakje heeft maar twee buren, dus er moet een lijn langs de rand doorheen lopen.",
+     "Trek een lijn in één keer. Til je je vinger op voordat je de andere stip bereikt, dan wordt hij gewist; afgemaakte lijnen blijven staan.",
+     "Ga je terug over je eigen lijn, dan wordt hij korter; begin je opnieuw vanaf een uiteinde, dan wis je die kleur."
+    ],
+    "aka": "Deze puzzels heten vaak \"verbind de stippen\" of lijnpuzzels. Bij sommige versies hoef je alleen de paren te verbinden; in Zirve moet je ook altijd het hele bord vullen."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "buizenpuzzel",
+    "desc": "Buizen draaien in Zirve: draai de buizen tot het water van de bron naar de vlag stroomt, en later door elke buis. Regels en tips.",
+    "intro": "Bij Buizen draaien staat het bord vol buisstukken: uiteinden, rechte stukken, bochten en T-stukken. Tik op een stuk om het een kwartslag te draaien en laat het water van de bron naar de vlag stromen; vanaf etage 40 moet elk stuk op de stroom aangesloten zijn.",
+    "controls": "Tik om te draaien",
+    "tips": [
+     "Begin naast de bron en de vlag. Die draaien nooit, dus de stukken ernaast hebben minder mogelijke richtingen.",
+     "Stukken aan de rand van het bord kunnen niet naar buiten wijzen. Draai ze eerst naar binnen.",
+     "Elke tik is een kwartslag met de klok mee. Een recht stuk heeft hooguit één tik nodig, elk ander stuk hooguit drie.",
+     "Vanaf etage 40 moet elk stuk op het netwerk aangesloten zijn: een open uiteinde dat naar de muur wijst of naar een stuk dat er niet op aansluit, betekent dat er nog iets fout is.",
+     "Het getal boven het bord laat zien hoeveel vakjes het water bereikt. Gebruik het om je voortgang te controleren."
+    ],
+    "aka": "Dit type staat bekend als buizenpuzzel, loodgieterspuzzel of netwerkpuzzel. In Zirve blijven de bron en de vlag op hun plek en is het bord bij de start nooit al opgelost."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "sorteerpuzzel met buisjes",
+    "desc": "Kleuren sorteren in Zirve: giet gekleurde steentjes van buisje naar buisje tot elk buisje één kleur heeft. Gietregels, ongedaan maken en tips.",
+    "intro": "Bij Kleuren sorteren krijg je buisjes met gemengde gekleurde steentjes en twee lege buisjes. Tik op een buisje om de bovenste steentjes van één kleur op te pakken en tik op een ander om ze erin te gieten; een buisje is klaar als er vier steentjes van één kleur in zitten.",
+    "controls": "Tikken",
+    "tips": [
+     "Je kunt alleen op dezelfde kleur of in een leeg buisje gieten. Houd zo lang mogelijk één buisje leeg: dat is je vrije ruimte.",
+     "Kijk eerst of de bovenste kleur van een ander buisje al past, voordat je een leeg buisje gebruikt.",
+     "Maak één kleur tegelijk af. Een vol buisje van één kleur zit niet meer in de weg.",
+     "Helpt geen enkele zet, tik dan op Ongedaan maken in plaats van je laatste lege buisje te vullen.",
+     "Elke kleur heeft ook een eigen vorm, dus je kunt op vorm sorteren als kleuren moeilijk uit elkaar te houden zijn."
+    ],
+    "aka": "Dit soort puzzel staat bekend als water sort of ball sort: water of balletjes sorteren. In Zirve zitten er gekleurde steentjes in de buisjes in plaats van water, en zijn er altijd twee lege buisjes."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "pijlenpuzzel",
+    "desc": "Pijlen in Zirve: tik op een pijl en hij schuift van het bord als de weg vrij is. Regels, gebogen pijlen, de tijdstraf van 3 seconden en tips.",
+    "intro": "Bij Pijlen staat het bord vol rechte en gebogen pijlen. Tik op een pijl en hij schuift in de richting van zijn punt van het bord, maar alleen als de lijn van zijn punt tot de rand leeg is; een geblokkeerde pijl botst terug en kost tijd.",
+    "controls": "Tikken",
+    "tips": [
+     "Kijk vanaf de punt van de pijl naar de rand van het bord. Staat er niets op die lijn, dan is de pijl vrij.",
+     "Een pijl weghalen blokkeert nooit een andere, dus pak elke vrije pijl die je ziet.",
+     "Begin bij de randen, waar de weg naar buiten kort is.",
+     "Een gebogen pijl vertrekt in de richting van zijn punt, niet van zijn staart. Volg het lijf tot de punt voordat je tikt.",
+     "Een geblokkeerde tik kost je 3 seconden. In de rustmodus is er geen klok, dus daar kun je vrij uitproberen."
+    ],
+    "aka": "Dit soort puzzel heet een pijlenpuzzel of arrow escape-puzzel. In Zirve kost een geblokkeerde pijl tijd in plaats van een leven, en lange pijlen kronkelen als slangen."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "schuifpuzzel met blokken",
+    "desc": "Poorten in Zirve: schuif blokken langs hun baan en leid ze naar buiten door de poort in hun eigen kleur. Regels, parkeren, vergrendelde blokken en tips.",
+    "intro": "Poorten is een schuifpuzzel met blokken: blokken bewegen alleen in hun lengterichting, en elk blok verlaat het bord door een poort in zijn eigen kleur. Geen enkel blok kan er bij de eerste zet uit, dus de puzzel draait om de vraag welk blok je waar parkeert.",
+    "controls": "Slepen of tikken",
+    "tips": [
+     "Zoek een blok dicht bij zijn poort en kijk wat er in de weg staat. Dat is meestal het blok dat je als eerste verplaatst.",
+     "Parkeer het blok dat in de weg staat op een plek waar het de baan van een ander blok niet afsluit.",
+     "Een blok dat vertrekt, blokkeert nooit iets, dus laat elk blok eruit zodra zijn weg vrij is.",
+     "Lees de regel onder het bord: als een zet niet doorgaat, staat daar waarom, zoals een vergrendeld blok, de verkeerde poort of een versperde weg.",
+     "Vanaf etage 80 is een grijs blok vergrendeld. Het gaat pas open als alle blokken in zijn sleutelkleur eruit zijn."
+    ],
+    "aka": "Schuif- en parkeerpuzzels met blokken vormen een oude familie; een bekend voorbeeld is de Chinese Klotski-puzzel. De versie van Zirve is anders doordat blokken door poorten in hun eigen kleur vertrekken in plaats van via één gezamenlijke uitgang."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "plaatsingspuzzel in Star Battle-stijl",
+    "desc": "Uitkijkposten in Zirve: zet één uitkijkpost in elke rij, kolom en elk gekleurd gebied, zonder dat ze elkaar raken. Regels en oplostips.",
+    "intro": "Uitkijkposten is een logische plaatsingspuzzel: zet één uitkijkpost in elke rij, elke kolom en elk gekleurd gebied, en geen twee uitkijkposten mogen elkaar raken, ook niet schuin. Elk bord heeft precies één oplossing en is op te lossen zonder te gokken.",
+    "controls": "Tikken",
+    "tips": [
+     "Tik één keer voor een ✕ als notitie en nog eens voor een uitkijkpost. Sleep over lege vakjes om in één keer veel ✕ te zetten.",
+     "Zet rond elke uitkijkpost een ✕ in de acht aangrenzende vakjes.",
+     "Ligt een gebied helemaal in één rij, dan kan geen ander gebied die rij gebruiken: zet een ✕ in de rest van de rij. Voor kolommen werkt het net zo.",
+     "Liggen twee gebieden samen binnen precies twee rijen, dan kunnen de andere gebieden die twee rijen niet gebruiken.",
+     "Een klein gebied is snel beslist. Begin daar en laat de kruisjes zich verspreiden."
+    ],
+    "aka": "Dit is een plaatsingspuzzel uit de Star Battle-familie, met één stuk per rij, kolom en gebied. Zirve gebruikt uitkijkposten als stukken."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "lichtpuzzel",
+    "desc": "Lichten in Zirve: tik op een vakje om het samen met zijn buren om te schakelen tot het hele bord brandt. Regels, bordgroottes en een stappenplan.",
+    "intro": "Lichten is het laatste spel dat wordt ontgrendeld en het meest wiskundige: een tik op een vakje schakelt dat vakje en zijn vier buren om, van aan naar uit en van uit naar aan. De etage is opgelost als elk vakje brandt.",
+    "controls": "Tikken",
+    "tips": [
+     "De volgorde van de tikken maakt niet uit, en twee tikken op hetzelfde vakje heffen elkaar op. Elk vakje heeft hooguit één tik nodig.",
+     "Werk rij voor rij: tik op het vakje onder elk donker vakje van de rij erboven. Zo schuiven de donkere vakjes naar beneden tot alleen de onderste rij over is.",
+     "Het patroon dat in de onderste rij overblijft, vertelt je op welke vakjes van de bovenste rij je moet tikken. Tik erop en werk weer naar beneden.",
+     "Een tik in een hoek verandert drie vakjes, aan een rand vier, in het midden vijf. Hoeken zijn handig voor kleine correcties."
+    ],
+    "aka": "Het is een versie van de puzzel die bekendstaat als lights out, genoemd naar een elektronisch handheldspel uit de jaren 90. In Zirve is het doel omgekeerd: laat elk vakje branden."
+   },
+   "state": "translated"
   }
  }
 }

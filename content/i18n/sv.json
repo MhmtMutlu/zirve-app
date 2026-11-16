@@ -935,6 +935,267 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Ingen påtvingad reklam",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Pussel",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Brödsmulor",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "Zirves {puzzleTypes} pusseltyper: regler och tips",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "Alla {puzzleTypes} pusseltyper i Zirve, ett gratis logikpusseltorn för iPhone och iPad: vad varje pussel kräver, när det öppnas och hur det blir svårare.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "Zirves {puzzleTypes} pusseltyper",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Varje våning i tornet är ett av de här spelen. Fyra är öppna från första våningen, och sedan tillkommer ett nytt vid varje läger. På varje sida nedan hittar du reglerna, hur pusslet växer när du klättrar, tips och en riktig skärmbild.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "Så spelar du {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type}, regler och tips | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} i Zirve: en riktig våning ur spelet",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Tips",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Var spelet dyker upp i tornet",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "{name} är ett av de fyra spelen på de första våningarna. Därefter dyker det upp blandat med de andra spelen och blir svårare ju högre du klättrar.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "{name} öppnas på våning {floor}, direkt efter läger {camp}, och den våningen är alltid {name}. Därefter dyker det upp blandat med de andra spelen och blir svårare ju högre du klättrar.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "I lugnt läge kan du spela alla spel du har låst upp, utan klocka och utan att förbruka liv. Det ger inga framsteg; det finns till för att öva.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Vad den här typen av pussel kallas",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Fler pussel",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Alla pussel",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "matchningspussel med glidande brickor",
+    "desc": "Färgpar i Zirve: dra en bricka till en granne med samma färg så försvinner båda. Regler, gränser för förflyttningar, låsta brickor och tips.",
+    "intro": "Färgpar är tornets första spel: dra en bricka till en granne med samma färg så lämnar båda spelplanen. Brickorna glider ruta för ruta, och högre upp kan varje bricka bara flyttas ett begränsat antal gånger.",
+    "controls": "Dra",
+    "tips": [
+     "Från våning 10 visar siffran i brickans hörn hur många rutor den fortfarande kan glida. Använd förflyttningarna till brickan som ligger långt från sitt par.",
+     "En bricka som står på 0 kan inte längre glida, men den kan fortfarande matchas: flytta i stället dess partner till den.",
+     "Brickor kan inte glida in i väggar. Hitta vägen runt dem innan du börjar dra.",
+     "Från våning 60 öppnas en låst bricka när ett par matchas precis bredvid den. Planera den matchningen tidigt.",
+     "Räcker inte de förflyttningar som är kvar för att bli klar trycker du på Börja om för att återställa spelplanen. Klockan fortsätter att gå, så gör det tidigt."
+    ],
+    "aka": "Det hör till familjen matchningspussel, där två likadana bitar möts och försvinner. I Zirve glider brickorna ruta för ruta, och från våning 10 räknas varje förflyttning. Varje färg har också sin egen form, så spelplanen går att läsa även utan färger."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "pussel med en enda linje",
+    "desc": "Rita vägen i Zirve: dra en enda linje från punkt till punkt och nå flaggan utan att lyfta fingret. Regler, dimma, kontrollpunkter i ordning och tips.",
+    "intro": "Rita vägen kräver en enda linje: gå från punkt till punkt utan att lyfta fingret, passera kontrollpunkterna och sluta på flaggan. Högre upp fylls spelplanen med väggar och dimma, och till sist måste linjen besöka varje punkt.",
+    "controls": "Rita",
+    "tips": [
+     "Håll fingret nere. Lyfter du det innan spelplanen är löst börjar linjen om från början.",
+     "Dra tillbaka längs din linje för att ångra de senaste stegen; det går snabbare än att börja om.",
+     "Dela inte spelplanen i två: om din linje delar upp de fria punkterna i skilda områden kan du inte besöka båda.",
+     "På spelplaner där varje punkt ska besökas måste en punkt med bara två fria grannar nås via den ena och lämnas via den andra. Bestäm de tvingade stegen i huvudet först.",
+     "Från våning 30 är kontrollpunkterna numrerade och du kan inte gå in i en innan det är dess tur, så planera en väg som når dem i ordning."
+    ],
+    "aka": "Det här är ett pussel där man ritar med en enda linje, utan att lyfta pennan. Klassiska pussel av det här slaget går ut på att rita varje linje i en figur; i Zirve besöker du i stället punkter, så den gamla regeln om ett udda antal förbindelser gäller inte här."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "packningspussel med block",
+    "desc": "Blockpussel i Zirve: dra och vrid bitarna tills de fyller luckorna på spelplanen exakt. Regler, spegelvända bitar från våning 30 och tips.",
+    "intro": "Blockpussel är ett packningspussel: dra bitarna från facket till spelplanen tills varje lucka är fylld. Tryck för att vrida; högre upp passar vissa bitar bara om du vänder dem.",
+    "controls": "Dra, tryck för att vrida",
+    "tips": [
+     "Börja med den största eller mest oregelbundna biten. Små bitar kan fylla det som blir över.",
+     "Fyll hörn och smala luckor först: där passar få bitar.",
+     "Räkna rutor. Om en lucka har en storlek som ingen återstående bit kan fylla ligger något på fel plats: tryck på en placerad bit för att skicka tillbaka den till facket.",
+     "Från våning 30 passar en bit märkt ↻ inte om du bara vrider den. Håll fingret på den för att spegelvända den.",
+     "När raden under spelplanen blir röd och säger ”ångra” blockerar en redan placerad bit resten."
+    ],
+    "aka": "Packningspussel med bitar som består av rutor kallas polyomino- eller pentominopussel, och tangram fungerar på samma sätt med trianglar. I Zirve skärs den tomma ytan ut ur själva bitarna, så bitarna passar alltid exakt."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "minnesspel med kort",
+    "desc": "Memory i Zirve: vänd två kort åt gången och hitta alla par. Spelplanens storlek, trior från våning 30 och tips för att minnas var korten ligger.",
+    "intro": "Memory är det klassiska kortspelet: vänd två kort, låt dem ligga öppna om de matchar och försök igen om de inte gör det. När du klättrar växer spelplanen, fel kort stängs snabbare och från våning 30 letar du efter trior.",
+    "controls": "Tryck",
+    "tips": [
+     "Första varvet vänder du korten i en fast ordning, rad för rad. Då är det lättare att minnas var de ligger.",
+     "När ett kort matchar ett som du redan har sett, ta paret direkt.",
+     "Fel kort stängs snabbare ju högre du klättrar. Säg bilden och platsen tyst för dig själv när du vänder.",
+     "Med trior misslyckas försöket direkt om två öppna kort skiljer sig åt, så vänd upp kortet du är säker på som andra kort."
+    ],
+    "aka": "Spelet kallas också minnesspel, parspel eller memoryspel. Zirve lägger till en variant med tre likadana kort från våning 30."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "pussel där du kopplar ihop prickar",
+    "desc": "Flöde i Zirve: koppla ihop varje par av likadana ändar med linjer som aldrig korsas och fyll hela spelplanen. Regler, storlekar och tips.",
+    "intro": "Flöde går ut på att koppla ihop varje par av likadana ändar med en linje. Linjer får inte korsas, varje ruta rymmer bara en linje och spelplanen är löst först när varje ruta är fylld.",
+    "controls": "Rita",
+    "tips": [
+     "Börja med paren längs kanterna och i hörnen: deras linjer har minst antal vägar att välja mellan.",
+     "Varje ruta måste fyllas, så en linje som lämnar en ensam tom ruta är fel. Låt linjerna gå tätt längs väggarna och längs varandra.",
+     "En tom hörnruta har bara två grannar, så en linje måste gå genom den längs kanten.",
+     "Rita en linje i ett svep. Lyfter du fingret innan du når paret raderas den; färdiga linjer ligger kvar.",
+     "Går du tillbaka över din egen linje blir den kortare, och börjar du om från en ände nollställs den färgen."
+    ],
+    "aka": "Pussel av den här typen kallas ofta prickpussel eller linjepussel. I vissa varianter räcker det att koppla ihop paren; i Zirve måste du alltid också fylla hela spelplanen."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "rörpussel",
+    "desc": "Vrid rören i Zirve: rotera rörbitarna tills vattnet rinner från källan till flaggan och senare genom varje bit. Regler och tips.",
+    "intro": "Vrid rören fyller spelplanen med rörbitar: ändstycken, raka rör, vinklar och T-rör. Tryck på en bit för att vrida den ett kvarts varv och få vattnet att rinna från källan till flaggan; från våning 40 måste varje bit vara med i flödet.",
+    "controls": "Tryck för att vrida",
+    "tips": [
+     "Börja intill källan och flaggan. De vrids aldrig, så bitarna bredvid dem har färre möjliga riktningar.",
+     "Bitar vid spelplanens kant kan inte peka utåt. Vrid dem inåt först.",
+     "Varje tryck är ett kvarts varv medurs. Ett rakt rör behöver högst ett tryck, alla andra bitar högst tre.",
+     "Från våning 40 måste varje bit vara ansluten till nätet: en öppen ände som pekar mot kanten eller mot en bit som inte är öppen åt det hållet betyder att något fortfarande är fel.",
+     "Siffran ovanför spelplanen visar hur många rutor vattnet når. Använd den för att se hur långt du har kommit."
+    ],
+    "aka": "Den här typen kallas rörpussel, rörmokarpussel eller nätverkspussel. I Zirve ligger källan och flaggan fast och spelplanen är aldrig löst från början."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "sorteringspussel med provrör",
+    "desc": "Färgsortering i Zirve: häll färgade stenar mellan provrören tills varje rör har en enda färg. Regler för att hälla, ångra och tips.",
+    "intro": "Färgsortering ger dig provrör med blandade färgade stenar och två tomma provrör. Tryck på ett rör för att lyfta de översta stenarna av samma färg och tryck på ett annat för att hälla dem dit; röret är klart när det har fyra stenar av en enda färg.",
+    "controls": "Tryck",
+    "tips": [
+     "Du kan bara hälla på samma färg eller i ett tomt provrör. Håll ett rör tomt så länge du kan: det är ditt fria utrymme.",
+     "Innan du använder ett tomt rör, leta efter ett rör vars översta färg redan matchar.",
+     "Gör klart en färg i taget. Ett fullt rör med en enda färg står inte längre i vägen.",
+     "Om inget drag hjälper, tryck på Ångra i stället för att fylla ditt sista tomma rör.",
+     "Varje färg har också sin egen form, så du kan sortera efter form om färgerna är svåra att skilja åt."
+    ],
+    "aka": "Det här är pussel av typen vattensortering eller bollsortering. I Zirve innehåller provrören färgade stenar i stället för vatten, och det finns alltid två tomma rör."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "pilpussel",
+    "desc": "Pilar i Zirve: tryck på en pil så glider den av spelplanen om vägen är fri. Regler, böjda pilar, tidsstraffet på 3 sekunder och tips.",
+    "intro": "Pilar fyller spelplanen med raka och böjda pilar. Tryck på en så glider den av spelplanen åt det håll spetsen pekar, men bara om linjen från spetsen till kanten är fri; en blockerad pil studsar tillbaka och kostar tid.",
+    "controls": "Tryck",
+    "tips": [
+     "Titta från pilspetsen till spelplanens kant. Står ingenting på den linjen är pilen fri.",
+     "Att ta bort en pil blockerar aldrig en annan, så ta varje fri pil du ser.",
+     "Börja nära kanterna, där vägarna ut är korta.",
+     "En böjd pil lämnar spelplanen åt det håll spetsen pekar, inte åt svansens håll. Följ kroppen fram till spetsen innan du trycker.",
+     "Ett tryck på en blockerad pil kostar 3 sekunder på klockan. I lugnt läge finns ingen klocka, så där kan du pröva fritt."
+    ],
+    "aka": "Den här typen av pussel kallas pilpussel. I Zirve kostar en blockerad pil tid i stället för ett liv, och långa pilar slingrar sig som ormar."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "skjutpussel med block",
+    "desc": "Portar i Zirve: skjut blocken längs sina banor och led ut vart och ett genom porten i sin egen färg. Regler, parkering, låsta block och tips.",
+    "intro": "Portar är ett skjutpussel med block: blocken rör sig bara i sin längdriktning, och vart och ett lämnar spelplanen genom en port i sin egen färg. Inget block kan lämna spelplanen i första draget, så pusslet handlar om att bestämma vilket block som ska parkeras var.",
+    "controls": "Dra eller tryck",
+    "tips": [
+     "Hitta ett block nära sin port och se vad som står i vägen. Det är oftast blocket du ska flytta först.",
+     "Parkera blocket som står i vägen där det inte spärrar ett annat blocks bana.",
+     "Ett block som lämnar spelplanen blockerar aldrig något, så släpp ut varje block så snart vägen är fri.",
+     "Läs raden under spelplanen: när ett drag inte går berättar den varför, till exempel ett låst block, fel port eller en spärrad väg.",
+     "Från våning 80 är ett grått block låst. Det öppnas först när alla block i dess nyckelfärg har lämnat spelplanen."
+    ],
+    "aka": "Skjutpussel och parkeringspussel är en gammal familj; ett välkänt exempel är det kinesiska Klotski. Zirves variant skiljer sig genom att blocken lämnar spelplanen genom portar i sin egen färg i stället för en gemensam utgång."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "placeringspussel i Star Battle-stil",
+    "desc": "Utkikar i Zirve: placera ett utkikstorn på varje rad, i varje kolumn och i varje färgat område, utan att två torn rör varandra. Regler och lösningstips.",
+    "intro": "Utkikar är ett logiskt placeringspussel: placera ett utkikstorn på varje rad, i varje kolumn och i varje färgat område, och inga två torn får röra varandra, inte ens diagonalt. Varje spelplan har exakt en lösning och kan lösas utan att gissa.",
+    "controls": "Tryck",
+    "tips": [
+     "Tryck en gång för en ✕-anteckning och en gång till för en utkik. Dra över tomma rutor för att markera många ✕ på en gång.",
+     "Runt varje utkik markerar du de åtta angränsande rutorna med ✕.",
+     "Om ett område ligger helt på en enda rad kan inget annat område använda den raden: markera resten av raden med ✕. Samma sak gäller kolumner.",
+     "Om två områden tillsammans ryms på exakt två rader kan de andra områdena inte använda de raderna.",
+     "Ett litet område avgörs snabbt. Börja där och låt kryssen sprida sig."
+    ],
+    "aka": "Det här är ett placeringspussel i Star Battle-familjen, med en pjäs per rad, kolumn och område. I Zirve är pjäserna utkikstorn."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "pussel där alla rutor ska tändas",
+    "desc": "Ljus i Zirve: tryck på en ruta för att vända den och dess grannar tills hela spelplanen lyser. Regler, storlekar och en metod steg för steg.",
+    "intro": "Ljus är det sista spelet som öppnas och det mest matematiska: ett tryck på en ruta vänder den och dess fyra grannar, från tänd till släckt och från släckt till tänd. Våningen är löst när varje ruta lyser.",
+    "controls": "Tryck",
+    "tips": [
+     "Ordningen på trycken spelar ingen roll, och två tryck på samma ruta tar ut varandra. Varje ruta behöver högst ett tryck.",
+     "Arbeta rad för rad: tryck på rutan under varje mörk ruta i raden ovanför. De mörka rutorna flyttas nedåt tills bara den nedersta raden är kvar.",
+     "Mönstret som blir kvar i nedersta raden visar vilka rutor i översta raden du ska trycka på. Tryck på dem och arbeta dig nedåt igen.",
+     "Ett tryck i ett hörn ändrar tre rutor, vid en kant fyra och i mitten fem. Hörnen passar bra för små justeringar."
+    ],
+    "aka": "Det är en variant av pusslet lights out, uppkallat efter ett elektroniskt handspel från 1990-talet. I Zirve är målet det omvända: tänd varje ruta."
+   },
+   "state": "translated"
   }
  }
 }

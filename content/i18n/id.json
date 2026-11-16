@@ -935,6 +935,267 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Iklan tidak dipaksakan",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Teka-teki",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Jejak halaman",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "{puzzleTypes} jenis teka-teki di Zirve: aturan dan tips",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "Semua {puzzleTypes} jenis teka-teki di Zirve, game menara teka-teki logika gratis untuk iPhone dan iPad: cara mainnya, kapan terbuka, dan bagaimana makin sulit.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "{puzzleTypes} jenis teka-teki di Zirve",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Setiap lantai menara adalah salah satu game ini. Empat sudah terbuka sejak lantai pertama, lalu satu game baru bergabung di setiap kamp berikutnya. Setiap halaman di bawah berisi aturan, bagaimana teka-tekinya makin sulit seiring kamu mendaki, tips, dan tangkapan layar asli.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "Cara main {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type}, aturan dan tips | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} di Zirve: lantai asli dari game",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Tips",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Di mana game ini muncul di menara",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "{name} adalah salah satu dari empat game di lantai-lantai pertama. Setelah itu game ini muncul bergantian dengan game lain dan makin sulit seiring kamu mendaki.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "{name} terbuka di lantai {floor}, tepat setelah kamp {camp}, dan lantai itu selalu {name}. Setelah itu game ini muncul bergantian dengan game lain dan makin sulit seiring kamu mendaki.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "Di mode santai kamu bisa memainkan setiap game yang sudah terbuka tanpa batas waktu dan tanpa memakai nyawa. Mode ini tidak memberi progres; gunanya untuk berlatih.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Sebutan untuk jenis teka-teki ini",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Teka-teki lainnya",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Semua teka-teki",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "teka-teki geser dan cocokkan ubin",
+    "desc": "Gabung Warna di Zirve: seret ubin ke ubin tetangga yang warnanya sama, dan keduanya hilang. Aturan, batas geseran, ubin terkunci, dan tips.",
+    "intro": "Gabung Warna adalah game pertama di menara: seret ubin ke ubin tetangga yang warnanya sama, dan keduanya hilang dari papan. Ubin bergeser kotak demi kotak, dan makin tinggi, jumlah kotak yang bisa ditempuh setiap ubin makin dibatasi.",
+    "controls": "Seret",
+    "tips": [
+     "Mulai lantai 10, angka di sudut ubin menunjukkan berapa kotak lagi ubin itu bisa bergeser. Gunakan jatah geseran untuk ubin yang jauh dari pasangannya.",
+     "Ubin dengan angka 0 tidak bisa bergeser lagi, tapi tetap bisa bergabung: bawa pasangannya ke ubin itu.",
+     "Kotak dinding tidak bisa dimasuki. Temukan jalan memutarinya sebelum mulai menyeret.",
+     "Mulai lantai 60, ubin terkunci terbuka saat pasangan mana pun bergabung tepat di sebelahnya. Rencanakan penggabungan itu sejak awal.",
+     "Kalau sisa geseran tidak cukup untuk menyelesaikan, ketuk Mulai ulang untuk mengembalikan papan ke awal. Waktu terus berjalan, jadi putuskan lebih awal."
+    ],
+    "aka": "Game ini termasuk keluarga teka-teki mencocokkan ubin, tempat dua keping yang sama bertemu lalu hilang. Di Zirve ubin bergeser kotak demi kotak, dan mulai lantai 10 setiap geseran dihitung. Setiap warna juga punya bentuknya sendiri, jadi papan tetap bisa dibaca tanpa melihat warna."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "teka-teki jalur satu garis",
+    "desc": "Gambar Jalur di Zirve: tarik satu garis dari titik ke titik dan capai bendera tanpa mengangkat jari. Aturan, kabut, pos berurutan, dan tips.",
+    "intro": "Gambar Jalur meminta satu garis saja: bergerak dari titik ke titik tanpa mengangkat jari, lewati pos-posnya, dan akhiri di bendera. Makin tinggi, papan dipenuhi dinding dan kabut, dan akhirnya garis harus melewati setiap titik.",
+    "controls": "Gambar",
+    "tips": [
+     "Jangan angkat jarimu. Kalau diangkat sebelum papan selesai, garisnya kembali ke awal.",
+     "Tarik mundur di sepanjang garismu untuk membatalkan langkah-langkah terakhir; lebih cepat daripada mulai dari awal.",
+     "Jangan membelah papan jadi dua: kalau garismu memisahkan titik-titik kosong ke area yang terpisah, kamu tidak bisa mengunjungi kedua area itu.",
+     "Di papan yang setiap titiknya harus dilewati, titik yang hanya punya dua tetangga kosong harus dimasuki dari satu tetangga dan ditinggalkan lewat yang lain. Tetapkan langkah wajib ini di kepala dulu.",
+     "Mulai lantai 30, pos diberi nomor dan kamu tidak bisa memasuki pos sebelum gilirannya, jadi rencanakan rute yang melewatinya secara berurutan."
+    ],
+    "aka": "Ini teka-teki menggambar satu garis atau satu goresan. Teka-teki satu goresan klasik memintamu menelusuri setiap sisi sebuah bentuk; di Zirve kamu mengunjungi titik, jadi aturan lama tentang jumlah sambungan ganjil tidak berlaku di sini."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "teka-teki susun balok",
+    "desc": "Pasang Balok di Zirve: seret dan putar keping sampai mengisi celah di papan dengan pas. Aturan, keping cermin mulai lantai 30, dan tips.",
+    "intro": "Pasang Balok adalah teka-teki menyusun keping: seret keping dari baki ke papan sampai setiap celah terisi. Ketuk untuk memutar; makin tinggi, beberapa keping baru muat setelah kamu membaliknya.",
+    "controls": "Seret, ketuk untuk memutar",
+    "tips": [
+     "Mulai dari keping terbesar atau yang bentuknya paling aneh. Keping kecil bisa mengisi sisanya.",
+     "Isi sudut dan celah sempit lebih dulu: hanya sedikit keping yang muat di sana.",
+     "Hitung kotaknya. Kalau ada celah yang ukurannya tidak bisa diisi keping mana pun yang tersisa, berarti ada keping yang salah tempat: ketuk keping yang sudah terpasang untuk mengembalikannya ke baki.",
+     "Mulai lantai 30, keping dengan lencana ↻ tidak akan muat kalau hanya diputar. Tekan lama untuk membaliknya.",
+     "Saat baris di bawah papan berubah merah dan memintamu mengambil kembali keping, berarti ada keping yang sudah terpasang menghalangi keping lainnya."
+    ],
+    "aka": "Teka-teki menyusun keping yang terbuat dari kotak-kotak dikenal sebagai teka-teki poliomino atau pentomino, dan tangram bekerja dengan cara yang sama memakai segitiga. Di Zirve ruang kosongnya dipotong dari keping-keping itu sendiri, jadi setiap papan punya susunan yang pas."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "game memori mencocokkan kartu",
+    "desc": "Memori di Zirve: balik dua kartu sekaligus dan temukan semua pasangannya. Ukuran papan, trio mulai lantai 30, dan tips mengingat letak kartu.",
+    "intro": "Memori adalah game kartu klasik: balik dua kartu, biarkan terbuka kalau cocok, dan coba lagi kalau tidak. Makin tinggi, papan makin besar, kartu yang salah tertutup lebih cepat, dan mulai lantai 30 kamu mencari trio.",
+    "controls": "Ketuk",
+    "tips": [
+     "Di putaran pertama, balik kartu dengan urutan tetap, baris demi baris. Dengan begitu letaknya lebih mudah diingat.",
+     "Kalau kartu yang kamu buka cocok dengan kartu yang sudah pernah kamu lihat, langsung ambil pasangannya.",
+     "Kartu yang salah tertutup lebih cepat seiring kamu mendaki. Sebutkan gambar dan letaknya dalam hati saat membalik.",
+     "Di mode trio, dua kartu terbuka yang berbeda langsung mengakhiri percobaan, jadi buka kartu yang sudah pasti sebagai kartu kedua."
+    ],
+    "aka": "Game ini juga dikenal sebagai permainan mengingat, cari pasangan, atau mencocokkan kartu. Mulai lantai 30, Zirve menambahkan versi dengan tiga kartu yang sama."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "teka-teki hubungkan titik",
+    "desc": "Alir Warna di Zirve: hubungkan ujung yang sama warnanya dengan garis yang tak bersilangan dan penuhi papan. Aturan, ukuran papan, dan tips.",
+    "intro": "Alir Warna memintamu menghubungkan setiap pasangan ujung yang sama warnanya dengan sebuah garis. Garis tidak boleh bersilangan, setiap kotak hanya bisa dilalui satu garis, dan papan baru selesai saat semua kotak terisi.",
+    "controls": "Gambar",
+    "tips": [
+     "Mulai dari pasangan di tepi dan di sudut: garisnya punya paling sedikit pilihan jalan.",
+     "Setiap kotak harus terisi, jadi garis yang menyisakan celah satu kotak itu salah. Rapatkan garis ke dinding dan ke garis lain.",
+     "Kotak sudut yang kosong hanya punya dua tetangga, jadi sebuah garis harus melewatinya menyusuri tepi.",
+     "Gambar satu garis dalam sekali tarik. Kalau jarimu terangkat sebelum sampai ke pasangannya, garis itu terhapus; garis yang sudah selesai tetap ada.",
+     "Kembali menyusuri garismu sendiri akan memendekkannya, dan memulai lagi dari salah satu ujung akan mengulang warna itu dari awal."
+    ],
+    "aka": "Teka-teki ini sering disebut hubungkan titik atau teka-teki garis. Beberapa versi hanya memintamu menghubungkan pasangan; versi Zirve selalu memintamu memenuhi seluruh papan juga."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "teka-teki menyambung pipa air",
+    "desc": "Putar Pipa di Zirve: putar keping pipa sampai air mengalir dari sumber ke bendera, lalu nantinya melewati setiap keping. Aturan dan tips.",
+    "intro": "Di Putar Pipa, papan penuh keping pipa: ujung, lurus, belokan, dan T. Ketuk keping untuk memutarnya seperempat putaran dan alirkan air dari sumber ke bendera; mulai lantai 40, setiap keping harus ikut dialiri.",
+    "controls": "Ketuk untuk memutar",
+    "tips": [
+     "Mulai dari sebelah sumber dan bendera. Keduanya tidak pernah berputar, jadi keping di sampingnya punya lebih sedikit kemungkinan arah.",
+     "Keping di tepi papan tidak boleh mengarah ke luar. Putar ke dalam lebih dulu.",
+     "Setiap ketukan memutar seperempat putaran searah jarum jam. Pipa lurus butuh paling banyak satu ketukan, keping lain paling banyak tiga.",
+     "Mulai lantai 40, setiap keping harus tersambung ke jaringan: ujung terbuka yang mengarah ke dinding atau ke keping yang tidak menyambung balik berarti masih ada yang salah.",
+     "Angka di atas papan menunjukkan berapa kotak yang sudah dialiri air. Pakai angka itu untuk mengecek kemajuanmu."
+    ],
+    "aka": "Jenis ini dikenal sebagai teka-teki pipa, teka-teki tukang ledeng, atau teka-teki jaringan. Di Zirve sumber dan bendera tetap di tempatnya, dan papan tidak pernah dimulai dalam keadaan sudah selesai."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "teka-teki sortir warna dalam tabung",
+    "desc": "Sortir Warna di Zirve: tuang batu berwarna antartabung sampai setiap tabung berisi satu warna. Aturan menuang, tombol Urungkan, dan tips.",
+    "intro": "Sortir Warna memberimu tabung berisi batu dengan warna campur aduk dan dua tabung kosong. Ketuk satu tabung untuk mengangkat batu teratas yang warnanya sama, lalu ketuk tabung lain untuk menuangnya; tabung selesai saat berisi empat batu dengan satu warna.",
+    "controls": "Ketuk",
+    "tips": [
+     "Kamu hanya bisa menuang ke warna yang sama atau ke tabung kosong. Biarkan satu tabung kosong selama mungkin: itu ruang bebasmu.",
+     "Sebelum memakai tabung kosong, cari tabung yang warna teratasnya sudah cocok.",
+     "Selesaikan satu warna dalam satu waktu. Tabung yang penuh satu warna tidak lagi menghalangi.",
+     "Kalau tidak ada langkah yang membantu, ketuk Urungkan alih-alih mengisi tabung kosong terakhirmu.",
+     "Setiap warna juga punya bentuknya sendiri, jadi kamu bisa menyortir berdasarkan bentuk kalau warnanya sulit dibedakan."
+    ],
+    "aka": "Ini teka-teki jenis sortir air atau sortir bola. Di Zirve tabungnya berisi batu berwarna, bukan air, dan selalu ada dua tabung kosong."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "teka-teki mengeluarkan panah",
+    "desc": "Panah di Zirve: ketuk panah, dan panah itu meluncur keluar papan jika jalannya kosong. Aturan, panah berliku, penalti 3 detik, dan tips.",
+    "intro": "Panah mengisi papan dengan panah lurus dan berliku. Ketuk satu, dan panah itu meluncur keluar papan ke arah kepalanya, tapi hanya jika garis dari kepalanya sampai tepi papan kosong; panah yang terhalang memantul kembali dan memakan waktu.",
+    "controls": "Ketuk",
+    "tips": [
+     "Lihat dari kepala panah ke tepi papan. Kalau tidak ada apa-apa di garis itu, panahnya bebas.",
+     "Mengeluarkan panah tidak pernah menghalangi panah lain, jadi keluarkan setiap panah bebas yang kamu lihat.",
+     "Mulai dari dekat tepi, tempat garis keluarnya pendek.",
+     "Panah berliku keluar ke arah kepalanya, bukan ekornya. Telusuri badannya sampai ke kepala sebelum mengetuk.",
+     "Ketukan pada panah yang terhalang memotong 3 detik dari waktumu. Di mode santai tidak ada batas waktu, jadi kamu bebas mencoba."
+    ],
+    "aka": "Teka-teki seperti ini disebut teka-teki panah atau teka-teki panah keluar. Di Zirve panah yang terhalang memakan waktu, bukan nyawa, dan panah panjang berliku seperti ular."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "teka-teki balok geser",
+    "desc": "Gerbang di Zirve: geser balok di jalurnya dan keluarkan masing-masing lewat gerbang sewarna. Aturan, parkir, balok terkunci, dan tips.",
+    "intro": "Gerbang adalah teka-teki balok geser: balok hanya bergerak searah sisi panjangnya, dan masing-masing keluar dari papan lewat gerbang dengan warnanya sendiri. Tidak ada balok yang bisa keluar di langkah pertama, jadi inti teka-tekinya adalah memutuskan balok mana yang diparkir dan di mana.",
+    "controls": "Seret atau ketuk",
+    "tips": [
+     "Cari balok yang dekat dengan gerbangnya dan lihat apa yang menghalanginya. Biasanya penghalang itulah yang harus digeser lebih dulu.",
+     "Parkir balok penghalang di tempat yang tidak menutup jalur balok lain.",
+     "Balok yang keluar tidak pernah menghalangi apa pun, jadi keluarkan setiap balok begitu jalannya terbuka.",
+     "Baca baris di bawah papan: saat sebuah langkah tidak berhasil, baris itu memberi tahu alasannya, misalnya balok terkunci, gerbang yang salah, atau jalan yang tertutup.",
+     "Mulai lantai 80, balok abu-abu terkunci. Balok itu baru terbuka setelah semua balok dengan warna kuncinya keluar."
+    ],
+    "aka": "Teka-teki balok geser dan parkir adalah keluarga lama; contoh terkenalnya teka-teki Klotski dari Tiongkok. Bedanya, di versi Zirve balok keluar lewat gerbang dengan warnanya sendiri, bukan lewat satu pintu keluar bersama."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "teka-teki penempatan ala Star Battle",
+    "desc": "Menara Pantau di Zirve: satu menara pantau di setiap baris, kolom, dan wilayah berwarna, tanpa ada yang bersentuhan. Aturan dan tips.",
+    "intro": "Menara Pantau adalah teka-teki penempatan berbasis logika: tempatkan satu menara pantau di setiap baris, setiap kolom, dan setiap wilayah berwarna, dan dua menara tidak boleh bersentuhan, bahkan secara diagonal. Setiap papan punya tepat satu solusi dan bisa diselesaikan tanpa menebak.",
+    "controls": "Ketuk",
+    "tips": [
+     "Ketuk sekali untuk catatan ✕ dan sekali lagi untuk menara pantau. Seret melewati kotak-kotak kosong untuk memberi banyak ✕ sekaligus.",
+     "Di sekeliling setiap menara pantau, tandai delapan kotak yang bersentuhan dengannya dengan ✕.",
+     "Kalau sebuah wilayah seluruhnya berada di satu baris, wilayah lain tidak bisa memakai baris itu: tandai sisa baris dengan ✕. Hal yang sama berlaku untuk kolom.",
+     "Kalau dua wilayah bersama-sama muat tepat di dalam dua baris, wilayah lain tidak bisa memakai dua baris itu.",
+     "Wilayah kecil cepat terjawab. Mulai dari sana dan biarkan tanda ✕ menyebar."
+    ],
+    "aka": "Ini teka-teki penempatan dari keluarga Star Battle, dengan satu keping per baris, kolom, dan wilayah. Zirve memakai menara pantau sebagai kepingnya."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "teka-teki menyalakan semua kotak",
+    "desc": "Lampu di Zirve: ketuk kotak untuk membaliknya beserta tetangganya sampai seluruh papan menyala. Aturan, ukuran papan, dan metode bertahap.",
+    "intro": "Lampu adalah game yang terbuka paling akhir dan yang paling matematis: mengetuk sebuah kotak membalik kotak itu dan empat tetangganya, yang menyala jadi gelap dan yang gelap jadi menyala. Lantai selesai saat semua kotak menyala.",
+    "controls": "Ketuk",
+    "tips": [
+     "Urutan ketukan tidak berpengaruh, dan dua ketukan di kotak yang sama saling meniadakan. Setiap kotak cukup diketuk paling banyak sekali.",
+     "Kerjakan baris demi baris: ketuk kotak di bawah setiap kotak gelap di baris atasnya. Kotak gelap turun ke bawah sampai hanya baris paling bawah yang tersisa.",
+     "Pola yang tersisa di baris paling bawah menunjukkan kotak mana di baris paling atas yang harus diketuk. Ketuk kotak-kotak itu lalu kerjakan lagi ke bawah.",
+     "Ketukan di sudut mengubah tiga kotak, di tepi empat, di tengah lima. Sudut cocok untuk perbaikan kecil."
+    ],
+    "aka": "Ini versi teka-teki yang dikenal sebagai lights out, dinamai dari sebuah game genggam tahun 1990-an. Di Zirve tujuannya dibalik: nyalakan semua kotak."
+   },
+   "state": "translated"
   }
  }
 }

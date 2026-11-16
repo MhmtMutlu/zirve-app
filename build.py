@@ -80,7 +80,20 @@ PAGES = {
     "kvkk":    {"tr": "kvkk/", "*": "kvkk/"},
     "delete":  {"tr": "hesap-silme/", "*": "delete-account/"},
     "support": {"tr": "destek/", "*": "support/"},
+    "games":   {"tr": "oyunlar/", "*": "games/"},
+    "press":   {"tr": "basin/", "*": "press/"},
 }
+# Game pages (plan §4.4): Turkish slug, slug in every other language. No trademarked genre name in a URL.
+GAME_SLUGS = {
+    "colorMatch": ("renk-birlestirme", "color-match"), "pathDraw": ("yol-cizme", "path-draw"),
+    "blockFit": ("blok-yerlestirme", "block-fit"), "memory": ("hafiza", "memory"), "flow": ("akis", "connect-the-dots"),
+    "pipes": ("boru-cevirme", "pipe-turn"), "colorSort": ("renk-dizme", "color-sort"), "arrows": ("oklar", "arrows"),
+    "gates": ("kapi", "sliding-blocks"), "flags": ("gozculer", "lookouts"), "lights": ("isik", "lights"),
+}
+PAGES.update({f"game.{k}": {"tr": f"oyunlar/{tr}/", "*": f"games/{slug}/"} for k, (tr, slug) in GAME_SLUGS.items()})
+# Pages built only in some languages, and the string prefix only those languages need (the press kit: tr, en).
+PAGE_LANGS = {"press": ("tr", "en")}
+PAGE_KEYS = {"press": "press."}
 DOCS = ("privacy", "terms", "kvkk", "delete", "support")    # bodies in src/<doc>.<lang>.html
 SMART_BANNER_ARG = {"daily": "zirve://daily"}               # apple-itunes-app app-argument per page
 
@@ -117,6 +130,9 @@ def required_keys(code):
     for doc in DOCS:
         if not (SRC / f"{doc}.{code}.html").exists():
             keys = {k for k in keys if not k.startswith(f"doc.{doc}.")}
+    for page, prefix in PAGE_KEYS.items():
+        if code not in PAGE_LANGS[page]:
+            keys = {k for k in keys if not k.startswith(prefix)}
     return keys
 
 
@@ -135,6 +151,8 @@ def doc_langs(page):
     """Languages a page is built in (published languages that have its content)."""
     if page in DOCS:
         return [c for c in ACTIVE if (SRC / f"{page}.{c}.html").exists()]
+    if page in PAGE_LANGS:
+        return [c for c in ACTIVE if c in PAGE_LANGS[page]]
     return list(ACTIVE)
 
 
@@ -456,7 +474,10 @@ def nav(t, page, links):
 
 
 def footer(t):
-    links = "".join(f'<a href="{t.href(p)}">{html.escape(l)}</a>' for p, l in t("footer.links"))
+    links = f'<a href="{t.href("games")}">{t.e("games.nav")}</a>'
+    if t.code in doc_langs("press"):
+        links += f'<a href="{t.href("press")}">{t.e("press.nav")}</a>'
+    links += "".join(f'<a href="{t.href(p)}">{html.escape(l)}</a>' for p, l in t("footer.links"))
     links += f'<a href="mailto:{SITE["contact"]}">{SITE["contact"]}</a>'
     updated = t.e("footer.updated", date="\x00").replace("\x00", f'<time datetime="{LASTMOD_ISO}">{LASTMOD_HUMAN}</time>')
     return f"""<footer><div class="wrap">
@@ -498,7 +519,9 @@ def landing(code):
     graph = common_nodes(t, url, title, desc, image=f"{BASE}/assets/shots/{HERO}.webp") + [app_node(t)]
     out = head(t, "home", title, desc, graph=graph, preload=True)
     out += nav(t, "home", t("home.nav"))
-    trust = "".join(f"<li>{I['check']}{html.escape(x['text'])}</li>" for x in t("home.trust") if requirement_met(x))
+    chips = [x["text"] for x in t("home.trust") if requirement_met(x)]
+    chips.insert(1, t("home.trust_ads"))
+    trust = "".join(f"<li>{I['check']}{html.escape(x)}</li>" for x in chips)
     stars = "".join(f'<span class="star">{I["star"]}</span>' for _ in range(3))
     f1, f2, f3 = t("home.float")
     out += f"""<main id="main">
@@ -529,13 +552,10 @@ def landing(code):
     def game(g):
         k = g["id"]
         name = t(f"game.name.{k}")
-        how = "".join(f"<li>{html.escape(x)}</li>" for x in g["how"])
-        more = "".join(f"<li>{html.escape(x)}</li>" for x in g["harder"])
         return (f'<article class="game" id="{k}"><div class="art">{G[k]}</div><div class="body">'
-                f'<div class="game-head"><h3>{html.escape(name)}</h3><span class="unlock">{t.e("game.unlock", floor=UNLOCK[k] + 1)}</span></div>'
+                f'<div class="game-head"><h3><a href="{t.href("game." + k)}">{html.escape(name)}</a></h3><span class="unlock">{t.e("game.unlock", floor=UNLOCK[k] + 1)}</span></div>'
                 f'<p class="goal">{html.escape(g["goal"])}</p>'
-                f'<h4>{t.e("home.how_label")}</h4><ol>{how}</ol>'
-                f'<h4>{t.e("home.harder_label")}</h4><ul>{more}</ul></div></article>')
+                f'<p class="more"><a href="{t.href("game." + k)}">{t.e("games.card_link", name=name)} →</a></p></div></article>')
 
     games = "".join(game(g) for g in t("home.games"))
     shot = lambda f, cap: (f'<figure><div class="phone sm"><img src="/assets/shots/{f}.webp" width="603" height="1311" loading="lazy" '
@@ -664,6 +684,191 @@ def daily(code):
     return out + footer(t)
 
 
+# ------------------------------------------------------------------------------------------- games
+# One page per puzzle type (plan §5.3) and their index. Rules come from home.games (the app's how-to), the rest from
+# games.<kind>: what the genre is called, tips, other names. Doorway test: a page must stop making sense when another
+# game's name is swapped in, so every page carries its own rules, tips and real screenshot.
+KINDS = [k["id"] for k in FACTS["puzzleKinds"]]
+SHOT_SIZE = (603, 1310)
+
+
+def game_shot_path(code, kind):
+    """Real capture of the game in this language (scripts/game-shots.sh), else the Turkish one."""
+    rel = f"assets/shots/games/{code.lower()}/{kind}.webp"
+    return rel if (ROOT / rel).exists() else f"assets/shots/games/tr/{kind}.webp"
+
+
+def game_img(t, kind, eager=False):
+    w, h = SHOT_SIZE
+    load = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    alt = t("games.shot_alt", name=t(f"game.name.{kind}"))
+    return (f'<img src="/{game_shot_path(t.code, kind)}" width="{w}" height="{h}" {load} decoding="async" '
+            f'alt="{html.escape(alt)}">')
+
+
+def crumbs_nav(t, items):
+    """Visible breadcrumb; the same names go into BreadcrumbList."""
+    parts = [f'<a href="{href}">{html.escape(name)}</a>' if href else f'<span aria-current="page">{html.escape(name)}</span>'
+             for name, href in items]
+    sep = ' <span aria-hidden="true">›</span> '
+    return f'<nav class="crumbs" aria-label="{t.e("games.crumbs_label")}">{sep.join(parts)}</nav>'
+
+
+def game_info(t, kind):
+    goal = next(g for g in t("home.games") if g["id"] == kind)
+    return {**goal, **t(f"games.{kind}"), "name": t(f"game.name.{kind}")}
+
+
+def game_page(kind, code):
+    t = T(code)
+    g = game_info(t, kind)
+    page = f"game.{kind}"
+    title = t("games.page_title", name=g["name"], type=g["type"])
+    desc = g["desc"]
+    url = page_url(page, code)
+    games_name = t("games.nav")
+    h1 = t("games.h1_game", name=g["name"], type=g["type"])
+    crumbs = [("Zirve", page_url("home", code)), (games_name, page_url("games", code)), (g["name"], None)]
+    graph = common_nodes(t, url, title, desc, crumbs=crumbs, image=f"{BASE}/{game_shot_path(code, kind)}")
+    out = head(t, page, title, desc, graph=graph)
+    out += nav(t, page, [(t.href("games"), games_name), (t.href("home"), t("nav.back"))])
+    floor = UNLOCK[kind] + 1
+    where = (t("games.where_first", name=g["name"]) if UNLOCK[kind] == 0
+             else t("games.where", name=g["name"], floor=floor, camp=UNLOCK[kind]))
+    li = lambda xs: "".join(f"<li>{html.escape(x)}</li>" for x in xs)
+    i = KINDS.index(kind)
+    others = [KINDS[(i + d) % len(KINDS)] for d in (1, 2, 3)]
+    related = "".join(f'<a class="game-link" href="{t.href("game." + k)}"><span class="art">{G[k]}</span>'
+                      f'<span><b>{t.e(f"game.name.{k}")}</b><small>{html.escape(t(f"games.{k}")["type"])}</small></span></a>'
+                      for k in others)
+    out += f"""<main id="main" class="gamepage">
+<section class="hero game-hero"><div class="wrap">
+  <div>
+    {crumbs_nav(t, [("Zirve", t.href("home")), (games_name, t.href("games")), (g["name"], None)])}
+    <span class="chip-soon"><i></i>{t.e("game.unlock", floor=floor)}</span>
+    <h1>{html.escape(h1)}</h1>
+    <p class="lead">{html.escape(g["intro"])}</p>
+    <div class="hero-cta">{badge(t)}</div>
+  </div>
+  <div class="hero-art"><div class="phone">{game_img(t, kind, eager=True)}</div></div>
+</div></section>
+<section class="white"><div class="wrap prose">
+  <h2>{t.e("home.how_label")}</h2>
+  <p class="goal">{html.escape(g["goal"])}</p>
+  <ol>{li(g["how"])}</ol>
+  <h2>{t.e("home.harder_label")}</h2>
+  <ul>{li(g["harder"])}</ul>
+  <h2>{t.e("games.tips_h2")}</h2>
+  <ul>{li(g["tips"])}</ul>
+  <h2>{t.e("games.where_h2")}</h2>
+  <p>{html.escape(where)}</p>
+  <p>{t.e("games.calm_p")}</p>
+  <h2>{t.e("games.aka_h2")}</h2>
+  <p>{html.escape(g["aka"])}</p>
+</div></section>
+<section><div class="wrap">
+  <div class="section-head"><h2>{t.e("games.more_h2")}</h2></div>
+  <div class="game-links">{related}</div>
+  <p class="all-games"><a class="btn btn-ghost" href="{t.href("games")}">{t.e("games.all_link")}</a></p>
+</div></section>
+<div class="cta-band"><div class="wrap"><div class="cta-card">
+  {mascot(cls="mascot")}
+  <div><h2>{t.e("home.cta_h2")}</h2><p>{t.e("home.cta_p")}</p></div>
+  {badge(t)}
+</div></div></div>
+</main>
+"""
+    return out + footer(t)
+
+
+def games_index(code):
+    t = T(code)
+    title, desc = t("games.title"), t("games.desc")
+    url = page_url("games", code)
+    h1 = t("games.h1")
+    items = [{"@type": "ListItem", "position": n, "name": t(f"game.name.{k}"), "url": page_url(f"game.{k}", code)}
+             for n, k in enumerate(KINDS, 1)]
+    graph = common_nodes(t, url, title, desc, types=["WebPage", "CollectionPage"],
+                         crumbs=[("Zirve", page_url("home", code)), (h1, None)],
+                         extra={"mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items}})
+    out = head(t, "games", title, desc, graph=graph)
+    out += nav(t, "games", [(t.href("home"), t("nav.back"))])
+
+    def card(k):
+        g = game_info(t, k)
+        return (f'<article class="game" id="{k}"><div class="art">{G[k]}</div><div class="body">'
+                f'<div class="game-head"><h2><a href="{t.href("game." + k)}">{html.escape(g["name"])}</a></h2>'
+                f'<span class="unlock">{t.e("game.unlock", floor=UNLOCK[k] + 1)}</span></div>'
+                f'<p class="type">{html.escape(g["type"])} · {html.escape(g["controls"])}</p>'
+                f'<p class="goal">{html.escape(g["goal"])}</p>'
+                f'<p class="more"><a href="{t.href("game." + k)}">{t.e("games.card_link", name=g["name"])} →</a></p></div></article>')
+
+    out += f"""<main id="main">
+<section class="hero games-hero"><div class="wrap">
+  <div>
+    {crumbs_nav(t, [("Zirve", t.href("home")), (h1, None)])}
+    <h1>{html.escape(h1)}</h1>
+    <p class="lead">{t.e("games.lead")}</p>
+    <div class="hero-cta">{badge(t)}</div>
+  </div>
+</div></section>
+<section class="white"><div class="wrap">
+  <div class="games">{"".join(card(k) for k in KINDS)}</div>
+</div></section>
+<div class="cta-band"><div class="wrap"><div class="cta-card">
+  {mascot(cls="mascot")}
+  <div><h2>{t.e("home.cta_h2")}</h2><p>{t.e("home.cta_p")}</p></div>
+  {badge(t)}
+</div></div></div>
+</main>
+"""
+    return out + footer(t)
+
+
+# ------------------------------------------------------------------------------------------- press kit
+def press(code):
+    """Press kit (plan §5.9): facts, two ready descriptions, the puzzle list and assets. No quotes, ratings, awards or
+    download counts; no personal name (the developer is mm-apps)."""
+    t = T(code)
+    title, desc = t("press.title"), t("press.desc")
+    url = page_url("press", code)
+    h1 = t("press.h1")
+    graph = common_nodes(t, url, title, desc, types=["WebPage", "AboutPage"], crumbs=[("Zirve", page_url("home", code)), (h1, None)])
+    out = head(t, "press", title, desc, graph=graph)
+    out += nav(t, "press", [(t.href("games"), t("games.nav")), (t.href("home"), t("nav.back"))])
+    extra = {"released": t.date(FACTS["datePublished"]), "version": LIVE["softwareVersion"], "minOS": FACTS["minOS"].split(".")[0],
+             "appStore": APP_STORE_URL, "site": page_url("home", code), "contact": SITE["contact"]}
+    rows = "".join(f'<tr><th scope="row">{html.escape(k)}</th><td>{html.escape(v)}</td></tr>' for k, v in t("press.rows", **extra))
+    long = "".join(f"<p>{html.escape(p)}</p>" for p in t("press.long"))
+    puzzles = "".join(f'<li><a href="{t.href("game." + k)}">{t.e(f"game.name.{k}")}</a>: {html.escape(t(f"games.{k}")["type"])}</li>' for k in KINDS)
+    shots = "".join(f'<li><a href="/{game_shot_path(code, k)}">{t.e(f"game.name.{k}")}</a></li>' for k in KINDS)
+    out += f"""<main id="main" class="doc"><div class="wrap">
+<header class="doc-head">
+  {crumbs_nav(t, [("Zirve", t.href("home")), (h1, None)])}
+  <h1>{html.escape(h1)}</h1>
+  <p class="meta">{t.e("press.lead")}</p>
+</header>
+<article>
+<h2>{t.e("press.facts_h2")}</h2>
+<table class="facts"><tbody>{rows}</tbody></table>
+<h2>{t.e("press.short_h2")}</h2>
+<p>{t.e("press.short")}</p>
+<h2>{t.e("press.long_h2")}</h2>
+{long}
+<h2>{t.e("press.puzzles_h2")}</h2>
+<ul>{puzzles}</ul>
+<h2>{t.e("press.assets_h2")}</h2>
+<p>{t.e("press.assets_p")}</p>
+<ul><li><a href="/assets/icon-512.png">{t.e("press.icon")}</a></li>{shots}</ul>
+<p class="note">{t.e("press.usage")}</p>
+<h2>{t.e("press.contact_h2")}</h2>
+<p>{t.e("press.contact_p", contact=SITE["contact"])} <a href="mailto:{SITE["contact"]}">{SITE["contact"]}</a></p>
+</article>
+</div></main>
+"""
+    return out + footer(t)
+
+
 # ------------------------------------------------------------------------------------------- documents
 def text_of(fragment):
     """Visible text of an inline HTML fragment (tags removed, entities decoded, spaces collapsed)."""
@@ -757,8 +962,10 @@ def llms_txt(lastmod):
     stores = {"CN": "mainland China", "BR": "Brazil", "RU": "Russia", "BY": "Belarus"}
     missing = ", ".join(stores[s] for s in FACTS["unavailableStorefronts"])
     updated = max(v["date"] for v in lastmod.values())
-    pages = [("Home", "home"), ("Daily tower", "daily"), ("Support", "support"), ("Privacy policy", "privacy"),
-             ("Terms of use", "terms"), ("Delete your account", "delete")]
+    pages = [("Home", "home"), ("Puzzle types", "games")]
+    pages += [(f"{t(f'game.name.{k}')}: {t(f'games.{k}')['type']}", f"game.{k}") for k in KINDS]
+    pages += [("Daily tower", "daily"), ("Press kit", "press"), ("Support", "support"), ("Privacy policy", "privacy"),
+              ("Terms of use", "terms"), ("Delete your account", "delete")]
     lines = ["# Zirve", "", f"> {t('definition')}", "",
              f"{FACTS['storeNames']['en']} is a free iPhone and iPad game by {FACTS['developer']} (Türkiye), released "
              f"{t.date(FACTS['datePublished'])}.", "", "## Facts",
@@ -793,6 +1000,12 @@ def stamp(rel, text, code, lastmod, today):
     return text.replace(LASTMOD_ISO, entry["date"]).replace(LASTMOD_HUMAN, html.escape(T(code).date(entry["date"])))
 
 
+def renderer(page):
+    if page.startswith("game."):
+        return lambda c, k=page[5:]: game_page(k, c)
+    return {"home": landing, "daily": daily, "games": games_index, "press": press}.get(page) or (lambda c, d=page: document(d, c))
+
+
 def build(today):
     for code in ACTIVE:
         missing, review = gate(code)
@@ -811,7 +1024,7 @@ def build(today):
     lastmod.update(old)
     for page in PAGES:
         for code in doc_langs(page):
-            render = landing if page == "home" else daily if page == "daily" else (lambda c, d=page: document(d, c))
+            render = renderer(page)
             text = render(code)
             path = page_path(page, code)
             write(path + "index.html", stamp(path, text, code, lastmod, today))
@@ -1120,10 +1333,14 @@ def check_pages(report, written, pages):
                     p.append(f"{rel}: WebPage name ≠ <title>")
                 if norm(n.get("description")) != norm(page.desc):
                     p.append(f"{rel}: WebPage description ≠ meta description")
-                for q in n.get("mainEntity", []):
+                for q in (n.get("mainEntity", []) if "FAQPage" in types else []):
                     for txt in (q["name"], q["acceptedAnswer"]["text"]):
                         if norm(txt) not in visible:
                             p.append(f"{rel}: FAQ text not visible: {txt[:50]}")
+            if "WebPage" in types and isinstance(n.get("mainEntity"), dict):
+                for item in n["mainEntity"].get("itemListElement", []):
+                    if norm(item["name"]) not in visible:
+                        p.append(f"{rel}: list item '{item['name']}' not visible")
             if "VideoGame" in types and norm(n["description"]) not in visible:
                 p.append(f"{rel}: app description not visible")
             if "BreadcrumbList" in types:

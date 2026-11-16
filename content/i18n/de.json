@@ -935,6 +935,267 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Keine aufgezwungene Werbung",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Rätsel",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Brotkrümelnavigation",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "Die {puzzleTypes} Rätselarten von Zirve: Regeln und Tipps",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "Alle {puzzleTypes} Rätselarten in Zirve, dem kostenlosen Logik-Rätselturm für iPhone und iPad: was jede verlangt, ab wann sie spielbar ist und wie sie schwerer wird.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "Die {puzzleTypes} Rätselarten von Zirve",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Jede Etage des Turms ist eines dieser Spiele. Vier sind ab der ersten Etage offen, danach kommt in jedem Lager ein neues dazu. Auf den Seiten unten findest du zu jedem Spiel die Regeln, wie das Rätsel beim Klettern wächst, Tipps und einen echten Screenshot.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "So spielst du {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type} – Regeln und Tipps | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} in Zirve: eine echte Etage aus dem Spiel",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Tipps",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Wo es im Turm vorkommt",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "{name} gehört zu den vier Spielen der ersten Etagen. Danach kommt es gemischt mit den anderen Spielen vor und wird beim Klettern schwerer.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "{name} wird auf Etage {floor} freigeschaltet, direkt nach Lager {camp}, und auf dieser Etage wartet immer {name}. Danach kommt es gemischt mit den anderen Spielen vor und wird beim Klettern schwerer.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "Im Ruhemodus spielst du jedes freigeschaltete Spiel ohne Zeitlimit und ohne Leben zu verbrauchen. Er bringt keinen Fortschritt; er ist zum Üben da.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Wie diese Art Rätsel heißt",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Weitere Rätsel",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Alle Rätsel",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "Match-Puzzle mit Schiebesteinen",
+    "desc": "Farbpaare in Zirve: Zieh einen Stein auf einen gleichfarbigen Nachbarn, und beide verschwinden. Regeln, Zuglimits, gesperrte Steine und Tipps.",
+    "intro": "Farbpaare ist das erste Spiel des Turms: Zieh einen Stein auf einen gleichfarbigen Nachbarn, und beide verlassen das Spielfeld. Steine rutschen Feld für Feld, und weiter oben kann jeder Stein nur begrenzt oft rutschen.",
+    "controls": "Ziehen",
+    "tips": [
+     "Ab Etage 10 zeigt die Zahl in der Ecke eines Steins, wie viele Felder er noch rutschen kann. Setz die Züge für den Stein ein, der weit von seinem Partner entfernt liegt.",
+     "Ein Stein mit 0 kann nicht mehr rutschen, sich aber noch verbinden: Bring stattdessen seinen Partner zu ihm.",
+     "Wandfelder kann kein Stein betreten. Such den Weg um sie herum, bevor du losziehst.",
+     "Ab Etage 60 öffnet sich ein gesperrter Stein, sobald direkt neben ihm ein Paar entsteht. Plane dieses Paar früh ein.",
+     "Reichen die übrigen Züge nicht mehr bis zum Ende, tippe auf Neustart, um das Spielfeld in den Ausgangszustand zurückzusetzen. Die Uhr läuft weiter, also warte damit nicht zu lange."
+    ],
+    "aka": "Es gehört zur Familie der Match-Puzzles, in denen zwei gleiche Teile zusammenkommen und verschwinden. In Zirve rutschen die Steine Feld für Feld, und ab Etage 10 zählt jeder Zug. Jede Farbe hat außerdem eine eigene Form, deshalb ist das Spielfeld auch ohne Farbunterscheidung lesbar."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "Ein-Strich-Rätsel",
+    "desc": "Weg zeichnen in Zirve: eine Linie von Knoten zu Knoten bis zur Flagge, ohne den Finger abzusetzen. Regeln, Nebel, Kontrollpunkte der Reihe nach und Tipps.",
+    "intro": "Weg zeichnen verlangt eine einzige Linie: Geh von Knoten zu Knoten, ohne den Finger abzusetzen, passiere die Kontrollpunkte und ende auf der Flagge. Weiter oben füllt sich das Spielfeld mit Wänden und Nebel, und schließlich muss die Linie jeden Knoten besuchen.",
+    "controls": "Zeichnen",
+    "tips": [
+     "Lass den Finger auf dem Bildschirm. Setzt du ihn ab, bevor das Spielfeld gelöst ist, beginnt die Linie von vorn.",
+     "Zieh auf deiner Linie zurück, um die letzten Schritte rückgängig zu machen; das geht schneller als ein Neuanfang.",
+     "Teil das Spielfeld nicht in zwei Hälften: Zerschneidet deine Linie die freien Knoten in getrennte Bereiche, kannst du nicht beide besuchen.",
+     "Auf Spielfeldern, auf denen jeder Knoten besucht werden muss, musst du einen Knoten mit nur zwei freien Nachbarn über den einen betreten und über den anderen verlassen. Leg diese erzwungenen Schritte zuerst im Kopf fest.",
+     "Ab Etage 30 sind die Kontrollpunkte nummeriert, und du kannst keinen betreten, bevor er an der Reihe ist. Plane also einen Weg, der sie in der richtigen Reihenfolge erreicht."
+    ],
+    "aka": "Das ist ein Ein-Strich- oder Linienrätsel. Klassische Ein-Strich-Figuren wie das Haus vom Nikolaus verlangen, jede Kante nachzufahren; in Zirve besuchst du stattdessen Knoten, deshalb gilt die alte Regel zur ungeraden Zahl von Verbindungen hier nicht."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "Block-Legepuzzle",
+    "desc": "Blöcke einpassen in Zirve: Zieh und dreh Teile, bis sie die Lücken auf dem Spielfeld genau füllen. Regeln, Spiegelteile ab Etage 30 und Tipps.",
+    "intro": "Blöcke einpassen ist ein Legepuzzle: Zieh die Teile aus der Ablage aufs Spielfeld, bis jede Lücke gefüllt ist. Tippe zum Drehen; weiter oben passen manche Teile erst, wenn du sie spiegelst.",
+    "controls": "Ziehen, zum Drehen tippen",
+    "tips": [
+     "Fang mit dem größten oder ungewöhnlichsten Teil an. Kleine Teile füllen, was übrig bleibt.",
+     "Füll zuerst Ecken und schmale Lücken: Dort passen nur wenige Teile hinein.",
+     "Zähl die Felder. Hat eine Lücke eine Größe, die kein übriges Teil bilden kann, liegt etwas falsch: Tippe ein gelegtes Teil an, um es in die Ablage zurückzunehmen.",
+     "Ab Etage 30 passt ein Teil mit dem ↻-Abzeichen nicht allein durch Drehen. Halte es gedrückt, um es zu spiegeln.",
+     "Wird die Zeile unter dem Spielfeld rot und rät dir, ein Teil zurückzunehmen, versperrt ein schon gelegtes Teil den Rest."
+    ],
+    "aka": "Legepuzzles mit Teilen aus Quadraten heißen Polyomino- oder Pentomino-Puzzles, und das Tangram funktioniert nach demselben Prinzip mit Dreiecken. In Zirve wird die leere Fläche aus den Teilen selbst ausgeschnitten, deshalb passen die Teile auf jedem Spielfeld genau."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "Gedächtnisspiel mit Kartenpaaren",
+    "desc": "Gedächtnis in Zirve: Deck jeweils zwei Karten auf und finde alle Paare. Spielfeldgrößen, Dreier ab Etage 30 und Tipps zum Merken der Positionen.",
+    "intro": "Gedächtnis ist der bekannte Kartenspiel-Klassiker: Deck zwei Karten auf; sind sie gleich, bleiben sie offen, sonst versuchst du es erneut. Beim Klettern wird das Spielfeld größer, falsche Karten schließen sich schneller, und ab Etage 30 suchst du Dreier.",
+    "controls": "Tippen",
+    "tips": [
+     "Deck beim ersten Durchgang die Karten in einer festen Reihenfolge auf, Reihe für Reihe. So merkst du dir die Positionen leichter.",
+     "Passt eine Karte zu einer, die du schon gesehen hast, hol dir das Paar sofort.",
+     "Je höher du kletterst, desto schneller schließen sich falsche Karten. Sag dir beim Aufdecken Bild und Platz leise vor.",
+     "Bei Dreiern beenden zwei offene, unterschiedliche Karten den Versuch sofort; deck die Karte, bei der du dir sicher bist, deshalb als zweite auf."
+    ],
+    "aka": "Es ist auch als „Paare finden“, „Pairs“ oder Konzentrationsspiel bekannt. Zirve ergänzt ab Etage 30 eine Variante mit drei gleichen Karten."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "Linienrätsel zum Punkteverbinden",
+    "desc": "Farbfluss in Zirve: Verbinde passende Enden mit Linien, die sich nie kreuzen, und fülle das ganze Spielfeld. Regeln, Spielfeldgrößen und Tipps.",
+    "intro": "Bei Farbfluss verbindest du jedes Paar passender Enden mit einer Linie. Linien dürfen sich nicht kreuzen, durch jedes Feld führt nur eine Linie, und das Spielfeld ist erst gelöst, wenn jedes Feld gefüllt ist.",
+    "controls": "Zeichnen",
+    "tips": [
+     "Beginne mit den Paaren an den Rändern und in den Ecken: Ihre Linien haben die wenigsten Möglichkeiten.",
+     "Jedes Feld muss gefüllt sein, also ist eine Linie falsch, die ein einzelnes leeres Feld einschließt. Führ die Linien eng an den Wänden und aneinander entlang.",
+     "Ein leeres Eckfeld hat nur zwei Nachbarn, also muss dort eine Linie am Rand entlang hindurchführen.",
+     "Zeichne eine Linie in einem Zug. Setzt du den Finger ab, bevor du ihr passendes Ende erreichst, verschwindet sie; fertige Linien bleiben.",
+     "Fährst du über deine eigene Linie zurück, wird sie kürzer, und ein Neuanfang an einem Ende setzt diese Farbe zurück."
+    ],
+    "aka": "Solche Rätsel heißen oft Punkte verbinden oder Linienrätsel. Manche Varianten verlangen nur, die Paare zu verbinden; in Zirve musst du immer auch das ganze Spielfeld füllen."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "Rohrpuzzle zum Drehen",
+    "desc": "Rohre drehen in Zirve: Dreh die Rohrteile, bis Wasser von der Quelle zur Flagge fließt, später durch jedes Teil. Regeln und Tipps.",
+    "intro": "Rohre drehen füllt das Spielfeld mit Rohrteilen: Enden, Geraden, Ecken und T-Stücke. Tippe ein Teil an, um es eine Vierteldrehung weiterzudrehen, und leite das Wasser von der Quelle zur Flagge; ab Etage 40 muss jedes Teil an den Wasserlauf angeschlossen sein.",
+    "controls": "Zum Drehen tippen",
+    "tips": [
+     "Beginne neben der Quelle und der Flagge. Sie drehen sich nie, deshalb haben die Teile daneben weniger mögliche Richtungen.",
+     "Teile am Rand des Spielfelds können nicht nach außen zeigen. Dreh sie zuerst nach innen.",
+     "Jedes Tippen ist eine Vierteldrehung im Uhrzeigersinn. Ein gerades Teil braucht höchstens ein Tippen, jedes andere höchstens drei.",
+     "Ab Etage 40 muss jedes Teil ans Netz angeschlossen sein: Ein offenes Ende, das auf die Wand oder auf ein Teil ohne passende Öffnung zeigt, bedeutet, dass noch etwas falsch ist.",
+     "Die Zahl über dem Spielfeld zeigt, wie viele Felder das Wasser erreicht. Damit prüfst du deinen Fortschritt."
+    ],
+    "aka": "Diese Art heißt Rohrpuzzle, Klempnerrätsel oder Netzwerkrätsel. In Zirve bleiben Quelle und Flagge fest, und das Spielfeld ist zu Beginn nie schon gelöst."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "Farbsortier-Puzzle mit Röhrchen",
+    "desc": "Farben sortieren in Zirve: Gieß farbige Steine zwischen Röhrchen um, bis jedes nur noch eine Farbe enthält. Regeln zum Umgießen, Rückgängig und Tipps.",
+    "intro": "Farben sortieren gibt dir Röhrchen mit gemischten farbigen Steinen und zwei leere Röhrchen. Tippe auf ein Röhrchen, um die obersten Steine einer Farbe aufzunehmen, und auf ein anderes, um sie umzugießen; ein Röhrchen ist fertig, wenn es vier Steine einer einzigen Farbe enthält.",
+    "controls": "Tippen",
+    "tips": [
+     "Du kannst nur auf dieselbe Farbe oder in ein leeres Röhrchen gießen. Halte ein Röhrchen so lange wie möglich leer: Das ist dein Spielraum.",
+     "Bevor du ein leeres Röhrchen benutzt, such eines, dessen oberste Farbe schon passt.",
+     "Mach eine Farbe nach der anderen fertig. Ein volles, einfarbiges Röhrchen steht nicht mehr im Weg.",
+     "Hilft kein Zug weiter, tippe auf Rückgängig, statt dein letztes leeres Röhrchen zu füllen.",
+     "Jede Farbe hat auch eine eigene Form, du kannst also nach Form sortieren, wenn sich Farben schwer unterscheiden lassen."
+    ],
+    "aka": "Das ist die Art Rätsel, die als Wasser- oder Kugelsortier-Puzzle bekannt ist. In Zirve enthalten die Röhrchen farbige Steine statt Wasser, und es gibt immer zwei leere Röhrchen."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "Pfeil-Puzzle",
+    "desc": "Pfeile in Zirve: Tippe auf einen Pfeil, und er gleitet vom Spielfeld, wenn sein Weg frei ist. Regeln, gebogene Pfeile, die 3-Sekunden-Strafe und Tipps.",
+    "intro": "Pfeile füllt das Spielfeld mit geraden und gebogenen Pfeilen. Tippe einen an, und er gleitet in Richtung seiner Spitze vom Spielfeld, aber nur, wenn die Bahn von der Spitze bis zum Rand frei ist; ein blockierter Pfeil prallt zurück und kostet Zeit.",
+    "controls": "Tippen",
+    "tips": [
+     "Schau von der Pfeilspitze bis zum Rand des Spielfelds. Liegt nichts auf dieser Bahn, ist der Pfeil frei.",
+     "Das Entfernen eines Pfeils blockiert nie einen anderen, also nimm jeden freien Pfeil, den du siehst.",
+     "Beginne an den Rändern, wo die Bahnen nach draußen kurz sind.",
+     "Ein gebogener Pfeil verlässt das Spielfeld in Richtung seiner Spitze, nicht seines Endes. Folge dem Körper bis zur Spitze, bevor du tippst.",
+     "Ein Tippen auf einen blockierten Pfeil kostet 3 Sekunden. Im Ruhemodus gibt es keine Uhr, also kannst du in Ruhe ausprobieren."
+    ],
+    "aka": "Diese Art Rätsel heißt Pfeil-Puzzle oder auch Arrow-Escape-Puzzle. In Zirve kostet ein blockierter Pfeil Zeit statt eines Lebens, und lange Pfeile winden sich wie Schlangen."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "Schiebepuzzle mit Blöcken",
+    "desc": "Tore in Zirve: Schieb Blöcke entlang ihrer Bahnen und führe jeden durch das Tor seiner Farbe hinaus. Regeln, Parken, gesperrte Blöcke und Tipps.",
+    "intro": "Tore ist ein Schiebepuzzle: Blöcke bewegen sich nur in Längsrichtung, und jeder verlässt das Spielfeld durch ein Tor seiner Farbe. Im ersten Zug kann kein Block hinaus; das eigentliche Rätsel ist also, welchen Block du wohin parkst.",
+    "controls": "Ziehen oder tippen",
+    "tips": [
+     "Such einen Block nahe an seinem Tor und schau, was ihm im Weg steht. Meist ist das der Block, den du zuerst bewegst.",
+     "Park den störenden Block so, dass er keine andere Bahn versperrt.",
+     "Ein Block, der hinausfährt, versperrt nie etwas, also lass jeden Block hinaus, sobald sein Weg frei ist.",
+     "Lies die Zeile unter dem Spielfeld: Klappt ein Zug nicht, nennt sie den Grund, etwa einen gesperrten Block, das falsche Tor oder einen versperrten Weg.",
+     "Ab Etage 80 ist ein grauer Block gesperrt. Er öffnet sich erst, wenn alle Blöcke seiner Schlüsselfarbe draußen sind."
+    ],
+    "aka": "Schiebe- und Rangierpuzzles sind eine alte Familie; ein bekanntes Beispiel ist das chinesische Klotski-Rätsel. In der Version von Zirve verlassen die Blöcke das Spielfeld durch Tore ihrer eigenen Farbe statt durch einen gemeinsamen Ausgang."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "Platzierungsrätsel im Star-Battle-Stil",
+    "desc": "Wachtürme in Zirve: Setze einen Wachturm in jede Reihe, jede Spalte und jeden farbigen Bereich, ohne dass sich zwei berühren. Regeln und Lösungstipps.",
+    "intro": "Wachtürme ist ein logisches Platzierungsrätsel: Setze einen Wachturm in jede Reihe, jede Spalte und jeden farbigen Bereich, und keine zwei Türme dürfen sich berühren, nicht einmal diagonal. Jedes Spielfeld hat genau eine Lösung und kommt ohne Raten aus.",
+    "controls": "Tippen",
+    "tips": [
+     "Tippe einmal für eine ✕-Notiz und noch einmal für einen Wachturm. Zieh über leere Felder, um viele ✕ auf einmal zu setzen.",
+     "Markiere rund um jeden Wachturm die acht angrenzenden Felder mit ✕.",
+     "Liegt ein Bereich ganz in einer Reihe, kann kein anderer Bereich diese Reihe nutzen: Markiere den Rest der Reihe mit ✕. Bei Spalten funktioniert es genauso.",
+     "Passen zwei Bereiche zusammen genau in zwei Reihen, können die anderen Bereiche diese beiden Reihen nicht nutzen.",
+     "Ein kleiner Bereich ist schnell entschieden. Fang dort an und lass die Kreuze sich ausbreiten."
+    ],
+    "aka": "Das ist ein Platzierungsrätsel aus der Star-Battle-Familie, mit einer Figur pro Reihe, Spalte und Bereich. In Zirve sind die Figuren Wachtürme."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "Lichtschalter-Rätsel",
+    "desc": "Lichter in Zirve: Tippe ein Feld an, es schaltet mit seinen Nachbarn um, bis alles leuchtet. Regeln, Spielfeldgrößen und eine Schritt-für-Schritt-Methode.",
+    "intro": "Lichter ist das Spiel, das als letztes freigeschaltet wird, und das mathematischste: Ein Tippen auf ein Feld schaltet es und seine vier Nachbarn um, Leuchtendes wird dunkel, Dunkles leuchtet. Die Etage ist gelöst, wenn jedes Feld leuchtet.",
+    "controls": "Tippen",
+    "tips": [
+     "Die Reihenfolge beim Tippen spielt keine Rolle, und zweimal Tippen auf dasselbe Feld hebt sich auf. Jedes Feld braucht höchstens ein Tippen.",
+     "Arbeite Reihe für Reihe: Tippe auf das Feld unter jedem dunklen Feld der Reihe darüber. Die dunklen Felder wandern nach unten, bis nur noch die unterste Reihe übrig ist.",
+     "Das Muster, das in der untersten Reihe übrig bleibt, verrät dir, welche Felder der obersten Reihe du antippen musst. Tippe sie an und arbeite dich wieder nach unten.",
+     "Ein Tippen in eine Ecke ändert drei Felder, am Rand vier, in der Mitte fünf. Ecken eignen sich gut für kleine Korrekturen."
+    ],
+    "aka": "Es ist eine Variante des Rätsels „Lights Out“ (Licht aus), benannt nach einem Handheld-Spiel aus den 1990er-Jahren. In Zirve ist das Ziel umgekehrt: Bring jedes Feld zum Leuchten."
+   },
+   "state": "translated"
   }
  }
 }

@@ -935,6 +935,400 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "No forced ads",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Puzzles",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Breadcrumb",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "The {puzzleTypes} puzzle types of Zirve: rules and tips",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "All {puzzleTypes} puzzle types in Zirve, the free logic puzzle tower for iPhone and iPad: what each one asks of you, when it opens and how it gets harder.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "The {puzzleTypes} puzzle types of Zirve",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Every floor of the tower is one of these games. Four are open from the first floor, and a new one joins at each camp after that. Each page below has the rules, how the puzzle grows as you climb, tips and a real screenshot.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "How to play {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type}, rules and tips | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} in Zirve: a real floor of the game",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Tips",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Where it appears in the tower",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "{name} is one of the four games of the first floors. From then on it comes up mixed with the other games, getting harder as you climb.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "{name} opens at floor {floor}, right after camp {camp}, and that floor is always {name}. From then on it comes up mixed with the other games, getting harder as you climb.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "In calm mode you can play every game you have unlocked with no timer and without spending lives. It gives no progress; it is there for practice.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "What this kind of puzzle is called",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "More puzzles",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "All puzzles",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "sliding tile-matching puzzle",
+    "desc": "Color match in Zirve: drag a tile onto a neighbour of the same colour and both disappear. Rules, slide limits, locked tiles and tips.",
+    "intro": "Color match is the first game of the tower: drag a tile onto a neighbour of the same colour and both leave the board. Tiles slide square by square, and higher up each tile can only slide a limited number of times.",
+    "controls": "Drag",
+    "tips": [
+     "From floor 10, the number in a tile's corner is how many squares it can still slide. Spend slides on the tile that is far from its pair.",
+     "A tile at 0 can no longer slide, but it can still merge: bring its partner to it instead.",
+     "Walls cannot be entered. Find the route around them before you start dragging.",
+     "From floor 60, a locked tile opens when any match happens right next to it. Plan that match early.",
+     "If the slides left are not enough to finish, tap Restart to bring the board back to its start. The clock keeps running, so do it early."
+    ],
+    "aka": "It belongs to the family of tile-matching puzzles, where two equal pieces meet and disappear. In Zirve tiles slide square by square, and from floor 10 every slide is counted. Each colour also has its own shape, so the board can be read without colour."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "one-line path puzzle",
+    "desc": "Path draw in Zirve: draw one line from node to node and reach the flag without lifting your finger. Rules, fog, ordered checkpoints and tips.",
+    "intro": "Path draw asks for a single line: move from node to node without lifting your finger, pass the checkpoints and end on the flag. Higher up the board fills with walls and fog, and finally the line must visit every node.",
+    "controls": "Draw",
+    "tips": [
+     "Keep your finger down. If you lift it before the board is solved, the line resets to the start.",
+     "Pull back along your line to undo the last steps; it is faster than starting over.",
+     "Do not split the board in two: if your line cuts the free nodes into separate areas, you cannot visit both.",
+     "On boards where every node must be visited, a node with only two free neighbours has to be entered from one and left by the other. Fix those forced steps in your head first.",
+     "From floor 30 the checkpoints are numbered and you cannot enter one before its turn, so plan a route that meets them in order."
+    ],
+    "aka": "This is a one-line or one-stroke drawing puzzle. Classic one-stroke puzzles ask you to trace every edge of a figure; in Zirve you visit nodes instead, so the old rule about an odd number of connections does not apply here."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "block fitting puzzle",
+    "desc": "Block fit in Zirve: drag and rotate pieces until they fill the gaps on the board exactly. Rules, mirror pieces from floor 30 and tips.",
+    "intro": "Block fit is a packing puzzle: drag the pieces from the tray onto the board until every gap is filled. Tap to rotate; higher up, some pieces only fit after you flip them.",
+    "controls": "Drag, tap to rotate",
+    "tips": [
+     "Start with the largest or oddest piece. Small pieces can fill whatever is left.",
+     "Fill corners and narrow gaps first: few pieces fit there.",
+     "Count squares. If a gap has a size no remaining piece can make, something is in the wrong place: tap a placed piece to send it back to the tray.",
+     "From floor 30, a piece with the ↻ badge will not fit by rotating alone. Press and hold it to flip it.",
+     "When the line under the board turns red and says undo, a piece already placed is blocking the rest."
+    ],
+    "aka": "Packing puzzles with pieces made of squares are known as polyomino or pentomino puzzles, and tangram works the same way with triangles. In Zirve the empty space is cut from the pieces themselves, so every board has an exact fit."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "card matching memory game",
+    "desc": "Memory in Zirve: flip two cards at a time and find every pair. Board sizes, triples from floor 30 and tips for remembering positions.",
+    "intro": "Memory is the classic card game: flip two cards, keep them open if they match and try again if they do not. As you climb the board grows, wrong cards close faster and from floor 30 you look for triples.",
+    "controls": "Tap",
+    "tips": [
+     "The first time round, flip cards in a fixed order, row by row. Positions are easier to recall that way.",
+     "When a card matches one you have already seen, go for the pair right away.",
+     "Wrong cards close faster as you climb. Say the picture and its place to yourself as you flip.",
+     "In triples, two open cards that differ end the attempt at once, so open the card you are sure of second."
+    ],
+    "aka": "It is also known as concentration, pairs or matching cards. Zirve adds a version with three equal cards from floor 30."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "connect the dots puzzle",
+    "desc": "Flow in Zirve: join every pair of matching ends with lines that never cross, and fill the whole board. Rules, board sizes and tips.",
+    "intro": "Flow asks you to join each pair of matching ends with a line. Lines cannot cross, every square can hold only one line, and the board is only solved when every square is filled.",
+    "controls": "Draw",
+    "tips": [
+     "Start with pairs along the edges and in the corners: their lines have the fewest ways to go.",
+     "Every square must be filled, so a line that leaves a one-square pocket is wrong. Let lines hug the walls and each other.",
+     "An empty corner square has only two neighbours, so a line must pass through it along the edge.",
+     "Draw a line in one go. Lifting your finger before you reach its pair erases it; finished lines stay.",
+     "Going back over your own line shortens it, and starting again from an end resets that colour."
+    ],
+    "aka": "These puzzles are often called connect the dots or line puzzles. Some versions only ask you to join the pairs; Zirve's version always asks you to fill the whole board too."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "pipe rotation puzzle",
+    "desc": "Pipe turn in Zirve: rotate the pipe pieces until water flows from the source to the flag, later through every piece. Rules and tips.",
+    "intro": "Pipe turn fills the board with pipe pieces: ends, straights, corners and T pieces. Tap a piece to turn it a quarter turn and make the water run from the source to the flag; from floor 40, every piece must join the flow.",
+    "controls": "Tap to rotate",
+    "tips": [
+     "Start next to the source and the flag. They never turn, so the pieces beside them have fewer possible directions.",
+     "Pieces on the edge of the board cannot point outwards. Turn them inwards first.",
+     "Each tap is a quarter turn clockwise. A straight piece needs at most one tap, any other piece at most three.",
+     "From floor 40 every piece must join the network: an open end pointing at the wall or at a piece that does not answer means something is still wrong.",
+     "The count above the board shows how many squares the water reaches. Use it to check your progress."
+    ],
+    "aka": "This type is known as a pipe puzzle, a plumber puzzle or a network puzzle. In Zirve the source and the flag stay fixed and the board never starts solved."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "color sort puzzle with tubes",
+    "desc": "Color sort in Zirve: pour coloured stones between tubes until each tube holds one colour. Pouring rules, undo and tips.",
+    "intro": "Color sort gives you tubes of mixed coloured stones and two empty tubes. Tap a tube to lift its top stones of one colour and tap another to pour them; the tube is solved when it holds four stones of a single colour.",
+    "controls": "Tap",
+    "tips": [
+     "You can only pour onto the same colour or into an empty tube. Keep one tube empty for as long as you can: it is your free space.",
+     "Before using an empty tube, look for a tube whose top already matches.",
+     "Finish one colour at a time. A full tube of one colour no longer gets in the way.",
+     "If no move helps, tap Undo instead of filling your last empty tube.",
+     "Every colour also has its own shape, so you can sort by shape if colours are hard to tell apart."
+    ],
+    "aka": "This is the water sort or ball sort type of puzzle. In Zirve the tubes hold coloured stones rather than water, and there are always two empty tubes."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "arrow escape puzzle",
+    "desc": "Arrows in Zirve: tap an arrow and it slides off the board if its path is clear. Rules, bent arrows, the 3-second penalty and tips.",
+    "intro": "Arrows fills the board with straight and bent arrows. Tap one and it slides off the board in the direction of its head, but only if the line from its head to the edge is empty; a blocked arrow bounces back and costs time.",
+    "controls": "Tap",
+    "tips": [
+     "Look from the arrowhead to the edge of the board. If nothing is on that line, the arrow is free.",
+     "Removing an arrow never blocks another one, so take every free arrow you see.",
+     "Start near the edges, where exit lines are short.",
+     "A bent arrow leaves in the direction of its head, not its tail. Follow the body to the head before you tap.",
+     "A blocked tap costs 3 seconds on the clock. In calm mode there is no clock, so you can try freely."
+    ],
+    "aka": "This kind of puzzle is called an arrow puzzle or an arrow escape puzzle. In Zirve a blocked arrow costs time rather than a life, and long arrows bend like snakes."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "sliding block puzzle",
+    "desc": "Gates in Zirve: slide blocks along their lanes and lead each one out through the gate of its own colour. Rules, parking, locked blocks and tips.",
+    "intro": "Gates is a sliding block puzzle: blocks move only along their long side, and each one leaves the board through a gate of its own colour. No block can leave on the first move, so the puzzle is deciding which block to park where.",
+    "controls": "Drag or tap",
+    "tips": [
+     "Find a block close to its gate and see what stands in its way. That is usually the block to move first.",
+     "Park the blocking piece where it does not close another block's lane.",
+     "A block leaving never blocks anything, so let every block out as soon as its way is clear.",
+     "Read the line under the board: when a move does not happen it tells you why, such as a locked block, the wrong gate or a closed path.",
+     "From floor 80 a grey block is locked. It opens only after every block of its key colour has left."
+    ],
+    "aka": "Sliding block and parking puzzles are an old family; a well-known example is the Chinese Klotski puzzle. Zirve's version differs in that blocks leave through gates of their own colour instead of one shared exit."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "Star Battle style placement puzzle",
+    "desc": "Lookouts in Zirve: place one lookout tower in every row, column and coloured region, with no two touching. Rules and solving tips.",
+    "intro": "Lookouts is a logic placement puzzle: put one lookout tower in every row, every column and every coloured region, and no two towers may touch, not even diagonally. Every board has exactly one solution and can be solved without guessing.",
+    "controls": "Tap",
+    "tips": [
+     "Tap once for a ✕ note and again for a lookout. Drag across empty squares to mark many ✕ at once.",
+     "Around every lookout, mark the eight touching squares with ✕.",
+     "If a region lies entirely in one row, no other region can use that row: mark the rest of the row with ✕. The same works for columns.",
+     "If two regions together fit inside exactly two rows, the other regions cannot use those two rows.",
+     "A small region decides quickly. Start there and let the crosses spread."
+    ],
+    "aka": "This is a placement puzzle in the Star Battle family, with one piece per row, column and region. Zirve uses lookout towers as the pieces."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "light every square puzzle",
+    "desc": "Lights in Zirve: tap a square to flip it and its neighbours until the whole board is lit. Rules, board sizes and a step-by-step method.",
+    "intro": "Lights is the last game to open and the most mathematical one: tapping a square flips it and its four neighbours, lit to dark and dark to lit. The floor is solved when every square is lit.",
+    "controls": "Tap",
+    "tips": [
+     "The order of taps does not matter, and two taps on the same square cancel out. Every square needs at most one tap.",
+     "Work row by row: tap the square under each dark square of the row above. The dark squares move down until only the bottom row is left.",
+     "The pattern left in the bottom row tells you which squares of the top row to tap. Tap them and work down again.",
+     "A tap in a corner changes three squares, on an edge four, in the middle five. Corners are good for small fixes."
+    ],
+    "aka": "It is a version of the puzzle known as lights out, named after a handheld game from the 1990s. In Zirve the goal is reversed: light every square."
+   },
+   "state": "translated"
+  },
+  "press.nav": {
+   "value": "Press kit",
+   "state": "translated"
+  },
+  "press.title": {
+   "value": "Zirve press kit: facts, descriptions and images",
+   "state": "translated"
+  },
+  "press.desc": {
+   "value": "Facts, ready-to-use descriptions, real screenshots and the icon of Zirve, the free logic puzzle tower for iPhone and iPad by mm-apps.",
+   "state": "translated"
+  },
+  "press.h1": {
+   "value": "Press kit",
+   "state": "translated"
+  },
+  "press.lead": {
+   "value": "Everything you need to write about Zirve in one place: facts, two ready descriptions, the puzzle list and images.",
+   "state": "translated"
+  },
+  "press.facts_h2": {
+   "value": "Facts",
+   "state": "translated"
+  },
+  "press.rows": {
+   "value": [
+    [
+     "Name",
+     "Zirve ({storeName} on the App Store)"
+    ],
+    [
+     "Developer",
+     "mm-apps, an independent developer in Türkiye"
+    ],
+    [
+     "Released",
+     "{released}"
+    ],
+    [
+     "Current version",
+     "{version}"
+    ],
+    [
+     "Platforms",
+     "iPhone and iPad, iOS and iPadOS {minOS} or later"
+    ],
+    [
+     "Price",
+     "Free. Optional in-app purchases: gem packs, a starter pack, the season set and the premium season track."
+    ],
+    [
+     "Ads",
+     "No forced ads. Rewarded ads play only when the player chooses a reward: a life, extra time or a double chest."
+    ],
+    [
+     "Puzzle types",
+     "{puzzleTypes}"
+    ],
+    [
+     "Modes",
+     "Tower with a camp every ten floors, daily tower, weekly leagues with {leagueTiers} tiers, monthly seasons, calm mode"
+    ],
+    [
+     "Offline",
+     "The tower can be played without internet and syncs later; leagues, leaderboards and friends need a connection."
+    ],
+    [
+     "Languages",
+     "{appLanguageCount}: {appLanguageNames}"
+    ],
+    [
+     "App Store",
+     "{appStore}"
+    ],
+    [
+     "Website",
+     "{site}"
+    ],
+    [
+     "Contact",
+     "{contact}"
+    ]
+   ],
+   "state": "translated"
+  },
+  "press.short_h2": {
+   "value": "Short description",
+   "state": "translated"
+  },
+  "press.short": {
+   "value": "Zirve is a free logic puzzle game for iPhone and iPad. You climb a tower where every floor is a short, timed puzzle from {puzzleTypes} types, from color sort and pipes to arrows and sliding blocks. There is a daily tower, weekly leagues and a calm mode with no timer, and no forced ads.",
+   "state": "translated"
+  },
+  "press.long_h2": {
+   "value": "Longer description",
+   "state": "translated"
+  },
+  "press.long": {
+   "value": [
+    "Zirve turns short logic puzzles into a climb. Every floor of the tower is one puzzle with a timer: solve it to go up, collect up to three stars and reach a camp every ten floors. Four games are open from the first floor and a new one joins at each camp, until all {puzzleTypes} are in the mix: color match, path draw, block fit, memory, flow, pipe turn, color sort, arrows, gates, lookouts and lights.",
+    "Every board is generated and solved by the computer before it is shown, so no puzzle is unsolvable. The daily tower gives everyone the same ten floors each day, with three attempts. Weekly leagues put players into groups of {leagueSize}, and monthly seasons add a reward path, outfits and tower themes.",
+    "Zirve is made by mm-apps, an independent developer in Türkiye, and is available in {appLanguageCount} languages. It shows no forced ads: an ad plays only when a player asks for a reward. Time assist with 1.5× or unlimited time, VoiceOver support and a shape for every colour make it playable for more people."
+   ],
+   "state": "translated"
+  },
+  "press.puzzles_h2": {
+   "value": "The puzzles",
+   "state": "translated"
+  },
+  "press.assets_h2": {
+   "value": "Images",
+   "state": "translated"
+  },
+  "press.assets_p": {
+   "value": "The app icon and a real screenshot of every puzzle, taken in the app in this page's language.",
+   "state": "translated"
+  },
+  "press.icon": {
+   "value": "App icon (PNG, 512 × 512)",
+   "state": "translated"
+  },
+  "press.usage": {
+   "value": "You may use these texts, the icon and the screenshots to write about Zirve. Please do not change the icon.",
+   "state": "translated"
+  },
+  "press.contact_h2": {
+   "value": "Contact",
+   "state": "translated"
+  },
+  "press.contact_p": {
+   "value": "For questions or more material, write to",
+   "state": "translated"
   }
  }
 }

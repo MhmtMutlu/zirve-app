@@ -935,6 +935,267 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Sin anuncios obligatorios",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Puzles",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Ruta de navegación",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "Los {puzzleTypes} tipos de puzle de Zirve: reglas y consejos",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "Los {puzzleTypes} tipos de puzle de Zirve, la torre gratuita de puzles de lógica para iPhone y iPad: qué pide cada uno, cuándo se desbloquea y cómo se complica.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "Los {puzzleTypes} tipos de puzle de Zirve",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Cada piso de la torre es uno de estos juegos. Cuatro están disponibles desde el primer piso y, a partir de ahí, se suma uno nuevo en cada campamento. En cada página encontrarás las reglas, cómo se complica el puzle a medida que subes, consejos y una captura de pantalla real.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "Cómo jugar a {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type}, reglas y consejos | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} en Zirve: un piso real del juego",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Consejos",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Dónde aparece en la torre",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "{name} es uno de los cuatro juegos de los primeros pisos. A partir de ahí aparece mezclado con los demás juegos y se complica a medida que subes.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "{name} se desbloquea en el piso {floor}, justo después del campamento {camp}, y ese piso siempre es de {name}. A partir de ahí aparece mezclado con los demás juegos y se complica a medida que subes.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "En el modo relax puedes jugar a todos los juegos que hayas desbloqueado, sin tiempo y sin gastar vidas. No cuenta para tu progreso: sirve para practicar.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Cómo se llama este tipo de puzle",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Más puzles",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Todos los puzles",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "puzle de deslizar y emparejar fichas",
+    "desc": "Une colores en Zirve: arrastra una ficha sobre una vecina del mismo color y ambas desaparecen. Reglas, límite de deslizamientos, fichas bloqueadas y consejos.",
+    "intro": "Une colores es el primer juego de la torre: arrastra una ficha sobre una vecina del mismo color y las dos salen del tablero. Las fichas se deslizan casilla a casilla y, más arriba, cada ficha solo puede deslizarse un número limitado de casillas.",
+    "controls": "Arrastra",
+    "tips": [
+     "Desde el piso 10, el número de la esquina de una ficha indica cuántas casillas puede deslizarse todavía. Gasta los deslizamientos en la ficha que está lejos de su pareja.",
+     "Una ficha en 0 ya no puede deslizarse, pero sí puede unirse: lleva su pareja hasta ella.",
+     "No se puede entrar en los muros. Busca la ruta que los rodea antes de empezar a arrastrar.",
+     "Desde el piso 60, una ficha bloqueada se abre cuando se hace cualquier pareja justo a su lado. Planifica esa pareja con antelación.",
+     "Si los deslizamientos que te quedan no bastan para terminar, toca Reiniciar para devolver el tablero a su estado inicial. El tiempo sigue corriendo, así que hazlo pronto."
+    ],
+    "aka": "Pertenece a la familia de los puzles de emparejar fichas, en los que dos piezas iguales se encuentran y desaparecen. En Zirve las fichas se deslizan casilla a casilla y, desde el piso 10, cada deslizamiento cuenta. Además, cada color tiene su propia forma, así que el tablero se puede leer sin depender del color."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "puzle de un solo trazo",
+    "desc": "Dibuja el camino en Zirve: traza una sola línea de nodo en nodo y llega a la bandera sin levantar el dedo. Reglas, niebla, puntos de control en orden y consejos.",
+    "intro": "Dibuja el camino pide una sola línea: avanza de nodo en nodo sin levantar el dedo, pasa por los puntos de control y termina en la bandera. Más arriba el tablero se llena de muros y niebla y, al final, la línea tiene que visitar todos los nodos.",
+    "controls": "Dibuja",
+    "tips": [
+     "No levantes el dedo. Si lo levantas antes de resolver el tablero, la línea vuelve al inicio.",
+     "Retrocede por tu propia línea para deshacer los últimos pasos; es más rápido que empezar de nuevo.",
+     "No partas el tablero en dos: si tu línea separa los nodos libres en zonas distintas, no podrás visitar ambas.",
+     "En los tableros en los que hay que visitar todos los nodos, a un nodo con solo dos vecinos libres se entra por uno y se sale por el otro. Fija mentalmente esos pasos obligados antes de empezar.",
+     "Desde el piso 30, los puntos de control están numerados y no puedes entrar en uno antes de que le toque, así que planifica una ruta que los recorra en orden."
+    ],
+    "aka": "Es un puzle de una sola línea o de un solo trazo. En los puzles clásicos de un solo trazo hay que recorrer todas las aristas de una figura; en Zirve, en cambio, se visitan nodos, así que aquí no se aplica la vieja regla del número impar de conexiones."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "puzle de encajar bloques",
+    "desc": "Encaja bloques en Zirve: arrastra y gira las piezas hasta llenar exactamente los huecos del tablero. Reglas, piezas en espejo desde el piso 30 y consejos.",
+    "intro": "Encaja bloques es un puzle de empaquetado: arrastra las piezas de la bandeja al tablero hasta llenar todos los huecos. Toca para girar; más arriba, algunas piezas solo encajan después de voltearlas.",
+    "controls": "Arrastra; toca para girar",
+    "tips": [
+     "Empieza por la pieza más grande o la de forma más rara. Las pequeñas pueden llenar lo que quede.",
+     "Llena primero las esquinas y los huecos estrechos: ahí caben pocas piezas.",
+     "Cuenta casillas. Si queda un hueco de un tamaño que ninguna pieza restante puede formar, algo está mal colocado: toca una pieza del tablero para devolverla a la bandeja.",
+     "Desde el piso 30, una pieza con la insignia ↻ no encaja solo girándola. Mantenla presionada para voltearla.",
+     "Cuando la línea bajo el tablero se pone roja y te dice que deshagas, una pieza ya colocada está bloqueando las demás."
+    ],
+    "aka": "Los puzles de empaquetado con piezas hechas de cuadrados se conocen como puzles de poliominós o pentominós, y el tangram funciona igual con triángulos. En Zirve el espacio vacío se recorta a partir de las propias piezas, así que cada tablero tiene un encaje exacto."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "juego de parejas de cartas",
+    "desc": "Memoria en Zirve: voltea dos cartas cada vez y encuentra todas las parejas. Tamaños de tablero, tríos desde el piso 30 y consejos para recordar posiciones.",
+    "intro": "Memoria es el clásico juego de cartas: voltea dos cartas; si coinciden, se quedan abiertas y, si no, vuelve a intentarlo. A medida que subes, el tablero crece, las cartas equivocadas se cierran más rápido y desde el piso 30 buscas tríos.",
+    "controls": "Toca",
+    "tips": [
+     "En la primera vuelta, voltea las cartas en un orden fijo, fila a fila. Así es más fácil recordar las posiciones.",
+     "Cuando una carta coincida con otra que ya has visto, ve a por la pareja enseguida.",
+     "Las cartas equivocadas se cierran más rápido a medida que subes. Mientras volteas, repite mentalmente el dibujo y su posición.",
+     "En los tríos, si dos cartas abiertas son distintas, el intento termina al instante, así que abre en segundo lugar la carta de la que estés seguro."
+    ],
+    "aka": "También se conoce como juego de memoria, juego de parejas o de emparejar cartas. Zirve añade, desde el piso 30, una versión con tres cartas iguales."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "puzle de unir puntos",
+    "desc": "Flujo en Zirve: une cada par de extremos iguales con líneas que nunca se cruzan y llena todo el tablero. Reglas, tamaños de tablero y consejos.",
+    "intro": "Flujo te pide unir cada par de extremos iguales con una línea. Las líneas no pueden cruzarse, por cada casilla solo puede pasar una línea y el tablero solo se resuelve cuando todas las casillas están llenas.",
+    "controls": "Dibuja",
+    "tips": [
+     "Empieza por las parejas de los bordes y las esquinas: sus líneas tienen menos caminos posibles.",
+     "Hay que llenar todas las casillas, así que una línea que deja un hueco de una casilla está mal. Haz que las líneas vayan pegadas a los muros y entre sí.",
+     "Una casilla de esquina vacía solo tiene dos vecinas, así que una línea tiene que pasar por ella siguiendo el borde.",
+     "Dibuja cada línea de una vez. Si levantas el dedo antes de llegar a su pareja, se borra; las líneas terminadas se quedan.",
+     "Volver sobre tu propia línea la acorta, y empezar de nuevo desde un extremo reinicia ese color."
+    ],
+    "aka": "Estos puzles suelen llamarse de unir puntos o de líneas. Algunas versiones solo piden unir las parejas; la de Zirve siempre pide también llenar todo el tablero."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "puzle de girar tuberías",
+    "desc": "Gira tuberías en Zirve: gira las piezas hasta que el agua fluya de la fuente a la bandera y, después, por todas las piezas. Reglas y consejos.",
+    "intro": "En Gira tuberías el tablero está lleno de piezas de tubería: extremos, rectas, codos y piezas en T. Toca una pieza para girarla un cuarto de vuelta y haz que el agua corra de la fuente a la bandera; desde el piso 40, todas las piezas tienen que formar parte del flujo.",
+    "controls": "Toca para girar",
+    "tips": [
+     "Empieza junto a la fuente y la bandera. Nunca giran, así que las piezas que tienen al lado tienen menos direcciones posibles.",
+     "Las piezas del borde del tablero no pueden apuntar hacia fuera. Gíralas primero hacia dentro.",
+     "Cada toque es un cuarto de vuelta en el sentido de las agujas del reloj. Una pieza recta necesita como mucho un toque; cualquier otra, como mucho tres.",
+     "Desde el piso 40, todas las piezas tienen que formar parte de la red: un extremo abierto que apunta a un muro o a una pieza que no conecta con él indica que algo sigue mal.",
+     "El número sobre el tablero muestra a cuántas casillas llega el agua. Úsalo para comprobar cómo vas."
+    ],
+    "aka": "Este tipo se conoce como puzle de tuberías, de fontanero o de redes. En Zirve la fuente y la bandera no se mueven y el tablero nunca empieza resuelto."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "puzle de ordenar colores en tubos",
+    "desc": "Ordena colores en Zirve: vierte piedras de colores de un tubo a otro hasta que cada tubo tenga un solo color. Reglas para verter, deshacer y consejos.",
+    "intro": "Ordena colores te da tubos con piedras de colores mezcladas y dos tubos vacíos. Toca un tubo para coger las piedras de arriba de un mismo color y toca otro para verterlas; un tubo está resuelto cuando tiene cuatro piedras de un solo color.",
+    "controls": "Toca",
+    "tips": [
+     "Solo puedes verter sobre el mismo color o en un tubo vacío. Mantén un tubo vacío todo el tiempo que puedas: es tu espacio libre.",
+     "Antes de usar un tubo vacío, busca uno cuya parte de arriba ya coincida.",
+     "Termina los colores de uno en uno. Un tubo lleno de un solo color ya no te estorba.",
+     "Si ningún movimiento ayuda, toca Deshacer en lugar de llenar tu último tubo vacío.",
+     "Cada color tiene además su propia forma, así que puedes ordenar por formas si te cuesta distinguir los colores."
+    ],
+    "aka": "Es un puzle del tipo ordenar agua o bolas por colores. En Zirve los tubos contienen piedras de colores en lugar de agua y siempre hay dos tubos vacíos."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "puzle de sacar flechas",
+    "desc": "Flechas en Zirve: toca una flecha y saldrá del tablero si su camino está libre. Reglas, flechas curvas, la penalización de 3 segundos y consejos.",
+    "intro": "Flechas llena el tablero de flechas rectas y curvas. Toca una y se deslizará fuera del tablero en la dirección de su punta, pero solo si la línea entre su punta y el borde está vacía; una flecha bloqueada rebota y te cuesta tiempo.",
+    "controls": "Toca",
+    "tips": [
+     "Mira desde la punta de la flecha hasta el borde del tablero. Si no hay nada en esa línea, la flecha está libre.",
+     "Sacar una flecha nunca bloquea a otra, así que saca todas las flechas libres que veas.",
+     "Empieza cerca de los bordes, donde las líneas de salida son cortas.",
+     "Una flecha curva sale en la dirección de su punta, no de su cola. Sigue el cuerpo hasta la punta antes de tocar.",
+     "Tocar una flecha bloqueada te quita 3 segundos del reloj. En el modo relax no hay reloj, así que puedes probar con libertad."
+    ],
+    "aka": "Este tipo de puzle se conoce como puzle de flechas o de escape de flechas. En Zirve una flecha bloqueada cuesta tiempo en vez de una vida, y las flechas largas se curvan como serpientes."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "puzle de bloques deslizantes",
+    "desc": "Puertas en Zirve: desliza los bloques por sus carriles y saca cada uno por la puerta de su color. Reglas, aparcar, bloques con candado y consejos.",
+    "intro": "Puertas es un puzle de bloques deslizantes: los bloques solo se mueven en la dirección de su lado largo y cada uno sale del tablero por una puerta de su color. Ningún bloque puede salir en el primer movimiento, así que el puzle consiste en decidir qué bloque aparcar y dónde.",
+    "controls": "Arrastra o toca",
+    "tips": [
+     "Busca un bloque cerca de su puerta y mira qué tiene en el camino. Normalmente ese es el bloque que hay que mover primero.",
+     "Aparca el bloque que estorba donde no cierre el carril de otro bloque.",
+     "Un bloque que sale nunca bloquea nada, así que saca cada bloque en cuanto tenga el camino libre.",
+     "Lee la línea bajo el tablero: cuando un movimiento no se puede hacer, te dice por qué; por ejemplo, un bloque con candado, la puerta equivocada o un camino cerrado.",
+     "Desde el piso 80, un bloque gris está cerrado con candado. Solo se abre cuando han salido todos los bloques del color de su llave."
+    ],
+    "aka": "Los puzles de bloques deslizantes y de aparcamiento forman una familia antigua; un ejemplo conocido es el puzle chino Klotski. La versión de Zirve se diferencia en que los bloques salen por puertas de su propio color en lugar de por una salida común."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "puzle de colocación estilo Star Battle",
+    "desc": "Atalayas en Zirve: pon una atalaya en cada fila, columna y zona de color, sin que dos se toquen. Reglas y consejos para resolverlo.",
+    "intro": "Atalayas es un puzle lógico de colocación: pon una atalaya en cada fila, en cada columna y en cada zona de color; dos atalayas no pueden tocarse, ni siquiera en diagonal. Cada tablero tiene exactamente una solución y se puede resolver sin adivinar.",
+    "controls": "Toca",
+    "tips": [
+     "Toca una vez para poner una nota ✕ y otra vez para poner una atalaya. Arrastra sobre casillas vacías para marcar varias ✕ a la vez.",
+     "Alrededor de cada atalaya, marca con ✕ las ocho casillas que la tocan.",
+     "Si una zona está entera en una sola fila, ninguna otra zona puede usar esa fila: marca con ✕ el resto de la fila. Con las columnas funciona igual.",
+     "Si dos zonas juntas caben exactamente en dos filas, las demás zonas no pueden usar esas dos filas.",
+     "Las zonas pequeñas se deciden rápido. Empieza por ahí y deja que las cruces se extiendan."
+    ],
+    "aka": "Es un puzle de colocación de la familia Star Battle, con una pieza por fila, columna y zona. En Zirve las piezas son atalayas."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "puzle de encender todas las luces",
+    "desc": "Luces en Zirve: toca una casilla para invertirla junto con sus vecinas hasta encender todo el tablero. Reglas, tamaños de tablero y un método paso a paso.",
+    "intro": "Luces es el último juego en desbloquearse y el más matemático: tocar una casilla la invierte junto con sus cuatro vecinas, de encendida a apagada y de apagada a encendida. El piso se resuelve cuando todas las casillas están encendidas.",
+    "controls": "Toca",
+    "tips": [
+     "El orden de los toques no importa, y dos toques en la misma casilla se anulan. Cada casilla necesita como mucho un toque.",
+     "Avanza fila a fila: toca la casilla que hay debajo de cada casilla apagada de la fila de arriba. Las casillas apagadas van bajando hasta que solo queda la última fila.",
+     "El patrón que queda en la última fila te dice qué casillas de la primera fila tienes que tocar. Tócalas y vuelve a bajar fila a fila.",
+     "Un toque en una esquina cambia tres casillas; en un borde, cuatro; en el centro, cinco. Las esquinas van bien para pequeños ajustes."
+    ],
+    "aka": "Es una versión del puzle conocido como lights out, que toma su nombre de un juego portátil de la década de 1990. En Zirve el objetivo es el contrario: encender todas las casillas."
+   },
+   "state": "translated"
   }
  }
 }

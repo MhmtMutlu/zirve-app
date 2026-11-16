@@ -1,418 +1,1242 @@
 {
  "": {
-  "date": "2026-11-15",
-  "hash": "8ec9419dfc8d5f95"
+  "date": "2026-11-16",
+  "hash": "490a52e597108690"
  },
  "404.html": {
-  "date": "2026-11-12",
-  "hash": "cebb4dd29dc1eff8"
+  "date": "2026-11-16",
+  "hash": "04406e2e28c58dc5"
+ },
+ "basin/": {
+  "date": "2026-11-16",
+  "hash": "7a0fd5b459e0c446"
  },
  "daily/": {
-  "date": "2026-11-12",
-  "hash": "25fbc3539652c26a"
+  "date": "2026-11-16",
+  "hash": "63def245238d8675"
  },
  "de/": {
-  "date": "2026-11-15",
-  "hash": "4e9e9f578e702e8a"
+  "date": "2026-11-16",
+  "hash": "fb66909f562fb5e3"
  },
  "de/daily/": {
-  "date": "2026-11-12",
-  "hash": "71db843224093f21"
+  "date": "2026-11-16",
+  "hash": "d07f14f48afe91df"
  },
  "de/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "6793330447cb7487"
+  "date": "2026-11-16",
+  "hash": "6c3d6ac55c31acb3"
+ },
+ "de/games/": {
+  "date": "2026-11-16",
+  "hash": "9fc9beb15573d938"
+ },
+ "de/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "969af0bed2b32690"
+ },
+ "de/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "1aa97b5710a5bd50"
+ },
+ "de/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "bf666ea7632775d2"
+ },
+ "de/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "46f86a0ba1169d62"
+ },
+ "de/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "bca662b17c852631"
+ },
+ "de/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "8875396553cb6254"
+ },
+ "de/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "e33bba1d3bcbcd22"
+ },
+ "de/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "9e4530289118621f"
+ },
+ "de/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "cfb4e07c8cab1526"
+ },
+ "de/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "f7cb22b917d479bb"
+ },
+ "de/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "f27c33d891b66a14"
  },
  "de/privacy/": {
-  "date": "2026-11-13",
-  "hash": "22744d4912ad6662"
+  "date": "2026-11-16",
+  "hash": "a6ab37e3e0bceb14"
  },
  "de/support/": {
-  "date": "2026-11-12",
-  "hash": "53c47008d0842c5a"
+  "date": "2026-11-16",
+  "hash": "a943927732f75938"
  },
  "de/terms/": {
-  "date": "2026-11-12",
-  "hash": "0aa616d8aa77c57b"
+  "date": "2026-11-16",
+  "hash": "520cf19dfdf3b55a"
  },
  "destek/": {
-  "date": "2026-11-12",
-  "hash": "c78a49bc071cb8ad"
+  "date": "2026-11-16",
+  "hash": "07ebd33ede7c3eac"
  },
  "en/": {
-  "date": "2026-11-15",
-  "hash": "4f5e863856fd8a54"
+  "date": "2026-11-16",
+  "hash": "8837f73694036117"
  },
  "en/daily/": {
-  "date": "2026-11-12",
-  "hash": "25e7a40140b5eb2a"
+  "date": "2026-11-16",
+  "hash": "dc338934a1ee637a"
  },
  "en/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "6a1aeb426c92a4f2"
+  "date": "2026-11-16",
+  "hash": "97a3704819742432"
+ },
+ "en/games/": {
+  "date": "2026-11-16",
+  "hash": "1355ae7b3672d047"
+ },
+ "en/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "b1ecc9c420ae7bce"
+ },
+ "en/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "5dd1d7a374cc718e"
+ },
+ "en/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "90c80b8827b3b651"
+ },
+ "en/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "07ea5723f8ef7c72"
+ },
+ "en/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "eed47c3ec4aeefc6"
+ },
+ "en/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "4f506065834643e8"
+ },
+ "en/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "930c12c9b9a56adb"
+ },
+ "en/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "2860cedefe6ab97a"
+ },
+ "en/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "e5d0b725cababb29"
+ },
+ "en/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "972859b5e05b39e4"
+ },
+ "en/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "43b018b2f43a0afb"
+ },
+ "en/press/": {
+  "date": "2026-11-16",
+  "hash": "cc61bb4d5805196d"
  },
  "en/privacy/": {
-  "date": "2026-11-13",
-  "hash": "27e5f5a0cbbca73f"
+  "date": "2026-11-16",
+  "hash": "8d053158122a1519"
  },
  "en/support/": {
-  "date": "2026-11-12",
-  "hash": "ed0759156cb269bc"
+  "date": "2026-11-16",
+  "hash": "c4524697f90ea48c"
  },
  "en/terms/": {
-  "date": "2026-11-12",
-  "hash": "081430c8b48e02d1"
+  "date": "2026-11-16",
+  "hash": "8ca2b5f4ea5fc923"
  },
  "es/": {
-  "date": "2026-11-15",
-  "hash": "7d7ce1e99fd5296a"
+  "date": "2026-11-16",
+  "hash": "dc3bdfdad2c2e6ad"
  },
  "es/daily/": {
-  "date": "2026-11-12",
-  "hash": "49570a4ba003c485"
+  "date": "2026-11-16",
+  "hash": "c7e1c5a7e8bbecc6"
  },
  "es/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "ffe8daadb5f8fb44"
+  "date": "2026-11-16",
+  "hash": "d06e1503c1a1d8ca"
+ },
+ "es/games/": {
+  "date": "2026-11-16",
+  "hash": "aa5e4195900365a3"
+ },
+ "es/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "e4eaa2e10258346f"
+ },
+ "es/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "f12ccaf08799d303"
+ },
+ "es/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "f8b2b340a994e8ae"
+ },
+ "es/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "eb203720c0ccd8d4"
+ },
+ "es/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "41e08d6d99fd8747"
+ },
+ "es/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "2ebd88531d1fc2fe"
+ },
+ "es/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "3f95abaa92179540"
+ },
+ "es/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "64cfc8c0b4493d6c"
+ },
+ "es/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "5867fb29b99b9fca"
+ },
+ "es/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "2672456d778d8f0f"
+ },
+ "es/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "d7fd7f606d0c3eec"
  },
  "es/privacy/": {
-  "date": "2026-11-13",
-  "hash": "68c613cbc9cf4e01"
+  "date": "2026-11-16",
+  "hash": "f2ba60b16b7a4215"
  },
  "es/support/": {
-  "date": "2026-11-12",
-  "hash": "e0b9f7717e508b58"
+  "date": "2026-11-16",
+  "hash": "e19befdf6e235dac"
  },
  "es/terms/": {
-  "date": "2026-11-12",
-  "hash": "fdc1a88c454939d7"
+  "date": "2026-11-16",
+  "hash": "012a5da83e8193c8"
  },
  "fr/": {
-  "date": "2026-11-15",
-  "hash": "5f9798b922dba6e0"
+  "date": "2026-11-16",
+  "hash": "1186c89b98cf9499"
  },
  "fr/daily/": {
-  "date": "2026-11-12",
-  "hash": "a4c4928659fcefc5"
+  "date": "2026-11-16",
+  "hash": "1d2cc7e9fc145369"
  },
  "fr/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "c4bbdce291f84cbd"
+  "date": "2026-11-16",
+  "hash": "111a1eeb5980a32d"
+ },
+ "fr/games/": {
+  "date": "2026-11-16",
+  "hash": "62bdad028501224e"
+ },
+ "fr/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "43727899fcb8080a"
+ },
+ "fr/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "b9e7451ff699dd1d"
+ },
+ "fr/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "83cfe8e6cf73e5ba"
+ },
+ "fr/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "faf0249b91c82171"
+ },
+ "fr/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "8f3c387bdcc86d41"
+ },
+ "fr/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "6c198f919a0a1397"
+ },
+ "fr/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "acb57dce7c0fb9de"
+ },
+ "fr/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "c7a65f47b3fffefe"
+ },
+ "fr/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "60a68aaf9c92f495"
+ },
+ "fr/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "6861628ca03b70f9"
+ },
+ "fr/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "357af36e52f7eeb0"
  },
  "fr/privacy/": {
-  "date": "2026-11-13",
-  "hash": "8ff27a937cfd4f90"
+  "date": "2026-11-16",
+  "hash": "a6632381a4a6bf84"
  },
  "fr/support/": {
-  "date": "2026-11-12",
-  "hash": "9109af59efdccaad"
+  "date": "2026-11-16",
+  "hash": "dee98b6bc6936983"
  },
  "fr/terms/": {
-  "date": "2026-11-12",
-  "hash": "16da697e9c929cf5"
+  "date": "2026-11-16",
+  "hash": "cabfa6016506e96e"
  },
  "gizlilik/": {
-  "date": "2026-11-13",
-  "hash": "367404a5a466a089"
+  "date": "2026-11-16",
+  "hash": "44e62601550e76a9"
  },
  "hesap-silme/": {
-  "date": "2026-11-12",
-  "hash": "969b3ea06e83e7da"
+  "date": "2026-11-16",
+  "hash": "65b72a91160957aa"
  },
  "id/": {
-  "date": "2026-11-15",
-  "hash": "8dca7b688edb5d8d"
+  "date": "2026-11-16",
+  "hash": "d155c91fc1351661"
  },
  "id/daily/": {
-  "date": "2026-11-12",
-  "hash": "089869b4bafc699b"
+  "date": "2026-11-16",
+  "hash": "bd5bcfeab3c2fd84"
  },
  "id/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "fc9ebf6384014acb"
+  "date": "2026-11-16",
+  "hash": "000db4e1ab2f5a4b"
+ },
+ "id/games/": {
+  "date": "2026-11-16",
+  "hash": "10501ad598d446f4"
+ },
+ "id/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "9363601e44f80836"
+ },
+ "id/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "aed72494db7c35aa"
+ },
+ "id/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "f4ab4101d69f8369"
+ },
+ "id/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "e3f3b027ccef5a8a"
+ },
+ "id/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "b7dfda45c0892ff9"
+ },
+ "id/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "4c7e3f8984b0012b"
+ },
+ "id/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "b1a0c510389f3e12"
+ },
+ "id/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "b6fb7cfd96b75444"
+ },
+ "id/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "b78b4be80bb083f7"
+ },
+ "id/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "eb9b88b39b81a017"
+ },
+ "id/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "22ce30e007f13426"
  },
  "id/privacy/": {
-  "date": "2026-11-13",
-  "hash": "fbfed72a35bc4313"
+  "date": "2026-11-16",
+  "hash": "0d77e78987a11ea2"
  },
  "id/support/": {
-  "date": "2026-11-12",
-  "hash": "220c5a0993851c07"
+  "date": "2026-11-16",
+  "hash": "00c587ce96bedf11"
  },
  "id/terms/": {
-  "date": "2026-11-12",
-  "hash": "22db0493a6c3e642"
+  "date": "2026-11-16",
+  "hash": "f90ccddc0c73f70b"
  },
  "it/": {
-  "date": "2026-11-15",
-  "hash": "d33e625e138e7934"
+  "date": "2026-11-16",
+  "hash": "4d146f8b2e526497"
  },
  "it/daily/": {
-  "date": "2026-11-12",
-  "hash": "4dee43b96bb5a82c"
+  "date": "2026-11-16",
+  "hash": "30cada7c97d916fe"
  },
  "it/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "a05113465472505f"
+  "date": "2026-11-16",
+  "hash": "d1fcb7c9d95bca91"
+ },
+ "it/games/": {
+  "date": "2026-11-16",
+  "hash": "2b43fd9d06b77bdf"
+ },
+ "it/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "b9737e04d16f5a8d"
+ },
+ "it/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "b72ed814b7d706f5"
+ },
+ "it/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "01998cefc5986235"
+ },
+ "it/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "6c72f4953f8893e9"
+ },
+ "it/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "973ef9c1f060c99e"
+ },
+ "it/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "0719223acdb548cb"
+ },
+ "it/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "d81e5f56358726a8"
+ },
+ "it/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "31fdee9e02c015eb"
+ },
+ "it/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "dccc9fcf017c4130"
+ },
+ "it/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "766a32ecf01f29c8"
+ },
+ "it/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "5c6e66a1c38ce794"
  },
  "it/privacy/": {
-  "date": "2026-11-13",
-  "hash": "a582e098c18b0537"
+  "date": "2026-11-16",
+  "hash": "5b9ce72d758bf57d"
  },
  "it/support/": {
-  "date": "2026-11-12",
-  "hash": "b9af0f2b9178cc64"
+  "date": "2026-11-16",
+  "hash": "8c8de415cc7ae670"
  },
  "it/terms/": {
-  "date": "2026-11-12",
-  "hash": "07cc83613ac206b7"
+  "date": "2026-11-16",
+  "hash": "815df3d012e54b73"
  },
  "ja/": {
-  "date": "2026-11-15",
-  "hash": "95d211de58a94326"
+  "date": "2026-11-16",
+  "hash": "9e405753a0c21251"
  },
  "ja/daily/": {
-  "date": "2026-11-12",
-  "hash": "b8cc61704b329f11"
+  "date": "2026-11-16",
+  "hash": "8bd4fc51cf22c624"
  },
  "ja/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "b159ed1cda28ae2b"
+  "date": "2026-11-16",
+  "hash": "9824eec3428f1be3"
+ },
+ "ja/games/": {
+  "date": "2026-11-16",
+  "hash": "804a27e8988fec3a"
+ },
+ "ja/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "669020d05678946e"
+ },
+ "ja/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "b18987545dd90873"
+ },
+ "ja/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "be46381a96e3d67b"
+ },
+ "ja/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "4f985df7e55c2825"
+ },
+ "ja/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "461c0ee11b7842bb"
+ },
+ "ja/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "a82173595afbc3e2"
+ },
+ "ja/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "cdfaa4815e28333d"
+ },
+ "ja/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "7247f81c3daa8d1a"
+ },
+ "ja/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "5aa5e20a0b85fdf9"
+ },
+ "ja/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "86e898d793ef6c92"
+ },
+ "ja/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "ef28b43a6044a259"
  },
  "ja/privacy/": {
-  "date": "2026-11-13",
-  "hash": "5d15ca9898421c96"
+  "date": "2026-11-16",
+  "hash": "515cace36eaece28"
  },
  "ja/support/": {
-  "date": "2026-11-12",
-  "hash": "a30a4597aecb29ef"
+  "date": "2026-11-16",
+  "hash": "916e23870f23d08b"
  },
  "ja/terms/": {
-  "date": "2026-11-12",
-  "hash": "5e91607a0b46e029"
+  "date": "2026-11-16",
+  "hash": "7219500a4f806c4c"
  },
  "ko/": {
-  "date": "2026-11-15",
-  "hash": "3340388042e0a97d"
+  "date": "2026-11-16",
+  "hash": "33b2ca7ef5a3b915"
  },
  "ko/daily/": {
-  "date": "2026-11-12",
-  "hash": "870176fcd93e1d47"
+  "date": "2026-11-16",
+  "hash": "6cbcea614f78f7e8"
  },
  "ko/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "4685bd5eaa33118e"
+  "date": "2026-11-16",
+  "hash": "68b04ea98673e805"
+ },
+ "ko/games/": {
+  "date": "2026-11-16",
+  "hash": "2d4ab9634974a4a6"
+ },
+ "ko/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "70ea0bb5d4470afa"
+ },
+ "ko/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "a63458c73a357d24"
+ },
+ "ko/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "69c542d6ca8b722f"
+ },
+ "ko/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "0b19356778fe02a1"
+ },
+ "ko/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "ca46b540c2603a05"
+ },
+ "ko/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "14163c3dde165ddb"
+ },
+ "ko/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "89e29755810a2e29"
+ },
+ "ko/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "846bc8f873ac4834"
+ },
+ "ko/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "420686b7d6c29f09"
+ },
+ "ko/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "d9183bfc87e3ac32"
+ },
+ "ko/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "49e6b593a93edf04"
  },
  "ko/privacy/": {
-  "date": "2026-11-13",
-  "hash": "2e75e15826fb679c"
+  "date": "2026-11-16",
+  "hash": "9a3b98883aef7101"
  },
  "ko/support/": {
-  "date": "2026-11-12",
-  "hash": "b85e473df1c8008e"
+  "date": "2026-11-16",
+  "hash": "a28ab956df452131"
  },
  "ko/terms/": {
-  "date": "2026-11-12",
-  "hash": "c819f7d663ec325b"
+  "date": "2026-11-16",
+  "hash": "b0dfae71e1c41950"
  },
  "kosullar/": {
-  "date": "2026-11-12",
-  "hash": "724960f6a4530f33"
+  "date": "2026-11-16",
+  "hash": "9563ed89d5e8059c"
  },
  "kvkk/": {
-  "date": "2026-11-13",
-  "hash": "de950d8131f8e006"
+  "date": "2026-11-16",
+  "hash": "17b01dbefb72e7f8"
  },
  "nl/": {
-  "date": "2026-11-15",
-  "hash": "635bdfe3399839d2"
+  "date": "2026-11-16",
+  "hash": "284e76a0ee923dbf"
  },
  "nl/daily/": {
-  "date": "2026-11-12",
-  "hash": "dc160b6aea758852"
+  "date": "2026-11-16",
+  "hash": "7bab8a139d9e2d45"
  },
  "nl/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "1658c1ae429e14b5"
+  "date": "2026-11-16",
+  "hash": "ad4c7cf8cf1e7d8b"
+ },
+ "nl/games/": {
+  "date": "2026-11-16",
+  "hash": "c88846b86c837f2f"
+ },
+ "nl/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "7c0dfcc2905a748a"
+ },
+ "nl/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "b885f34ca4433340"
+ },
+ "nl/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "fd9b7d18f7a580f3"
+ },
+ "nl/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "a3230897579b3e4f"
+ },
+ "nl/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "61ebcf9d8836f65b"
+ },
+ "nl/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "a7e53be8690e164b"
+ },
+ "nl/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "2c5060d151bbe611"
+ },
+ "nl/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "342a18446e6ade12"
+ },
+ "nl/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "de0543c023188fa3"
+ },
+ "nl/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "5937c73fd12f42f3"
+ },
+ "nl/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "b01fb219a60a9660"
  },
  "nl/privacy/": {
-  "date": "2026-11-13",
-  "hash": "8d6bebf2dade8b75"
+  "date": "2026-11-16",
+  "hash": "7ba74eb64274e5dc"
  },
  "nl/support/": {
-  "date": "2026-11-12",
-  "hash": "4ca7065f32293a79"
+  "date": "2026-11-16",
+  "hash": "9da977fea8a242c7"
  },
  "nl/terms/": {
-  "date": "2026-11-12",
-  "hash": "8ae2b7e164cb4056"
+  "date": "2026-11-16",
+  "hash": "248b5e150798a6fe"
+ },
+ "oyunlar/": {
+  "date": "2026-11-16",
+  "hash": "a82f91110fa282ff"
+ },
+ "oyunlar/akis/": {
+  "date": "2026-11-16",
+  "hash": "472b9b533f32d4eb"
+ },
+ "oyunlar/blok-yerlestirme/": {
+  "date": "2026-11-16",
+  "hash": "c3a09b0eeb704e25"
+ },
+ "oyunlar/boru-cevirme/": {
+  "date": "2026-11-16",
+  "hash": "30201fd5dfe4c01d"
+ },
+ "oyunlar/gozculer/": {
+  "date": "2026-11-16",
+  "hash": "72f9eecd43008f51"
+ },
+ "oyunlar/hafiza/": {
+  "date": "2026-11-16",
+  "hash": "58ad39a491e6d48b"
+ },
+ "oyunlar/isik/": {
+  "date": "2026-11-16",
+  "hash": "bdadef27a689fef7"
+ },
+ "oyunlar/kapi/": {
+  "date": "2026-11-16",
+  "hash": "ac72480f7b8dc854"
+ },
+ "oyunlar/oklar/": {
+  "date": "2026-11-16",
+  "hash": "c8b70fcaf17f6e66"
+ },
+ "oyunlar/renk-birlestirme/": {
+  "date": "2026-11-16",
+  "hash": "e57bf2032f83221f"
+ },
+ "oyunlar/renk-dizme/": {
+  "date": "2026-11-16",
+  "hash": "f1f00cc660c60adb"
+ },
+ "oyunlar/yol-cizme/": {
+  "date": "2026-11-16",
+  "hash": "34d5caeb75b28fb0"
  },
  "pl/": {
-  "date": "2026-11-15",
-  "hash": "d472af7f7d35fb1a"
+  "date": "2026-11-16",
+  "hash": "7b1bacdb1b9392b0"
  },
  "pl/daily/": {
-  "date": "2026-11-12",
-  "hash": "87c6eaabe0731d7a"
+  "date": "2026-11-16",
+  "hash": "e94482c7b0505f51"
  },
  "pl/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "151a18a74f78f604"
+  "date": "2026-11-16",
+  "hash": "8b53417a5f9ae32a"
+ },
+ "pl/games/": {
+  "date": "2026-11-16",
+  "hash": "82d5f1177babfa17"
+ },
+ "pl/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "a3e120781af91b3b"
+ },
+ "pl/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "ad85f1cd659c1c65"
+ },
+ "pl/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "0e155897963857f8"
+ },
+ "pl/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "f611279450d33af9"
+ },
+ "pl/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "b92874c07cafee24"
+ },
+ "pl/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "890703bd9cd41378"
+ },
+ "pl/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "e37aa521c9b56b49"
+ },
+ "pl/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "0bc4d4b2d6e30aa8"
+ },
+ "pl/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "b2433dc9e1f40f3a"
+ },
+ "pl/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "5f02c085ed994b4d"
+ },
+ "pl/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "d6c18ed1ce8af622"
  },
  "pl/privacy/": {
-  "date": "2026-11-13",
-  "hash": "551a2fb1e4429a11"
+  "date": "2026-11-16",
+  "hash": "d106818b1bed208f"
  },
  "pl/support/": {
-  "date": "2026-11-12",
-  "hash": "92ce23d9eb6d87dc"
+  "date": "2026-11-16",
+  "hash": "76790f94ee6e60a4"
  },
  "pl/terms/": {
-  "date": "2026-11-12",
-  "hash": "2b51211dbd37b033"
+  "date": "2026-11-16",
+  "hash": "96430a09f050f078"
  },
  "ru/": {
-  "date": "2026-11-15",
-  "hash": "a97f661cb1e4832f"
+  "date": "2026-11-16",
+  "hash": "04cfc356c347d399"
  },
  "ru/daily/": {
-  "date": "2026-11-12",
-  "hash": "c037101d58d1d2f9"
+  "date": "2026-11-16",
+  "hash": "aa495b7a81051735"
  },
  "ru/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "d451af169a150367"
+  "date": "2026-11-16",
+  "hash": "80303e70f453886c"
+ },
+ "ru/games/": {
+  "date": "2026-11-16",
+  "hash": "7de9ca773ac8f10c"
+ },
+ "ru/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "ea2438738d7507b2"
+ },
+ "ru/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "cae1d31a4c206172"
+ },
+ "ru/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "c507b347d6c41f14"
+ },
+ "ru/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "452cfd67a4c26435"
+ },
+ "ru/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "f9de645d6a2acf79"
+ },
+ "ru/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "023869871b9d3144"
+ },
+ "ru/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "f36137ebe507ba5c"
+ },
+ "ru/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "0f7529bf52b39e6e"
+ },
+ "ru/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "405f81793d1aedc3"
+ },
+ "ru/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "1f5a22210e69bfc5"
+ },
+ "ru/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "65f417d409b41adf"
  },
  "ru/privacy/": {
-  "date": "2026-11-13",
-  "hash": "0a1096c57c498177"
+  "date": "2026-11-16",
+  "hash": "2bdeb0e17bab14b6"
  },
  "ru/support/": {
-  "date": "2026-11-12",
-  "hash": "f59e1e984fdf0abc"
+  "date": "2026-11-16",
+  "hash": "8a4c0819a5dc8e29"
  },
  "ru/terms/": {
-  "date": "2026-11-12",
-  "hash": "f68f496f80687649"
+  "date": "2026-11-16",
+  "hash": "1d191dc59173cf6d"
  },
  "sv/": {
-  "date": "2026-11-15",
-  "hash": "b61f7f5e2376803d"
+  "date": "2026-11-16",
+  "hash": "049cd0354d2bc00a"
  },
  "sv/daily/": {
-  "date": "2026-11-12",
-  "hash": "9f8ec87c27db92fa"
+  "date": "2026-11-16",
+  "hash": "e9d55397fa4cebc1"
  },
  "sv/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "65939d3fc72a5d32"
+  "date": "2026-11-16",
+  "hash": "034e310f2a1789b7"
+ },
+ "sv/games/": {
+  "date": "2026-11-16",
+  "hash": "4947b839badd57fc"
+ },
+ "sv/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "380518929ae62764"
+ },
+ "sv/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "142eb8c3d4424a87"
+ },
+ "sv/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "e528b4983e717007"
+ },
+ "sv/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "dbae402fbd69dcd0"
+ },
+ "sv/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "000f3bacb18878bc"
+ },
+ "sv/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "153940715e1a8507"
+ },
+ "sv/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "02525bed558694f6"
+ },
+ "sv/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "c55c1d20ce107003"
+ },
+ "sv/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "9e264e159d70db30"
+ },
+ "sv/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "85498d3166296036"
+ },
+ "sv/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "eaba0fd3d647d098"
  },
  "sv/privacy/": {
-  "date": "2026-11-13",
-  "hash": "724867064a33ec9a"
+  "date": "2026-11-16",
+  "hash": "f7d196339eb07e67"
  },
  "sv/support/": {
-  "date": "2026-11-12",
-  "hash": "01ebd6bd78b474d9"
+  "date": "2026-11-16",
+  "hash": "5be73629ff161aee"
  },
  "sv/terms/": {
-  "date": "2026-11-12",
-  "hash": "7798c439a76bb297"
+  "date": "2026-11-16",
+  "hash": "6b84aa47ba27e1e6"
  },
  "th/": {
-  "date": "2026-11-15",
-  "hash": "2f96008fdc4c3f50"
+  "date": "2026-11-16",
+  "hash": "06b25b7e2c758233"
  },
  "th/daily/": {
-  "date": "2026-11-12",
-  "hash": "afc889c73775b715"
+  "date": "2026-11-16",
+  "hash": "035ccbfabd5d938c"
  },
  "th/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "13a9ec8d43410586"
+  "date": "2026-11-16",
+  "hash": "a3c953582fcd896e"
+ },
+ "th/games/": {
+  "date": "2026-11-16",
+  "hash": "7b8311ca8e435302"
+ },
+ "th/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "3e02e041485f00de"
+ },
+ "th/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "21f629fff36cc2f5"
+ },
+ "th/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "2c7762fd94f39c65"
+ },
+ "th/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "9752e476a540a15b"
+ },
+ "th/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "2e034d21cc9edea8"
+ },
+ "th/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "881fa2a2898852e4"
+ },
+ "th/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "1a1e68834dd5f1ec"
+ },
+ "th/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "fe3bce249eff49ab"
+ },
+ "th/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "7429afa45bae11d3"
+ },
+ "th/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "23a7239d84f5ae60"
+ },
+ "th/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "141893b816ced56b"
  },
  "th/privacy/": {
-  "date": "2026-11-13",
-  "hash": "ad20d1c4fa238055"
+  "date": "2026-11-16",
+  "hash": "2cb232588714d9b3"
  },
  "th/support/": {
-  "date": "2026-11-12",
-  "hash": "d17aa47d89e98231"
+  "date": "2026-11-16",
+  "hash": "fa102adf7da7ed82"
  },
  "th/terms/": {
-  "date": "2026-11-12",
-  "hash": "9c9ade2cc277999a"
+  "date": "2026-11-16",
+  "hash": "bea6a93f6788db16"
  },
  "uk/": {
-  "date": "2026-11-15",
-  "hash": "aa8ef8b54eb55757"
+  "date": "2026-11-16",
+  "hash": "0d75aab6c3464266"
  },
  "uk/daily/": {
-  "date": "2026-11-12",
-  "hash": "3738cebd0a929e48"
+  "date": "2026-11-16",
+  "hash": "c9743e37492f808a"
  },
  "uk/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "61c43ddeaa34419a"
+  "date": "2026-11-16",
+  "hash": "e9848502fe5f8b07"
+ },
+ "uk/games/": {
+  "date": "2026-11-16",
+  "hash": "170f676cf84824c1"
+ },
+ "uk/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "d03e0308c8c6cc89"
+ },
+ "uk/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "dfed8afe69bb8df8"
+ },
+ "uk/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "c71aefa2a586d46d"
+ },
+ "uk/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "a1124316f96c0359"
+ },
+ "uk/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "e9cb853d7c2a852a"
+ },
+ "uk/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "31d07c1266ad5529"
+ },
+ "uk/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "b15b5004edaf2382"
+ },
+ "uk/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "76dc6bb683808a52"
+ },
+ "uk/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "4b28beec4465f46c"
+ },
+ "uk/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "653212866ff502b3"
+ },
+ "uk/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "f07504d4add652f4"
  },
  "uk/privacy/": {
-  "date": "2026-11-13",
-  "hash": "a74e053eae8cfee6"
+  "date": "2026-11-16",
+  "hash": "32a4a6b331a499e1"
  },
  "uk/support/": {
-  "date": "2026-11-12",
-  "hash": "fd75d74c25aacb03"
+  "date": "2026-11-16",
+  "hash": "06240d80ab00b9e1"
  },
  "uk/terms/": {
-  "date": "2026-11-12",
-  "hash": "3be98a597974838a"
+  "date": "2026-11-16",
+  "hash": "ebe194b78c1db3e6"
  },
  "zh-hans/": {
-  "date": "2026-11-15",
-  "hash": "94418f7a5c507391"
+  "date": "2026-11-16",
+  "hash": "5f370df356ae596d"
  },
  "zh-hans/daily/": {
-  "date": "2026-11-12",
-  "hash": "fd14ac7274b28182"
+  "date": "2026-11-16",
+  "hash": "29929e6ab842bc92"
  },
  "zh-hans/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "f76c20971ea49dc9"
+  "date": "2026-11-16",
+  "hash": "462bc564d364bec4"
+ },
+ "zh-hans/games/": {
+  "date": "2026-11-16",
+  "hash": "317e16829bcbb8d5"
+ },
+ "zh-hans/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "aa37f85ec0ae99b8"
+ },
+ "zh-hans/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "0e28d493825ad203"
+ },
+ "zh-hans/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "21d8a1039f2f4283"
+ },
+ "zh-hans/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "4716f18c5981627c"
+ },
+ "zh-hans/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "5a97f405aa6f8ad8"
+ },
+ "zh-hans/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "6e48545b28fabc81"
+ },
+ "zh-hans/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "72ddd48a48c4b9c5"
+ },
+ "zh-hans/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "6fc868d6d6976108"
+ },
+ "zh-hans/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "12b4ab5f19ba0055"
+ },
+ "zh-hans/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "206a1dc44f57f231"
+ },
+ "zh-hans/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "a5c19cac34ad3781"
  },
  "zh-hans/privacy/": {
-  "date": "2026-11-13",
-  "hash": "c85e286f4d1cfc83"
+  "date": "2026-11-16",
+  "hash": "cb21d874b5a1d884"
  },
  "zh-hans/support/": {
-  "date": "2026-11-12",
-  "hash": "c09cf83326d42f01"
+  "date": "2026-11-16",
+  "hash": "adee68a5be374473"
  },
  "zh-hans/terms/": {
-  "date": "2026-11-12",
-  "hash": "2c790a7af2f61ddb"
+  "date": "2026-11-16",
+  "hash": "877619f87221bf4f"
  },
  "zh-hant/": {
-  "date": "2026-11-15",
-  "hash": "70c439332cf4aacb"
+  "date": "2026-11-16",
+  "hash": "09266d49571ab044"
  },
  "zh-hant/daily/": {
-  "date": "2026-11-12",
-  "hash": "b887ef762bb5ca74"
+  "date": "2026-11-16",
+  "hash": "500e795d1d4fc66d"
  },
  "zh-hant/delete-account/": {
-  "date": "2026-11-12",
-  "hash": "7326d3dc5081ba5f"
+  "date": "2026-11-16",
+  "hash": "bfada80851d7c049"
+ },
+ "zh-hant/games/": {
+  "date": "2026-11-16",
+  "hash": "01f7af2508026801"
+ },
+ "zh-hant/games/arrows/": {
+  "date": "2026-11-16",
+  "hash": "3a508e8e16e39b66"
+ },
+ "zh-hant/games/block-fit/": {
+  "date": "2026-11-16",
+  "hash": "e2121456ac52c920"
+ },
+ "zh-hant/games/color-match/": {
+  "date": "2026-11-16",
+  "hash": "6adfb6643fdaf83b"
+ },
+ "zh-hant/games/color-sort/": {
+  "date": "2026-11-16",
+  "hash": "ff7767c9b3b47606"
+ },
+ "zh-hant/games/connect-the-dots/": {
+  "date": "2026-11-16",
+  "hash": "df415e2155a49eae"
+ },
+ "zh-hant/games/lights/": {
+  "date": "2026-11-16",
+  "hash": "55ecca0589bde55d"
+ },
+ "zh-hant/games/lookouts/": {
+  "date": "2026-11-16",
+  "hash": "5c7daa04d375e97a"
+ },
+ "zh-hant/games/memory/": {
+  "date": "2026-11-16",
+  "hash": "2bd255c40f30e0a9"
+ },
+ "zh-hant/games/path-draw/": {
+  "date": "2026-11-16",
+  "hash": "0a5c9f61603c1185"
+ },
+ "zh-hant/games/pipe-turn/": {
+  "date": "2026-11-16",
+  "hash": "20623b3fda2f1eab"
+ },
+ "zh-hant/games/sliding-blocks/": {
+  "date": "2026-11-16",
+  "hash": "750141e5de8f2898"
  },
  "zh-hant/privacy/": {
-  "date": "2026-11-13",
-  "hash": "c57a55481c548da9"
+  "date": "2026-11-16",
+  "hash": "a6373664d0d73737"
  },
  "zh-hant/support/": {
-  "date": "2026-11-12",
-  "hash": "7ca9edc41fa81fe8"
+  "date": "2026-11-16",
+  "hash": "801622d66eeea403"
  },
  "zh-hant/terms/": {
-  "date": "2026-11-12",
-  "hash": "6380efc6e99f0e1f"
+  "date": "2026-11-16",
+  "hash": "639fd425e8596763"
  }
 }

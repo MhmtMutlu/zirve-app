@@ -15,11 +15,24 @@ Zirve: Logic Puzzle Tower is a free iPhone and iPad game by mm-apps (Türkiye), 
 - Current version: 1.1
 - Not available in: mainland China, Brazil, Russia, Belarus App Stores
 - App Store: https://apps.apple.com/app/id6823998367
-- Last updated: 2026-11-15
+- Last updated: 2026-11-16
 
 ## Pages
 - [Home](https://zirve.mm-apps.com/en/)
+- [Puzzle types](https://zirve.mm-apps.com/en/games/)
+- [Color match: sliding tile-matching puzzle](https://zirve.mm-apps.com/en/games/color-match/)
+- [Path draw: one-line path puzzle](https://zirve.mm-apps.com/en/games/path-draw/)
+- [Block fit: block fitting puzzle](https://zirve.mm-apps.com/en/games/block-fit/)
+- [Memory: card matching memory game](https://zirve.mm-apps.com/en/games/memory/)
+- [Flow: connect the dots puzzle](https://zirve.mm-apps.com/en/games/connect-the-dots/)
+- [Pipe turn: pipe rotation puzzle](https://zirve.mm-apps.com/en/games/pipe-turn/)
+- [Color sort: color sort puzzle with tubes](https://zirve.mm-apps.com/en/games/color-sort/)
+- [Arrows: arrow escape puzzle](https://zirve.mm-apps.com/en/games/arrows/)
+- [Gates: sliding block puzzle](https://zirve.mm-apps.com/en/games/sliding-blocks/)
+- [Lookouts: Star Battle style placement puzzle](https://zirve.mm-apps.com/en/games/lookouts/)
+- [Lights: light every square puzzle](https://zirve.mm-apps.com/en/games/lights/)
 - [Daily tower](https://zirve.mm-apps.com/en/daily/)
+- [Press kit](https://zirve.mm-apps.com/en/press/)
 - [Support](https://zirve.mm-apps.com/en/support/)
 - [Privacy policy](https://zirve.mm-apps.com/en/privacy/)
 - [Terms of use](https://zirve.mm-apps.com/en/terms/)

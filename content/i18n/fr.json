@@ -935,6 +935,267 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Aucune pub imposée",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Énigmes",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Fil d'Ariane",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "Les {puzzleTypes} types d'énigmes de Zirve : règles et astuces",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "Les {puzzleTypes} types d'énigmes de Zirve, la tour d'énigmes gratuite pour iPhone et iPad : le but de chacun, quand il se débloque et comment il se corse.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "Les {puzzleTypes} types d'énigmes de Zirve",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Chaque étage de la tour est l'un de ces jeux. Quatre sont accessibles dès le premier étage, puis un nouveau s'ajoute à chaque camp. Chaque page ci-dessous présente les règles, l'évolution de l'énigme à mesure que tu grimpes, des astuces et une vraie capture d'écran.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "Comment jouer à {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name} : {type}, règles et astuces | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name} : {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} dans Zirve : un vrai étage du jeu",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Astuces",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Où le trouver dans la tour",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "Le jeu {name} fait partie des quatre jeux des premiers étages. Ensuite, il revient mêlé aux autres jeux et se corse à mesure que tu grimpes.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "Le jeu {name} se débloque à l'étage {floor}, juste après le camp {camp}, et cet étage propose toujours {name}. Ensuite, il revient mêlé aux autres jeux et se corse à mesure que tu grimpes.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "En mode zen, tu peux jouer à tous les jeux débloqués sans chrono et sans dépenser de vies. Ce mode ne fait pas progresser dans la tour : il sert à s'entraîner.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Comment s'appelle ce type d'énigme",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Autres énigmes",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Toutes les énigmes",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "jeu d'association de tuiles à faire glisser",
+    "desc": "Fusion de couleurs dans Zirve : glisse une tuile sur une voisine de même couleur, les deux disparaissent. Règles, glissements limités, tuiles verrouillées, astuces.",
+    "intro": "Fusion de couleurs est le premier jeu de la tour : fais glisser une tuile sur une voisine de même couleur et les deux quittent le plateau. Les tuiles glissent case par case et, plus haut dans la tour, chaque tuile ne peut parcourir qu'un nombre limité de cases.",
+    "controls": "Glisser",
+    "tips": [
+     "Dès l'étage 10, le chiffre dans le coin d'une tuile indique combien de cases elle peut encore parcourir. Réserve tes glissements à la tuile éloignée de sa paire.",
+     "Une tuile à 0 ne peut plus glisser, mais elle peut encore fusionner : amène plutôt sa paire jusqu'à elle.",
+     "Les murs sont infranchissables. Repère le chemin qui les contourne avant de commencer à faire glisser.",
+     "Dès l'étage 60, une tuile verrouillée s'ouvre dès qu'une paire, quelle qu'elle soit, se forme juste à côté d'elle. Prépare cette paire tôt.",
+     "Si les glissements restants ne suffisent pas pour finir, touche Recommencer pour remettre le plateau dans son état de départ. Le chrono continue de tourner : fais-le tôt."
+    ],
+    "aka": "Ce jeu appartient à la famille des jeux d'association de tuiles, où deux pièces identiques se rejoignent et disparaissent. Dans Zirve, les tuiles glissent case par case et, dès l'étage 10, chaque glissement est compté. Chaque couleur a aussi sa propre forme : le plateau se lit même sans distinguer les couleurs."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "casse-tête d'un seul trait",
+    "desc": "Tracé de chemin dans Zirve : trace une seule ligne de nœud en nœud jusqu'au drapeau sans lever le doigt. Règles, brouillard, points de contrôle et astuces.",
+    "intro": "Tracé de chemin demande une seule ligne : va de nœud en nœud sans lever le doigt, passe par les points de contrôle et termine sur le drapeau. Plus haut, le plateau se remplit de murs et de brouillard et, plus haut encore, la ligne doit passer par tous les nœuds.",
+    "controls": "Tracer",
+    "tips": [
+     "Garde le doigt posé. Si tu le lèves avant que le plateau soit résolu, la ligne repart de zéro.",
+     "Reviens en arrière sur ta ligne pour annuler les derniers pas ; c'est plus rapide que de tout recommencer.",
+     "Ne coupe pas le plateau en deux : si ta ligne sépare les nœuds libres en deux zones, tu ne pourras pas passer par les deux.",
+     "Sur les plateaux où il faut passer par tous les nœuds, un nœud qui n'a que deux voisins libres doit être atteint par l'un et quitté par l'autre. Repère d'abord ces passages obligés.",
+     "Dès l'étage 30, les points de contrôle sont numérotés et tu ne peux pas entrer dans l'un d'eux avant son tour : prévois un chemin qui les atteint dans l'ordre."
+    ],
+    "aka": "C'est un casse-tête de tracé d'un seul trait. Les énigmes classiques d'un seul trait demandent de tracer chaque arête d'une figure une seule fois ; dans Zirve, on passe plutôt par des nœuds, donc la règle classique du nombre impair de connexions ne s'applique pas ici."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "puzzle de blocs à emboîter",
+    "desc": "Placement de blocs dans Zirve : glisse et tourne les pièces pour combler exactement les trous du plateau. Règles, pièces en miroir dès l'étage 30, astuces.",
+    "intro": "Placement de blocs est un casse-tête d'emboîtement : fais glisser les pièces du bas vers le plateau jusqu'à combler chaque trou. Touche une pièce pour la tourner ; plus haut, certaines pièces ne rentrent qu'une fois retournées.",
+    "controls": "Glisser, toucher pour tourner",
+    "tips": [
+     "Commence par la pièce la plus grande ou la plus biscornue. Les petites pièces combleront ce qui reste.",
+     "Remplis d'abord les coins et les trous étroits : peu de pièces y rentrent.",
+     "Compte les cases. Si un trou a une taille qu'aucune pièce restante ne peut couvrir, une pièce est mal placée : touche une pièce posée pour la reprendre.",
+     "Dès l'étage 30, une pièce marquée ↻ ne rentre pas par simple rotation. Appuie longuement dessus pour la retourner.",
+     "Quand la ligne sous le plateau devient rouge et te dit de reprendre une pièce, c'est qu'une pièce déjà posée bloque le reste."
+    ],
+    "aka": "Les casse-têtes d'emboîtement avec des pièces faites de carrés s'appellent casse-têtes de polyominos ou de pentominos, et le tangram fonctionne de la même façon avec des triangles. Dans Zirve, l'espace vide est découpé à partir des pièces elles-mêmes : chaque plateau a donc un assemblage exact."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "jeu des paires",
+    "desc": "Mémoire dans Zirve : retourne deux cartes à la fois et trouve toutes les paires. Tailles de plateau, triplés dès l'étage 30 et astuces pour retenir les places.",
+    "intro": "Mémoire est le jeu de cartes classique : retourne deux cartes, elles restent visibles si elles forment une paire, sinon réessaie. Plus tu grimpes, plus le plateau grandit et plus les mauvaises cartes se referment vite ; dès l'étage 30, tu cherches des triplés.",
+    "controls": "Toucher",
+    "tips": [
+     "Au premier tour, retourne les cartes dans un ordre fixe, ligne par ligne. Les emplacements sont plus faciles à retenir ainsi.",
+     "Quand une carte correspond à une carte déjà vue, va chercher la paire tout de suite.",
+     "Les mauvaises cartes se referment plus vite à mesure que tu grimpes. Répète-toi l'image et sa place en la retournant.",
+     "Avec les triplés, deux cartes ouvertes différentes mettent fin à l'essai aussitôt : ouvre en deuxième la carte dont tu es sûr."
+    ],
+    "aka": "On l'appelle aussi jeu de mémoire, jeu des paires ou concentration. Zirve ajoute une version à trois cartes identiques dès l'étage 30."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "casse-tête pour relier les points",
+    "desc": "Flux dans Zirve : relie chaque paire d'extrémités de même couleur par des lignes qui ne se croisent pas et remplis tout le plateau. Règles, tailles, astuces.",
+    "intro": "Flux te demande de relier chaque paire d'extrémités de même couleur par une ligne. Les lignes ne se croisent pas, chaque case ne peut contenir qu'une ligne, et le plateau n'est résolu que lorsque toutes les cases sont remplies.",
+    "controls": "Tracer",
+    "tips": [
+     "Commence par les paires le long des bords et dans les coins : leurs lignes ont le moins de chemins possibles.",
+     "Toutes les cases doivent être remplies : une ligne qui laisse un recoin d'une seule case est fausse. Colle tes lignes aux murs et aux autres lignes.",
+     "Une case de coin vide n'a que deux voisines : une ligne doit donc la traverser en suivant le bord.",
+     "Trace une ligne d'un seul geste. Si tu lèves le doigt avant d'atteindre sa paire, elle s'efface ; les lignes terminées restent.",
+     "Repasser sur ta propre ligne la raccourcit, et repartir d'une extrémité réinitialise cette couleur."
+    ],
+    "aka": "On appelle souvent ces énigmes « relier les points » ou casse-têtes de lignes. Certaines versions demandent seulement de relier les paires ; celle de Zirve demande toujours de remplir aussi tout le plateau."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "casse-tête de tuyaux à faire pivoter",
+    "desc": "Rotation de tuyaux dans Zirve : tourne les tuyaux pour que l'eau coule de la source au drapeau, puis, plus haut, dans chaque tuyau. Règles et astuces.",
+    "intro": "Rotation de tuyaux remplit le plateau de tuyaux : embouts, tuyaux droits, coudes et T. Touche un tuyau pour le tourner d'un quart de tour et fais couler l'eau de la source au drapeau ; dès l'étage 40, chaque tuyau doit faire partie du circuit.",
+    "controls": "Toucher pour tourner",
+    "tips": [
+     "Commence à côté de la source et du drapeau. Ils ne tournent jamais, donc les tuyaux voisins ont moins d'orientations possibles.",
+     "Les tuyaux au bord du plateau ne peuvent pas pointer vers l'extérieur. Tourne-les d'abord vers l'intérieur.",
+     "Chaque touche fait un quart de tour dans le sens horaire. Un tuyau droit demande au plus une touche, tout autre tuyau au plus trois.",
+     "Dès l'étage 40, chaque tuyau doit rejoindre le réseau : une ouverture tournée vers le bord, ou vers un tuyau sans ouverture en face, signale qu'il reste une erreur.",
+     "Le compteur au-dessus du plateau indique combien de cases l'eau atteint. Sers-t'en pour suivre ta progression."
+    ],
+    "aka": "On parle de casse-tête de tuyaux, de jeu de plombier ou de casse-tête de réseau. Dans Zirve, la source et le drapeau restent fixes et le plateau n'est jamais résolu au départ."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "jeu de tri de couleurs dans des tubes",
+    "desc": "Tri de couleurs dans Zirve : verse les pierres colorées d'un tube à l'autre jusqu'à ce que chaque tube ne contienne qu'une couleur. Règles, annulation, astuces.",
+    "intro": "Tri de couleurs te donne des tubes remplis de pierres colorées mélangées et deux tubes vides. Touche un tube pour soulever les pierres de même couleur du dessus, puis touche-en un autre pour les y verser ; un tube est terminé quand il contient quatre pierres d'une seule couleur.",
+    "controls": "Toucher",
+    "tips": [
+     "Tu ne peux verser que sur la même couleur ou dans un tube vide. Garde un tube vide le plus longtemps possible : c'est ta marge de manœuvre.",
+     "Avant d'utiliser un tube vide, cherche un tube dont le dessus correspond déjà.",
+     "Termine une couleur à la fois. Un tube rempli d'une seule couleur ne gêne plus.",
+     "Si aucun coup n'aide, touche Annuler au lieu de remplir ton dernier tube vide.",
+     "Chaque couleur a aussi sa propre forme : tu peux trier par forme si les couleurs sont difficiles à distinguer."
+    ],
+    "aka": "C'est le type de casse-tête appelé tri d'eau ou tri de boules (water sort, ball sort). Dans Zirve, les tubes contiennent des pierres colorées plutôt que de l'eau, et il y a toujours deux tubes vides."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "casse-tête de flèches à faire sortir",
+    "desc": "Flèches dans Zirve : touche une flèche et elle sort du plateau si sa voie est libre. Règles, flèches coudées, pénalité de 3 secondes et astuces.",
+    "intro": "Flèches remplit le plateau de flèches droites et coudées. Touche-en une : elle glisse hors du plateau dans le sens de sa pointe, mais seulement si la ligne entre sa pointe et le bord est vide ; une flèche bloquée rebondit et te coûte du temps.",
+    "controls": "Toucher",
+    "tips": [
+     "Regarde de la pointe de la flèche jusqu'au bord du plateau. Si rien ne se trouve sur cette ligne, la flèche est libre.",
+     "Retirer une flèche n'en bloque jamais une autre : prends toutes les flèches libres que tu vois.",
+     "Commence près des bords, là où les lignes de sortie sont courtes.",
+     "Une flèche coudée sort dans le sens de sa pointe, pas de sa queue. Suis son corps jusqu'à la pointe avant de toucher.",
+     "Toucher une flèche bloquée te coûte 3 secondes au chrono. En mode zen, il n'y a pas de chrono : tu peux essayer librement."
+    ],
+    "aka": "Ce genre d'énigme s'appelle casse-tête de flèches ou jeu de flèches à libérer. Dans Zirve, une flèche bloquée coûte du temps plutôt qu'une vie, et les longues flèches se courbent comme des serpents."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "casse-tête de blocs coulissants",
+    "desc": "Portes dans Zirve : fais glisser les blocs dans leur couloir et fais sortir chacun par la porte de sa couleur. Règles, rangement, blocs verrouillés, astuces.",
+    "intro": "Portes est un casse-tête de blocs coulissants : les blocs ne bougent que dans le sens de leur longueur, et chacun quitte le plateau par une porte de sa couleur. Aucun bloc ne peut sortir au premier coup : tout l'enjeu est de décider quel bloc ranger, et où.",
+    "controls": "Glisser ou toucher",
+    "tips": [
+     "Repère un bloc proche de sa porte et regarde ce qui lui barre la route. C'est généralement le bloc à déplacer en premier.",
+     "Range le bloc gênant là où il ne ferme pas le couloir d'un autre bloc.",
+     "Un bloc qui sort ne bloque jamais rien : fais sortir chaque bloc dès que sa voie est libre.",
+     "Lis la ligne sous le plateau : quand un coup ne se fait pas, elle t'explique pourquoi, par exemple un bloc verrouillé, la mauvaise porte ou un chemin bloqué.",
+     "Dès l'étage 80, un bloc gris est verrouillé. Il ne s'ouvre qu'une fois que tous les blocs de sa couleur-clé sont sortis."
+    ],
+    "aka": "Les casse-têtes de blocs coulissants et de parking forment une vieille famille ; un exemple connu est le Klotski chinois, appelé l'Âne rouge en France. La version de Zirve se distingue : les blocs sortent par des portes de leur propre couleur au lieu d'une sortie commune."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "casse-tête de placement de type Star Battle",
+    "desc": "Tours de guet dans Zirve : place une tour de guet par ligne, colonne et zone de couleur, sans que deux tours se touchent. Règles et astuces de résolution.",
+    "intro": "Tours de guet est un casse-tête de placement logique : place une tour de guet dans chaque ligne, chaque colonne et chaque zone de couleur, sans que deux tours se touchent, même en diagonale. Chaque plateau a exactement une solution et se résout sans deviner.",
+    "controls": "Toucher",
+    "tips": [
+     "Touche une fois pour une note ✕, encore une fois pour une tour de guet. Fais glisser le doigt sur des cases vides pour poser plusieurs ✕ d'un coup.",
+     "Autour de chaque tour de guet, marque d'un ✕ les huit cases qui la touchent.",
+     "Si une zone tient entièrement dans une seule ligne, aucune autre zone ne peut utiliser cette ligne : marque le reste de la ligne d'un ✕. Même chose pour les colonnes.",
+     "Si deux zones tiennent ensemble dans exactement deux lignes, les autres zones ne peuvent pas utiliser ces deux lignes.",
+     "Une petite zone se résout vite. Commence par là et laisse les croix se propager."
+    ],
+    "aka": "C'est un casse-tête de placement de la famille Star Battle, avec une pièce par ligne, par colonne et par zone. Dans Zirve, les pièces sont des tours de guet."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "casse-tête pour allumer toutes les cases",
+    "desc": "Lumières dans Zirve : touche une case pour l'inverser avec ses voisines jusqu'à ce que tout le plateau soit allumé. Règles, tailles et méthode pas à pas.",
+    "intro": "Lumières est le dernier jeu à se débloquer et le plus mathématique : toucher une case l'inverse, ainsi que ses quatre voisines ; ce qui est allumé s'éteint, ce qui est éteint s'allume. L'étage est réussi quand toutes les cases sont allumées.",
+    "controls": "Toucher",
+    "tips": [
+     "L'ordre des touches n'a pas d'importance, et deux touches sur la même case s'annulent. Chaque case demande au plus une touche.",
+     "Avance ligne par ligne : touche la case située sous chaque case sombre de la ligne du dessus. Les cases sombres descendent jusqu'à ce qu'il ne reste que la dernière ligne.",
+     "Le motif restant sur la dernière ligne t'indique quelles cases de la première ligne toucher. Touche-les et redescends ligne par ligne.",
+     "Une touche dans un coin change trois cases, sur un bord quatre, au milieu cinq. Les coins sont utiles pour les petites retouches."
+    ],
+    "aka": "C'est une version du casse-tête connu sous le nom de lights out (« éteindre les lumières »), d'après un jeu électronique de poche des années 1990. Dans Zirve, le but est inversé : allumer toutes les cases."
+   },
+   "state": "translated"
   }
  }
 }

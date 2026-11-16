@@ -12,6 +12,13 @@ GitHub Pages ile yayınlanır: <https://zirve.mm-apps.com/>
 | KVKK aydınlatma metni | `/kvkk/` | – |
 | Hesap silme | `/hesap-silme/` | `/en/delete-account/` |
 | Destek | `/destek/` | `/en/support/` |
+| Bulmacalar (11 türün dizini) | `/oyunlar/` | `/en/games/` |
+| Oyun sayfası ×11 (kurallar, ipuçları, gerçek ekran görüntüsü) | `/oyunlar/<tr-slug>/` | `/en/games/<slug>/` |
+| Basın kiti (yalnızca tr, en) | `/basin/` | `/en/press/` |
+
+Diğer diller İngilizce yolları kendi önekleriyle kullanır (`/de/games/arrows/`). Oyun slug'ları `build.py` → `GAME_SLUGS`;
+yalnızca bazı dillerde olan sayfalar `PAGE_LANGS`. Oyun sayfasının kuralları `home.games`'ten (uygulamanın nasıl oynanır
+metni), tür adı, açıklama, ipuçları ve diğer adlar `games.<tür>`'den gelir; kural değişince ikisi birlikte güncellenir.
 
 ## Yapı
 `python3 build.py` bütün siteyi depo köküne üretir ve ardından denetimleri çalıştırır (hata varsa çıkış kodu 1,
@@ -68,6 +75,8 @@ adları, JSON-LD `softwareVersion`/`inLanguage`, `llms.txt` birlikte değişir. 
 - `badges.sh`: Apple rozetlerini yeniden indirir.
 - `og.swift`: OG görselleri (`swiftc -O scripts/og.swift -o /tmp/zirve-og && /tmp/zirve-og ../zirve/App/Resources/Fonts assets/og/manifest.json`).
 - Ekran görüntüleri `assets/shots/` (iPhone 17 Pro simülatörü, `-ZirveDebugCleanUI`, 9:41 durum çubuğu, WebP).
+- `game-shots.sh`: oyun sayfalarının ekran görüntüleri, her dilde (`assets/shots/games/<dil>/<tür>.webp`, 603 px),
+  uygulama deposunun mağaza ham görüntülerinden (`docs/store/screenshots/raw/<dil>/iphone-6.9/game-<tür>.jpg`).
 
 ## Gizlilik
 Site çerez, analiz veya üçüncü taraf istek kullanmaz; Fredoka ve Nunito yazı tipleri (SIL OFL) `assets/fonts/` altından

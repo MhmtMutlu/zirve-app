@@ -943,6 +943,400 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Zorunlu reklam yok",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Bulmacalar",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Sayfa yolu",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "Zirve'nin {puzzleTypes} bulmaca türü: kurallar ve ipuçları",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "iPhone ve iPad için ücretsiz zeka oyunu Zirve'deki {puzzleTypes} bulmaca türünün hepsi: her biri senden ne ister, ne zaman açılır, nasıl zorlaşır.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "Zirve'nin {puzzleTypes} bulmaca türü",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Kulenin her katı bu oyunlardan biridir. Dördü ilk kattan açıktır, ardından her kampta bir yenisi katılır. Aşağıdaki her sayfada kurallar, tırmandıkça nasıl zorlaştığı, ipuçları ve gerçek bir ekran görüntüsü var.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "{name} nasıl oynanır",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type}, kurallar ve ipuçları | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "Zirve'de {name}: oyundan gerçek bir kat",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "İpuçları",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Kulede ne zaman karşına çıkar",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "{name}, ilk katların dört oyunundan biridir. Sonra diğer oyunlarla karışık gelir ve tırmandıkça zorlaşır.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "{name}, {camp}. kampın hemen ardından, kat {floor}'de açılır; o kat her zaman {name} olur. Sonra diğer oyunlarla karışık gelir ve tırmandıkça zorlaşır.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "Sakin modda açtığın her oyunu süre olmadan ve can harcamadan oynayabilirsin. İlerleme vermez; pratik içindir.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Bu tür bulmacaya ne denir",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Diğer bulmacalar",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Bütün bulmacalar",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "kaydırmalı eşleştirme bulmacası",
+    "desc": "Zirve'de renk birleştirme: taşı aynı renkteki komşusuna sürükle, ikisi de kalksın. Kurallar, hareket hakkı, kilitli taşlar ve ipuçları.",
+    "intro": "Renk birleştirme kulenin ilk oyunudur: bir taşı aynı renkteki komşusuna sürüklersin, ikisi de tahtadan kalkar. Taşlar kare kare kayar; yukarılarda her taşın kaç kare kayabileceği sınırlıdır.",
+    "controls": "Sürükle",
+    "tips": [
+     "Kat 10'dan itibaren taşın köşesindeki sayı, o taşın daha kaç kare kayabileceğidir. Kayışları eşinden uzakta duran taşa harca.",
+     "Sayısı 0 olan taş artık kayamaz ama birleşebilir: eşini ona getir.",
+     "Duvarlı karelere girilmez. Sürüklemeden önce çevresinden dolaşan yolu bul.",
+     "Kat 60'tan itibaren kilitli taş, hemen yanında herhangi bir eşleşme olunca açılır. O eşleşmeyi erkenden planla.",
+     "Kalan hareketler bitirmeye yetmiyorsa Baştan düğmesiyle tahtayı ilk haline döndür. Süre akmaya devam eder, o yüzden erken karar ver."
+    ],
+    "aka": "Bu oyun, iki eş parçanın buluşup kaybolduğu eşleştirme bulmacaları ailesindendir. Zirve'de taşlar kare kare kayar ve kat 10'dan itibaren her kayış sayılır. Her rengin kendi şekli de vardır; tahta renge bakmadan da okunur."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "tek çizgi yol bulmacası",
+    "desc": "Zirve'de yol çizme: parmağını kaldırmadan düğümden düğüme tek çizgi çek, bayrağa ulaş. Kurallar, sis, sıralı ara noktalar ve ipuçları.",
+    "intro": "Yol çizme tek bir çizgi ister: parmağını kaldırmadan düğümden düğüme ilerle, ara noktalardan geç ve bayrakta bitir. Yukarılarda tahta duvarlar ve sisle dolar, en sonunda çizgi her düğüme uğramak zorundadır.",
+    "controls": "Çiz",
+    "tips": [
+     "Parmağını kaldırma. Tahta çözülmeden kaldırırsan çizgi başlangıca döner.",
+     "Son adımları geri almak için çizginin üstünden geri çek; baştan başlamaktan hızlıdır.",
+     "Tahtayı ikiye bölme: çizgin boş düğümleri ayrı bölgelere ayırırsa ikisine birden uğrayamazsın.",
+     "Her düğüme uğranması gereken tahtalarda, yalnızca iki boş komşusu olan düğüme birinden girilir, ötekinden çıkılır. Önce bu zorunlu adımları kafanda yerleştir.",
+     "Kat 30'dan itibaren ara noktalar numaralıdır ve sırası gelmeden birine giremezsin. Yolu onlara sırayla uğrayacak şekilde planla."
+    ],
+    "aka": "Bu, tek çizgi ya da tek hamle çizim bulmacasıdır. Klasik tek çizgi bulmacalarında şeklin her kenarından geçilir; Zirve'de ise düğümlere uğranır. Bu yüzden o bulmacalardaki tek sayıda bağlantı kuralı burada geçerli değildir."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "blok yerleştirme bulmacası",
+    "desc": "Zirve'de blok yerleştirme: parçaları sürükle ve döndür, tahtadaki boşluklara tam oturt. Kurallar, kat 30'dan ayna parçalar ve ipuçları.",
+    "intro": "Blok yerleştirme bir yerleştirme bulmacasıdır: tepsideki parçaları tahtaya sürükle, her boşluk dolsun. Döndürmek için dokun; yukarılarda bazı parçalar ancak çevrilince sığar.",
+    "controls": "Sürükle, döndürmek için dokun",
+    "tips": [
+     "En büyük ya da en tuhaf parçayla başla. Küçük parçalar kalan yerleri doldurur.",
+     "Önce köşeleri ve dar boşlukları doldur: oralara az parça sığar.",
+     "Kareleri say. Hiçbir kalan parçanın oluşturamayacağı büyüklükte bir boşluk kaldıysa bir parça yanlış yerdedir: tahtadaki parçaya dokun, tepsiye dönsün.",
+     "Kat 30'dan itibaren ↻ rozetli parça yalnızca döndürmekle sığmaz. Çevirmek için basılı tut.",
+     "Tahtanın altındaki satır kırmızıya dönüp geri al diyorsa, yerleştirdiğin bir parça kalanların yolunu kapatıyor demektir."
+    ],
+    "aka": "Karelerden oluşan parçalarla yapılan bu bulmacalara poliomino ya da pentomino bulmacası denir; tangram da üçgenlerle aynı mantıkla çalışır. Zirve'de boşluk parçaların kendisinden oyulur, bu yüzden her tahtanın tam bir çözümü vardır."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "kart eşleştirme hafıza oyunu",
+    "desc": "Zirve'de hafıza: her seferinde iki kart çevir, bütün eşleri bul. Tahta boyları, kat 30'dan üçlüler ve yerleri hatırlamak için ipuçları.",
+    "intro": "Hafıza bildiğin kart oyunudur: iki kart çevir, eşse açık kalsın, değilse yeniden dene. Tırmandıkça tahta büyür, yanlış kartlar daha çabuk kapanır ve kat 30'dan itibaren üçlüler aranır.",
+    "controls": "Dokun",
+    "tips": [
+     "İlk turda kartları sabit bir sırayla, satır satır çevir. Yerleri böyle hatırlamak daha kolaydır.",
+     "Çevirdiğin kart daha önce gördüğün birinin eşiyse hemen o çifte git.",
+     "Tırmandıkça yanlış kartlar daha çabuk kapanır. Çevirirken resmi ve yerini içinden söyle.",
+     "Üçlülerde açık iki kart farklıysa deneme hemen biter; emin olduğun kartı ikinci aç."
+    ],
+    "aka": "Bu oyun kart eşleştirme ya da eşini bul oyunu olarak da bilinir. Zirve, kat 30'dan itibaren üç aynı kartla oynanan bir biçimini ekler."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "nokta birleştirme bulmacası",
+    "desc": "Zirve'de akış: aynı renkteki uçları kesişmeyen çizgilerle birleştir ve bütün tahtayı doldur. Kurallar, tahta boyları ve ipuçları.",
+    "intro": "Akış, aynı renkteki her uç çiftini bir çizgiyle birleştirmeni ister. Çizgiler kesişemez, bir kareden yalnızca bir çizgi geçer ve tahta ancak bütün kareler dolunca çözülür.",
+    "controls": "Çiz",
+    "tips": [
+     "Kenarlardaki ve köşelerdeki çiftlerle başla: onların çizgilerinin gidebileceği yol azdır.",
+     "Her kare dolmalı; tek karelik boşluk bırakan bir çizgi yanlıştır. Çizgileri duvarlara ve birbirine yasla.",
+     "Boş bir köşe karesinin yalnızca iki komşusu vardır; oradan bir çizgi kenar boyunca geçmek zorundadır.",
+     "Çizgiyi tek seferde çiz. Eşine varmadan parmağını kaldırırsan silinir; tamamlanan çizgiler kalır.",
+     "Kendi çizginin üstüne geri gelmek onu kısaltır, bir uçtan yeniden başlamak o rengi sıfırlar."
+    ],
+    "aka": "Bu bulmacalar nokta birleştirme ya da çizgi bulmacası olarak bilinir. Bazı sürümler yalnızca çiftleri birleştirmeni ister; Zirve'nin sürümü her zaman bütün tahtayı da doldurmanı ister."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "boru döndürme bulmacası",
+    "desc": "Zirve'de boru çevirme: boruları döndür, su kaynaktan bayrağa, sonra bütün parçalardan aksın. Kurallar ve ipuçları.",
+    "intro": "Boru çevirmede tahta boru parçalarıyla doludur: uç, düz, köşe ve T. Bir parçaya dokunup çeyrek tur döndürerek suyu kaynaktan bayrağa akıtırsın; kat 40'tan itibaren bütün parçalar akışa katılmalıdır.",
+    "controls": "Döndürmek için dokun",
+    "tips": [
+     "Kaynağın ve bayrağın yanından başla. Onlar hiç dönmez, bu yüzden yanlarındaki parçaların gidebileceği yön azdır.",
+     "Tahtanın kenarındaki parçalar dışarıyı gösteremez. Önce onları içeri çevir.",
+     "Her dokunuş saat yönünde çeyrek turdur. Düz bir parça en çok bir, diğerleri en çok üç dokunuş ister.",
+     "Kat 40'tan itibaren her parça ağa katılmalı: duvarı ya da karşılık vermeyen bir parçayı gösteren açık uç, bir şeyin hâlâ yanlış olduğunu söyler.",
+     "Tahtanın üstündeki sayı suyun kaç kareye ulaştığını gösterir. İlerlemeni onunla kontrol et."
+    ],
+    "aka": "Bu tür boru bulmacası, tesisatçı bulmacası ya da ağ bulmacası olarak bilinir. Zirve'de kaynak ve bayrak sabit kalır, tahta hiçbir zaman çözülmüş gelmez."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "tüplü renk sıralama bulmacası",
+    "desc": "Zirve'de renk dizme: renkli taşları tüpler arasında dök, her tüpte tek renk kalsın. Dökme kuralları, geri al ve ipuçları.",
+    "intro": "Renk dizme sana karışık renkli taşlarla dolu tüpler ve iki boş tüp verir. Bir tüpe dokunup üstteki aynı renk taşları al, başka bir tüpe dokunup dök; tüp, tek renkten dört taş olunca tamamlanır.",
+    "controls": "Dokun",
+    "tips": [
+     "Yalnızca aynı rengin üstüne ya da boş tüpe dökebilirsin. Bir tüpü olabildiğince uzun süre boş tut: o senin serbest alanın.",
+     "Boş tüpü kullanmadan önce üstü zaten aynı renk olan bir tüp ara.",
+     "Renkleri birer birer bitir. Tek renkle dolmuş tüp artık yolunu kesmez.",
+     "Hiçbir hamle işe yaramıyorsa son boş tüpü doldurmak yerine Geri al'a dokun.",
+     "Her rengin kendi şekli de vardır; renkleri ayırt etmek zorsa şekle göre diz."
+    ],
+    "aka": "Bu, su sıralama ya da top sıralama türünden bir bulmacadır. Zirve'de tüplerde su yerine renkli taşlar vardır ve her zaman iki boş tüp bulunur."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "ok çıkarma bulmacası",
+    "desc": "Zirve'de oklar: bir oka dokun, yolu açıksa tahtadan kayıp çıksın. Kurallar, kıvrımlı oklar, 3 saniyelik ceza ve ipuçları.",
+    "intro": "Oklar, tahtayı düz ve kıvrımlı oklarla doldurur. Birine dokunduğunda ucunun gösterdiği yöne kayıp tahtadan çıkar, ama yalnızca ucundan kenara kadar olan hat boşsa; önü kapalı ok çarpıp geri döner ve süre kaybettirir.",
+    "controls": "Dokun",
+    "tips": [
+     "Ok ucundan tahtanın kenarına doğru bak. O hatta hiçbir şey yoksa ok serbesttir.",
+     "Bir oku çıkarmak hiçbir zaman başka bir oku engellemez; gördüğün her serbest oku çıkar.",
+     "Çıkış hattının kısa olduğu kenarlardan başla.",
+     "Kıvrımlı ok kuyruğunun değil ucunun yönünde çıkar. Dokunmadan önce gövdeyi uca kadar izle.",
+     "Önü kapalı oka dokunmak süreden 3 saniye götürür. Sakin modda süre olmadığı için rahatça deneyebilirsin."
+    ],
+    "aka": "Bu tür bulmacaya ok bulmacası ya da ok çıkarma bulmacası denir. Zirve'de önü kapalı ok can değil süre götürür, uzun oklar da yılan gibi kıvrılır."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "kayan blok bulmacası",
+    "desc": "Zirve'de kapı: blokları kendi şeritlerinde kaydır, her birini kendi rengindeki kapıdan çıkar. Kurallar, park etme, kilitli bloklar ve ipuçları.",
+    "intro": "Kapı bir kayan blok bulmacasıdır: bloklar yalnızca uzun kenarları boyunca kayar ve her biri tahtadan kendi rengindeki kapıdan çıkar. İlk hamlede hiçbir blok çıkamaz; bulmaca hangi bloğu nereye park edeceğine karar vermektir.",
+    "controls": "Sürükle ya da dokun",
+    "tips": [
+     "Kapısına yakın bir blok bul ve yolunda ne durduğuna bak. Genellikle önce o engeli oynatmak gerekir.",
+     "Engel olan bloğu, başka bir bloğun şeridini kapatmayacağı bir yere park et.",
+     "Çıkan blok hiçbir şeyi engellemez; yolu açılan her bloğu hemen çıkar.",
+     "Tahtanın altındaki satırı oku: bir hamle olmadığında nedenini söyler, örneğin kilitli blok, yanlış kapı ya da kapalı yol.",
+     "Kat 80'den itibaren gri blok kilitlidir. Ancak anahtar rengindeki bütün bloklar çıkınca açılır."
+    ],
+    "aka": "Kayan blok ve park bulmacaları eski bir ailedir; bilinen bir örneği Çin'in Klotski bulmacasıdır. Zirve'nin sürümünde bloklar tek bir ortak çıkış yerine kendi renklerindeki kapılardan çıkar."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "Star Battle tarzı yerleştirme bulmacası",
+    "desc": "Zirve'de gözcüler: her satıra, sütuna ve renkli bölgeye birer gözcü kulesi koy, hiçbiri birbirine değmesin. Kurallar ve çözüm ipuçları.",
+    "intro": "Gözcüler bir mantık yerleştirme bulmacasıdır: her satıra, her sütuna ve her renkli bölgeye bir gözcü kulesi koy; iki kule çapraz bile olsa birbirine değemez. Her tahtanın tek bir çözümü vardır ve tahmin etmeden çözülür.",
+    "controls": "Dokun",
+    "tips": [
+     "Bir kez dokun ✕ notu, bir daha dokun gözcü olsun. Boş karelerin üstünden parmağını sürükleyerek tek seferde çok sayıda ✕ koyabilirsin.",
+     "Her gözcünün çevresindeki sekiz kareye ✕ koy.",
+     "Bir bölge tamamen tek bir satırdaysa o satırı başka bölge kullanamaz: satırın geri kalanına ✕ koy. Sütunlarda da aynısı geçerli.",
+     "İki bölge birlikte tam olarak iki satırın içine sığıyorsa, diğer bölgeler o iki satırı kullanamaz.",
+     "Küçük bölgeler çabuk karar verir. Oradan başla, ✕'ler yayılsın."
+    ],
+    "aka": "Bu, her satırda, sütunda ve bölgede bir parça olan Star Battle ailesinden bir yerleştirme bulmacasıdır. Zirve'de parçalar gözcü kuleleridir."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "bütün kareleri yakma bulmacası",
+    "desc": "Zirve'de ışık: bir kareye dokun, kendisi ve komşuları dönsün; bütün tahta yanana dek devam et. Kurallar, tahta boyları ve adım adım yöntem.",
+    "intro": "Işık en son açılan ve en matematiksel oyundur: bir kareye dokunmak onu ve dört komşusunu çevirir, yanan söner, sönük yanar. Bütün kareler yanınca kat çözülür.",
+    "controls": "Dokun",
+    "tips": [
+     "Dokunuşların sırası önemli değildir ve aynı kareye iki dokunuş birbirini götürür. Her kareye en çok bir kez dokunman yeter.",
+     "Satır satır ilerle: üst satırdaki her sönük karenin altındaki kareye dokun. Sönük kareler aşağı iner, sonunda yalnızca en alt satır kalır.",
+     "En alt satırda kalan desen, üst satırda hangi karelere dokunacağını söyler. Onlara dokun ve yeniden aşağı doğru ilerle.",
+     "Köşeye dokunmak üç, kenara dokunmak dört, ortaya dokunmak beş kareyi değiştirir. Küçük düzeltmeler için köşeler iyidir."
+    ],
+    "aka": "Bu, 1990'lardaki bir el oyunundan adını alan lights out bulmacasının bir sürümüdür. Zirve'de hedef tersinedir: bütün kareleri yak."
+   },
+   "state": "translated"
+  },
+  "press.nav": {
+   "value": "Basın kiti",
+   "state": "translated"
+  },
+  "press.title": {
+   "value": "Zirve basın kiti: bilgiler, tanıtım metinleri ve görseller",
+   "state": "translated"
+  },
+  "press.desc": {
+   "value": "mm-apps'in iPhone ve iPad için ücretsiz zeka oyunu Zirve hakkında bilgiler, kullanıma hazır tanıtım metinleri, gerçek ekran görüntüleri ve ikon.",
+   "state": "translated"
+  },
+  "press.h1": {
+   "value": "Basın kiti",
+   "state": "translated"
+  },
+  "press.lead": {
+   "value": "Zirve hakkında yazmak için gereken her şey tek yerde: bilgiler, iki hazır tanıtım metni, bulmaca listesi ve görseller.",
+   "state": "translated"
+  },
+  "press.facts_h2": {
+   "value": "Bilgiler",
+   "state": "translated"
+  },
+  "press.rows": {
+   "value": [
+    [
+     "Ad",
+     "Zirve (App Store'da {storeName})"
+    ],
+    [
+     "Geliştirici",
+     "mm-apps, Türkiye'de bağımsız bir geliştirici"
+    ],
+    [
+     "Yayın tarihi",
+     "{released}"
+    ],
+    [
+     "Güncel sürüm",
+     "{version}"
+    ],
+    [
+     "Platform",
+     "iPhone ve iPad, iOS ve iPadOS {minOS} ve sonrası"
+    ],
+    [
+     "Fiyat",
+     "Ücretsiz. İsteğe bağlı uygulama içi satın almalar: elmas paketleri, başlangıç paketi, sezon seti ve sezonun premium ödül yolu."
+    ],
+    [
+     "Reklam",
+     "Zorunlu reklam yok. Ödüllü reklam yalnızca oyuncu bir ödül seçtiğinde oynar: can, ek süre ya da 2 katı sandık."
+    ],
+    [
+     "Bulmaca türü",
+     "{puzzleTypes}"
+    ],
+    [
+     "Modlar",
+     "Her on katta kampı olan kule, günün kulesi, {leagueTiers} kademeli haftalık lig, aylık sezonlar, sakin mod"
+    ],
+    [
+     "Çevrimdışı",
+     "Kule internetsiz oynanır ve sonra eşitlenir; lig, sıralamalar ve arkadaşlar bağlantı ister."
+    ],
+    [
+     "Diller",
+     "{appLanguageCount}: {appLanguageNames}"
+    ],
+    [
+     "App Store",
+     "{appStore}"
+    ],
+    [
+     "Web sitesi",
+     "{site}"
+    ],
+    [
+     "İletişim",
+     "{contact}"
+    ]
+   ],
+   "state": "translated"
+  },
+  "press.short_h2": {
+   "value": "Kısa tanıtım",
+   "state": "translated"
+  },
+  "press.short": {
+   "value": "Zirve, iPhone ve iPad için ücretsiz bir zeka oyunu. Her katı {puzzleTypes} türden kısa, süreli bir bulmaca olan bir kuleye tırmanırsın: renk dizmeden boru çevirmeye, oklardan kayan bloklara. Günün kulesi, haftalık lig ve süresiz sakin mod var; zorunlu reklam yok.",
+   "state": "translated"
+  },
+  "press.long_h2": {
+   "value": "Uzun tanıtım",
+   "state": "translated"
+  },
+  "press.long": {
+   "value": [
+    "Zirve kısa mantık bulmacalarını bir tırmanışa dönüştürür. Kulenin her katı süreli bir bulmacadır: çözersen yükselirsin, üç yıldıza kadar toplarsın ve her on katta bir kampa varırsın. Dört oyun ilk kattan açıktır, her kampta bir yenisi katılır ve sonunda {puzzleTypes} türün hepsi karışık gelir: renk birleştirme, yol çizme, blok yerleştirme, hafıza, akış, boru çevirme, renk dizme, oklar, kapı, gözcüler ve ışık.",
+    "Her tahta gösterilmeden önce bilgisayar tarafından üretilir ve çözülür; çözümsüz bulmaca yoktur. Günün kulesi herkese her gün aynı on katı, üç denemeyle verir. Haftalık lig oyuncuları {leagueSize} kişilik gruplara ayırır; aylık sezonlar ödül yolu, kıyafetler ve kule görünümleri ekler.",
+    "Zirve'yi Türkiye'de bağımsız geliştirici mm-apps yapıyor; oyun {appLanguageCount} dilde. Zorunlu reklam göstermez: reklam yalnızca oyuncu bir ödül istediğinde oynar. 1,5 kat ya da sınırsız süre veren süre yardımı, VoiceOver desteği ve her rengin bir şekli olması oyunu daha çok kişi için oynanabilir kılar."
+   ],
+   "state": "translated"
+  },
+  "press.puzzles_h2": {
+   "value": "Bulmacalar",
+   "state": "translated"
+  },
+  "press.assets_h2": {
+   "value": "Görseller",
+   "state": "translated"
+  },
+  "press.assets_p": {
+   "value": "Uygulama ikonu ve her bulmacanın bu sayfanın dilinde, uygulamada alınmış gerçek ekran görüntüsü.",
+   "state": "translated"
+  },
+  "press.icon": {
+   "value": "Uygulama ikonu (PNG, 512 × 512)",
+   "state": "translated"
+  },
+  "press.usage": {
+   "value": "Bu metinleri, ikonu ve ekran görüntülerini Zirve hakkında yazmak için kullanabilirsin. Lütfen ikonu değiştirme.",
+   "state": "translated"
+  },
+  "press.contact_h2": {
+   "value": "İletişim",
+   "state": "translated"
+  },
+  "press.contact_p": {
+   "value": "Soruların ya da ek malzeme için yaz:",
+   "state": "translated"
   }
  }
 }

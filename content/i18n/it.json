@@ -935,6 +935,267 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Nessuna pubblicità forzata",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Rompicapi",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Percorso di navigazione",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "I {puzzleTypes} tipi di rompicapo di Zirve: regole e consigli",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "Tutti i {puzzleTypes} tipi di rompicapo di Zirve, gioco logico gratuito per iPhone e iPad: cosa chiede ognuno, quando si sblocca e come diventa più difficile.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "I {puzzleTypes} tipi di rompicapo di Zirve",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Ogni piano della torre è uno di questi giochi. Quattro sono disponibili dal primo piano, poi a ogni campo se ne aggiunge uno nuovo. In ogni pagina qui sotto trovi le regole, come diventa più difficile il rompicapo man mano che sali, alcuni consigli e uno screenshot reale.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "Come si gioca a {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type}, regole e consigli | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} in Zirve: un vero piano del gioco",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Consigli",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Dove compare nella torre",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "{name} è uno dei quattro giochi dei primi piani. Da lì in poi compare insieme agli altri giochi e diventa più difficile man mano che sali.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "{name} si sblocca al piano {floor}, subito dopo il campo {camp}, e quel piano propone sempre {name}. Da lì in poi compare insieme agli altri giochi e diventa più difficile man mano che sali.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "In modalità relax puoi giocare a tutti i giochi che hai sbloccato, senza timer e senza spendere vite. Non ti fa avanzare nella torre: serve per allenarti.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Come si chiama questo tipo di rompicapo",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Altri rompicapi",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Tutti i rompicapi",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "rompicapo di abbinamento con tessere scorrevoli",
+    "desc": "Unisci i colori in Zirve: trascina una tessera su una vicina dello stesso colore e spariscono entrambe. Regole, spostamenti contati, tessere bloccate e consigli.",
+    "intro": "Unisci i colori è il primo gioco della torre: trascina una tessera su una vicina dello stesso colore ed entrambe lasciano la griglia. Le tessere scorrono di casella in casella e, più in alto, ognuna può scorrere solo per un numero limitato di caselle.",
+    "controls": "Trascina",
+    "tips": [
+     "Dal piano 10, il numero nell'angolo di una tessera indica di quante caselle può ancora spostarsi. Riserva gli spostamenti alla tessera lontana dalla sua coppia.",
+     "Una tessera a 0 non può più spostarsi, ma può ancora abbinarsi: porta da lei l'altra tessera della coppia.",
+     "Nelle caselle con il muro non si può entrare. Trova il percorso per aggirarle prima di iniziare a trascinare.",
+     "Dal piano 60, una tessera bloccata si apre quando avviene un abbinamento qualsiasi proprio accanto a lei. Pianifica quell'abbinamento per tempo.",
+     "Se gli spostamenti rimasti non bastano per finire, tocca Ricomincia per riportare la griglia allo stato iniziale. Il tempo continua a scorrere, quindi decidi presto."
+    ],
+    "aka": "Appartiene alla famiglia dei rompicapi di abbinamento, in cui due pezzi uguali si incontrano e spariscono. In Zirve le tessere scorrono di casella in casella e dal piano 10 ogni spostamento viene contato. Ogni colore ha anche una sua forma, così la griglia si legge anche senza distinguere i colori."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "rompicapo a tratto unico",
+    "desc": "Disegna il percorso in Zirve: una sola linea da nodo a nodo fino alla bandiera, senza alzare il dito. Regole, nebbia, checkpoint in ordine e consigli.",
+    "intro": "Disegna il percorso chiede una sola linea: vai da nodo a nodo senza alzare il dito, passa dai checkpoint e finisci sulla bandiera. Più in alto la griglia si riempie di muri e nebbia e, alla fine, la linea deve passare da ogni nodo.",
+    "controls": "Traccia",
+    "tips": [
+     "Tieni il dito sullo schermo. Se lo alzi prima di aver risolto la griglia, la linea torna al punto di partenza.",
+     "Ripercorri all'indietro la tua linea per annullare gli ultimi passi: è più veloce che ricominciare.",
+     "Non dividere la griglia in due: se la linea separa i nodi liberi in zone distinte, non potrai visitarle entrambe.",
+     "Nelle griglie in cui va visitato ogni nodo, un nodo con solo due vicini liberi va raggiunto da uno e lasciato dall'altro. Individua prima questi passaggi obbligati.",
+     "Dal piano 30 i checkpoint sono numerati e non puoi entrare in uno prima del suo turno: pianifica un percorso che li tocchi in ordine."
+    ],
+    "aka": "È un rompicapo da disegnare con una sola linea, detto anche a tratto unico. I classici rompicapi a tratto unico chiedono di ripassare ogni lato di una figura; in Zirve invece si passa dai nodi, quindi la vecchia regola sul numero dispari di collegamenti qui non vale."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "rompicapo a incastro di blocchi",
+    "desc": "Incastra i blocchi in Zirve: trascina e ruota i pezzi finché riempiono esattamente gli spazi della griglia. Regole, pezzi speculari dal piano 30 e consigli.",
+    "intro": "Incastra i blocchi è un rompicapo di riempimento: trascina i pezzi dal vassoio sulla griglia finché ogni spazio è pieno. Tocca per ruotare; più in alto, alcuni pezzi entrano solo se li capovolgi.",
+    "controls": "Trascina, tocca per ruotare",
+    "tips": [
+     "Inizia dal pezzo più grande o più strano. Quelli piccoli possono riempire ciò che resta.",
+     "Riempi prima gli angoli e gli spazi stretti: lì entrano pochi pezzi.",
+     "Conta le caselle. Se uno spazio ha una dimensione che nessun pezzo rimasto può coprire, qualcosa è fuori posto: tocca un pezzo già posato per rimandarlo nel vassoio.",
+     "Dal piano 30, un pezzo con il simbolo ↻ non entra ruotandolo e basta. Tienilo premuto per capovolgerlo.",
+     "Quando la riga sotto la griglia diventa rossa e ti invita a riprendere un pezzo, è un pezzo già posato a bloccare il resto."
+    ],
+    "aka": "I rompicapi di riempimento con pezzi fatti di quadrati sono noti come rompicapi di polimini o pentamini, e il tangram funziona allo stesso modo con i triangoli. In Zirve lo spazio vuoto è ricavato dai pezzi stessi, quindi ogni griglia ha un incastro esatto."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "gioco di memoria con le carte",
+    "desc": "Memoria in Zirve: gira due carte alla volta e trova tutte le coppie. Dimensioni della griglia, tris dal piano 30 e consigli per ricordare le posizioni.",
+    "intro": "Memoria è il classico gioco di carte: gira due carte, se sono uguali restano scoperte, altrimenti riprova. Salendo la griglia si allarga, le carte sbagliate si richiudono più in fretta e dal piano 30 si cercano i tris.",
+    "controls": "Tocca",
+    "tips": [
+     "Al primo giro, gira le carte in un ordine fisso, riga per riga. Così è più facile ricordare le posizioni.",
+     "Quando una carta corrisponde a una che hai già visto, completa subito la coppia.",
+     "Salendo, le carte sbagliate si richiudono più in fretta. Mentre giri, ripeti a mente l'immagine e la sua posizione.",
+     "Nei tris, due carte scoperte diverse chiudono subito il tentativo, quindi scopri per seconda la carta di cui sei sicuro."
+    ],
+    "aka": "È conosciuto anche come gioco delle coppie o gioco delle carte abbinate. Zirve aggiunge una versione con tre carte uguali dal piano 30."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "rompicapo collega i punti",
+    "desc": "Flusso in Zirve: collega ogni coppia di estremità uguali con linee che non si incrociano e riempi tutta la griglia. Regole, dimensioni e consigli.",
+    "intro": "Flusso ti chiede di collegare ogni coppia di estremità uguali con una linea. Le linee non possono incrociarsi, ogni casella può contenere una sola linea e la griglia è risolta solo quando ogni casella è piena.",
+    "controls": "Traccia",
+    "tips": [
+     "Inizia dalle coppie lungo i bordi e negli angoli: le loro linee hanno meno strade possibili.",
+     "Ogni casella va riempita, quindi una linea che lascia isolata una sola casella è sbagliata. Fai correre le linee lungo i muri e l'una accanto all'altra.",
+     "Una casella d'angolo vuota ha solo due vicine, quindi una linea deve attraversarla lungo il bordo.",
+     "Traccia ogni linea in un solo gesto. Se alzi il dito prima di raggiungere la sua coppia, la linea si cancella; quelle finite restano.",
+     "Tornare indietro sulla propria linea la accorcia, e ripartire da un'estremità azzera quel colore."
+    ],
+    "aka": "Questi rompicapi sono spesso chiamati collega i punti o rompicapi di linee. Alcune versioni chiedono solo di unire le coppie; quella di Zirve chiede sempre anche di riempire tutta la griglia."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "rompicapo dei tubi da ruotare",
+    "desc": "Gira i tubi in Zirve: ruota i tubi finché l'acqua scorre dalla sorgente alla bandiera e, più avanti, in tutti i tubi. Regole e consigli.",
+    "intro": "Gira i tubi riempie la griglia di pezzi di tubo: terminali, dritti, curve e pezzi a T. Tocca un pezzo per ruotarlo di un quarto di giro e far scorrere l'acqua dalla sorgente alla bandiera; dal piano 40, ogni pezzo deve far parte del flusso.",
+    "controls": "Tocca per ruotare",
+    "tips": [
+     "Inizia vicino alla sorgente e alla bandiera. Non ruotano mai, quindi i pezzi accanto a loro hanno meno direzioni possibili.",
+     "I pezzi sul bordo della griglia non possono puntare verso l'esterno. Girali prima verso l'interno.",
+     "Ogni tocco è un quarto di giro in senso orario. A un pezzo dritto basta al massimo un tocco, a ogni altro pezzo al massimo tre.",
+     "Dal piano 40 ogni pezzo deve far parte della rete: un'estremità aperta che punta verso il bordo o verso un pezzo senza un'apertura corrispondente significa che qualcosa è ancora sbagliato.",
+     "Il contatore sopra la griglia mostra quante caselle raggiunge l'acqua. Usalo per controllare i tuoi progressi."
+    ],
+    "aka": "Questo tipo è noto come rompicapo dei tubi, dell'idraulico o delle reti. In Zirve la sorgente e la bandiera restano fisse e la griglia non parte mai già risolta."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "rompicapo di ordinamento colori con provette",
+    "desc": "Ordina i colori in Zirve: versa le pietre colorate da una provetta all'altra finché ognuna ha un solo colore. Regole per versare, tasto Annulla e consigli.",
+    "intro": "Ordina i colori ti dà provette piene di pietre colorate mescolate e due provette vuote. Tocca una provetta per prendere le pietre dello stesso colore in cima e toccane un'altra per versarle; la provetta è completa quando contiene quattro pietre di un solo colore.",
+    "controls": "Tocca",
+    "tips": [
+     "Puoi versare solo sullo stesso colore o in una provetta vuota. Tieni una provetta vuota il più a lungo possibile: è il tuo spazio libero.",
+     "Prima di usare una provetta vuota, cerca una provetta che abbia già in cima lo stesso colore.",
+     "Completa un colore alla volta. Una provetta piena di un solo colore non è più d'intralcio.",
+     "Se nessuna mossa aiuta, tocca Annulla invece di riempire l'ultima provetta vuota.",
+     "Ogni colore ha anche una sua forma, quindi puoi ordinare per forma se i colori sono difficili da distinguere."
+    ],
+    "aka": "È il tipo di rompicapo noto come water sort o ball sort, in cui si ordinano liquidi o palline per colore. In Zirve le provette contengono pietre colorate invece dell'acqua e ci sono sempre due provette vuote."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "rompicapo delle frecce",
+    "desc": "Frecce in Zirve: tocca una freccia e, se la via è libera, scivola fuori dalla griglia. Regole, frecce curve, penalità di 3 secondi e consigli.",
+    "intro": "Frecce riempie la griglia di frecce dritte e curve. Toccane una: scivola fuori dalla griglia nella direzione della testa, ma solo se la linea dalla testa al bordo è libera; una freccia bloccata rimbalza indietro e ti costa tempo.",
+    "controls": "Tocca",
+    "tips": [
+     "Guarda dalla punta della freccia fino al bordo della griglia. Se su quella linea non c'è nulla, la freccia è libera.",
+     "Togliere una freccia non ne blocca mai un'altra, quindi fai uscire ogni freccia libera che vedi.",
+     "Inizia vicino ai bordi, dove le linee d'uscita sono corte.",
+     "Una freccia curva esce nella direzione della testa, non della coda. Segui il corpo fino alla testa prima di toccare.",
+     "Un tocco su una freccia bloccata costa 3 secondi. In modalità relax non c'è timer, quindi puoi provare liberamente."
+    ],
+    "aka": "Questo tipo di rompicapo si chiama rompicapo delle frecce o arrow escape. In Zirve una freccia bloccata costa tempo e non una vita, e le frecce lunghe si piegano come serpenti."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "rompicapo a blocchi scorrevoli",
+    "desc": "Porte in Zirve: fai scorrere i blocchi lungo le loro corsie e porta ognuno fuori dalla porta del suo colore. Regole, parcheggio, lucchetti e consigli.",
+    "intro": "Porte è un rompicapo a blocchi scorrevoli: i blocchi si muovono solo nel senso della loro lunghezza e ognuno esce dalla griglia attraverso una porta del suo colore. Nessun blocco può uscire alla prima mossa, quindi il rompicapo sta nel decidere quale blocco parcheggiare e dove.",
+    "controls": "Trascina o tocca",
+    "tips": [
+     "Trova un blocco vicino alla sua porta e guarda cosa gli sbarra la strada. Di solito è quello il blocco da spostare per primo.",
+     "Parcheggia il blocco che ingombra dove non chiude la corsia di un altro blocco.",
+     "Un blocco uscito non intralcia più nulla, quindi fai uscire ogni blocco appena la sua strada è libera.",
+     "Leggi la riga sotto la griglia: quando una mossa non avviene ti dice perché, per esempio un blocco col lucchetto, la porta sbagliata o una strada chiusa.",
+     "Dal piano 80 un blocco grigio ha il lucchetto. Si sblocca solo dopo che sono usciti tutti i blocchi del colore della sua chiave."
+    ],
+    "aka": "I rompicapi a blocchi scorrevoli e di parcheggio sono una famiglia antica; un esempio noto è il rompicapo cinese Klotski. La versione di Zirve è diversa perché i blocchi escono da porte del proprio colore invece che da un'unica uscita comune."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "rompicapo di posizionamento stile Star Battle",
+    "desc": "Torri di guardia in Zirve: metti una torre in ogni riga, colonna e zona colorata, senza che due si tocchino. Regole e consigli di risoluzione.",
+    "intro": "Torri di guardia è un rompicapo logico di posizionamento: metti una torre di guardia in ogni riga, ogni colonna e ogni zona colorata, e due torri non possono toccarsi, nemmeno in diagonale. Ogni griglia ha una sola soluzione e si risolve senza tirare a indovinare.",
+    "controls": "Tocca",
+    "tips": [
+     "Tocca una volta per un appunto ✕ e di nuovo per una torre. Trascina il dito sulle caselle vuote per segnare molte ✕ in una volta.",
+     "Intorno a ogni torre, segna con ✕ le otto caselle che la toccano.",
+     "Se una zona sta tutta in una riga, nessun'altra zona può usare quella riga: segna con ✕ il resto della riga. Lo stesso vale per le colonne.",
+     "Se due zone insieme stanno esattamente dentro due righe, le altre zone non possono usare quelle due righe.",
+     "Una zona piccola si decide in fretta. Parti da lì e lascia che le ✕ si diffondano."
+    ],
+    "aka": "È un rompicapo di posizionamento della famiglia Star Battle, con un pezzo per riga, colonna e zona. Zirve usa come pezzi le torri di guardia."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "rompicapo delle luci da accendere",
+    "desc": "Luci in Zirve: tocca una casella per invertirla insieme alle vicine finché tutta la griglia è accesa. Regole, dimensioni e un metodo passo passo.",
+    "intro": "Luci è l'ultimo gioco a sbloccarsi e il più matematico: toccare una casella inverte quella casella e le sue quattro vicine, da accesa a spenta e da spenta ad accesa. Il piano è risolto quando ogni casella è accesa.",
+    "controls": "Tocca",
+    "tips": [
+     "L'ordine dei tocchi non conta e due tocchi sulla stessa casella si annullano. Ogni casella ha bisogno al massimo di un tocco.",
+     "Procedi riga per riga: tocca la casella sotto ogni casella spenta della riga sopra. Le caselle spente scendono finché restano solo nell'ultima riga.",
+     "Lo schema rimasto nell'ultima riga ti dice quali caselle della prima riga toccare. Toccale e ripeti scendendo.",
+     "Un tocco in un angolo cambia tre caselle, su un bordo quattro, al centro cinque. Gli angoli sono utili per piccole correzioni."
+    ],
+    "aka": "È una versione del rompicapo noto come lights out (luci spente), dal nome di un gioco elettronico portatile degli anni '90. In Zirve l'obiettivo è al contrario: accendere tutte le caselle."
+   },
+   "state": "translated"
   }
  }
 }

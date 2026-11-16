@@ -935,6 +935,267 @@
     ]
    ],
    "state": "translated"
+  },
+  "home.trust_ads": {
+   "value": "Bez wymuszonych reklam",
+   "state": "translated"
+  },
+  "games.nav": {
+   "value": "Łamigłówki",
+   "state": "translated"
+  },
+  "games.crumbs_label": {
+   "value": "Ścieżka nawigacyjna",
+   "state": "translated"
+  },
+  "games.title": {
+   "value": "{puzzleTypes} rodzajów łamigłówek w Zirve: zasady i porady",
+   "state": "translated"
+  },
+  "games.desc": {
+   "value": "Poznaj {puzzleTypes} rodzajów łamigłówek Zirve, darmowej wieży logicznej na iPhone'a i iPada: czego wymaga każda, kiedy się odblokowuje i jak rośnie trudność.",
+   "state": "translated"
+  },
+  "games.h1": {
+   "value": "{puzzleTypes} rodzajów łamigłówek w Zirve",
+   "state": "translated"
+  },
+  "games.lead": {
+   "value": "Każde piętro wieży to jedna z tych gier. Cztery są dostępne od pierwszego piętra, a potem w każdym obozie dochodzi nowa. Na każdej z poniższych stron znajdziesz zasady, opis tego, jak łamigłówka zmienia się w trakcie wspinaczki, porady i prawdziwy zrzut ekranu.",
+   "state": "translated"
+  },
+  "games.card_link": {
+   "value": "Jak grać: {name}",
+   "state": "translated"
+  },
+  "games.page_title": {
+   "value": "{name}: {type}, zasady i porady | Zirve",
+   "state": "translated"
+  },
+  "games.h1_game": {
+   "value": "{name}: {type}",
+   "state": "translated"
+  },
+  "games.shot_alt": {
+   "value": "{name} w Zirve: prawdziwe piętro z gry",
+   "state": "translated"
+  },
+  "games.tips_h2": {
+   "value": "Porady",
+   "state": "translated"
+  },
+  "games.where_h2": {
+   "value": "Gdzie pojawia się w wieży",
+   "state": "translated"
+  },
+  "games.where_first": {
+   "value": "Gra {name} należy do czterech gier dostępnych od pierwszego piętra. Potem pojawia się na przemian z innymi grami i jest tym trudniejsza, im wyżej się wspinasz.",
+   "state": "translated"
+  },
+  "games.where": {
+   "value": "Gra {name} odblokowuje się na piętrze {floor}, tuż za obozem {camp}, i to piętro to zawsze {name}. Potem pojawia się na przemian z innymi grami i jest tym trudniejsza, im wyżej się wspinasz.",
+   "state": "translated"
+  },
+  "games.calm_p": {
+   "value": "W trybie relaksu możesz grać w każdą odblokowaną grę bez limitu czasu i bez utraty żyć. Ten tryb nie daje postępów; służy do ćwiczeń.",
+   "state": "translated"
+  },
+  "games.aka_h2": {
+   "value": "Jak nazywa się ten rodzaj łamigłówki",
+   "state": "translated"
+  },
+  "games.more_h2": {
+   "value": "Więcej łamigłówek",
+   "state": "translated"
+  },
+  "games.all_link": {
+   "value": "Wszystkie łamigłówki",
+   "state": "translated"
+  },
+  "games.colorMatch": {
+   "value": {
+    "type": "łamigłówka z przesuwaniem i łączeniem kafelków",
+    "desc": "Pary kolorów w Zirve: przeciągnij kafelek na sąsiada w tym samym kolorze, a oba znikną. Zasady, limity przesunięć, zablokowane kafelki i porady.",
+    "intro": "Pary kolorów to pierwsza gra w wieży: przeciągasz kafelek na sąsiada w tym samym kolorze i oba znikają z planszy. Kafelki przesuwają się pole po polu, a wyżej w wieży każdy kafelek może się przesunąć tylko ograniczoną liczbę razy.",
+    "controls": "Przeciągnij",
+    "tips": [
+     "Od piętra 10 liczba w rogu kafelka mówi, o ile pól może się jeszcze przesunąć. Przesunięcia wykorzystuj na kafelek, który leży daleko od swojej pary.",
+     "Kafelek z 0 nie może się już przesunąć, ale nadal może się połączyć: przesuń do niego jego parę.",
+     "Przez ściany nie da się przejść. Zanim zaczniesz przeciągać, znajdź drogę dookoła nich.",
+     "Od piętra 60 zablokowany kafelek otwiera się, gdy tuż obok powstanie dowolna para. Zaplanuj ją wcześnie.",
+     "Jeśli pozostałe przesunięcia nie wystarczą do końca, dotknij Od nowa, aby przywrócić planszę do stanu początkowego. Zegar tyka dalej, więc nie zwlekaj z decyzją."
+    ],
+    "aka": "Należy do rodziny łamigłówek z łączeniem kafelków, w których dwa takie same elementy spotykają się i znikają. W Zirve kafelki przesuwają się pole po polu, a od piętra 10 każde przesunięcie jest liczone. Każdy kolor ma też własny kształt, więc planszę da się odczytać nawet bez rozróżniania kolorów."
+   },
+   "state": "translated"
+  },
+  "games.pathDraw": {
+   "value": {
+    "type": "łamigłówka z rysowaniem jedną kreską",
+    "desc": "Rysuj ścieżkę w Zirve: poprowadź jedną linię od węzła do węzła i dotrzyj do flagi bez odrywania palca. Zasady, mgła, punkty kontrolne i porady.",
+    "intro": "W grze Rysuj ścieżkę potrzebna jest jedna linia: prowadź ją od węzła do węzła, nie odrywając palca, przejdź przez punkty kontrolne i zakończ na fladze. Wyżej na planszy przybywa ścian i mgły, a w końcu linia musi odwiedzić każdy węzeł.",
+    "controls": "Rysuj",
+    "tips": [
+     "Trzymaj palec na ekranie. Jeśli oderwiesz go przed rozwiązaniem planszy, linia wraca na start.",
+     "Cofnij się po własnej linii, aby wymazać ostatnie kroki; to szybsze niż zaczynanie od nowa.",
+     "Nie dziel planszy na dwie części: jeśli linia rozetnie wolne węzły na osobne obszary, nie odwiedzisz obu.",
+     "Na planszach, na których trzeba odwiedzić każdy węzeł, do węzła mającego tylko dwóch wolnych sąsiadów musisz wejść od jednego z nich i wyjść do drugiego. Najpierw ustal w głowie te wymuszone kroki.",
+     "Od piętra 30 punkty kontrolne są ponumerowane i na żaden nie można wejść, zanim przyjdzie jego kolej, więc zaplanuj trasę, która przejdzie przez nie w odpowiedniej kolejności."
+    ],
+    "aka": "To łamigłówka typu „jedną kreską”, czyli rysowanie figury bez odrywania ołówka od kartki. Klasyczne wersje każą przejść po każdej krawędzi figury; w Zirve odwiedzasz węzły, więc dawna reguła o nieparzystej liczbie połączeń tu nie obowiązuje."
+   },
+   "state": "translated"
+  },
+  "games.blockFit": {
+   "value": {
+    "type": "układanka z dopasowywaniem klocków",
+    "desc": "Dopasuj klocki w Zirve: przeciągaj i obracaj klocki, aż dokładnie wypełnią luki na planszy. Zasady, lustrzane klocki od piętra 30 i porady.",
+    "intro": "Dopasuj klocki to łamigłówka z układaniem: przeciągaj klocki z tacy na planszę, aż wypełnisz każdą lukę. Dotknij klocka, aby go obrócić; wyżej niektóre klocki pasują dopiero po odwróceniu.",
+    "controls": "Przeciągnij, dotknij, aby obrócić",
+    "tips": [
+     "Zacznij od największego klocka albo tego o najbardziej nietypowym kształcie. Małe wypełnią to, co zostanie.",
+     "Najpierw wypełniaj rogi i wąskie luki: pasuje tam niewiele klocków.",
+     "Licz pola. Jeśli luka ma rozmiar, którego nie da się złożyć z pozostałych klocków, coś leży w złym miejscu: dotknij położonego klocka, aby wrócił na tacę.",
+     "Od piętra 30 klocek z oznaczeniem ↻ nie zmieści się po samym obróceniu. Przytrzymaj go, aby go odwrócić.",
+     "Gdy komunikat pod planszą robi się czerwony i każe cofnąć ruch, któryś z położonych klocków blokuje resztę."
+    ],
+    "aka": "Łamigłówki z klockami złożonymi z kwadratów nazywa się łamigłówkami typu poliomino albo pentomino, a tangram działa tak samo z trójkątami. W Zirve puste miejsce powstaje z kształtów samych klocków, więc każdą planszę da się wypełnić bez reszty."
+   },
+   "state": "translated"
+  },
+  "games.memory": {
+   "value": {
+    "type": "gra memory w pary",
+    "desc": "Pamięć w Zirve: odwracaj po dwie karty i znajdź wszystkie pary. Rozmiary planszy, trójki od piętra 30 i porady, jak zapamiętać położenie kart.",
+    "intro": "Pamięć to klasyczna gra z kartami: odwracasz dwie; jeśli pasują, zostają odkryte, a jeśli nie, próbujesz dalej. Podczas wspinaczki plansza rośnie, błędne karty zakrywają się szybciej, a od piętra 30 szukasz trójek.",
+    "controls": "Dotknij",
+    "tips": [
+     "Przy pierwszym przejściu przez planszę odwracaj karty w stałej kolejności, rząd po rzędzie. Tak łatwiej zapamiętać ich położenie.",
+     "Gdy karta pasuje do takiej, która już się pokazała, od razu odkryj tę parę.",
+     "Im wyżej, tym szybciej zakrywają się błędne karty. Odwracając, powtarzaj w myślach obrazek i jego miejsce.",
+     "W trójkach dwie odkryte karty, które się różnią, od razu kończą próbę, więc jako drugą odkrywaj kartę, co do której nie masz wątpliwości."
+    ],
+    "aka": "Ta gra znana jest też jako memory albo gra w pary. Od piętra 30 Zirve dodaje wersję z trzema takimi samymi kartami."
+   },
+   "state": "translated"
+  },
+  "games.flow": {
+   "value": {
+    "type": "łamigłówka typu „połącz kropki”",
+    "desc": "Przepływ w Zirve: połącz każdą parę pasujących końców liniami, które się nie krzyżują, i wypełnij całą planszę. Zasady, rozmiary planszy i porady.",
+    "intro": "W grze Przepływ łączysz linią każdą parę pasujących końców. Linie nie mogą się krzyżować, przez każde pole może biec tylko jedna linia, a plansza jest rozwiązana dopiero wtedy, gdy każde pole jest wypełnione.",
+    "controls": "Rysuj",
+    "tips": [
+     "Zacznij od par przy krawędziach i w rogach: ich linie mają najmniej możliwych tras.",
+     "Każde pole musi być wypełnione, więc linia, która zostawia odcięte pojedyncze puste pole, jest błędna. Prowadź linie przy ścianach i tuż obok siebie.",
+     "Puste pole w rogu ma tylko dwóch sąsiadów, więc linia musi przez nie przejść wzdłuż krawędzi.",
+     "Rysuj linię jednym ruchem. Jeśli oderwiesz palec, zanim dotrzesz do pasującej kropki, linia się wymaże; ukończone linie zostają.",
+     "Cofnięcie się po własnej linii ją skraca, a rysowanie od nowa z jednego z końców resetuje ten kolor."
+    ],
+    "aka": "Takie łamigłówki często nazywa się „połącz kropki” albo łamigłówkami z liniami. Niektóre wersje wymagają tylko połączenia par; w Zirve zawsze trzeba też wypełnić całą planszę."
+   },
+   "state": "translated"
+  },
+  "games.pipes": {
+   "value": {
+    "type": "łamigłówka typu hydraulik",
+    "desc": "Obracanie rur w Zirve: obracaj rury, aż woda popłynie od źródła do flagi, a na wyższych piętrach przez każdą rurę. Zasady i porady.",
+    "intro": "W grze Obracanie rur plansza jest pełna rur: końcówek, prostych odcinków, kolanek i trójników. Dotknij rury, aby obrócić ją o 90 stopni, i poprowadź wodę od źródła do flagi; od piętra 40 każda rura musi być podłączona do obiegu.",
+    "controls": "Dotknij, aby obrócić",
+    "tips": [
+     "Zacznij przy źródle i fladze. One nigdy się nie obracają, więc rury obok nich mają mniej możliwych kierunków.",
+     "Rury przy krawędzi planszy nie mogą być skierowane na zewnątrz. Najpierw obróć je do środka.",
+     "Każde dotknięcie obraca rurę o 90 stopni zgodnie z ruchem wskazówek zegara. Prosty odcinek potrzebuje najwyżej jednego dotknięcia, każda inna rura najwyżej trzech.",
+     "Od piętra 40 każda rura musi należeć do sieci: otwarty koniec skierowany w ścianę albo w rurę, która się z nim nie łączy, oznacza, że coś jest jeszcze nie tak.",
+     "Licznik nad planszą pokazuje, do ilu pól dociera woda. Dzięki niemu sprawdzisz swoje postępy."
+    ],
+    "aka": "Ten rodzaj łamigłówki znany jest jako łamigłówka z rurami, „hydraulik” albo łamigłówka sieciowa. W Zirve źródło i flaga są nieruchome, a plansza nigdy nie jest rozwiązana na starcie."
+   },
+   "state": "translated"
+  },
+  "games.colorSort": {
+   "value": {
+    "type": "łamigłówka z przelewaniem między probówkami",
+    "desc": "Sortowanie kolorów w Zirve: przelewaj kolorowe kamyki między probówkami, aż w każdej będzie jeden kolor. Zasady przelewania, cofanie i porady.",
+    "intro": "W grze Sortowanie kolorów dostajesz probówki z wymieszanymi kolorowymi kamykami i dwie puste probówki. Dotknij probówki, aby podnieść leżące na górze kamyki jednego koloru, a potem dotknij innej, aby je przelać; probówka jest ułożona, gdy ma cztery kamyki w jednym kolorze.",
+    "controls": "Dotknij",
+    "tips": [
+     "Przelewać można tylko na ten sam kolor albo do pustej probówki. Jak najdłużej trzymaj jedną probówkę pustą: to twoje wolne miejsce.",
+     "Zanim użyjesz pustej probówki, poszukaj takiej, której górny kolor już pasuje.",
+     "Układaj kolory po jednym. Pełna probówka w jednym kolorze przestaje przeszkadzać.",
+     "Jeśli żaden ruch nie pomaga, dotknij Cofnij, zamiast zapełniać ostatnią pustą probówkę.",
+     "Każdy kolor ma też własny kształt, więc gdy trudno odróżnić kolory, możesz sortować według kształtu."
+    ],
+    "aka": "To łamigłówka typu water sort albo ball sort, czyli sortowanie wody lub kulek. W Zirve w probówkach są kolorowe kamyki zamiast wody i zawsze są dwie puste probówki."
+   },
+   "state": "translated"
+  },
+  "games.arrows": {
+   "value": {
+    "type": "łamigłówka ze strzałkami",
+    "desc": "Strzałki w Zirve: dotknij strzałki, a opuści planszę, jeśli ma wolną drogę. Zasady, wygięte strzałki, 3 sekundy kary i porady.",
+    "intro": "W grze Strzałki plansza jest pełna prostych i wygiętych strzałek. Dotknij jednej, a wysunie się z planszy w kierunku swojego grotu, ale tylko wtedy, gdy linia od grotu do krawędzi jest pusta; zablokowana strzałka odbija się i kosztuje czas.",
+    "controls": "Dotknij",
+    "tips": [
+     "Poprowadź wzrokiem linię od grotu do krawędzi planszy. Jeśli nic na niej nie ma, strzałka jest wolna.",
+     "Usunięcie strzałki nigdy nie blokuje innej, więc usuwaj każdą wolną strzałkę, którą widzisz.",
+     "Zaczynaj przy krawędziach, gdzie drogi wyjścia są krótkie.",
+     "Wygięta strzałka wychodzi w kierunku grotu, nie ogona. Zanim dotkniesz, prześledź ją wzrokiem aż do grotu.",
+     "Dotknięcie zablokowanej strzałki kosztuje 3 sekundy. W trybie relaksu nie ma zegara, więc możesz próbować do woli."
+    ],
+    "aka": "Ten rodzaj łamigłówki nazywa się łamigłówką ze strzałkami albo „ucieczką strzałek”. W Zirve zablokowana strzałka kosztuje czas zamiast życia, a długie strzałki wyginają się jak węże."
+   },
+   "state": "translated"
+  },
+  "games.gates": {
+   "value": {
+    "type": "łamigłówka z przesuwaniem klocków",
+    "desc": "Bramy w Zirve: przesuwaj klocki po ich torach i wyprowadź każdy przez bramę w swoim kolorze. Zasady, odstawianie, zablokowane klocki i porady.",
+    "intro": "Bramy to łamigłówka z przesuwaniem klocków: klocki poruszają się tylko wzdłuż swojego dłuższego boku, a każdy opuszcza planszę przez bramę w swoim kolorze. W pierwszym ruchu żaden klocek nie może wyjść, więc cała sztuka polega na tym, który klocek gdzie odstawić.",
+    "controls": "Przeciągnij albo dotknij",
+    "tips": [
+     "Znajdź klocek blisko jego bramy i zobacz, co stoi mu na drodze. Zwykle to właśnie ten klocek trzeba ruszyć najpierw.",
+     "Odstaw blokujący klocek tam, gdzie nie zamknie toru innemu klockowi.",
+     "Wychodzący klocek niczego nie blokuje, więc wypuszczaj każdy, gdy tylko ma wolną drogę.",
+     "Czytaj komunikat pod planszą: gdy ruch się nie udaje, wyjaśnia dlaczego, na przykład zablokowany klocek, zła brama albo zamknięta droga.",
+     "Od piętra 80 szary klocek jest zablokowany. Otwiera się dopiero, gdy planszę opuszczą wszystkie klocki w kolorze jego klucza."
+    ],
+    "aka": "Łamigłówki z przesuwaniem klocków i łamigłówki parkingowe mają długą historię; znanym przykładem jest chińska łamigłówka Klotski. Wersja Zirve różni się tym, że klocki wychodzą przez bramy we własnych kolorach zamiast przez jedno wspólne wyjście."
+   },
+   "state": "translated"
+  },
+  "games.flags": {
+   "value": {
+    "type": "łamigłówka logiczna w stylu Star Battle",
+    "desc": "Strażnice w Zirve: postaw po jednej strażnicy w każdym rzędzie, kolumnie i kolorowym obszarze tak, by żadne dwie się nie stykały. Zasady i porady.",
+    "intro": "Strażnice to logiczna łamigłówka z rozmieszczaniem: postaw jedną strażnicę w każdym rzędzie, każdej kolumnie i każdym kolorowym obszarze; dwie strażnice nie mogą się stykać, nawet po przekątnej. Każda plansza ma dokładnie jedno rozwiązanie i da się ją rozwiązać bez zgadywania.",
+    "controls": "Dotknij",
+    "tips": [
+     "Dotknij pola raz, aby postawić notatkę ✕, i drugi raz, aby postawić strażnicę. Przeciągnij palcem po pustych polach, aby postawić ✕ na wielu polach naraz.",
+     "Wokół każdej strażnicy oznacz ✕ osiem sąsiednich pól.",
+     "Jeśli obszar leży w całości w jednym rzędzie, żaden inny obszar nie może mieć strażnicy w tym rzędzie: oznacz resztę rzędu ✕. To samo dotyczy kolumn.",
+     "Jeśli dwa obszary razem mieszczą się dokładnie w dwóch rzędach, pozostałe obszary nie mogą mieć strażnic w tych dwóch rzędach.",
+     "Mały obszar szybko się rozstrzyga. Zacznij od niego, a krzyżyki zaczną się rozchodzić dalej."
+    ],
+    "aka": "To łamigłówka z rozmieszczaniem z rodziny Star Battle: po jednym elemencie w każdym rzędzie, kolumnie i obszarze. W Zirve tymi elementami są strażnice."
+   },
+   "state": "translated"
+  },
+  "games.lights": {
+   "value": {
+    "type": "łamigłówka z zapalaniem wszystkich pól",
+    "desc": "Światła w Zirve: dotknij pola, aby przełączyć je i jego sąsiadów, aż zaświeci się cała plansza. Zasady, rozmiary planszy i metoda krok po kroku.",
+    "intro": "Światła to gra odblokowywana jako ostatnia i najbardziej matematyczna: dotknięcie pola przełącza je i jego czterech sąsiadów, zapalone gaśnie, a ciemne się zapala. Piętro jest rozwiązane, gdy świecą się wszystkie pola.",
+    "controls": "Dotknij",
+    "tips": [
+     "Kolejność dotknięć nie ma znaczenia, a dwa dotknięcia tego samego pola się znoszą. Każde pole wymaga najwyżej jednego dotknięcia.",
+     "Działaj rząd po rzędzie: dotknij pola pod każdym ciemnym polem w rzędzie powyżej. Ciemne pola przesuwają się w dół, aż zostaną tylko w dolnym rzędzie.",
+     "Układ, który zostanie w dolnym rzędzie, mówi, których pól górnego rzędu dotknąć. Dotknij ich i znów przejdź rząd po rzędzie w dół.",
+     "Dotknięcie w rogu zmienia trzy pola, przy krawędzi cztery, a w środku pięć. Rogi dobrze nadają się do drobnych poprawek."
+    ],
+    "aka": "To odmiana łamigłówki znanej jako lights out („zgaś światła”), nazwanej tak od przenośnej gry elektronicznej z lat 90. W Zirve cel jest odwrotny: zapal wszystkie pola."
+   },
+   "state": "translated"
   }
  }
 }
