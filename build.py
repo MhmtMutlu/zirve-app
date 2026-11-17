@@ -506,8 +506,8 @@ UNLOCK = {k["id"]: k["unlockCamp"] for k in FACTS["puzzleKinds"]}
 def hero_picture(alt):
     shots = "/assets/shots/" + HERO
     sizes = "(max-width: 900px) min(74vw, 290px), 330px"
-    return (f'<picture><source type="image/avif" srcset="{shots}-320.avif 320w, {shots}.avif 603w" sizes="{sizes}">'
-            f'<source type="image/webp" srcset="{shots}-320.webp 320w, {shots}.webp 603w" sizes="{sizes}">'
+    # No AVIF: sips-encoded AVIF at 603 px decoded fully transparent in Chrome (17 Nov 2026); WebP works everywhere.
+    return (f'<picture><source type="image/webp" srcset="{shots}-320.webp 320w, {shots}.webp 603w" sizes="{sizes}">'
             f'<img src="{shots}.webp" width="603" height="1311" fetchpriority="high" decoding="async" alt="{html.escape(alt)}"></picture>')
 
 
@@ -1396,7 +1396,7 @@ def check_pages(report, written, pages):
         if LANG[code].script == "latin":
             total += fonts
         if page == "home":
-            total += (ROOT / f"assets/shots/{HERO}.avif").stat().st_size
+            total += (ROOT / f"assets/shots/{HERO}.webp").stat().st_size
         limit = 100 if LANG[code].script in ("latin", "cyrillic", "vietnamese") else 60
         sizes.append(f"{rel} {total // 1024} KB")
         if total > limit * 1024:

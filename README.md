@@ -71,7 +71,7 @@ adları, JSON-LD `softwareVersion`/`inLanguage`, `llms.txt` birlikte değişir. 
 ### Yardımcı betikler (`scripts/`)
 - `indexnow.sh`: deploy **sonrası** değişen sayfaları IndexNow'a bildirir (`DRY_RUN=1` ile yalnızca yazdırır).
 - `subset-fonts.py`: yazı tipi alt kümeleri (fontTools + brotli gerekir).
-- `images.sh`: hero görselinin AVIF/WebP boyutları (macOS `sips`, `cwebp`).
+- `images.sh`: hero görselinin 320 px WebP sürümü (macOS `sips`, `cwebp`). AVIF kullanılmaz: `sips` ile üretilen AVIF Chrome'da boş görünüyordu.
 - `badges.sh`: Apple rozetlerini yeniden indirir.
 - `og.swift`: OG görselleri (`swiftc -O scripts/og.swift -o /tmp/zirve-og && /tmp/zirve-og ../zirve/App/Resources/Fonts assets/og/manifest.json`).
 - Ekran görüntüleri `assets/shots/` (iPhone 17 Pro simülatörü, `-ZirveDebugCleanUI`, 9:41 durum çubuğu, WebP).
