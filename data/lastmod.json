@@ -80,16 +80,16 @@
   "hash": "a6ab37e3e0bceb14"
  },
  "de/support/": {
-  "date": "2026-11-16",
-  "hash": "a943927732f75938"
+  "date": "2026-11-20",
+  "hash": "b2f79fdae3df5007"
  },
  "de/terms/": {
   "date": "2026-11-16",
   "hash": "520cf19dfdf3b55a"
  },
  "destek/": {
-  "date": "2026-11-16",
-  "hash": "07ebd33ede7c3eac"
+  "date": "2026-11-20",
+  "hash": "edd6a5277ee3a6a6"
  },
  "en/": {
   "date": "2026-11-17",
@@ -160,8 +160,8 @@
   "hash": "8d053158122a1519"
  },
  "en/support/": {
-  "date": "2026-11-16",
-  "hash": "c4524697f90ea48c"
+  "date": "2026-11-20",
+  "hash": "56afd04db43342ee"
  },
  "en/terms/": {
   "date": "2026-11-16",
@@ -232,8 +232,8 @@
   "hash": "f2ba60b16b7a4215"
  },
  "es/support/": {
-  "date": "2026-11-16",
-  "hash": "e19befdf6e235dac"
+  "date": "2026-11-20",
+  "hash": "e3313e74da23fd96"
  },
  "es/terms/": {
   "date": "2026-11-16",
@@ -304,8 +304,8 @@
   "hash": "a6632381a4a6bf84"
  },
  "fr/support/": {
-  "date": "2026-11-16",
-  "hash": "dee98b6bc6936983"
+  "date": "2026-11-20",
+  "hash": "5233ccb6f791144a"
  },
  "fr/terms/": {
   "date": "2026-11-16",
@@ -384,8 +384,8 @@
   "hash": "0d77e78987a11ea2"
  },
  "id/support/": {
-  "date": "2026-11-16",
-  "hash": "00c587ce96bedf11"
+  "date": "2026-11-20",
+  "hash": "37d3e65da056db7f"
  },
  "id/terms/": {
   "date": "2026-11-16",
@@ -456,8 +456,8 @@
   "hash": "5b9ce72d758bf57d"
  },
  "it/support/": {
-  "date": "2026-11-16",
-  "hash": "8c8de415cc7ae670"
+  "date": "2026-11-20",
+  "hash": "ee4dea72b4d979a9"
  },
  "it/terms/": {
   "date": "2026-11-16",
@@ -528,8 +528,8 @@
   "hash": "515cace36eaece28"
  },
  "ja/support/": {
-  "date": "2026-11-16",
-  "hash": "916e23870f23d08b"
+  "date": "2026-11-20",
+  "hash": "659acc44dc8e3353"
  },
  "ja/terms/": {
   "date": "2026-11-16",
@@ -600,8 +600,8 @@
   "hash": "9a3b98883aef7101"
  },
  "ko/support/": {
-  "date": "2026-11-16",
-  "hash": "a28ab956df452131"
+  "date": "2026-11-20",
+  "hash": "5ee66cbcca224413"
  },
  "ko/terms/": {
   "date": "2026-11-16",
@@ -680,8 +680,8 @@
   "hash": "7ba74eb64274e5dc"
  },
  "nl/support/": {
-  "date": "2026-11-16",
-  "hash": "9da977fea8a242c7"
+  "date": "2026-11-20",
+  "hash": "655baa27ed944c76"
  },
  "nl/terms/": {
   "date": "2026-11-16",
@@ -800,8 +800,8 @@
   "hash": "d106818b1bed208f"
  },
  "pl/support/": {
-  "date": "2026-11-16",
-  "hash": "76790f94ee6e60a4"
+  "date": "2026-11-20",
+  "hash": "940c1856ff74299f"
  },
  "pl/terms/": {
   "date": "2026-11-16",
@@ -872,8 +872,8 @@
   "hash": "2bdeb0e17bab14b6"
  },
  "ru/support/": {
-  "date": "2026-11-16",
-  "hash": "8a4c0819a5dc8e29"
+  "date": "2026-11-20",
+  "hash": "c940ef5931e325ea"
  },
  "ru/terms/": {
   "date": "2026-11-16",
@@ -944,8 +944,8 @@
   "hash": "f7d196339eb07e67"
  },
  "sv/support/": {
-  "date": "2026-11-16",
-  "hash": "5be73629ff161aee"
+  "date": "2026-11-20",
+  "hash": "3d3a0198e13d34c9"
  },
  "sv/terms/": {
   "date": "2026-11-16",
@@ -1016,8 +1016,8 @@
   "hash": "2cb232588714d9b3"
  },
  "th/support/": {
-  "date": "2026-11-16",
-  "hash": "fa102adf7da7ed82"
+  "date": "2026-11-20",
+  "hash": "ae6e4319e8dfe82b"
  },
  "th/terms/": {
   "date": "2026-11-16",
@@ -1088,8 +1088,8 @@
   "hash": "32a4a6b331a499e1"
  },
  "uk/support/": {
-  "date": "2026-11-16",
-  "hash": "06240d80ab00b9e1"
+  "date": "2026-11-20",
+  "hash": "9a143d1e66112324"
  },
  "uk/terms/": {
   "date": "2026-11-16",
@@ -1160,8 +1160,8 @@
   "hash": "cb21d874b5a1d884"
  },
  "zh-hans/support/": {
-  "date": "2026-11-16",
-  "hash": "adee68a5be374473"
+  "date": "2026-11-20",
+  "hash": "368ff17cce6d169d"
  },
  "zh-hans/terms/": {
   "date": "2026-11-16",
@@ -1232,8 +1232,8 @@
   "hash": "a6373664d0d73737"
  },
  "zh-hant/support/": {
-  "date": "2026-11-16",
-  "hash": "801622d66eeea403"
+  "date": "2026-11-20",
+  "hash": "9d0fe1eb6c9a694c"
  },
  "zh-hant/terms/": {
   "date": "2026-11-16",
