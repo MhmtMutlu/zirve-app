@@ -1,6 +1,6 @@
 {
   "_doc": "Single source of truth for every fact the site, the JSON-LD, llms.txt and the OG cards state. Release flag: only `live` and versions.<v>.releaseDate change on release day. build.py compares the values marked (app) with the app repo (../zirve or $ZIRVE_APP_REPO) and fails on a mismatch. Plan: zirve/docs/research/SEO_GEO_1_1.md §2.2, §4.9.",
-  "live": "1.1",
+  "live": "1.2",
   "versions": {
     "1.0": {
       "softwareVersion": "1.0",
@@ -11,6 +11,12 @@
     "1.1": {
       "softwareVersion": "1.1",
       "releaseDate": "2026-11-15",
+      "leagueTiers": ["bronze", "silver", "gold", "platinum", "diamond", "master", "legend", "mythic", "titan", "immortal", "champion", "summit"],
+      "appLanguages": ["tr", "en", "de", "fr", "it", "es", "ja", "ko", "zh-Hant", "zh-Hans", "nl", "pl", "sv", "th", "id", "uk", "ru"]
+    },
+    "1.2": {
+      "softwareVersion": "1.2",
+      "releaseDate": "2026-11-21",
       "leagueTiers": ["bronze", "silver", "gold", "platinum", "diamond", "master", "legend", "mythic", "titan", "immortal", "champion", "summit"],
       "appLanguages": ["tr", "en", "de", "fr", "it", "es", "ja", "ko", "zh-Hant", "zh-Hans", "nl", "pl", "sv", "th", "id", "uk", "ru"]
     }
